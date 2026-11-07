@@ -1,0 +1,37 @@
+# Small provisional vocabulary, not an ontology or an English dictionary.
+AI
+PERSON
+LANGUAGE
+DO
+IS
+HAS
+CAUSE
+IF
+NOT
+AND
+KNOW
+WANT
+COMPARE
+REL
+RAW
+RAIN
+WATER
+LIQUID
+CREATE
+LEARN
+FIRE
+COLD
+HEAT
+CHANGE
+TEMPERATURE
+FLOW
+EARTH
+PLANET
+HELP
+TOOL
+MARKET
+EXCHANGE
+VALUE
+VALUE_A
+VALUE_B
+# GREATER_THAN deliberately omitted to illustrate the audit's unknown-name signal.
