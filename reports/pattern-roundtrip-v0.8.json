@@ -1,0 +1,37 @@
+{
+  "domains": {
+    "computing": 4,
+    "daily": 4,
+    "epistemic": 4,
+    "mathematics": 4,
+    "science": 4,
+    "society": 4
+  },
+  "exact_canonical_roundtrips": 24,
+  "independent_ai_reader_results": null,
+  "new_english_coverage_claims": 0,
+  "new_relation_operators": 0,
+  "note": "Exact structural expansion on 24 selected, public, authored expressions; NOT semantic coverage or AI comprehension.",
+  "pattern_characters_in_selected_examples": 1457,
+  "pattern_definitions": 16,
+  "pattern_invocations": {
+    "P_ACT": 7,
+    "P_ACT2": 2,
+    "P_ALL": 3,
+    "P_BEFORE_ACTS": 1,
+    "P_COMPARE": 3,
+    "P_HAS": 3,
+    "P_IF_ACTION": 1,
+    "P_KNOW": 1,
+    "P_MAY_ACT": 1,
+    "P_MAY_ACT2": 2,
+    "P_NOT": 2,
+    "P_SAY": 1,
+    "P_SOME": 2,
+    "P_STATE": 3
+  },
+  "roundtrip_cases": 24,
+  "source_candidates_remaining_frozen": 36,
+  "source_characters_in_selected_examples": 1459,
+  "version": "0.8"
+}

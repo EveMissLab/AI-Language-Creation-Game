@@ -58,3 +58,7 @@ jobs:
         run: python reader_trial.py check
       - name: Audit v0.7 non-AI lexical baseline (NOT AI comprehension)
         run: python reader_trial.py baseline-report
+      - name: Check v0.8 transparent English-symbol composition patterns
+        run: python pattern_lab.py check
+      - name: Audit v0.8 selected pattern roundtrips (NOT AI comprehension)
+        run: python pattern_lab.py report

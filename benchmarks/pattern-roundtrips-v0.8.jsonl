@@ -1,0 +1,24 @@
+{"source_id": "D101", "pattern": "P_HAS(owner=BANK_FINANCIAL, item=MONEY)", "note": "Possession relation with financial sense retained."}
+{"source_id": "D102", "pattern": "P_ACT(actor=BOAT, action=REACH, object=BANK_RIVER)", "note": "Action with explicit river-bank sense."}
+{"source_id": "D103", "pattern": "P_STATE(subject=LIGHT_ILLUMINATION, property=BRIGHT)", "note": "Property relation preserves illumination sense."}
+{"source_id": "D105", "pattern": "P_ACT2(actor=MOUSE_ANIMAL, action=RUN)", "note": "No invented action object in this event."}
+{"source_id": "S101", "pattern": "P_ACT2(actor=CELL_BIOLOGICAL, action=DIVIDE)", "note": "Biological cell action remains distinct from electricity."}
+{"source_id": "S102", "pattern": "P_HAS(owner=CELL_ELECTRIC, item=ENERGY)", "note": "Electrical cell has stored energy."}
+{"source_id": "S105", "pattern": "P_IF_ACTION(subject=GAS, property=HEATED, actor=GAS, action=EXPAND)", "note": "Conditional structure preserves test then effect, not actuality."}
+{"source_id": "S106", "pattern": "P_MAY_ACT2(actor=INSTRUMENT, action=FAIL)", "note": "Possible failure without asserting it happened."}
+{"source_id": "M101", "pattern": "P_ALL(var=N, domain=NUMBER, claim=P_COMPARE(left=REF(var=N), right=REF(var=N), by=EQUAL))", "note": "Explicit quantification and reflexive equality."}
+{"source_id": "M102", "pattern": "P_SOME(var=N, domain=INTEGER, claim=P_COMPARE(left=REF(var=N), right=ZERO, by=GREATER_THAN))", "note": "Existential scope and greater-than comparator."}
+{"source_id": "M103", "pattern": "P_NOT(claim=P_ALL(var=N, domain=INTEGER, claim=P_STATE(subject=REF(var=N), property=POSITIVE)))", "note": "Negation scopes over universal quantification."}
+{"source_id": "M105", "pattern": "P_COMPARE(left=TWO, right=THREE, by=LESS_THAN)", "note": "Asymmetric comparator direction remains visible."}
+{"source_id": "C101", "pattern": "P_ACT(actor=MOUSE_DEVICE, action=MOVE, object=CURSOR)", "note": "Mouse-device action with explicit object."}
+{"source_id": "C104", "pattern": "P_ACT(actor=MODEL_STATISTICAL, action=PREDICT, object=DATA)", "note": "Statistical-model action, not physical model."}
+{"source_id": "C105", "pattern": "P_BEFORE_ACTS(actor=PROGRAM, first=CHECK, second=DELETE, object=FILE)", "note": "Order of check and deletion is preserved."}
+{"source_id": "C106", "pattern": "P_MAY_ACT2(actor=SERVER, action=FAIL)", "note": "Server failure remains possible not asserted."}
+{"source_id": "O101", "pattern": "P_ACT(actor=BANK_FINANCIAL, action=LEND, object=MONEY)", "note": "Financial rather than geographic sense."}
+{"source_id": "O102", "pattern": "P_ACT(actor=COURT, action=PROTECT, object=RIGHT_ENTITLEMENT)", "note": "Legal entitlement sense retained."}
+{"source_id": "O105", "pattern": "P_MAY_ACT(actor=POLICY, action=HARM, object=COMMUNITY)", "note": "Possible harm is not an actual harm statement."}
+{"source_id": "O106", "pattern": "P_SOME(var=P, domain=PERSON, claim=P_HAS(owner=REF(var=P), item=LAND))", "note": "Explicit existential quantification of ownership."}
+{"source_id": "E101", "pattern": "P_ACT(actor=MODEL_PHYSICAL, action=REPRESENT, object=BUILDING)", "note": "Physical representation rather than statistical sense."}
+{"source_id": "E103", "pattern": "P_SAY(speaker=EXPERT, content=P_NOT(claim=P_STATE(subject=REPORT, property=TRUE)))", "note": "Quoted denial does not assert the denial directly."}
+{"source_id": "E105", "pattern": "P_ALL(var=R, domain=RESEARCHER, claim=BELIEVE(agent=REF(var=R), content=CLAIM))", "note": "Quantified belief attribution remains scoped."}
+{"source_id": "E106", "pattern": "P_KNOW(agent=OBSERVER, content=P_ACT(actor=INSTRUMENT, action=MEASURE, object=SYSTEM))", "note": "Agent and measurement action retain their nesting."}

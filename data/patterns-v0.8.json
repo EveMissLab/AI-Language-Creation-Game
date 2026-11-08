@@ -1,0 +1,160 @@
+{
+  "format": "ALCG-patterns-v0.8",
+  "description": "Optional readable structural pattern recipes; each expands to existing ALCG roles, not a new operator or new character.",
+  "patterns": [
+    {
+      "name": "P_STATE",
+      "slots": [
+        "subject",
+        "property"
+      ],
+      "template": "IS(subject=HOLE(slot=subject), property=HOLE(slot=property))",
+      "gloss": "Expose subject and property while reusing an IS relation."
+    },
+    {
+      "name": "P_ACT",
+      "slots": [
+        "actor",
+        "action",
+        "object"
+      ],
+      "template": "DO(actor=HOLE(slot=actor), action=HOLE(slot=action), object=HOLE(slot=object))",
+      "gloss": "Make the agent, action and object roles explicit."
+    },
+    {
+      "name": "P_ACT2",
+      "slots": [
+        "actor",
+        "action"
+      ],
+      "template": "DO(actor=HOLE(slot=actor), action=HOLE(slot=action))",
+      "gloss": "Two-role event descriptor without an implied object."
+    },
+    {
+      "name": "P_HAS",
+      "slots": [
+        "owner",
+        "item"
+      ],
+      "template": "HAS(owner=HOLE(slot=owner), item=HOLE(slot=item))",
+      "gloss": "Express a provisional ownership/possession relation."
+    },
+    {
+      "name": "P_MAY_ACT",
+      "slots": [
+        "actor",
+        "action",
+        "object"
+      ],
+      "template": "MAY(claim=P_ACT(actor=HOLE(slot=actor), action=HOLE(slot=action), object=HOLE(slot=object)))",
+      "gloss": "Possible action: never assert actual occurrence."
+    },
+    {
+      "name": "P_MAY_ACT2",
+      "slots": [
+        "actor",
+        "action"
+      ],
+      "template": "MAY(claim=P_ACT2(actor=HOLE(slot=actor), action=HOLE(slot=action)))",
+      "gloss": "Possible intransitive action, not confirmed actuality."
+    },
+    {
+      "name": "P_IF_ACTION",
+      "slots": [
+        "subject",
+        "property",
+        "actor",
+        "action"
+      ],
+      "template": "IF(test=P_STATE(subject=HOLE(slot=subject), property=HOLE(slot=property)), then=P_ACT2(actor=HOLE(slot=actor), action=HOLE(slot=action)))",
+      "gloss": "Conditional action retains antecedent versus consequent."
+    },
+    {
+      "name": "P_COMPARE",
+      "slots": [
+        "left",
+        "right",
+        "by"
+      ],
+      "template": "COMPARE(left=HOLE(slot=left), right=HOLE(slot=right), by=HOLE(slot=by))",
+      "gloss": "Comparison keeps both operands and comparison label."
+    },
+    {
+      "name": "P_ALL",
+      "slots": [
+        "var",
+        "domain",
+        "claim"
+      ],
+      "template": "FORALL(var=HOLE(slot=var), domain=HOLE(slot=domain), claim=HOLE(slot=claim))",
+      "gloss": "Caller chooses the explicit quantified variable and its scope."
+    },
+    {
+      "name": "P_SOME",
+      "slots": [
+        "var",
+        "domain",
+        "claim"
+      ],
+      "template": "EXISTS(var=HOLE(slot=var), domain=HOLE(slot=domain), claim=HOLE(slot=claim))",
+      "gloss": "Existential quantifier with caller-supplied binder name."
+    },
+    {
+      "name": "P_NOT",
+      "slots": [
+        "claim"
+      ],
+      "template": "NOT(claim=HOLE(slot=claim))",
+      "gloss": "Negation preserves the exact embedded scope."
+    },
+    {
+      "name": "P_AND",
+      "slots": [
+        "left",
+        "right"
+      ],
+      "template": "AND(left=HOLE(slot=left), right=HOLE(slot=right))",
+      "gloss": "Conjunction does not imply event time order."
+    },
+    {
+      "name": "P_BEFORE_ACTS",
+      "slots": [
+        "actor",
+        "first",
+        "second",
+        "object"
+      ],
+      "template": "BEFORE(earlier=P_ACT(actor=HOLE(slot=actor), action=HOLE(slot=first), object=HOLE(slot=object)), later=P_ACT(actor=HOLE(slot=actor), action=HOLE(slot=second), object=HOLE(slot=object)))",
+      "gloss": "Temporal order preserves the same actor and object across actions."
+    },
+    {
+      "name": "P_KNOW",
+      "slots": [
+        "agent",
+        "content"
+      ],
+      "template": "KNOW(agent=HOLE(slot=agent), content=HOLE(slot=content))",
+      "gloss": "Provisional knowledge attribution, not proof of the knowledge."
+    },
+    {
+      "name": "P_SAY",
+      "slots": [
+        "speaker",
+        "content"
+      ],
+      "template": "SAY(speaker=HOLE(slot=speaker), content=HOLE(slot=content))",
+      "gloss": "Quoting a claim does not assert its truth."
+    },
+    {
+      "name": "P_WANT_ACT",
+      "slots": [
+        "agent",
+        "actor",
+        "action",
+        "object"
+      ],
+      "template": "WANT(agent=HOLE(slot=agent), goal=P_ACT(actor=HOLE(slot=actor), action=HOLE(slot=action), object=HOLE(slot=object)))",
+      "gloss": "Desire about an action does not assert action occurred."
+    }
+  ]
+}
