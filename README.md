@@ -2,7 +2,7 @@
 
 **An open-source, AI-first language-creation playground.** Begin with English-readable concepts and symbols, then grow toward wider semantic coverage and eventually reusable mesoscopic concept/function bundles.
 
-> Status: **v0.15 replayable bounded countermodels (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
+> Status: **v0.16 opt-in finite causal interventions (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
 
 ## What is the game?
 
@@ -105,6 +105,12 @@ python counterexample_lab.py check
 python counterexample_lab.py report
 python counterexample_lab.py replay --case G14_EXISTS_01 --variant operator_or_coreference_change
 # Reports replayable truth-value differences, NOT independent AI comprehension.
+
+# v0.16: distinguish observational association from toy structural interventions
+python causal_lab.py check
+python causal_lab.py report
+python causal_lab.py replay --case G14_CAUSE_01 --variant lexical_slot_change
+# Uses eight explicitly authored Boolean SCMs, NOT measured real-world causality.
 ```
 
 Minimal examples:
@@ -116,7 +122,7 @@ WANT(agent=PERSON, goal=DO(actor=AI, action=HELP, object=PERSON))
 RAW(text="A meaning not yet expressed with structured concepts.")
 ```
 
-These examples demonstrate a **parser**, not verified meaning or truth. See [syntax sketch](docs/GRAMMAR-v0.1.md) and the [v0.2 coverage protocol](docs/COVERAGE-v0.2.md), and the [v0.3 reconstruction protocol](docs/RECONSTRUCTION-v0.3.md), the [v0.4 scope/time/modality experiments](docs/SCOPE-TIME-MODAL-v0.4.md), and the [v0.5 semantic stability laboratory](docs/SEMANTIC-STABILITY-v0.5.md), the [v0.6 coverage and polysemy protocol](docs/SENSE-COVERAGE-v0.6.md), and the [v0.7 reader-transfer protocol](docs/READER-TRANSFER-v0.7.md), the [v0.8 composition pattern experiment](docs/COMPOSITION-PATTERNS-v0.8.md), and the [v0.9 pattern-transfer protocol](docs/PATTERN-TRANSFER-v0.9.md), and the [v0.10 compact surface experiment](docs/COMPACT-SURFACE-v0.10.md), and the [v0.11 pattern proposal gate](docs/PATTERN-EVOLUTION-v0.11.md) and [v0.12 deterministic discovery lab](docs/AUTOMATIC-DISCOVERY-v0.12.md), plus the [v0.13 nontraining transfer diagnostic](docs/HOLDOUT-TRANSFER-v0.13.md) and the [v0.14 generated challenge protocol](docs/AUTOMATIC-CHALLENGE-GENERATOR-v0.14.md) and [v0.15 bounded counterexamples](docs/BOUNDED-COUNTEREXAMPLES-v0.15.md) for current limits.
+These examples demonstrate a **parser**, not verified meaning or truth. See [syntax sketch](docs/GRAMMAR-v0.1.md) and the [v0.2 coverage protocol](docs/COVERAGE-v0.2.md), and the [v0.3 reconstruction protocol](docs/RECONSTRUCTION-v0.3.md), the [v0.4 scope/time/modality experiments](docs/SCOPE-TIME-MODAL-v0.4.md), and the [v0.5 semantic stability laboratory](docs/SEMANTIC-STABILITY-v0.5.md), the [v0.6 coverage and polysemy protocol](docs/SENSE-COVERAGE-v0.6.md), and the [v0.7 reader-transfer protocol](docs/READER-TRANSFER-v0.7.md), the [v0.8 composition pattern experiment](docs/COMPOSITION-PATTERNS-v0.8.md), and the [v0.9 pattern-transfer protocol](docs/PATTERN-TRANSFER-v0.9.md), and the [v0.10 compact surface experiment](docs/COMPACT-SURFACE-v0.10.md), and the [v0.11 pattern proposal gate](docs/PATTERN-EVOLUTION-v0.11.md) and [v0.12 deterministic discovery lab](docs/AUTOMATIC-DISCOVERY-v0.12.md), plus the [v0.13 nontraining transfer diagnostic](docs/HOLDOUT-TRANSFER-v0.13.md) and the [v0.14 generated challenge protocol](docs/AUTOMATIC-CHALLENGE-GENERATOR-v0.14.md), [v0.15 bounded counterexamples](docs/BOUNDED-COUNTEREXAMPLES-v0.15.md), and [v0.16 finite intervention experiments](docs/FINITE-CAUSAL-INTERVENTIONS-v0.16.md) for current limits.
 
 ## Roadmap, kept intentionally small
 
@@ -134,11 +140,12 @@ These examples demonstrate a **parser**, not verified meaning or truth. See [syn
 12. **Automated proposal discovery (v0.12):** deterministically mine repeated full-expression AST shapes from 64 candidate representations across the frozen 84 English cases. Four machine-induced, structurally roundtripping motifs enter human review; one redundant active shape is filtered out. The original examples are also the evidence, **not held-out testing**; estimated incremental dictionary cost exceeds payload savings for every two-sample batch. No automatic promotion or claim of AI comprehension.
 13. **Nontraining structural transfer (v0.13):** examine 96 contrast expressions authored in earlier versions, removing 39 exact overlaps with the v0.12 mining set. Of 57 remaining canonical ASTs, three match the mined templates — **all three are deliberately incorrect foil answers** to their English targets. Add 16 post-discovery diagnostic pairs: all 16 positive structures roundtrip, eight foils fail the pattern while eight still match but alter the intended claim. This is syntax-level evidence, **not AI understanding or independent semantic generalization**; the active registry stays frozen.
 14. **Automatic metamorphic challenges (v0.14):** generate 32 new synthetic ASTs and 104 variants from human-curated English label banks and the 4 non-active v0.12 candidate motifs. Check argument-order and alpha-renaming invariants, changed lexical slots that still match, and role/operator violations that do not. This is **deterministic synthetic structural testing**, not independent natural-language generalization or AI comprehension; no dictionary change.
-15. **Next:** preregister a genuinely independent semantic benchmark and collect AI reader responses with fresh contexts; no registry revision without deliberate review.
-16. **Mesoscopic units (later):** explore functional composition and executable semantics as a separate future stage; v0.8 recipes are **not** this stage.
-15. **Bounded semantic counterexamples (v0.15):** revisit the 104 frozen v0.14 variants with an explicitly limited finite oracle; generate and replay 46 separating toy models, keep 40 canonical equivalences distinct, and label two no-witness cases and 16 unsupported causal contrasts. Extends only the finite evaluator's `LESS_THAN` comparison, not the published language registry. This is **not** an AI understanding score or real-world semantics result.
+15. **Bounded semantic counterexamples (v0.15):** revisit 104 frozen v0.14 variants with an intentionally limited finite oracle; generate 46 replayable toy separating models, retain 40 canonical equivalences, and distinguish 2 no-witness results from 16 unsupported causal contrasts. Old artifacts remain pinned.
+16. **Opt-in causal interventions (v0.16):** add eight deliberately authored finite Boolean structural causal models with explicit `do`-style interventions. Test 24 CAUSE-root contrasts: 8 canonical matches, 7 conditional intervention separations, 1 non-separation, and 8 effects outside the typed `CHANGE` subset. Compare observational association against intervention sensitivity. This is **not empirical causal inference or independently measured AI comprehension**; no published dictionary change.
+17. **Next:** preregister independent semantic readers and fresh out-of-sample meanings, including cases where observational evidence and intervention results conflict.
+18. **Mesoscopic units (later):** explore actually usable functional/conceptual compositions without prematurely calling an unexecuted symbolic label a program.
 
-GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.14 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
+GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.16 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
 
 ## 中文簡介
 
@@ -151,6 +158,9 @@ v0.12 新增**程式化組合候選發現器**：它從舊版 84 條人工英文
 v0.13 開始針對候選樣板做**訓練集外的結構泛化診斷**：先從舊版 96 條概念對照表達中，扣除 39 條與 v0.12 挖掘輸入完全一致的結構，剩下 57 條只有 3 條符合樣板，且**三條全部是原問題的錯誤對照選項**。另加入 16 組事後設計的跨領域壓力測試，正例全部無損還原，對照中 8 條被拒絕，8 條仍符合結構卻改變了想要表達的意思。這個結果提醒我們：**可還原、可重用與「理解原意」必須分開驗證**。四個樣板仍在待審核區，公開字典沒有變動。詳見 [v0.13 規格](docs/HOLDOUT-TRANSFER-v0.13.md)。
 
 v0.14 新增**程式產生的語言挑戰與變形測試**：由人工挑選的英文概念標籤池及既有四個待審核樣板，確定性生成 32 條新結構與 104 條對照；其中 40 條為標準化結構等價變形，32 條在樣板仍可匹配時改變概念內容，另 32 條改變算子或共用角色而不再匹配。這是可重現的**結構測試**，不是 AI 獨立創造了新的自然語義，也不是英文覆蓋率或理解率。仍未修改 16 個公開樣板。參見 [v0.14 生成實驗規格](docs/AUTOMATIC-CHALLENGE-GENERATOR-v0.14.md)。
+
+
+v0.16 新增**有限布林結構因果模型（SCM）介入試驗**，以八組明確撰寫的假設性模型，檢查原本 v0.15 無法處理的部分 `CAUSE` 表達。系統比較「觀察到的相關性」與「固定背景條件、強制指定原因變數之後的結果」，可以展示有相關但無介入影響，或沒有整體相關卻存在條件介入影響的情況。24 組比較分為：8 組參數換序等價、7 組在指定模型中可區分、1 組在指定模型中無法區分，以及 8 組不符合限定的因果表達型別。**這些是人工設定的有限模型，不是現實因果發現，更不是 AI 理解率。** 既有的語法、已發布字典及 v0.15 報告保持不變。參見 [v0.16 試驗規格](docs/FINITE-CAUSAL-INTERVENTIONS-v0.16.md)。
 
 ## License
 

@@ -1,0 +1,328 @@
+{
+  "format": "ALCG-v0.16-binary-scm",
+  "provenance": "assistant-authored, deliberately stipulated toy SCMs matched to frozen synthetic v0.14 cases, not empirical evidence",
+  "scenarios": [
+    {
+      "case_id": "G14_CAUSE_01",
+      "mechanism": "gated_and",
+      "exogenous": [
+        "U",
+        "G"
+      ],
+      "equations": [
+        {
+          "name": "PRESSURE_CHANGE",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "VIBRATION",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "Y",
+          "op": "and",
+          "args": [
+            "PRESSURE_CHANGE",
+            "G"
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "subject": "FILTRATION_SYSTEM",
+          "property": "THERMAL_STABILITY",
+          "indicator": "Y"
+        }
+      ],
+      "note": "Effect responds to original source only when gate G=1; foil is observationally correlated."
+    },
+    {
+      "case_id": "G14_CAUSE_02",
+      "mechanism": "direct",
+      "exogenous": [
+        "U",
+        "G"
+      ],
+      "equations": [
+        {
+          "name": "FREQUENCY_SHIFT",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "HEAT_CYCLE",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "Y",
+          "op": "copy",
+          "args": [
+            "FREQUENCY_SHIFT"
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "subject": "ROBOTIC_ARM",
+          "property": "SIGNAL_QUALITY",
+          "indicator": "Y"
+        }
+      ],
+      "note": "Direct influence from source; foil shares the same observation driver but has no intervention effect."
+    },
+    {
+      "case_id": "G14_CAUSE_03",
+      "mechanism": "mediated",
+      "exogenous": [
+        "U",
+        "G"
+      ],
+      "equations": [
+        {
+          "name": "HEAT_CYCLE",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "AIRFLOW",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "M",
+          "op": "copy",
+          "args": [
+            "HEAT_CYCLE"
+          ]
+        },
+        {
+          "name": "Y",
+          "op": "copy",
+          "args": [
+            "M"
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "subject": "SENSOR_ARRAY",
+          "property": "THERMAL_STABILITY",
+          "indicator": "Y"
+        }
+      ],
+      "note": "Original source acts through an intermediate variable M; foil is a correlating proxy."
+    },
+    {
+      "case_id": "G14_CAUSE_04",
+      "mechanism": "gated_or",
+      "exogenous": [
+        "U",
+        "G"
+      ],
+      "equations": [
+        {
+          "name": "PRESSURE_CHANGE",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "VIBRATION",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "Y",
+          "op": "or",
+          "args": [
+            "PRESSURE_CHANGE",
+            "G"
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "subject": "CONTROL_SYSTEM",
+          "property": "POWER_OUTPUT",
+          "indicator": "Y"
+        }
+      ],
+      "note": "Original source has an effect when gate G=0; correlation is not causal proof."
+    },
+    {
+      "case_id": "G14_CAUSE_05",
+      "mechanism": "inhibitory",
+      "exogenous": [
+        "U",
+        "G"
+      ],
+      "equations": [
+        {
+          "name": "POWER_FLUCTUATION",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "PRESSURE_CHANGE",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "Y",
+          "op": "not",
+          "args": [
+            "POWER_FLUCTUATION"
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "subject": "TEST_CHAMBER",
+          "property": "THERMAL_STABILITY",
+          "indicator": "Y"
+        }
+      ],
+      "note": "Original source inhibits indicator Y, demonstrating that influence need not be positive."
+    },
+    {
+      "case_id": "G14_CAUSE_06",
+      "mechanism": "confounded_only",
+      "exogenous": [
+        "U",
+        "G"
+      ],
+      "equations": [
+        {
+          "name": "HUMIDITY",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "HARDWARE_UPDATE",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "Y",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "subject": "WATER_CHANNEL",
+          "property": "FLOW_RATE",
+          "indicator": "Y"
+        }
+      ],
+      "note": "Both apparent sources share an upstream U with Y; neither source influences Y under intervention."
+    },
+    {
+      "case_id": "G14_CAUSE_07",
+      "mechanism": "interactive_xor",
+      "exogenous": [
+        "U",
+        "G"
+      ],
+      "equations": [
+        {
+          "name": "VIBRATION",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "HUMIDITY",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "Y",
+          "op": "xor",
+          "args": [
+            "VIBRATION",
+            "G"
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "subject": "BATTERY_MODULE",
+          "property": "POWER_OUTPUT",
+          "indicator": "Y"
+        }
+      ],
+      "note": "Source effect depends on gate G and flips sign across contexts."
+    },
+    {
+      "case_id": "G14_CAUSE_08",
+      "mechanism": "foil_is_causal",
+      "exogenous": [
+        "U",
+        "G"
+      ],
+      "equations": [
+        {
+          "name": "CALIBRATION",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "FREQUENCY_SHIFT",
+          "op": "copy",
+          "args": [
+            "U"
+          ]
+        },
+        {
+          "name": "Y",
+          "op": "copy",
+          "args": [
+            "FREQUENCY_SHIFT"
+          ]
+        }
+      ],
+      "outcomes": [
+        {
+          "subject": "MATERIAL_LAYER",
+          "property": "MOISTURE_LEVEL",
+          "indicator": "Y"
+        }
+      ],
+      "note": "Foil source, not original source, drives Y; both are observationally identical."
+    }
+  ]
+}

@@ -1,0 +1,878 @@
+{
+  "active_registry_changed": false,
+  "ai_comprehension_score": null,
+  "comparisons": 24,
+  "empirical_causal_evidence": null,
+  "format": "ALCG-v0.16-binary-scm",
+  "frozen_active_patterns_sha256": "5d97c41701b8196766a65bf08ac24f1942df3fa2e1a7546f3845b0df805d3bc6",
+  "frozen_v014_sha256": "0d40a9effbf8c3f559269d5a300a6160e5ed3ef251b0bd2b2ad18651c60f8802",
+  "frozen_v015_report_sha256": "efcbbf93b6cb8d72d6e04d4eee221f36f3b9f4efcda5ed644ae499d9ab4f98b1",
+  "independent_ai_readers": 0,
+  "interpretation": "In each stipulated finite deterministic binary SCM, CAUSE means there exists at least one exogenous assignment where do(source=0) and do(source=1) yield different Boolean outcome indicators. CHANGE is only a named outcome indicator, not a physical time-series or verified real-world change. Observational association is not intervention.",
+  "mechanism_counts": {
+    "confounded_only": 1,
+    "direct": 1,
+    "foil_is_causal": 1,
+    "gated_and": 1,
+    "gated_or": 1,
+    "inhibitory": 1,
+    "interactive_xor": 1,
+    "mediated": 1
+  },
+  "observational_vs_intervention": [
+    {
+      "case_id": "G14_CAUSE_01",
+      "observational": {
+        "observational_association": true,
+        "observed_rates": {
+          "false": "0",
+          "true": "1/2"
+        }
+      },
+      "original_influence_in_some_context": true
+    },
+    {
+      "case_id": "G14_CAUSE_02",
+      "observational": {
+        "observational_association": true,
+        "observed_rates": {
+          "false": "0",
+          "true": "1"
+        }
+      },
+      "original_influence_in_some_context": true
+    },
+    {
+      "case_id": "G14_CAUSE_03",
+      "observational": {
+        "observational_association": true,
+        "observed_rates": {
+          "false": "0",
+          "true": "1"
+        }
+      },
+      "original_influence_in_some_context": true
+    },
+    {
+      "case_id": "G14_CAUSE_04",
+      "observational": {
+        "observational_association": true,
+        "observed_rates": {
+          "false": "1/2",
+          "true": "1"
+        }
+      },
+      "original_influence_in_some_context": true
+    },
+    {
+      "case_id": "G14_CAUSE_05",
+      "observational": {
+        "observational_association": true,
+        "observed_rates": {
+          "false": "1",
+          "true": "0"
+        }
+      },
+      "original_influence_in_some_context": true
+    },
+    {
+      "case_id": "G14_CAUSE_06",
+      "observational": {
+        "observational_association": true,
+        "observed_rates": {
+          "false": "0",
+          "true": "1"
+        }
+      },
+      "original_influence_in_some_context": false
+    },
+    {
+      "case_id": "G14_CAUSE_07",
+      "observational": {
+        "observational_association": false,
+        "observed_rates": {
+          "false": "1/2",
+          "true": "1/2"
+        }
+      },
+      "original_influence_in_some_context": true
+    },
+    {
+      "case_id": "G14_CAUSE_08",
+      "observational": {
+        "observational_association": true,
+        "observed_rates": {
+          "false": "0",
+          "true": "1"
+        }
+      },
+      "original_influence_in_some_context": false
+    }
+  ],
+  "provenance": "assistant-authored toy SCMs; zero observed or learned causal mechanisms",
+  "results": [
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "FILTRATION_SYSTEM",
+        "influence_in_some_context": true,
+        "source": "PRESSURE_CHANGE",
+        "witness": {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "PRESSURE_CHANGE"
+        }
+      },
+      "case_id": "G14_CAUSE_01",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "FILTRATION_SYSTEM",
+        "influence_in_some_context": true,
+        "source": "PRESSURE_CHANGE",
+        "witness": {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "PRESSURE_CHANGE"
+        }
+      },
+      "scenario_mechanism": "gated_and",
+      "status": "canonical_equivalent_same_scm",
+      "variant": "named_argument_reorder"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "FILTRATION_SYSTEM",
+        "influence_in_some_context": false,
+        "source": "VIBRATION",
+        "witness": null
+      },
+      "case_id": "G14_CAUSE_01",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "FILTRATION_SYSTEM",
+        "influence_in_some_context": true,
+        "source": "PRESSURE_CHANGE",
+        "witness": {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "PRESSURE_CHANGE"
+        }
+      },
+      "scenario_mechanism": "gated_and",
+      "status": "intervention_difference_in_stipulated_scm",
+      "variant": "lexical_slot_change"
+    },
+    {
+      "alternate": null,
+      "case_id": "G14_CAUSE_01",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "FILTRATION_SYSTEM",
+        "influence_in_some_context": true,
+        "source": "PRESSURE_CHANGE",
+        "witness": {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "PRESSURE_CHANGE"
+        }
+      },
+      "reason": "outside v0.16 CAUSE subset: expected CHANGE with roles ['property', 'subject']",
+      "scenario_mechanism": "gated_and",
+      "status": "outside_typed_causal_subset",
+      "variant": "operator_or_coreference_change"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "SIGNAL_QUALITY",
+        "effect_subject": "ROBOTIC_ARM",
+        "influence_in_some_context": true,
+        "source": "FREQUENCY_SHIFT",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "FREQUENCY_SHIFT"
+        }
+      },
+      "case_id": "G14_CAUSE_02",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "SIGNAL_QUALITY",
+        "effect_subject": "ROBOTIC_ARM",
+        "influence_in_some_context": true,
+        "source": "FREQUENCY_SHIFT",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "FREQUENCY_SHIFT"
+        }
+      },
+      "scenario_mechanism": "direct",
+      "status": "canonical_equivalent_same_scm",
+      "variant": "named_argument_reorder"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "SIGNAL_QUALITY",
+        "effect_subject": "ROBOTIC_ARM",
+        "influence_in_some_context": false,
+        "source": "HEAT_CYCLE",
+        "witness": null
+      },
+      "case_id": "G14_CAUSE_02",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "SIGNAL_QUALITY",
+        "effect_subject": "ROBOTIC_ARM",
+        "influence_in_some_context": true,
+        "source": "FREQUENCY_SHIFT",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "FREQUENCY_SHIFT"
+        }
+      },
+      "scenario_mechanism": "direct",
+      "status": "intervention_difference_in_stipulated_scm",
+      "variant": "lexical_slot_change"
+    },
+    {
+      "alternate": null,
+      "case_id": "G14_CAUSE_02",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "SIGNAL_QUALITY",
+        "effect_subject": "ROBOTIC_ARM",
+        "influence_in_some_context": true,
+        "source": "FREQUENCY_SHIFT",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "FREQUENCY_SHIFT"
+        }
+      },
+      "reason": "outside v0.16 CAUSE subset: expected CHANGE with roles ['property', 'subject']",
+      "scenario_mechanism": "direct",
+      "status": "outside_typed_causal_subset",
+      "variant": "operator_or_coreference_change"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "SENSOR_ARRAY",
+        "influence_in_some_context": true,
+        "source": "HEAT_CYCLE",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "HEAT_CYCLE"
+        }
+      },
+      "case_id": "G14_CAUSE_03",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "SENSOR_ARRAY",
+        "influence_in_some_context": true,
+        "source": "HEAT_CYCLE",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "HEAT_CYCLE"
+        }
+      },
+      "scenario_mechanism": "mediated",
+      "status": "canonical_equivalent_same_scm",
+      "variant": "named_argument_reorder"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "SENSOR_ARRAY",
+        "influence_in_some_context": false,
+        "source": "AIRFLOW",
+        "witness": null
+      },
+      "case_id": "G14_CAUSE_03",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "SENSOR_ARRAY",
+        "influence_in_some_context": true,
+        "source": "HEAT_CYCLE",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "HEAT_CYCLE"
+        }
+      },
+      "scenario_mechanism": "mediated",
+      "status": "intervention_difference_in_stipulated_scm",
+      "variant": "lexical_slot_change"
+    },
+    {
+      "alternate": null,
+      "case_id": "G14_CAUSE_03",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "SENSOR_ARRAY",
+        "influence_in_some_context": true,
+        "source": "HEAT_CYCLE",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "HEAT_CYCLE"
+        }
+      },
+      "reason": "outside v0.16 CAUSE subset: expected CHANGE with roles ['property', 'subject']",
+      "scenario_mechanism": "mediated",
+      "status": "outside_typed_causal_subset",
+      "variant": "operator_or_coreference_change"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "POWER_OUTPUT",
+        "effect_subject": "CONTROL_SYSTEM",
+        "influence_in_some_context": true,
+        "source": "PRESSURE_CHANGE",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "PRESSURE_CHANGE"
+        }
+      },
+      "case_id": "G14_CAUSE_04",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "POWER_OUTPUT",
+        "effect_subject": "CONTROL_SYSTEM",
+        "influence_in_some_context": true,
+        "source": "PRESSURE_CHANGE",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "PRESSURE_CHANGE"
+        }
+      },
+      "scenario_mechanism": "gated_or",
+      "status": "canonical_equivalent_same_scm",
+      "variant": "named_argument_reorder"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "POWER_OUTPUT",
+        "effect_subject": "CONTROL_SYSTEM",
+        "influence_in_some_context": false,
+        "source": "VIBRATION",
+        "witness": null
+      },
+      "case_id": "G14_CAUSE_04",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "POWER_OUTPUT",
+        "effect_subject": "CONTROL_SYSTEM",
+        "influence_in_some_context": true,
+        "source": "PRESSURE_CHANGE",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "PRESSURE_CHANGE"
+        }
+      },
+      "scenario_mechanism": "gated_or",
+      "status": "intervention_difference_in_stipulated_scm",
+      "variant": "lexical_slot_change"
+    },
+    {
+      "alternate": null,
+      "case_id": "G14_CAUSE_04",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "POWER_OUTPUT",
+        "effect_subject": "CONTROL_SYSTEM",
+        "influence_in_some_context": true,
+        "source": "PRESSURE_CHANGE",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "PRESSURE_CHANGE"
+        }
+      },
+      "reason": "outside v0.16 CAUSE subset: expected CHANGE with roles ['property', 'subject']",
+      "scenario_mechanism": "gated_or",
+      "status": "outside_typed_causal_subset",
+      "variant": "operator_or_coreference_change"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "TEST_CHAMBER",
+        "influence_in_some_context": true,
+        "source": "POWER_FLUCTUATION",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": true,
+          "do_source_true": false,
+          "observed_outcome": true,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "POWER_FLUCTUATION"
+        }
+      },
+      "case_id": "G14_CAUSE_05",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "TEST_CHAMBER",
+        "influence_in_some_context": true,
+        "source": "POWER_FLUCTUATION",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": true,
+          "do_source_true": false,
+          "observed_outcome": true,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "POWER_FLUCTUATION"
+        }
+      },
+      "scenario_mechanism": "inhibitory",
+      "status": "canonical_equivalent_same_scm",
+      "variant": "named_argument_reorder"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "TEST_CHAMBER",
+        "influence_in_some_context": false,
+        "source": "PRESSURE_CHANGE",
+        "witness": null
+      },
+      "case_id": "G14_CAUSE_05",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "TEST_CHAMBER",
+        "influence_in_some_context": true,
+        "source": "POWER_FLUCTUATION",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": true,
+          "do_source_true": false,
+          "observed_outcome": true,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "POWER_FLUCTUATION"
+        }
+      },
+      "scenario_mechanism": "inhibitory",
+      "status": "intervention_difference_in_stipulated_scm",
+      "variant": "lexical_slot_change"
+    },
+    {
+      "alternate": null,
+      "case_id": "G14_CAUSE_05",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "THERMAL_STABILITY",
+        "effect_subject": "TEST_CHAMBER",
+        "influence_in_some_context": true,
+        "source": "POWER_FLUCTUATION",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": true,
+          "do_source_true": false,
+          "observed_outcome": true,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "POWER_FLUCTUATION"
+        }
+      },
+      "reason": "outside v0.16 CAUSE subset: expected CHANGE with roles ['property', 'subject']",
+      "scenario_mechanism": "inhibitory",
+      "status": "outside_typed_causal_subset",
+      "variant": "operator_or_coreference_change"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "FLOW_RATE",
+        "effect_subject": "WATER_CHANNEL",
+        "influence_in_some_context": false,
+        "source": "HUMIDITY",
+        "witness": null
+      },
+      "case_id": "G14_CAUSE_06",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "FLOW_RATE",
+        "effect_subject": "WATER_CHANNEL",
+        "influence_in_some_context": false,
+        "source": "HUMIDITY",
+        "witness": null
+      },
+      "scenario_mechanism": "confounded_only",
+      "status": "canonical_equivalent_same_scm",
+      "variant": "named_argument_reorder"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "FLOW_RATE",
+        "effect_subject": "WATER_CHANNEL",
+        "influence_in_some_context": false,
+        "source": "HARDWARE_UPDATE",
+        "witness": null
+      },
+      "case_id": "G14_CAUSE_06",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "FLOW_RATE",
+        "effect_subject": "WATER_CHANNEL",
+        "influence_in_some_context": false,
+        "source": "HUMIDITY",
+        "witness": null
+      },
+      "scenario_mechanism": "confounded_only",
+      "status": "not_separated_in_stipulated_scm",
+      "variant": "lexical_slot_change"
+    },
+    {
+      "alternate": null,
+      "case_id": "G14_CAUSE_06",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "FLOW_RATE",
+        "effect_subject": "WATER_CHANNEL",
+        "influence_in_some_context": false,
+        "source": "HUMIDITY",
+        "witness": null
+      },
+      "reason": "outside v0.16 CAUSE subset: expected CHANGE with roles ['property', 'subject']",
+      "scenario_mechanism": "confounded_only",
+      "status": "outside_typed_causal_subset",
+      "variant": "operator_or_coreference_change"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "POWER_OUTPUT",
+        "effect_subject": "BATTERY_MODULE",
+        "influence_in_some_context": true,
+        "source": "VIBRATION",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "VIBRATION"
+        }
+      },
+      "case_id": "G14_CAUSE_07",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "POWER_OUTPUT",
+        "effect_subject": "BATTERY_MODULE",
+        "influence_in_some_context": true,
+        "source": "VIBRATION",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "VIBRATION"
+        }
+      },
+      "scenario_mechanism": "interactive_xor",
+      "status": "canonical_equivalent_same_scm",
+      "variant": "named_argument_reorder"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "POWER_OUTPUT",
+        "effect_subject": "BATTERY_MODULE",
+        "influence_in_some_context": false,
+        "source": "HUMIDITY",
+        "witness": null
+      },
+      "case_id": "G14_CAUSE_07",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "POWER_OUTPUT",
+        "effect_subject": "BATTERY_MODULE",
+        "influence_in_some_context": true,
+        "source": "VIBRATION",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "VIBRATION"
+        }
+      },
+      "scenario_mechanism": "interactive_xor",
+      "status": "intervention_difference_in_stipulated_scm",
+      "variant": "lexical_slot_change"
+    },
+    {
+      "alternate": null,
+      "case_id": "G14_CAUSE_07",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "POWER_OUTPUT",
+        "effect_subject": "BATTERY_MODULE",
+        "influence_in_some_context": true,
+        "source": "VIBRATION",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "VIBRATION"
+        }
+      },
+      "reason": "outside v0.16 CAUSE subset: expected CHANGE with roles ['property', 'subject']",
+      "scenario_mechanism": "interactive_xor",
+      "status": "outside_typed_causal_subset",
+      "variant": "operator_or_coreference_change"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "MOISTURE_LEVEL",
+        "effect_subject": "MATERIAL_LAYER",
+        "influence_in_some_context": false,
+        "source": "CALIBRATION",
+        "witness": null
+      },
+      "case_id": "G14_CAUSE_08",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "MOISTURE_LEVEL",
+        "effect_subject": "MATERIAL_LAYER",
+        "influence_in_some_context": false,
+        "source": "CALIBRATION",
+        "witness": null
+      },
+      "scenario_mechanism": "foil_is_causal",
+      "status": "canonical_equivalent_same_scm",
+      "variant": "named_argument_reorder"
+    },
+    {
+      "alternate": {
+        "contexts_examined": 4,
+        "effect_property": "MOISTURE_LEVEL",
+        "effect_subject": "MATERIAL_LAYER",
+        "influence_in_some_context": true,
+        "source": "FREQUENCY_SHIFT",
+        "witness": {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "do_source_false": false,
+          "do_source_true": true,
+          "observed_outcome": false,
+          "observed_source": false,
+          "outcome_indicator": "Y",
+          "source": "FREQUENCY_SHIFT"
+        }
+      },
+      "case_id": "G14_CAUSE_08",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "MOISTURE_LEVEL",
+        "effect_subject": "MATERIAL_LAYER",
+        "influence_in_some_context": false,
+        "source": "CALIBRATION",
+        "witness": null
+      },
+      "scenario_mechanism": "foil_is_causal",
+      "status": "intervention_difference_in_stipulated_scm",
+      "variant": "lexical_slot_change"
+    },
+    {
+      "alternate": null,
+      "case_id": "G14_CAUSE_08",
+      "original": {
+        "contexts_examined": 4,
+        "effect_property": "MOISTURE_LEVEL",
+        "effect_subject": "MATERIAL_LAYER",
+        "influence_in_some_context": false,
+        "source": "CALIBRATION",
+        "witness": null
+      },
+      "reason": "outside v0.16 CAUSE subset: expected CHANGE with roles ['property', 'subject']",
+      "scenario_mechanism": "foil_is_causal",
+      "status": "outside_typed_causal_subset",
+      "variant": "operator_or_coreference_change"
+    }
+  ],
+  "scenario_fixture_sha256": "b2128574b01767da0ff2602663372a62c371f6025c3690b4eb13267337f08851",
+  "scenarios": 8,
+  "status_counts": {
+    "canonical_equivalent_same_scm": 8,
+    "intervention_difference_in_stipulated_scm": 7,
+    "not_separated_in_stipulated_scm": 1,
+    "outside_typed_causal_subset": 8
+  }
+}

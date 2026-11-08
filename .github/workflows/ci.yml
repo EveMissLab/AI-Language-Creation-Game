@@ -90,3 +90,7 @@ jobs:
         run: python counterexample_lab.py check
       - name: Audit v0.15 supported, inconclusive and unsupported statuses (NOT AI comprehension)
         run: python counterexample_lab.py report
+      - name: Validate v0.16 opt-in finite causal interventions and replay receipts
+        run: python causal_lab.py check
+      - name: Audit v0.16 observational association versus interventions (NOT real-world causal evidence)
+        run: python causal_lab.py report
