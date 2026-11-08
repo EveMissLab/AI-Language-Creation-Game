@@ -37,7 +37,7 @@ These examples demonstrate a **parser**, not verified meaning or truth. See [syn
 3. **Stability:** refine relation labels and scope only when test cases expose ambiguity.
 4. **Mesoscopic units (later):** explore reusable concept and *functional* compositions; do not force them into the first syntax.
 
-No GitHub Actions or external APIs are required. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
+GitHub Actions runs the unit tests, sample syntax check, and vocabulary audit on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
 
 ## 中文簡介
 
