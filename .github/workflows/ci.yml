@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: Run unit tests
-        run: python -m unittest discover -s tests -v
+        run: python tests/run_split_suite.py
       - name: Check example syntax
         run: python alcg.py check samples/seed.alcg
       - name: Audit example vocabulary
@@ -108,3 +108,7 @@ jobs:
         run: python active_design.py check
       - name: Audit v0.19 minimum intervention budget and synthetic stopping costs
         run: python active_design.py summary
+      - name: Check v0.20 hypothetical noisy-cost Bayesian report and frozen inputs
+        run: python noisy_design.py check
+      - name: Audit v0.20 greedy information and exact bounded MAP accuracy (NOT empirical accuracy)
+        run: python noisy_design.py report

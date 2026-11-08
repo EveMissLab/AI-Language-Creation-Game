@@ -1,0 +1,1974 @@
+{
+  "counts": {
+    "distinct_contexts": 4,
+    "families": 7,
+    "hypotheses_per_family": 16,
+    "informative_off_natural_actions": 4,
+    "interventions_per_family": 8
+  },
+  "format": "ALCG-v0.20-noisy-cost-aware-active-design",
+  "limitations": [
+    "Noise probabilities and intervention costs are chosen experimental inputs, not estimated.",
+    "All 16 masks remain possible after finite noisy evidence: identification is probabilistic.",
+    "Greedy information gain per cost and exact finite-budget MAP have different objectives.",
+    "The prior is uniform and errors are conditionally independent; correlated/model-specific error is not evaluated.",
+    "No empirical intervention, external AI reader, natural language fidelity or general causality claim.",
+    "No new language operator, mesoscopic character or published registry change."
+  ],
+  "models": [
+    {
+      "exact_MAP_budget_comparisons": [
+        {
+          "budget_cost_units": 0,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "initial_action_cost": 0,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": null
+        },
+        {
+          "budget_cost_units": 1,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.109375,
+            "denominator": 64,
+            "numerator": 7
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 2,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.1640625,
+            "denominator": 128,
+            "numerator": 21
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 3,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.167480469,
+            "denominator": 2048,
+            "numerator": 343
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 4,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.19140625,
+            "denominator": 256,
+            "numerator": 49
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        }
+      ],
+      "family_id": "F17_CONTEXT",
+      "greedy_after_one_observation": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.214314019,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.214314019,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      },
+      "informative_action_cost_noise_tradeoffs": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "cost_units": 4,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.165677483,
+          "information_gain_bits_uniform": 0.662709933,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "cost_units": 1,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.456435557,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "cost_units": 1,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.25,
+            "denominator": 4,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.188721876,
+          "information_gain_bits_uniform": 0.188721876,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "cost_units": 3,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.152145186,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        }
+      ],
+      "posterior_after_one_greedy_observation": {
+        "MAP_probability": {
+          "decimal": 0.109375,
+          "denominator": 64,
+          "numerator": 7
+        },
+        "all_16_masks_remain_possible": true,
+        "entropy_bits": 3.543564443,
+        "evidence": [
+          {
+            "action_id": 3,
+            "observed_Y": false
+          }
+        ]
+      },
+      "two_opposite_readings_cancel_exactly": true,
+      "uniform_prior_entropy_bits": 4,
+      "uniform_prior_greedy_per_cost": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.456435557,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.456435557,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      }
+    },
+    {
+      "exact_MAP_budget_comparisons": [
+        {
+          "budget_cost_units": 0,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "initial_action_cost": 0,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": null
+        },
+        {
+          "budget_cost_units": 1,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.109375,
+            "denominator": 64,
+            "numerator": 7
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 2,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.1640625,
+            "denominator": 128,
+            "numerator": 21
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 3,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.167480469,
+            "denominator": 2048,
+            "numerator": 343
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 4,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.19140625,
+            "denominator": 256,
+            "numerator": 49
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        }
+      ],
+      "family_id": "F17_DIRECT",
+      "greedy_after_one_observation": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.214314019,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.214314019,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      },
+      "informative_action_cost_noise_tradeoffs": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "cost_units": 4,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.165677483,
+          "information_gain_bits_uniform": 0.662709933,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "cost_units": 1,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.456435557,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "cost_units": 1,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.25,
+            "denominator": 4,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.188721876,
+          "information_gain_bits_uniform": 0.188721876,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "cost_units": 3,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.152145186,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        }
+      ],
+      "posterior_after_one_greedy_observation": {
+        "MAP_probability": {
+          "decimal": 0.109375,
+          "denominator": 64,
+          "numerator": 7
+        },
+        "all_16_masks_remain_possible": true,
+        "entropy_bits": 3.543564443,
+        "evidence": [
+          {
+            "action_id": 3,
+            "observed_Y": false
+          }
+        ]
+      },
+      "two_opposite_readings_cancel_exactly": true,
+      "uniform_prior_entropy_bits": 4,
+      "uniform_prior_greedy_per_cost": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.456435557,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.456435557,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      }
+    },
+    {
+      "exact_MAP_budget_comparisons": [
+        {
+          "budget_cost_units": 0,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "initial_action_cost": 0,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": null
+        },
+        {
+          "budget_cost_units": 1,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.109375,
+            "denominator": 64,
+            "numerator": 7
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 2,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.1640625,
+            "denominator": 128,
+            "numerator": 21
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 3,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.167480469,
+            "denominator": 2048,
+            "numerator": 343
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 4,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.19140625,
+            "denominator": 256,
+            "numerator": 49
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        }
+      ],
+      "family_id": "F17_DIRECTION_ONLY",
+      "greedy_after_one_observation": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.214314019,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.214314019,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      },
+      "informative_action_cost_noise_tradeoffs": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "cost_units": 4,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.165677483,
+          "information_gain_bits_uniform": 0.662709933,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "cost_units": 1,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.456435557,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "cost_units": 1,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.25,
+            "denominator": 4,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.188721876,
+          "information_gain_bits_uniform": 0.188721876,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "cost_units": 3,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.152145186,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        }
+      ],
+      "posterior_after_one_greedy_observation": {
+        "MAP_probability": {
+          "decimal": 0.109375,
+          "denominator": 64,
+          "numerator": 7
+        },
+        "all_16_masks_remain_possible": true,
+        "entropy_bits": 3.543564443,
+        "evidence": [
+          {
+            "action_id": 3,
+            "observed_Y": false
+          }
+        ]
+      },
+      "two_opposite_readings_cancel_exactly": true,
+      "uniform_prior_entropy_bits": 4,
+      "uniform_prior_greedy_per_cost": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.456435557,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.456435557,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      }
+    },
+    {
+      "exact_MAP_budget_comparisons": [
+        {
+          "budget_cost_units": 0,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "initial_action_cost": 0,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": null
+        },
+        {
+          "budget_cost_units": 1,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.109375,
+            "denominator": 64,
+            "numerator": 7
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 2,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.1640625,
+            "denominator": 128,
+            "numerator": 21
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 3,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.167480469,
+            "denominator": 2048,
+            "numerator": 343
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 4,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.19140625,
+            "denominator": 256,
+            "numerator": 49
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        }
+      ],
+      "family_id": "F17_DISPUTED",
+      "greedy_after_one_observation": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.214314019,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.214314019,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      },
+      "informative_action_cost_noise_tradeoffs": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "cost_units": 4,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.165677483,
+          "information_gain_bits_uniform": 0.662709933,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "cost_units": 1,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.456435557,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "cost_units": 1,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.25,
+            "denominator": 4,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.188721876,
+          "information_gain_bits_uniform": 0.188721876,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "cost_units": 3,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.152145186,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        }
+      ],
+      "posterior_after_one_greedy_observation": {
+        "MAP_probability": {
+          "decimal": 0.109375,
+          "denominator": 64,
+          "numerator": 7
+        },
+        "all_16_masks_remain_possible": true,
+        "entropy_bits": 3.543564443,
+        "evidence": [
+          {
+            "action_id": 3,
+            "observed_Y": false
+          }
+        ]
+      },
+      "two_opposite_readings_cancel_exactly": true,
+      "uniform_prior_entropy_bits": 4,
+      "uniform_prior_greedy_per_cost": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.456435557,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.456435557,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      }
+    },
+    {
+      "exact_MAP_budget_comparisons": [
+        {
+          "budget_cost_units": 0,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "initial_action_cost": 0,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": null
+        },
+        {
+          "budget_cost_units": 1,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.109375,
+            "denominator": 64,
+            "numerator": 7
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 2,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.1640625,
+            "denominator": 128,
+            "numerator": 21
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 3,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.167480469,
+            "denominator": 2048,
+            "numerator": 343
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 4,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.19140625,
+            "denominator": 256,
+            "numerator": 49
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        }
+      ],
+      "family_id": "F17_NEGATIVE",
+      "greedy_after_one_observation": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.214314019,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.214314019,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      },
+      "informative_action_cost_noise_tradeoffs": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "cost_units": 4,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.165677483,
+          "information_gain_bits_uniform": 0.662709933,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "cost_units": 1,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.456435557,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "cost_units": 1,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.25,
+            "denominator": 4,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.188721876,
+          "information_gain_bits_uniform": 0.188721876,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "cost_units": 3,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.152145186,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        }
+      ],
+      "posterior_after_one_greedy_observation": {
+        "MAP_probability": {
+          "decimal": 0.109375,
+          "denominator": 64,
+          "numerator": 7
+        },
+        "all_16_masks_remain_possible": true,
+        "entropy_bits": 3.543564443,
+        "evidence": [
+          {
+            "action_id": 3,
+            "observed_Y": true
+          }
+        ]
+      },
+      "two_opposite_readings_cancel_exactly": true,
+      "uniform_prior_entropy_bits": 4,
+      "uniform_prior_greedy_per_cost": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.456435557,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.456435557,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      }
+    },
+    {
+      "exact_MAP_budget_comparisons": [
+        {
+          "budget_cost_units": 0,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "initial_action_cost": 0,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": null
+        },
+        {
+          "budget_cost_units": 1,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.109375,
+            "denominator": 64,
+            "numerator": 7
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 2,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.1640625,
+            "denominator": 128,
+            "numerator": 21
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 3,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.167480469,
+            "denominator": 2048,
+            "numerator": 343
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 4,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.19140625,
+            "denominator": 256,
+            "numerator": 49
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        }
+      ],
+      "family_id": "F17_NO_EFFECT",
+      "greedy_after_one_observation": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.214314019,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.214314019,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      },
+      "informative_action_cost_noise_tradeoffs": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "cost_units": 4,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.165677483,
+          "information_gain_bits_uniform": 0.662709933,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "cost_units": 1,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.456435557,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "cost_units": 1,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.25,
+            "denominator": 4,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.188721876,
+          "information_gain_bits_uniform": 0.188721876,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "cost_units": 3,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.152145186,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        }
+      ],
+      "posterior_after_one_greedy_observation": {
+        "MAP_probability": {
+          "decimal": 0.109375,
+          "denominator": 64,
+          "numerator": 7
+        },
+        "all_16_masks_remain_possible": true,
+        "entropy_bits": 3.543564443,
+        "evidence": [
+          {
+            "action_id": 3,
+            "observed_Y": false
+          }
+        ]
+      },
+      "two_opposite_readings_cancel_exactly": true,
+      "uniform_prior_entropy_bits": 4,
+      "uniform_prior_greedy_per_cost": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.456435557,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.456435557,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      }
+    },
+    {
+      "exact_MAP_budget_comparisons": [
+        {
+          "budget_cost_units": 0,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "initial_action_cost": 0,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": null
+        },
+        {
+          "budget_cost_units": 1,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.109375,
+            "denominator": 64,
+            "numerator": 7
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 2,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.1640625,
+            "denominator": 128,
+            "numerator": 21
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 3,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.167480469,
+            "denominator": 2048,
+            "numerator": 343
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        },
+        {
+          "budget_cost_units": 4,
+          "current_MAP_accuracy": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "expected_final_MAP_accuracy": {
+            "decimal": 0.19140625,
+            "denominator": 256,
+            "numerator": 49
+          },
+          "initial_action_cost": 1,
+          "method": "exact_bounded_dynamic_program_for_MAP_accuracy",
+          "objective_note": "full 16-mask MAP classification, not worst-case guaranteed correctness",
+          "optimal_first_action": {
+            "action_id": 3,
+            "background": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "cost_units": 1,
+            "do_SIGNAL": true,
+            "flip_probability": {
+              "decimal": 0.125,
+              "denominator": 8,
+              "numerator": 1
+            },
+            "same_as_natural_SIGNAL": false
+          }
+        }
+      ],
+      "family_id": "F17_POLARITY",
+      "greedy_after_one_observation": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.214314019,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.214314019,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      },
+      "informative_action_cost_noise_tradeoffs": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "cost_units": 4,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.0625,
+            "denominator": 16,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.165677483,
+          "information_gain_bits_uniform": 0.662709933,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "cost_units": 1,
+          "do_SIGNAL": true,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.456435557,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "cost_units": 1,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.25,
+            "denominator": 4,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.188721876,
+          "information_gain_bits_uniform": 0.188721876,
+          "same_as_natural_SIGNAL": false
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "cost_units": 3,
+          "do_SIGNAL": false,
+          "flip_probability": {
+            "decimal": 0.125,
+            "denominator": 8,
+            "numerator": 1
+          },
+          "information_bits_per_cost_uniform": 0.152145186,
+          "information_gain_bits_uniform": 0.456435557,
+          "same_as_natural_SIGNAL": false
+        }
+      ],
+      "posterior_after_one_greedy_observation": {
+        "MAP_probability": {
+          "decimal": 0.109375,
+          "denominator": 64,
+          "numerator": 7
+        },
+        "all_16_masks_remain_possible": true,
+        "entropy_bits": 3.543564443,
+        "evidence": [
+          {
+            "action_id": 3,
+            "observed_Y": false
+          }
+        ]
+      },
+      "two_opposite_readings_cancel_exactly": true,
+      "uniform_prior_entropy_bits": 4,
+      "uniform_prior_greedy_per_cost": {
+        "action_id": 3,
+        "background": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "cost_units": 1,
+        "do_SIGNAL": true,
+        "expected_information_gain_bits": 0.456435557,
+        "flip_probability": {
+          "decimal": 0.125,
+          "denominator": 8,
+          "numerator": 1
+        },
+        "information_bits_per_cost": 0.456435557,
+        "same_as_natural_SIGNAL": false,
+        "selection_method": "greedy_gain_per_cost"
+      }
+    }
+  ],
+  "provenance": "exact assistant-authored finite channel analysis, no real sampled outcomes"
+}

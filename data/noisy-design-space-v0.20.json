@@ -1,0 +1,47 @@
+{
+  "format": "ALCG-v0.20-noisy-cost-aware-active-design",
+  "source": "exact 16-hypothesis truth signatures for each of seven v0.19 synthetic families",
+  "v019_report_sha256": "2d9cddce9204b672465a1d8327ab9348ab84d12f954e7bf25f9c7077bd9ce7a6",
+  "v019_design_spec_sha256": "96acd1e374283c8923f003db641c77e607aa5295278b324ea5295083e7439853",
+  "hypotheses": "masks 0..15, initially equal probability, exactly as in v0.19",
+  "outcomes": "Boolean SCM result independently flipped with specified probability on each attempt",
+  "conditional_independence": "noise events independent conditional on the true mask and chosen action",
+  "experimental_rates_and_costs": [
+    {
+      "context_index": 0,
+      "flip_numerator": 1,
+      "flip_denominator": 16,
+      "cost_units": 4
+    },
+    {
+      "context_index": 1,
+      "flip_numerator": 1,
+      "flip_denominator": 8,
+      "cost_units": 1
+    },
+    {
+      "context_index": 2,
+      "flip_numerator": 1,
+      "flip_denominator": 4,
+      "cost_units": 1
+    },
+    {
+      "context_index": 3,
+      "flip_numerator": 1,
+      "flip_denominator": 8,
+      "cost_units": 3
+    }
+  ],
+  "actions": "eight v0.19 actions, four off-natural informative and four natural noninformative",
+  "repetitions": "allowed, with fresh conditionally independent noise per attempted observation",
+  "evidence": "observed Boolean outcomes with action ID; no deterministic candidate elimination",
+  "greedy_objective": "maximize Shannon information gain divided by integer action cost",
+  "exact_budget_objective": "maximize expected posterior MAP full-mask accuracy under finite cost budget",
+  "optimal_budget_scope": "exact enumeration, budgets 0..4, with repeats and adaptive branches allowed",
+  "tie_break": "prefer lower spent cost, then lower action id; zero-gain action is never chosen",
+  "guarantee": "strictly positive flip rates imply no finite noisy history guarantees exact identification",
+  "limitations": "no real sensor data, no calibrated noise, no intervention price survey, no general optimal policy",
+  "no_real_world_causal_inference": true,
+  "no_independent_ai_comprehension_claim": true,
+  "published_registry_unmodified": true
+}

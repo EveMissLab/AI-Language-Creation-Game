@@ -2,7 +2,7 @@
 
 **An open-source, AI-first language-creation playground.** Begin with English-readable concepts and symbols, then grow toward wider semantic coverage and eventually reusable mesoscopic concept/function bundles.
 
-> Status: **v0.19 finite active intervention design (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
+> Status: **v0.20 synthetic noisy and cost-aware active intervention design (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
 
 ## What is the game?
 
@@ -125,6 +125,13 @@ python mechanism_search.py summary
 # v0.19: choose interventions to distinguish still-compatible mechanisms
 python active_design.py check
 python active_design.py summary
+
+# v0.20: Bayesian noisy readings and cost-aware finite experiment selection
+python noisy_design.py check
+python noisy_design.py report
+python noisy_design.py plan --family F17_DIRECT --budget 2
+python noisy_design.py plan --family F17_DIRECT --budget 1 --observe 3=1 --observe 3=0
+python noisy_design.py replay --family F17_DIRECT --mask 5 --action 3 --flip
 python active_design.py recommend --family F17_DIRECT --objective identify
 python active_design.py simulate --family F17_DIRECT --mask 9 --objective anchor
 # The oracle is a bounded synthetic SCM, NOT a real intervention or AI comprehension score.
@@ -162,10 +169,11 @@ These examples demonstrate a **parser**, not verified meaning or truth. See [syn
 17. **Cross-model causal invariance (v0.17):** compare one typed `CAUSE` claim across 7 assistant-authored families and 21 finite SCMs, including 84 aligned model/background evaluations and 168 interventions. Distinguish exact output invariance, shared qualitative direction, background-restricted direction, and disagreement; preserve all earlier model files, reports and published patterns. No independent reader or real-world causal inference is claimed.
 18. **Bounded mechanism search (v0.18):** exhaustively enumerate 16 synthetic observationally anchor-equivalent Boolean completions per v0.17 family (112 candidate SCMs total). All match the designated first model at four natural backgrounds, but new candidates weaken the previously true finite-family stability claim in all five applicable families. The other two families already lacked a nonzero common direction. This is bounded *model-family sensitivity*, not a falsification of earlier calculations, not all causal models and not empirical inference. [Detailed scope and replayable witnesses](docs/OBSERVATION-EQUIVALENT-MECHANISM-SEARCH-v0.18.md).
 19. **Active intervention design (v0.19):** use the 16 v0.18 observation-equivalent completions per family as a fixed, noiseless hypothesis class. Four informative off-natural interventions are necessary and sufficient for exact identification; a weaker anchor-agreement test can stop at the first mismatch (uniform-prior mean 1.875, worst 4). Supports partial-information recommendations under restricted access, and 896 independent SCM response replays. **No real experiments, independent AI-reader data or dictionary update.** [Full specification](docs/ACTIVE-INTERVENTION-DESIGN-v0.19.md).
-20. **Non-implemented challenge:** collect independent reader data without conflating it with synthetic mechanism experiments.
-21. **Mesoscopic units (later):** explore actually usable functional/conceptual compositions without prematurely calling an unexecuted symbolic label a program.
+20. **Noisy, cost-aware active experiments (v0.20):** keep the v0.19 exact finite benchmark fixed and instead assume independent symmetric binary measurement errors and unequal intervention costs. Repeated readings update a rational Bayesian posterior rather than deleting candidates. Compare greedy information gain per cost with exact budget-limited MAP mechanism classification; the objectives can select different next interventions. These are hypothetical synthetic channel/cost parameters, **not measured sensor error, real-world causal discovery or AI comprehension**. [Specification](docs/NOISY-COST-AWARE-ACTIVE-DESIGN-v0.20.md).
+21. **Non-implemented challenge:** collect independent reader data without conflating it with synthetic mechanism experiments.
+22. **Mesoscopic units (later):** explore actually usable functional/conceptual compositions without prematurely calling an unexecuted symbolic label a program.
 
-GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.19 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
+GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.20 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
 
 ## 中文簡介
 
@@ -188,6 +196,8 @@ v0.17 新增**跨模型有限因果穩定性試驗**：同一個 `CAUSE` 表達�
 v0.18 加入**觀察等價的有限機制探索**：在既有 7 組 v0.17 家族上，以每組第一個模型為觀察錨點，枚舉 16 種不改變自然觀察輸出、但可能改變 `do(SIGNAL)` 結果的有限布林機制（共 112 個新模型）。五組原本具非空穩定性結論的家族都找到加入新模型後不再維持原結論的反例；兩組本來就沒有共同非零方向，不能被虛報成「再度推翻」。這不修改既有 v0.17 計算結論，而是測量**擴張假設模型家族時的敏感性**，也不是現實因果發現或獨立 AI 理解測試。詳見 [v0.18 研究規格](docs/OBSERVATION-EQUIVALENT-MECHANISM-SEARCH-v0.18.md)。
 
 v0.19 新增**主動有限介入辨識**：在 v0.18 已知的七組家族、每組 16 個觀察等價機制中，系統能按照條件選擇下一個可分辨機制的 `do(SIGNAL)` 測試，並將結果回饋至剩餘候選清單。四個有效介入是完整辨識的必要且充分條件；若只是判斷是否與錨點相同，均勻候選假設下平均 1.875 次，最壞四次。總共重新執行 896 次合成模型介入來核對保存的真值表；這些**不是現實中的實驗、AI 語義理解測試，也不代表一般因果系統必須四次介入**。不更動既有公開字典。詳見 [v0.19 研究規格](docs/ACTIVE-INTERVENTION-DESIGN-v0.19.md)。
+
+v0.20 新增**假設性雜訊與不同介入成本的主動實驗設計**：以 v0.19 七組家族、每組 16 個既有機制為固定基礎，設定四種不同成本及非零對稱觀測翻轉機率。即使遇到矛盾讀數，也會以有理數貝葉斯後驗保留所有候選，不再假裝已能零錯誤辨識。比較每單位成本的預期資訊收益與固定預算內最終全機制 MAP 成功率；兩者在某些情況會選不同的下一步。本版沒有新增語言算子、沒有更新公開字典，也沒有現實感測或獨立 AI 理解率的測量。詳見 [v0.20 研究規格](docs/NOISY-COST-AWARE-ACTIVE-DESIGN-v0.20.md)。
 
 ## License
 
