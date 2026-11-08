@@ -50,3 +50,7 @@ jobs:
         run: python reader_v04.py check
       - name: Validate v0.5 semantic stability and finite counterexamples
         run: python semantic_lab.py check
+      - name: Validate v0.6 English sense and concept coverage
+        run: python sense_coverage.py check
+      - name: Audit v0.6 sense coverage without claiming reader scores
+        run: python sense_coverage.py report

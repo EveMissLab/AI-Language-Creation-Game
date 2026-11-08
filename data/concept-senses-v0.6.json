@@ -1,0 +1,108 @@
+{
+  "version": "0.6-experimental",
+  "purpose": "Disambiguation hints for English-readable labels; not a full ontology or proof of understanding.",
+  "entries": [
+    {
+      "surface": "bank",
+      "sense_id": "BANK_FINANCIAL",
+      "kind": "noun",
+      "gloss": "A financial institution or organization; not a riverbank."
+    },
+    {
+      "surface": "bank",
+      "sense_id": "BANK_RIVER",
+      "kind": "noun",
+      "gloss": "The sloped or level land beside a river."
+    },
+    {
+      "surface": "light",
+      "sense_id": "LIGHT_ILLUMINATION",
+      "kind": "noun",
+      "gloss": "Visible radiation or illumination; not low weight."
+    },
+    {
+      "surface": "light",
+      "sense_id": "LIGHT_WEIGHT",
+      "kind": "adjective",
+      "gloss": "Having relatively little weight; not illumination."
+    },
+    {
+      "surface": "cell",
+      "sense_id": "CELL_BIOLOGICAL",
+      "kind": "noun",
+      "gloss": "A living biological cell."
+    },
+    {
+      "surface": "cell",
+      "sense_id": "CELL_ELECTRIC",
+      "kind": "noun",
+      "gloss": "An electrochemical cell storing chemical energy."
+    },
+    {
+      "surface": "mouse",
+      "sense_id": "MOUSE_ANIMAL",
+      "kind": "noun",
+      "gloss": "Small rodent animal; not the input device."
+    },
+    {
+      "surface": "mouse",
+      "sense_id": "MOUSE_DEVICE",
+      "kind": "noun",
+      "gloss": "Pointing input device for computers."
+    },
+    {
+      "surface": "model",
+      "sense_id": "MODEL_STATISTICAL",
+      "kind": "noun",
+      "gloss": "A statistical or computational representation for prediction or inference."
+    },
+    {
+      "surface": "model",
+      "sense_id": "MODEL_PHYSICAL",
+      "kind": "noun",
+      "gloss": "A physical representation or scale artifact."
+    },
+    {
+      "surface": "right",
+      "sense_id": "RIGHT_ENTITLEMENT",
+      "kind": "noun",
+      "gloss": "A legal or moral entitlement, not spatial direction."
+    },
+    {
+      "surface": "right",
+      "sense_id": "RIGHT_DIRECTION",
+      "kind": "noun",
+      "gloss": "The rightward side or direction, not an entitlement."
+    },
+    {
+      "surface": "charge",
+      "sense_id": "CHARGE_ELECTRIC",
+      "kind": "verb",
+      "gloss": "Transfer electrical energy into an electric cell or storage."
+    },
+    {
+      "surface": "charge",
+      "sense_id": "CHARGE_FEE",
+      "kind": "verb",
+      "gloss": "Impose a price or fee, not charge a battery."
+    },
+    {
+      "surface": "key",
+      "sense_id": "KEY_KEYBOARD",
+      "kind": "noun",
+      "gloss": "A pressable component of an input keyboard."
+    },
+    {
+      "surface": "key",
+      "sense_id": "KEY_CREDENTIAL",
+      "kind": "noun",
+      "gloss": "A security secret or authorization credential, not a keyboard key."
+    },
+    {
+      "surface": "key",
+      "sense_id": "KEY_LOCK",
+      "kind": "noun",
+      "gloss": "A physical key for a mechanical lock, not a credential string."
+    }
+  ]
+}

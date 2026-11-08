@@ -1,0 +1,65 @@
+{
+  "version": "0.6",
+  "baseline": {
+    "cases": 36,
+    "sha256": "4569e6b8507340d7c26b1012504f73cdbe078448cf9f887fe256f1e90f2107c6"
+  },
+  "new_curated_cases": 48,
+  "combined_curated_cases": 84,
+  "proposal_labels": {
+    "candidate": 36,
+    "partial": 6,
+    "raw": 6
+  },
+  "author_candidate_fraction_of_new_curated_set": 0.75,
+  "candidate_with_nested_relations": 15,
+  "registered_relation_operators_reused": 17,
+  "additional_relation_operators_introduced": 0,
+  "new_distinct_lexical_atom_labels_vs_v0_4": 74,
+  "ambiguous_english_surfaces_reviewed": 8,
+  "disambiguated_sense_ids": 17,
+  "sense_ids_represented_in_cases": 17,
+  "independent_ai_reader_score": null,
+  "wordnet_or_general_english_coverage": null,
+  "warning": "All proposals are hand-authored on curated samples. Explicit sense labels and syntactic checks do NOT demonstrate faithful English meaning or AI comprehension.",
+  "new_benchmark_sha256": "1555814a6ec16a4083c198cf8e72fe8e6de28cd19c87e76c8c3e6b59ccfd9ea9",
+  "sense_registry_sha256": "97ee83d87a5e5c971f559498ee265f6b599a121e8fa7e27cf107d0723ec8c9ab",
+  "by_domain": {
+    "computing": {
+      "total": 8,
+      "candidate": 6,
+      "partial": 1,
+      "raw": 1
+    },
+    "daily": {
+      "total": 8,
+      "candidate": 6,
+      "partial": 1,
+      "raw": 1
+    },
+    "epistemic": {
+      "total": 8,
+      "candidate": 6,
+      "partial": 1,
+      "raw": 1
+    },
+    "mathematics": {
+      "total": 8,
+      "candidate": 6,
+      "partial": 1,
+      "raw": 1
+    },
+    "science": {
+      "total": 8,
+      "candidate": 6,
+      "partial": 1,
+      "raw": 1
+    },
+    "society": {
+      "total": 8,
+      "candidate": 6,
+      "partial": 1,
+      "raw": 1
+    }
+  }
+}
