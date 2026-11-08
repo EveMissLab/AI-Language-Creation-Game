@@ -1,0 +1,299 @@
+{
+  "active_registry_sha256": "5d97c41701b8196766a65bf08ac24f1942df3fa2e1a7546f3845b0df805d3bc6",
+  "actual_training_candidate_expressions": 64,
+  "caution": "Historical contrast expressions were written before mining but may share their author and design assumptions. Overlaps with actual mining inputs are excluded by canonical AST. Diagnostic posthoc pairs were authored to stress known templates. No independent semantic generalization, AI comprehension, ontological correctness or actual execution is proven.",
+  "external_generalization_claim": false,
+  "format": "ALCG-transfer-lab-v0.13",
+  "frozen_v0_12_proposals_sha256": "da0583e148b0d73ef082252722bf77450f729e1086b9311c6a44cf54fb9bebeb",
+  "frozen_v0_12_report_sha256": "26713180a9fadc65085c4f3620f01077418dcf2982205d8daa917d74329374ac",
+  "historical_nontraining": {
+    "claim_boundary": "Matched AST topology does not imply matching the English target. A foil can match a candidate pattern and still be the WRONG answer.",
+    "dataset_counts": {
+      "benchmarks/contrast-v0.3.jsonl": {
+        "eligible": 13,
+        "overlap_with_training": 11,
+        "total": 24
+      },
+      "benchmarks/contrast-v0.4.jsonl": {
+        "eligible": 21,
+        "matched": 2,
+        "overlap_with_training": 3,
+        "total": 24
+      },
+      "benchmarks/reader-contrast-v0.7.jsonl": {
+        "eligible": 23,
+        "matched": 1,
+        "overlap_with_training": 25,
+        "total": 48
+      }
+    },
+    "distinct_nontraining_expressions": 57,
+    "exact_training_overlaps_excluded": 39,
+    "matched_cases": [
+      {
+        "expression_sha256": "ac2d5dc6acef8e6f94fe29b4d25829e92570a9403b648df13c8d16715d37e0d7",
+        "fixture": "benchmarks/contrast-v0.4.jsonl",
+        "id": "K403",
+        "matched_not_necessarily_correct": true,
+        "pattern": "P_DISC_CAUSE_E650D79604",
+        "side": "foil"
+      },
+      {
+        "expression_sha256": "8c7429a1b209647d32272fb335a4675271bac39b10cbab9cf2b5473e2e5dbc2b",
+        "fixture": "benchmarks/contrast-v0.4.jsonl",
+        "id": "K407",
+        "matched_not_necessarily_correct": true,
+        "pattern": "P_DISC_BEFORE_28BF19FB1F",
+        "side": "foil"
+      },
+      {
+        "expression_sha256": "065a552438ac0cb32e2e1604e1719986badee814c93779df2d4cd8303d211b60",
+        "fixture": "benchmarks/reader-contrast-v0.7.jsonl",
+        "id": "V715",
+        "matched_not_necessarily_correct": true,
+        "pattern": "P_DISC_BEFORE_28BF19FB1F",
+        "side": "foil"
+      }
+    ],
+    "matches_by_answer_role": {
+      "foil": 3
+    },
+    "matches_to_candidates": 3,
+    "nontraining_expressions": 57,
+    "total_historical_expressions": 96
+  },
+  "historical_sources_sha256": {
+    "benchmarks/contrast-v0.3.jsonl": "a09980c40f27c52f95b901332c63b7a3d696506be0e730700c47a3481b93d7fe",
+    "benchmarks/contrast-v0.4.jsonl": "be12dd32a0b430996464f50dadbae203a2b802b92c8ef63fc635ac0a85079b74",
+    "benchmarks/reader-contrast-v0.7.jsonl": "6f0ad9d9c0164610059c9198e057d8edde21e49db601b2ed4fbe27935eb7b739"
+  },
+  "independent_ai_readers": 0,
+  "posthoc_diagnostic": {
+    "authored_after_discovery": true,
+    "candidate_usage_costs": [
+      {
+        "compact_utf8_bytes": 189,
+        "definition_utf8_bytes_estimate": 314,
+        "expanded_utf8_bytes": 285,
+        "net_after_one_definition_bytes": -218,
+        "pattern": "P_DISC_CAUSE_E650D79604",
+        "payload_bytes_saved": 96,
+        "posthoc_positive_uses": 4
+      },
+      {
+        "compact_utf8_bytes": 234,
+        "definition_utf8_bytes_estimate": 419,
+        "expanded_utf8_bytes": 460,
+        "net_after_one_definition_bytes": -193,
+        "pattern": "P_DISC_BEFORE_28BF19FB1F",
+        "payload_bytes_saved": 226,
+        "posthoc_positive_uses": 4
+      },
+      {
+        "compact_utf8_bytes": 216,
+        "definition_utf8_bytes_estimate": 376,
+        "expanded_utf8_bytes": 368,
+        "net_after_one_definition_bytes": -224,
+        "pattern": "P_DISC_EXISTS_A8241B5011",
+        "payload_bytes_saved": 152,
+        "posthoc_positive_uses": 4
+      },
+      {
+        "compact_utf8_bytes": 174,
+        "definition_utf8_bytes_estimate": 300,
+        "expanded_utf8_bytes": 230,
+        "net_after_one_definition_bytes": -244,
+        "pattern": "P_DISC_NOT_34AE85E4FF",
+        "payload_bytes_saved": 56,
+        "posthoc_positive_uses": 4
+      }
+    ],
+    "claim_boundary": "These examples were written knowing the four patterns. Matching positives is a matcher regression, not independent distributional generalization; same-shape foils demonstrate why correct English interpretation must be evaluated separately.",
+    "pairs": [
+      {
+        "domain": "ecology",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": true,
+        "foil_type": "same_shape_different_roles",
+        "id": "TP1301",
+        "pattern": "P_DISC_CAUSE_E650D79604",
+        "positive_expansion_sha256": "6b7b06145606066165885310f5b0d70de432f36e2307a5c5db020b6444cf6fa5",
+        "positive_matched": true
+      },
+      {
+        "domain": "medicine",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": false,
+        "foil_type": "operator_change",
+        "id": "TP1302",
+        "pattern": "P_DISC_CAUSE_E650D79604",
+        "positive_expansion_sha256": "fc570bbaaa79d5694b020eccab521c009478308f935cfaf6346be9af7cd50591",
+        "positive_matched": true
+      },
+      {
+        "domain": "education",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": true,
+        "foil_type": "same_shape_different_roles",
+        "id": "TP1303",
+        "pattern": "P_DISC_CAUSE_E650D79604",
+        "positive_expansion_sha256": "ff69661196b065585e2105e96aef3d6f9d076805e4d19fe30acc27ef732ec58c",
+        "positive_matched": true
+      },
+      {
+        "domain": "logistics",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": false,
+        "foil_type": "operator_change",
+        "id": "TP1304",
+        "pattern": "P_DISC_CAUSE_E650D79604",
+        "positive_expansion_sha256": "ee74fb1cb17b06ed684b481f411b6fba5bcf0ff7c8e8d83a8891727e4e2d9b02",
+        "positive_matched": true
+      },
+      {
+        "domain": "logistics",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": true,
+        "foil_type": "same_shape_temporal_reversal",
+        "id": "TP1305",
+        "pattern": "P_DISC_BEFORE_28BF19FB1F",
+        "positive_expansion_sha256": "3ecf10b346670cbfefca6f6f7d6bfb86cb202d8f4738f95fc9cb7cce22531036",
+        "positive_matched": true
+      },
+      {
+        "domain": "medicine",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": false,
+        "foil_type": "shared_actor_broken",
+        "id": "TP1306",
+        "pattern": "P_DISC_BEFORE_28BF19FB1F",
+        "positive_expansion_sha256": "6d25f2e5235c7762f0edade96767a7875795bb1fcb5213ac3acbfe03f952b38f",
+        "positive_matched": true
+      },
+      {
+        "domain": "education",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": true,
+        "foil_type": "same_shape_temporal_reversal",
+        "id": "TP1307",
+        "pattern": "P_DISC_BEFORE_28BF19FB1F",
+        "positive_expansion_sha256": "7886c63a36a8997919ad266a3086a34fdeeaef18e0a40937d0ed8f7b55c8593a",
+        "positive_matched": true
+      },
+      {
+        "domain": "manufacturing",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": false,
+        "foil_type": "operator_change",
+        "id": "TP1308",
+        "pattern": "P_DISC_BEFORE_28BF19FB1F",
+        "positive_expansion_sha256": "8400a55b7709d11086b6ccb32bc3d3c6bdbb9b403716240bbddeefff04ca7809",
+        "positive_matched": true
+      },
+      {
+        "domain": "laboratory",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": false,
+        "foil_type": "quantifier_change",
+        "id": "TP1309",
+        "pattern": "P_DISC_EXISTS_A8241B5011",
+        "positive_expansion_sha256": "b2a92bcf795f69a3cc9c204dabfc682884d46bed0e17a675029a797c3af49f36",
+        "positive_matched": true
+      },
+      {
+        "domain": "economics",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": true,
+        "foil_type": "same_shape_comparison_shift",
+        "id": "TP1310",
+        "pattern": "P_DISC_EXISTS_A8241B5011",
+        "positive_expansion_sha256": "a38dcc8be11384de60d646c2a5ce640ffdbe7a34b13a2d01db6c0a784228b4d4",
+        "positive_matched": true
+      },
+      {
+        "domain": "education",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": true,
+        "foil_matched": false,
+        "foil_type": "binder_reference_mismatch",
+        "id": "TP1311",
+        "pattern": "P_DISC_EXISTS_A8241B5011",
+        "positive_expansion_sha256": "ed104bef7f5fbb7f6526e7ef1468ee4e85da170373e0a2639fe1d60a778a8580",
+        "positive_matched": true
+      },
+      {
+        "domain": "meteorology",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": true,
+        "foil_type": "same_shape_comparison_shift",
+        "id": "TP1312",
+        "pattern": "P_DISC_EXISTS_A8241B5011",
+        "positive_expansion_sha256": "f3926e04563c00203ab4f5d10a6a7a67e6ee6c102a566d061aba5c6eb2fe7294",
+        "positive_matched": true
+      },
+      {
+        "domain": "ecology",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": false,
+        "foil_type": "negation_removed",
+        "id": "TP1313",
+        "pattern": "P_DISC_NOT_34AE85E4FF",
+        "positive_expansion_sha256": "6c921383d253677e841516f0a47fbff332b6c9c7f78d0643b71b2a055943f731",
+        "positive_matched": true
+      },
+      {
+        "domain": "finance",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": true,
+        "foil_type": "same_shape_operand_reversal",
+        "id": "TP1314",
+        "pattern": "P_DISC_NOT_34AE85E4FF",
+        "positive_expansion_sha256": "20fa6cfaaa487a406895eb517bce3ad19ab7afa46ec761473cf3bf54b8f65590",
+        "positive_matched": true
+      },
+      {
+        "domain": "medicine",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": false,
+        "foil_type": "operator_change",
+        "id": "TP1315",
+        "pattern": "P_DISC_NOT_34AE85E4FF",
+        "positive_expansion_sha256": "ae15f3800ede885202f9de7715f449a36161293b04541cdc0a27326ee9eecbd0",
+        "positive_matched": true
+      },
+      {
+        "domain": "education",
+        "foil_changed_canonical_structure": true,
+        "foil_invalid_scope": false,
+        "foil_matched": true,
+        "foil_type": "same_shape_operand_reversal",
+        "id": "TP1316",
+        "pattern": "P_DISC_NOT_34AE85E4FF",
+        "positive_expansion_sha256": "21859ded8ba6feb802a20d21af3de42958665b4d6f1640aeda98a877ad38a9fe",
+        "positive_matched": true
+      }
+    ],
+    "positive_structural_matches": 16,
+    "positive_tests": 16,
+    "role_or_structure_foils_rejected": 8,
+    "same_shape_meaning_shift_foils_still_match": 8
+  },
+  "posthoc_probe_file_sha256": "bf7898715ec880d809d7aa1e7b055bf269301bf73e14ef952a2e976ebaf2a196",
+  "promoted_patterns": 0,
+  "review_only_patterns_considered": 4,
+  "semantic_comprehension_accuracy": null
+}

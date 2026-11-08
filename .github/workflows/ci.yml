@@ -78,3 +78,7 @@ jobs:
         run: python pattern_discovery.py check
       - name: Audit v0.12 review-only motifs and dictionary costs (NOT semantic comprehension)
         run: python pattern_discovery.py report
+      - name: Validate v0.13 historical nontraining transfer and authored counterexamples
+        run: python transfer_lab.py check
+      - name: Audit v0.13 shape matching limits (NOT independent AI semantics)
+        run: python transfer_lab.py report
