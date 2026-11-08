@@ -94,3 +94,9 @@ jobs:
         run: python causal_lab.py check
       - name: Audit v0.16 observational association versus interventions (NOT real-world causal evidence)
         run: python causal_lab.py report
+      - name: Validate v0.17 deterministic cross-model fixture and frozen inputs
+        run: python family_fixtures_v017.py check
+      - name: Check v0.17 finite causal invariance receipts (NOT universal or empirical causality)
+        run: python causal_robustness.py check
+      - name: Audit v0.17 cross-model classification (NOT AI comprehension)
+        run: python causal_robustness.py summary

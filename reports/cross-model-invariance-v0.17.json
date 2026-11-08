@@ -1,0 +1,2069 @@
+{
+  "format": "ALCG-v0.17-stipulated-binary-scm-families",
+  "pinned_public_patterns_sha256": "5d97c41701b8196766a65bf08ac24f1942df3fa2e1a7546f3845b0df805d3bc6",
+  "pinned_v016_fixture_sha256": "b2128574b01767da0ff2602663372a62c371f6025c3690b4eb13267337f08851",
+  "pinned_v016_report_sha256": "ead89c9c4042460027e99ee105a66b4a81065197b0f4798c37f621b200984167",
+  "provenance": "assistant-authored synthetic alternative SCM families; no observational datasets were fitted",
+  "results": [
+    {
+      "backgrounds_per_model": 4,
+      "classification": "exact_intervention_response_invariant",
+      "consistent_direction_contexts": [
+        {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "direction": "positive"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "direction": "positive"
+        },
+        {
+          "context": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "direction": "positive"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "direction": "positive"
+        }
+      ],
+      "effect": [
+        "NETWORK_NODE",
+        "RELIABILITY"
+      ],
+      "every_model_influential_in_every_context": true,
+      "every_model_influential_in_some_context": true,
+      "exact_intervention_response_invariant": true,
+      "existential_influence_agreement": true,
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=NETWORK_NODE, property=RELIABILITY))",
+      "family_id": "F17_DIRECT",
+      "first_direction_disagreement": null,
+      "first_intervention_value_disagreement": null,
+      "identical_intervention_value_contexts": [
+        {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_false": false,
+          "do_true": true
+        },
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "do_false": false,
+          "do_true": true
+        },
+        {
+          "context": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "do_false": false,
+          "do_true": true
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "do_false": false,
+          "do_true": true
+        }
+      ],
+      "mechanisms": 3,
+      "model_results": [
+        {
+          "case_id": "F17_DIRECT_M1",
+          "influence_in_all_contexts": true,
+          "influence_in_some_context": true,
+          "mechanism": "direct",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_DIRECT_M2",
+          "influence_in_all_contexts": true,
+          "influence_in_some_context": true,
+          "mechanism": "mediated",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_DIRECT_M3",
+          "influence_in_all_contexts": true,
+          "influence_in_some_context": true,
+          "mechanism": "irrelevant_gate",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        }
+      ],
+      "qualitative_direction_invariant": true,
+      "question": "Is the full do-response identical despite internal DAG changes?",
+      "robust_nonzero_direction_contexts": [
+        {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "direction": "positive"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "direction": "positive"
+        },
+        {
+          "context": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "direction": "positive"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "direction": "positive"
+        }
+      ],
+      "source": "SIGNAL"
+    },
+    {
+      "backgrounds_per_model": 4,
+      "classification": "qualitative_direction_invariant_only",
+      "consistent_direction_contexts": [
+        {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "direction": "unchanged"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "direction": "positive"
+        },
+        {
+          "context": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "direction": "unchanged"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "direction": "positive"
+        }
+      ],
+      "effect": [
+        "SENSOR_ARRAY",
+        "ACTIVE_STATE"
+      ],
+      "every_model_influential_in_every_context": false,
+      "every_model_influential_in_some_context": true,
+      "exact_intervention_response_invariant": false,
+      "existential_influence_agreement": true,
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=SENSOR_ARRAY, property=ACTIVE_STATE))",
+      "family_id": "F17_DIRECTION_ONLY",
+      "first_direction_disagreement": null,
+      "first_intervention_value_disagreement": {
+        "context": {
+          "G": false,
+          "U": false
+        },
+        "context_index": 0,
+        "models": [
+          {
+            "case_id": "F17_DIRECTION_ONLY_M1",
+            "do_false": false,
+            "do_true": false
+          },
+          {
+            "case_id": "F17_DIRECTION_ONLY_M2",
+            "do_false": true,
+            "do_true": true
+          },
+          {
+            "case_id": "F17_DIRECTION_ONLY_M3",
+            "do_false": false,
+            "do_true": false
+          }
+        ]
+      },
+      "identical_intervention_value_contexts": [
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "do_false": false,
+          "do_true": true
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "do_false": false,
+          "do_true": true
+        }
+      ],
+      "mechanisms": 3,
+      "model_results": [
+        {
+          "case_id": "F17_DIRECTION_ONLY_M1",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": true,
+          "mechanism": "gated_and",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1/2"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_DIRECTION_ONLY_M2",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": true,
+          "mechanism": "gated_or",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "1/2",
+              "true": "1"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_DIRECTION_ONLY_M3",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": true,
+          "mechanism": "mediated_gate",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1/2"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        }
+      ],
+      "qualitative_direction_invariant": true,
+      "question": "Can intervention direction remain stable while the unresponsive baseline changes?",
+      "robust_nonzero_direction_contexts": [
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "direction": "positive"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "direction": "positive"
+        }
+      ],
+      "source": "SIGNAL"
+    },
+    {
+      "backgrounds_per_model": 4,
+      "classification": "context_limited_direction_invariant",
+      "consistent_direction_contexts": [
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "direction": "positive"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "direction": "positive"
+        }
+      ],
+      "effect": [
+        "ROBOTIC_ARM",
+        "CONTROL_SIGNAL"
+      ],
+      "every_model_influential_in_every_context": false,
+      "every_model_influential_in_some_context": true,
+      "exact_intervention_response_invariant": false,
+      "existential_influence_agreement": true,
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=ROBOTIC_ARM, property=CONTROL_SIGNAL))",
+      "family_id": "F17_CONTEXT",
+      "first_direction_disagreement": {
+        "context": {
+          "G": false,
+          "U": false
+        },
+        "context_index": 0,
+        "models": [
+          {
+            "case_id": "F17_CONTEXT_M1",
+            "direction": "unchanged",
+            "do_false": false,
+            "do_true": false
+          },
+          {
+            "case_id": "F17_CONTEXT_M2",
+            "direction": "positive",
+            "do_false": false,
+            "do_true": true
+          },
+          {
+            "case_id": "F17_CONTEXT_M3",
+            "direction": "negative",
+            "do_false": true,
+            "do_true": false
+          }
+        ]
+      },
+      "first_intervention_value_disagreement": {
+        "context": {
+          "G": false,
+          "U": false
+        },
+        "context_index": 0,
+        "models": [
+          {
+            "case_id": "F17_CONTEXT_M1",
+            "do_false": false,
+            "do_true": false
+          },
+          {
+            "case_id": "F17_CONTEXT_M2",
+            "do_false": false,
+            "do_true": true
+          },
+          {
+            "case_id": "F17_CONTEXT_M3",
+            "do_false": true,
+            "do_true": false
+          }
+        ]
+      },
+      "identical_intervention_value_contexts": [
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "do_false": false,
+          "do_true": true
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "do_false": false,
+          "do_true": true
+        }
+      ],
+      "mechanisms": 3,
+      "model_results": [
+        {
+          "case_id": "F17_CONTEXT_M1",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": true,
+          "mechanism": "gated_and",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1/2"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_CONTEXT_M2",
+          "influence_in_all_contexts": true,
+          "influence_in_some_context": true,
+          "mechanism": "direct",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_CONTEXT_M3",
+          "influence_in_all_contexts": true,
+          "influence_in_some_context": true,
+          "mechanism": "conditional_xor",
+          "observational": {
+            "observational_association": false,
+            "observed_rates": {
+              "false": "1/2",
+              "true": "1/2"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        }
+      ],
+      "qualitative_direction_invariant": false,
+      "question": "Does agreement exist only when the background gate is true?",
+      "robust_nonzero_direction_contexts": [
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "direction": "positive"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "direction": "positive"
+        }
+      ],
+      "source": "SIGNAL"
+    },
+    {
+      "backgrounds_per_model": 4,
+      "classification": "no_common_nonzero_direction",
+      "consistent_direction_contexts": [],
+      "effect": [
+        "TEST_CHAMBER",
+        "PRESSURE_STATE"
+      ],
+      "every_model_influential_in_every_context": true,
+      "every_model_influential_in_some_context": true,
+      "exact_intervention_response_invariant": false,
+      "existential_influence_agreement": true,
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=TEST_CHAMBER, property=PRESSURE_STATE))",
+      "family_id": "F17_POLARITY",
+      "first_direction_disagreement": {
+        "context": {
+          "G": false,
+          "U": false
+        },
+        "context_index": 0,
+        "models": [
+          {
+            "case_id": "F17_POLARITY_M1",
+            "direction": "positive",
+            "do_false": false,
+            "do_true": true
+          },
+          {
+            "case_id": "F17_POLARITY_M2",
+            "direction": "negative",
+            "do_false": true,
+            "do_true": false
+          },
+          {
+            "case_id": "F17_POLARITY_M3",
+            "direction": "positive",
+            "do_false": false,
+            "do_true": true
+          }
+        ]
+      },
+      "first_intervention_value_disagreement": {
+        "context": {
+          "G": false,
+          "U": false
+        },
+        "context_index": 0,
+        "models": [
+          {
+            "case_id": "F17_POLARITY_M1",
+            "do_false": false,
+            "do_true": true
+          },
+          {
+            "case_id": "F17_POLARITY_M2",
+            "do_false": true,
+            "do_true": false
+          },
+          {
+            "case_id": "F17_POLARITY_M3",
+            "do_false": false,
+            "do_true": true
+          }
+        ]
+      },
+      "identical_intervention_value_contexts": [],
+      "mechanisms": 3,
+      "model_results": [
+        {
+          "case_id": "F17_POLARITY_M1",
+          "influence_in_all_contexts": true,
+          "influence_in_some_context": true,
+          "mechanism": "excitatory",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_POLARITY_M2",
+          "influence_in_all_contexts": true,
+          "influence_in_some_context": true,
+          "mechanism": "inhibitory",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "1",
+              "true": "0"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_POLARITY_M3",
+          "influence_in_all_contexts": true,
+          "influence_in_some_context": true,
+          "mechanism": "conditional_xor",
+          "observational": {
+            "observational_association": false,
+            "observed_rates": {
+              "false": "1/2",
+              "true": "1/2"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            }
+          ]
+        }
+      ],
+      "qualitative_direction_invariant": false,
+      "question": "Can all mechanisms be causal while intervention signs disagree?",
+      "robust_nonzero_direction_contexts": [],
+      "source": "SIGNAL"
+    },
+    {
+      "backgrounds_per_model": 4,
+      "classification": "no_common_nonzero_direction",
+      "consistent_direction_contexts": [],
+      "effect": [
+        "POWER_GRID",
+        "LOAD_STATE"
+      ],
+      "every_model_influential_in_every_context": false,
+      "every_model_influential_in_some_context": false,
+      "exact_intervention_response_invariant": false,
+      "existential_influence_agreement": false,
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=POWER_GRID, property=LOAD_STATE))",
+      "family_id": "F17_DISPUTED",
+      "first_direction_disagreement": {
+        "context": {
+          "G": false,
+          "U": false
+        },
+        "context_index": 0,
+        "models": [
+          {
+            "case_id": "F17_DISPUTED_M1",
+            "direction": "positive",
+            "do_false": false,
+            "do_true": true
+          },
+          {
+            "case_id": "F17_DISPUTED_M2",
+            "direction": "unchanged",
+            "do_false": false,
+            "do_true": false
+          },
+          {
+            "case_id": "F17_DISPUTED_M3",
+            "direction": "unchanged",
+            "do_false": false,
+            "do_true": false
+          }
+        ]
+      },
+      "first_intervention_value_disagreement": {
+        "context": {
+          "G": false,
+          "U": false
+        },
+        "context_index": 0,
+        "models": [
+          {
+            "case_id": "F17_DISPUTED_M1",
+            "do_false": false,
+            "do_true": true
+          },
+          {
+            "case_id": "F17_DISPUTED_M2",
+            "do_false": false,
+            "do_true": false
+          },
+          {
+            "case_id": "F17_DISPUTED_M3",
+            "do_false": false,
+            "do_true": false
+          }
+        ]
+      },
+      "identical_intervention_value_contexts": [],
+      "mechanisms": 3,
+      "model_results": [
+        {
+          "case_id": "F17_DISPUTED_M1",
+          "influence_in_all_contexts": true,
+          "influence_in_some_context": true,
+          "mechanism": "direct",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_DISPUTED_M2",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": false,
+          "mechanism": "confounded_proxy",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_DISPUTED_M3",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": true,
+          "mechanism": "gated",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1/2"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "positive",
+              "do_false_indicator": false,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        }
+      ],
+      "qualitative_direction_invariant": false,
+      "question": "Does observational co-movement identify robust intervention influence?",
+      "robust_nonzero_direction_contexts": [],
+      "source": "SIGNAL"
+    },
+    {
+      "backgrounds_per_model": 4,
+      "classification": "qualitative_direction_invariant_only",
+      "consistent_direction_contexts": [
+        {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "direction": "unchanged"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "direction": "unchanged"
+        },
+        {
+          "context": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "direction": "unchanged"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "direction": "unchanged"
+        }
+      ],
+      "effect": [
+        "MARKET_SYSTEM",
+        "SIGNAL_STATE"
+      ],
+      "every_model_influential_in_every_context": false,
+      "every_model_influential_in_some_context": false,
+      "exact_intervention_response_invariant": false,
+      "existential_influence_agreement": true,
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=MARKET_SYSTEM, property=SIGNAL_STATE))",
+      "family_id": "F17_NO_EFFECT",
+      "first_direction_disagreement": null,
+      "first_intervention_value_disagreement": {
+        "context": {
+          "G": false,
+          "U": false
+        },
+        "context_index": 0,
+        "models": [
+          {
+            "case_id": "F17_NO_EFFECT_M1",
+            "do_false": false,
+            "do_true": false
+          },
+          {
+            "case_id": "F17_NO_EFFECT_M2",
+            "do_false": false,
+            "do_true": false
+          },
+          {
+            "case_id": "F17_NO_EFFECT_M3",
+            "do_false": true,
+            "do_true": true
+          }
+        ]
+      },
+      "identical_intervention_value_contexts": [],
+      "mechanisms": 3,
+      "model_results": [
+        {
+          "case_id": "F17_NO_EFFECT_M1",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": false,
+          "mechanism": "shared_driver",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "0",
+              "true": "1"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_NO_EFFECT_M2",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": false,
+          "mechanism": "independent_gate",
+          "observational": {
+            "observational_association": false,
+            "observed_rates": {
+              "false": "1/2",
+              "true": "1/2"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_NO_EFFECT_M3",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": false,
+          "mechanism": "inverse_driver",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "1",
+              "true": "0"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            }
+          ]
+        }
+      ],
+      "qualitative_direction_invariant": true,
+      "question": "Can all mechanisms omit an effect of the named intervention?",
+      "robust_nonzero_direction_contexts": [],
+      "source": "SIGNAL"
+    },
+    {
+      "backgrounds_per_model": 4,
+      "classification": "qualitative_direction_invariant_only",
+      "consistent_direction_contexts": [
+        {
+          "context": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "direction": "unchanged"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "direction": "negative"
+        },
+        {
+          "context": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "direction": "unchanged"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "direction": "negative"
+        }
+      ],
+      "effect": [
+        "CHEMICAL_REACTOR",
+        "SAFETY_STATE"
+      ],
+      "every_model_influential_in_every_context": false,
+      "every_model_influential_in_some_context": true,
+      "exact_intervention_response_invariant": false,
+      "existential_influence_agreement": true,
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=CHEMICAL_REACTOR, property=SAFETY_STATE))",
+      "family_id": "F17_NEGATIVE",
+      "first_direction_disagreement": null,
+      "first_intervention_value_disagreement": {
+        "context": {
+          "G": false,
+          "U": false
+        },
+        "context_index": 0,
+        "models": [
+          {
+            "case_id": "F17_NEGATIVE_M1",
+            "do_false": false,
+            "do_true": false
+          },
+          {
+            "case_id": "F17_NEGATIVE_M2",
+            "do_false": false,
+            "do_true": false
+          },
+          {
+            "case_id": "F17_NEGATIVE_M3",
+            "do_false": true,
+            "do_true": true
+          }
+        ]
+      },
+      "identical_intervention_value_contexts": [
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "do_false": true,
+          "do_true": false
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "do_false": true,
+          "do_true": false
+        }
+      ],
+      "mechanisms": 3,
+      "model_results": [
+        {
+          "case_id": "F17_NEGATIVE_M1",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": true,
+          "mechanism": "inhibitory_and",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "1/2",
+              "true": "0"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_NEGATIVE_M2",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": true,
+          "mechanism": "negated_or",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "1/2",
+              "true": "0"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": false,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            }
+          ]
+        },
+        {
+          "case_id": "F17_NEGATIVE_M3",
+          "influence_in_all_contexts": false,
+          "influence_in_some_context": true,
+          "mechanism": "inhibitory_or",
+          "observational": {
+            "observational_association": true,
+            "observed_rates": {
+              "false": "1",
+              "true": "1/2"
+            }
+          },
+          "responses": [
+            {
+              "context": {
+                "G": false,
+                "U": false
+              },
+              "context_index": 0,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": true,
+                "U": false
+              },
+              "context_index": 1,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": true,
+              "observed_source": false
+            },
+            {
+              "context": {
+                "G": false,
+                "U": true
+              },
+              "context_index": 2,
+              "direction": "unchanged",
+              "do_false_indicator": true,
+              "do_true_indicator": true,
+              "observed_indicator": true,
+              "observed_source": true
+            },
+            {
+              "context": {
+                "G": true,
+                "U": true
+              },
+              "context_index": 3,
+              "direction": "negative",
+              "do_false_indicator": true,
+              "do_true_indicator": false,
+              "observed_indicator": false,
+              "observed_source": true
+            }
+          ]
+        }
+      ],
+      "qualitative_direction_invariant": true,
+      "question": "Is a negative effect direction stable despite baseline differences?",
+      "robust_nonzero_direction_contexts": [
+        {
+          "context": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "direction": "negative"
+        },
+        {
+          "context": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "direction": "negative"
+        }
+      ],
+      "source": "SIGNAL"
+    }
+  ],
+  "scope": "Finite, explicit, enumerated models only. Identical U,G labels assume aligned backgrounds. CAUSE follows v0.16: existence of a do(source=0/1) contrast in some context, not proof that a natural-language claim holds in reality.",
+  "source_fixture_sha256": "8e56da78a59fae8a3c7c65940b2a44b2d351d8a155cded02308f75b3173e0589",
+  "summary": {
+    "active_registry_changed": false,
+    "ai_comprehension_score": null,
+    "background_evaluations": 84,
+    "classification_counts": {
+      "context_limited_direction_invariant": 1,
+      "exact_intervention_response_invariant": 1,
+      "no_common_nonzero_direction": 2,
+      "qualitative_direction_invariant_only": 3
+    },
+    "empirical_causal_evidence": null,
+    "families": 7,
+    "independent_ai_readers": 0,
+    "intervention_evaluations": 168,
+    "models": 21,
+    "robust_nonzero_contexts": 10
+  }
+}

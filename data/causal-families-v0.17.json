@@ -1,0 +1,817 @@
+{
+  "format": "ALCG-v0.17-stipulated-binary-scm-families",
+  "provenance": "assistant-authored synthetic families, not inferred from observations, not empirical causality or an independent AI reading experiment",
+  "context_alignment": "Each family shares exactly the exogenous names U,G, the endogenous source SIGNAL and one named Boolean output Y. All U,G assignments are compared without probabilistic interpretation.",
+  "families": [
+    {
+      "family_id": "F17_DIRECT",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=NETWORK_NODE, property=RELIABILITY))",
+      "question": "Is the full do-response identical despite internal DAG changes?",
+      "models": [
+        {
+          "case_id": "F17_DIRECT_M1",
+          "mechanism": "direct",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "copy",
+              "args": [
+                "SIGNAL"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "NETWORK_NODE",
+              "property": "RELIABILITY",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Y copies SIGNAL."
+        },
+        {
+          "case_id": "F17_DIRECT_M2",
+          "mechanism": "mediated",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "M",
+              "op": "copy",
+              "args": [
+                "SIGNAL"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "copy",
+              "args": [
+                "M"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "NETWORK_NODE",
+              "property": "RELIABILITY",
+              "indicator": "Y"
+            }
+          ],
+          "note": "M mediates the same mapping."
+        },
+        {
+          "case_id": "F17_DIRECT_M3",
+          "mechanism": "irrelevant_gate",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "NG",
+              "op": "not",
+              "args": [
+                "G"
+              ]
+            },
+            {
+              "name": "NEVER",
+              "op": "and",
+              "args": [
+                "G",
+                "NG"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "or",
+              "args": [
+                "SIGNAL",
+                "NEVER"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "NETWORK_NODE",
+              "property": "RELIABILITY",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Gate creates a zero-valued branch."
+        }
+      ]
+    },
+    {
+      "family_id": "F17_DIRECTION_ONLY",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=SENSOR_ARRAY, property=ACTIVE_STATE))",
+      "question": "Can intervention direction remain stable while the unresponsive baseline changes?",
+      "models": [
+        {
+          "case_id": "F17_DIRECTION_ONLY_M1",
+          "mechanism": "gated_and",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "and",
+              "args": [
+                "SIGNAL",
+                "G"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "SENSOR_ARRAY",
+              "property": "ACTIVE_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Suppressed outcome is false when G is false."
+        },
+        {
+          "case_id": "F17_DIRECTION_ONLY_M2",
+          "mechanism": "gated_or",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "NG",
+              "op": "not",
+              "args": [
+                "G"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "or",
+              "args": [
+                "SIGNAL",
+                "NG"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "SENSOR_ARRAY",
+              "property": "ACTIVE_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Suppressed outcome is true when G is false."
+        },
+        {
+          "case_id": "F17_DIRECTION_ONLY_M3",
+          "mechanism": "mediated_gate",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "M",
+              "op": "copy",
+              "args": [
+                "SIGNAL"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "and",
+              "args": [
+                "M",
+                "G"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "SENSOR_ARRAY",
+              "property": "ACTIVE_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Intermediary preserves sign, not a new context."
+        }
+      ]
+    },
+    {
+      "family_id": "F17_CONTEXT",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=ROBOTIC_ARM, property=CONTROL_SIGNAL))",
+      "question": "Does agreement exist only when the background gate is true?",
+      "models": [
+        {
+          "case_id": "F17_CONTEXT_M1",
+          "mechanism": "gated_and",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "and",
+              "args": [
+                "SIGNAL",
+                "G"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "ROBOTIC_ARM",
+              "property": "CONTROL_SIGNAL",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Positive response only under G=true."
+        },
+        {
+          "case_id": "F17_CONTEXT_M2",
+          "mechanism": "direct",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "copy",
+              "args": [
+                "SIGNAL"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "ROBOTIC_ARM",
+              "property": "CONTROL_SIGNAL",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Positive response under both gate settings."
+        },
+        {
+          "case_id": "F17_CONTEXT_M3",
+          "mechanism": "conditional_xor",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "NG",
+              "op": "not",
+              "args": [
+                "G"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "xor",
+              "args": [
+                "SIGNAL",
+                "NG"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "ROBOTIC_ARM",
+              "property": "CONTROL_SIGNAL",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Negative response under G=false; positive under G=true."
+        }
+      ]
+    },
+    {
+      "family_id": "F17_POLARITY",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=TEST_CHAMBER, property=PRESSURE_STATE))",
+      "question": "Can all mechanisms be causal while intervention signs disagree?",
+      "models": [
+        {
+          "case_id": "F17_POLARITY_M1",
+          "mechanism": "excitatory",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "copy",
+              "args": [
+                "SIGNAL"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "TEST_CHAMBER",
+              "property": "PRESSURE_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Positive intervention response."
+        },
+        {
+          "case_id": "F17_POLARITY_M2",
+          "mechanism": "inhibitory",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "not",
+              "args": [
+                "SIGNAL"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "TEST_CHAMBER",
+              "property": "PRESSURE_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Negative intervention response."
+        },
+        {
+          "case_id": "F17_POLARITY_M3",
+          "mechanism": "conditional_xor",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "xor",
+              "args": [
+                "SIGNAL",
+                "G"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "TEST_CHAMBER",
+              "property": "PRESSURE_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Sign changes with G."
+        }
+      ]
+    },
+    {
+      "family_id": "F17_DISPUTED",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=POWER_GRID, property=LOAD_STATE))",
+      "question": "Does observational co-movement identify robust intervention influence?",
+      "models": [
+        {
+          "case_id": "F17_DISPUTED_M1",
+          "mechanism": "direct",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "copy",
+              "args": [
+                "SIGNAL"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "POWER_GRID",
+              "property": "LOAD_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Positive intervention response."
+        },
+        {
+          "case_id": "F17_DISPUTED_M2",
+          "mechanism": "confounded_proxy",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "POWER_GRID",
+              "property": "LOAD_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Observed source and outcome agree but intervening on SIGNAL does nothing."
+        },
+        {
+          "case_id": "F17_DISPUTED_M3",
+          "mechanism": "gated",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "and",
+              "args": [
+                "SIGNAL",
+                "G"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "POWER_GRID",
+              "property": "LOAD_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Only G=true exhibits influence."
+        }
+      ]
+    },
+    {
+      "family_id": "F17_NO_EFFECT",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=MARKET_SYSTEM, property=SIGNAL_STATE))",
+      "question": "Can all mechanisms omit an effect of the named intervention?",
+      "models": [
+        {
+          "case_id": "F17_NO_EFFECT_M1",
+          "mechanism": "shared_driver",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "MARKET_SYSTEM",
+              "property": "SIGNAL_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Observation may correlate, do response is null."
+        },
+        {
+          "case_id": "F17_NO_EFFECT_M2",
+          "mechanism": "independent_gate",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "copy",
+              "args": [
+                "G"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "MARKET_SYSTEM",
+              "property": "SIGNAL_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "No relation to SIGNAL."
+        },
+        {
+          "case_id": "F17_NO_EFFECT_M3",
+          "mechanism": "inverse_driver",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "not",
+              "args": [
+                "U"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "MARKET_SYSTEM",
+              "property": "SIGNAL_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Inverse association, still no do response."
+        }
+      ]
+    },
+    {
+      "family_id": "F17_NEGATIVE",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=CHEMICAL_REACTOR, property=SAFETY_STATE))",
+      "question": "Is a negative effect direction stable despite baseline differences?",
+      "models": [
+        {
+          "case_id": "F17_NEGATIVE_M1",
+          "mechanism": "inhibitory_and",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "INV",
+              "op": "not",
+              "args": [
+                "SIGNAL"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "and",
+              "args": [
+                "INV",
+                "G"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "CHEMICAL_REACTOR",
+              "property": "SAFETY_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Negative only under G=true, else false."
+        },
+        {
+          "case_id": "F17_NEGATIVE_M2",
+          "mechanism": "negated_or",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "NG",
+              "op": "not",
+              "args": [
+                "G"
+              ]
+            },
+            {
+              "name": "MASK",
+              "op": "or",
+              "args": [
+                "SIGNAL",
+                "NG"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "not",
+              "args": [
+                "MASK"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "CHEMICAL_REACTOR",
+              "property": "SAFETY_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Equivalent negative gate."
+        },
+        {
+          "case_id": "F17_NEGATIVE_M3",
+          "mechanism": "inhibitory_or",
+          "exogenous": [
+            "U",
+            "G"
+          ],
+          "equations": [
+            {
+              "name": "SIGNAL",
+              "op": "copy",
+              "args": [
+                "U"
+              ]
+            },
+            {
+              "name": "INV",
+              "op": "not",
+              "args": [
+                "SIGNAL"
+              ]
+            },
+            {
+              "name": "NG",
+              "op": "not",
+              "args": [
+                "G"
+              ]
+            },
+            {
+              "name": "Y",
+              "op": "or",
+              "args": [
+                "INV",
+                "NG"
+              ]
+            }
+          ],
+          "outcomes": [
+            {
+              "subject": "CHEMICAL_REACTOR",
+              "property": "SAFETY_STATE",
+              "indicator": "Y"
+            }
+          ],
+          "note": "Negative only under G=true, but suppressed baseline is true."
+        }
+      ]
+    }
+  ]
+}
