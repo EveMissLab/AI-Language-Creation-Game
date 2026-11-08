@@ -1,0 +1,28 @@
+{
+  "format": "ALCG-v0.19-bounded-active-intervention-design",
+  "provenance": "deterministic synthetic experiment over frozen assistant-authored v0.18 Boolean SCMs",
+  "v018_report_sha256": "52588b33e3edda771728b6963964c6ebdc6b2d6d0004d0c8816407495b30557e",
+  "v018_search_space_sha256": "99c7ba43e36fad5dfc10f893ff70808c4278b148214bba8c9426cc8674ab465a",
+  "hypotheses_per_family": 16,
+  "families": 7,
+  "hypothesis_label": "H four-bit off-support completion mask, 0..15",
+  "background_order": [
+    "U=0,G=0",
+    "U=0,G=1",
+    "U=1,G=0",
+    "U=1,G=1"
+  ],
+  "observation_equation": "SIGNAL=U",
+  "actions": "For each context, do(SIGNAL=0) or do(SIGNAL=1), outcome is Boolean Y",
+  "cost": "Every intervention counts as one unit; natural-value interventions are allowed but uninformative",
+  "prior": "uniform over currently compatible masks; conditional reweighting by elimination",
+  "objective_exact": "distinguish all remaining full intervention signatures",
+  "objective_anchor": "decide whether intervention signature equals the original first model",
+  "planner": "exact finite dynamic program, minimize worst-case interventions first, expected interventions second",
+  "ties": "choose lexicographically smallest action ID (context_index*2 + do_signal)",
+  "allowed_evidence": "action id plus observed Boolean Y; reject inconsistent outcomes or impossible observation",
+  "claims_scope": "Exact identification only in the 16-hypothesis class, with specified backgrounds, cost and perfect noiseless interventions; no general-world conclusion.",
+  "no_empirical_data": true,
+  "no_ai_comprehension_evaluation": true,
+  "no_registry_updates": true
+}

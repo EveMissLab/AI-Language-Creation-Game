@@ -104,3 +104,7 @@ jobs:
         run: python mechanism_search.py check
       - name: Audit v0.18 finite mechanism completion boundaries (NOT AI comprehension)
         run: python mechanism_search.py summary
+      - name: Check v0.19 exact bounded active identification receipts (NOT empirical causality)
+        run: python active_design.py check
+      - name: Audit v0.19 minimum intervention budget and synthetic stopping costs
+        run: python active_design.py summary

@@ -1,0 +1,3912 @@
+{
+  "experiment_model": "Four Boolean backgrounds U,G; natural SIGNAL=U. For each background one off-support do(SIGNAL != U) yields exactly one H bit; natural-value interventions reveal none. No noise, unit cost.",
+  "family_results": [
+    {
+      "anchor_mask": 15,
+      "baseline_observations_U_G": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "enumerated_anchor_agreement_costs_per_mask_0_to_15": [
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        4,
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        4
+      ],
+      "enumerated_exact_identification_costs_per_mask_0_to_15": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=NETWORK_NODE, property=RELIABILITY))",
+      "family_id": "F17_DIRECT",
+      "informative_off_support_actions": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        }
+      ],
+      "minimum_identification_set": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "natural_value_controls_action_ids": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "optimal_anchor_agreement_test": {
+        "anchor_mask": 15,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 1.875,
+          "denominator": 8,
+          "numerator": 15
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "anchor",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "optimal_exact_identification": {
+        "anchor_mask": 15,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 4.0,
+          "denominator": 1,
+          "numerator": 4
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "identify",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "static_budget_classes": [
+        {
+          "best_action_ids": [],
+          "best_distinguishable_classes": 1,
+          "budget": 0,
+          "example_ambiguity": 16,
+          "largest_indistinguishable_class": 16
+        },
+        {
+          "best_action_ids": [
+            1
+          ],
+          "best_distinguishable_classes": 2,
+          "budget": 1,
+          "example_ambiguity": 8,
+          "largest_indistinguishable_class": 8
+        },
+        {
+          "best_action_ids": [
+            1,
+            3
+          ],
+          "best_distinguishable_classes": 4,
+          "budget": 2,
+          "example_ambiguity": 4,
+          "largest_indistinguishable_class": 4
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4
+          ],
+          "best_distinguishable_classes": 8,
+          "budget": 3,
+          "example_ambiguity": 2,
+          "largest_indistinguishable_class": 2
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "best_distinguishable_classes": 16,
+          "budget": 4,
+          "example_ambiguity": 1,
+          "largest_indistinguishable_class": 1
+        }
+      ],
+      "trace_examples": {
+        "exact_mask_example": {
+          "anchor_mask": 15,
+          "compatible_masks_at_end": [
+            10
+          ],
+          "family_id": "F17_DIRECT",
+          "final_decision": 10,
+          "number_of_interventions": 4,
+          "objective": "identify",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                2,
+                6,
+                10,
+                14
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                2,
+                10
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                10
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 10
+        },
+        "same_as_anchor": {
+          "anchor_mask": 15,
+          "compatible_masks_at_end": [
+            15
+          ],
+          "family_id": "F17_DIRECT",
+          "final_decision": true,
+          "number_of_interventions": 4,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                3,
+                7,
+                11,
+                15
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                7,
+                15
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                15
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 15
+        },
+        "some_different_from_anchor": {
+          "anchor_mask": 15,
+          "compatible_masks_at_end": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14
+          ],
+          "family_id": "F17_DIRECT",
+          "final_decision": false,
+          "number_of_interventions": 1,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14
+              ],
+              "step": 1
+            }
+          ],
+          "true_mask": 14
+        }
+      }
+    },
+    {
+      "anchor_mask": 10,
+      "baseline_observations_U_G": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "enumerated_anchor_agreement_costs_per_mask_0_to_15": [
+        2,
+        1,
+        4,
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        4,
+        1,
+        2,
+        1,
+        3,
+        1
+      ],
+      "enumerated_exact_identification_costs_per_mask_0_to_15": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=SENSOR_ARRAY, property=ACTIVE_STATE))",
+      "family_id": "F17_DIRECTION_ONLY",
+      "informative_off_support_actions": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        }
+      ],
+      "minimum_identification_set": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "natural_value_controls_action_ids": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "optimal_anchor_agreement_test": {
+        "anchor_mask": 10,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 1.875,
+          "denominator": 8,
+          "numerator": 15
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "anchor",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "optimal_exact_identification": {
+        "anchor_mask": 10,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 4.0,
+          "denominator": 1,
+          "numerator": 4
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "identify",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "static_budget_classes": [
+        {
+          "best_action_ids": [],
+          "best_distinguishable_classes": 1,
+          "budget": 0,
+          "example_ambiguity": 16,
+          "largest_indistinguishable_class": 16
+        },
+        {
+          "best_action_ids": [
+            1
+          ],
+          "best_distinguishable_classes": 2,
+          "budget": 1,
+          "example_ambiguity": 8,
+          "largest_indistinguishable_class": 8
+        },
+        {
+          "best_action_ids": [
+            1,
+            3
+          ],
+          "best_distinguishable_classes": 4,
+          "budget": 2,
+          "example_ambiguity": 4,
+          "largest_indistinguishable_class": 4
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4
+          ],
+          "best_distinguishable_classes": 8,
+          "budget": 3,
+          "example_ambiguity": 2,
+          "largest_indistinguishable_class": 2
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "best_distinguishable_classes": 16,
+          "budget": 4,
+          "example_ambiguity": 1,
+          "largest_indistinguishable_class": 1
+        }
+      ],
+      "trace_examples": {
+        "exact_mask_example": {
+          "anchor_mask": 10,
+          "compatible_masks_at_end": [
+            15
+          ],
+          "family_id": "F17_DIRECTION_ONLY",
+          "final_decision": 15,
+          "number_of_interventions": 4,
+          "objective": "identify",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                3,
+                7,
+                11,
+                15
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                7,
+                15
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                15
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 15
+        },
+        "same_as_anchor": {
+          "anchor_mask": 10,
+          "compatible_masks_at_end": [
+            10
+          ],
+          "family_id": "F17_DIRECTION_ONLY",
+          "final_decision": true,
+          "number_of_interventions": 4,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                2,
+                6,
+                10,
+                14
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                2,
+                10
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                10
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 10
+        },
+        "some_different_from_anchor": {
+          "anchor_mask": 10,
+          "compatible_masks_at_end": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ],
+          "family_id": "F17_DIRECTION_ONLY",
+          "final_decision": false,
+          "number_of_interventions": 1,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ],
+              "step": 1
+            }
+          ],
+          "true_mask": 11
+        }
+      }
+    },
+    {
+      "anchor_mask": 10,
+      "baseline_observations_U_G": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "enumerated_anchor_agreement_costs_per_mask_0_to_15": [
+        2,
+        1,
+        4,
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        4,
+        1,
+        2,
+        1,
+        3,
+        1
+      ],
+      "enumerated_exact_identification_costs_per_mask_0_to_15": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=ROBOTIC_ARM, property=CONTROL_SIGNAL))",
+      "family_id": "F17_CONTEXT",
+      "informative_off_support_actions": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        }
+      ],
+      "minimum_identification_set": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "natural_value_controls_action_ids": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "optimal_anchor_agreement_test": {
+        "anchor_mask": 10,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 1.875,
+          "denominator": 8,
+          "numerator": 15
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "anchor",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "optimal_exact_identification": {
+        "anchor_mask": 10,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 4.0,
+          "denominator": 1,
+          "numerator": 4
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "identify",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "static_budget_classes": [
+        {
+          "best_action_ids": [],
+          "best_distinguishable_classes": 1,
+          "budget": 0,
+          "example_ambiguity": 16,
+          "largest_indistinguishable_class": 16
+        },
+        {
+          "best_action_ids": [
+            1
+          ],
+          "best_distinguishable_classes": 2,
+          "budget": 1,
+          "example_ambiguity": 8,
+          "largest_indistinguishable_class": 8
+        },
+        {
+          "best_action_ids": [
+            1,
+            3
+          ],
+          "best_distinguishable_classes": 4,
+          "budget": 2,
+          "example_ambiguity": 4,
+          "largest_indistinguishable_class": 4
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4
+          ],
+          "best_distinguishable_classes": 8,
+          "budget": 3,
+          "example_ambiguity": 2,
+          "largest_indistinguishable_class": 2
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "best_distinguishable_classes": 16,
+          "budget": 4,
+          "example_ambiguity": 1,
+          "largest_indistinguishable_class": 1
+        }
+      ],
+      "trace_examples": {
+        "exact_mask_example": {
+          "anchor_mask": 10,
+          "compatible_masks_at_end": [
+            15
+          ],
+          "family_id": "F17_CONTEXT",
+          "final_decision": 15,
+          "number_of_interventions": 4,
+          "objective": "identify",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                3,
+                7,
+                11,
+                15
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                7,
+                15
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                15
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 15
+        },
+        "same_as_anchor": {
+          "anchor_mask": 10,
+          "compatible_masks_at_end": [
+            10
+          ],
+          "family_id": "F17_CONTEXT",
+          "final_decision": true,
+          "number_of_interventions": 4,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                2,
+                6,
+                10,
+                14
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                2,
+                10
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                10
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 10
+        },
+        "some_different_from_anchor": {
+          "anchor_mask": 10,
+          "compatible_masks_at_end": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ],
+          "family_id": "F17_CONTEXT",
+          "final_decision": false,
+          "number_of_interventions": 1,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ],
+              "step": 1
+            }
+          ],
+          "true_mask": 11
+        }
+      }
+    },
+    {
+      "anchor_mask": 15,
+      "baseline_observations_U_G": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "enumerated_anchor_agreement_costs_per_mask_0_to_15": [
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        4,
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        4
+      ],
+      "enumerated_exact_identification_costs_per_mask_0_to_15": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=TEST_CHAMBER, property=PRESSURE_STATE))",
+      "family_id": "F17_POLARITY",
+      "informative_off_support_actions": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        }
+      ],
+      "minimum_identification_set": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "natural_value_controls_action_ids": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "optimal_anchor_agreement_test": {
+        "anchor_mask": 15,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 1.875,
+          "denominator": 8,
+          "numerator": 15
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "anchor",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "optimal_exact_identification": {
+        "anchor_mask": 15,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 4.0,
+          "denominator": 1,
+          "numerator": 4
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "identify",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "static_budget_classes": [
+        {
+          "best_action_ids": [],
+          "best_distinguishable_classes": 1,
+          "budget": 0,
+          "example_ambiguity": 16,
+          "largest_indistinguishable_class": 16
+        },
+        {
+          "best_action_ids": [
+            1
+          ],
+          "best_distinguishable_classes": 2,
+          "budget": 1,
+          "example_ambiguity": 8,
+          "largest_indistinguishable_class": 8
+        },
+        {
+          "best_action_ids": [
+            1,
+            3
+          ],
+          "best_distinguishable_classes": 4,
+          "budget": 2,
+          "example_ambiguity": 4,
+          "largest_indistinguishable_class": 4
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4
+          ],
+          "best_distinguishable_classes": 8,
+          "budget": 3,
+          "example_ambiguity": 2,
+          "largest_indistinguishable_class": 2
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "best_distinguishable_classes": 16,
+          "budget": 4,
+          "example_ambiguity": 1,
+          "largest_indistinguishable_class": 1
+        }
+      ],
+      "trace_examples": {
+        "exact_mask_example": {
+          "anchor_mask": 15,
+          "compatible_masks_at_end": [
+            10
+          ],
+          "family_id": "F17_POLARITY",
+          "final_decision": 10,
+          "number_of_interventions": 4,
+          "objective": "identify",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                2,
+                6,
+                10,
+                14
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                2,
+                10
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                10
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 10
+        },
+        "same_as_anchor": {
+          "anchor_mask": 15,
+          "compatible_masks_at_end": [
+            15
+          ],
+          "family_id": "F17_POLARITY",
+          "final_decision": true,
+          "number_of_interventions": 4,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                3,
+                7,
+                11,
+                15
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                7,
+                15
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                15
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 15
+        },
+        "some_different_from_anchor": {
+          "anchor_mask": 15,
+          "compatible_masks_at_end": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14
+          ],
+          "family_id": "F17_POLARITY",
+          "final_decision": false,
+          "number_of_interventions": 1,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14
+              ],
+              "step": 1
+            }
+          ],
+          "true_mask": 14
+        }
+      }
+    },
+    {
+      "anchor_mask": 15,
+      "baseline_observations_U_G": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "enumerated_anchor_agreement_costs_per_mask_0_to_15": [
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        4,
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        4
+      ],
+      "enumerated_exact_identification_costs_per_mask_0_to_15": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=POWER_GRID, property=LOAD_STATE))",
+      "family_id": "F17_DISPUTED",
+      "informative_off_support_actions": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        }
+      ],
+      "minimum_identification_set": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "natural_value_controls_action_ids": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "optimal_anchor_agreement_test": {
+        "anchor_mask": 15,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 1.875,
+          "denominator": 8,
+          "numerator": 15
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "anchor",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "optimal_exact_identification": {
+        "anchor_mask": 15,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 4.0,
+          "denominator": 1,
+          "numerator": 4
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "identify",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "static_budget_classes": [
+        {
+          "best_action_ids": [],
+          "best_distinguishable_classes": 1,
+          "budget": 0,
+          "example_ambiguity": 16,
+          "largest_indistinguishable_class": 16
+        },
+        {
+          "best_action_ids": [
+            1
+          ],
+          "best_distinguishable_classes": 2,
+          "budget": 1,
+          "example_ambiguity": 8,
+          "largest_indistinguishable_class": 8
+        },
+        {
+          "best_action_ids": [
+            1,
+            3
+          ],
+          "best_distinguishable_classes": 4,
+          "budget": 2,
+          "example_ambiguity": 4,
+          "largest_indistinguishable_class": 4
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4
+          ],
+          "best_distinguishable_classes": 8,
+          "budget": 3,
+          "example_ambiguity": 2,
+          "largest_indistinguishable_class": 2
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "best_distinguishable_classes": 16,
+          "budget": 4,
+          "example_ambiguity": 1,
+          "largest_indistinguishable_class": 1
+        }
+      ],
+      "trace_examples": {
+        "exact_mask_example": {
+          "anchor_mask": 15,
+          "compatible_masks_at_end": [
+            10
+          ],
+          "family_id": "F17_DISPUTED",
+          "final_decision": 10,
+          "number_of_interventions": 4,
+          "objective": "identify",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                2,
+                6,
+                10,
+                14
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                2,
+                10
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                10
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 10
+        },
+        "same_as_anchor": {
+          "anchor_mask": 15,
+          "compatible_masks_at_end": [
+            15
+          ],
+          "family_id": "F17_DISPUTED",
+          "final_decision": true,
+          "number_of_interventions": 4,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                3,
+                7,
+                11,
+                15
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                7,
+                15
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                15
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 15
+        },
+        "some_different_from_anchor": {
+          "anchor_mask": 15,
+          "compatible_masks_at_end": [
+            0,
+            2,
+            4,
+            6,
+            8,
+            10,
+            12,
+            14
+          ],
+          "family_id": "F17_DISPUTED",
+          "final_decision": false,
+          "number_of_interventions": 1,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14
+              ],
+              "step": 1
+            }
+          ],
+          "true_mask": 14
+        }
+      }
+    },
+    {
+      "anchor_mask": 0,
+      "baseline_observations_U_G": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "enumerated_anchor_agreement_costs_per_mask_0_to_15": [
+        4,
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        4,
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1
+      ],
+      "enumerated_exact_identification_costs_per_mask_0_to_15": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=MARKET_SYSTEM, property=SIGNAL_STATE))",
+      "family_id": "F17_NO_EFFECT",
+      "informative_off_support_actions": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        }
+      ],
+      "minimum_identification_set": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "natural_value_controls_action_ids": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "optimal_anchor_agreement_test": {
+        "anchor_mask": 0,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 1.875,
+          "denominator": 8,
+          "numerator": 15
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "anchor",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "optimal_exact_identification": {
+        "anchor_mask": 0,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 4.0,
+          "denominator": 1,
+          "numerator": 4
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "identify",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "static_budget_classes": [
+        {
+          "best_action_ids": [],
+          "best_distinguishable_classes": 1,
+          "budget": 0,
+          "example_ambiguity": 16,
+          "largest_indistinguishable_class": 16
+        },
+        {
+          "best_action_ids": [
+            1
+          ],
+          "best_distinguishable_classes": 2,
+          "budget": 1,
+          "example_ambiguity": 8,
+          "largest_indistinguishable_class": 8
+        },
+        {
+          "best_action_ids": [
+            1,
+            3
+          ],
+          "best_distinguishable_classes": 4,
+          "budget": 2,
+          "example_ambiguity": 4,
+          "largest_indistinguishable_class": 4
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4
+          ],
+          "best_distinguishable_classes": 8,
+          "budget": 3,
+          "example_ambiguity": 2,
+          "largest_indistinguishable_class": 2
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "best_distinguishable_classes": 16,
+          "budget": 4,
+          "example_ambiguity": 1,
+          "largest_indistinguishable_class": 1
+        }
+      ],
+      "trace_examples": {
+        "exact_mask_example": {
+          "anchor_mask": 0,
+          "compatible_masks_at_end": [
+            5
+          ],
+          "family_id": "F17_NO_EFFECT",
+          "final_decision": 5,
+          "number_of_interventions": 4,
+          "objective": "identify",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                1,
+                5,
+                9,
+                13
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                5,
+                13
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                5
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 5
+        },
+        "same_as_anchor": {
+          "anchor_mask": 0,
+          "compatible_masks_at_end": [
+            0
+          ],
+          "family_id": "F17_NO_EFFECT",
+          "final_decision": true,
+          "number_of_interventions": 4,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                0,
+                4,
+                8,
+                12
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                0,
+                8
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                0
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 0
+        },
+        "some_different_from_anchor": {
+          "anchor_mask": 0,
+          "compatible_masks_at_end": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ],
+          "family_id": "F17_NO_EFFECT",
+          "final_decision": false,
+          "number_of_interventions": 1,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ],
+              "step": 1
+            }
+          ],
+          "true_mask": 1
+        }
+      }
+    },
+    {
+      "anchor_mask": 10,
+      "baseline_observations_U_G": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "enumerated_anchor_agreement_costs_per_mask_0_to_15": [
+        2,
+        1,
+        4,
+        1,
+        2,
+        1,
+        3,
+        1,
+        2,
+        1,
+        4,
+        1,
+        2,
+        1,
+        3,
+        1
+      ],
+      "enumerated_exact_identification_costs_per_mask_0_to_15": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=CHEMICAL_REACTOR, property=SAFETY_STATE))",
+      "family_id": "F17_NEGATIVE",
+      "informative_off_support_actions": [
+        {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 3,
+          "background": {
+            "G": true,
+            "U": false
+          },
+          "context_index": 1,
+          "do_SIGNAL": true,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 4,
+          "background": {
+            "G": false,
+            "U": true
+          },
+          "context_index": 2,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        {
+          "action_id": 6,
+          "background": {
+            "G": true,
+            "U": true
+          },
+          "context_index": 3,
+          "do_SIGNAL": false,
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        }
+      ],
+      "minimum_identification_set": [
+        1,
+        3,
+        4,
+        6
+      ],
+      "natural_value_controls_action_ids": [
+        0,
+        2,
+        5,
+        7
+      ],
+      "optimal_anchor_agreement_test": {
+        "anchor_mask": 10,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 1.875,
+          "denominator": 8,
+          "numerator": 15
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "anchor",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "optimal_exact_identification": {
+        "anchor_mask": 10,
+        "count": 16,
+        "decision_if_determined": null,
+        "hypotheses_remaining": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "identifiability_under_allowed_actions": true,
+        "identified": false,
+        "minimum_expected_additional_interventions_uniform": {
+          "decimal": 4.0,
+          "denominator": 1,
+          "numerator": 4
+        },
+        "minimum_worst_case_additional_interventions": 4,
+        "next_experiment": {
+          "action_id": 1,
+          "background": {
+            "G": false,
+            "U": false
+          },
+          "context_index": 0,
+          "do_SIGNAL": true,
+          "information_gain_bits_uniform": 1.0,
+          "partial_information_only": false,
+          "partitions": {
+            "false": [
+              0,
+              2,
+              4,
+              6,
+              8,
+              10,
+              12,
+              14
+            ],
+            "true": [
+              1,
+              3,
+              5,
+              7,
+              9,
+              11,
+              13,
+              15
+            ]
+          },
+          "same_as_natural_SIGNAL": false,
+          "unit_cost": 1
+        },
+        "objective": "identify",
+        "unavailable_or_unselected_actions": [],
+        "used_actions": []
+      },
+      "static_budget_classes": [
+        {
+          "best_action_ids": [],
+          "best_distinguishable_classes": 1,
+          "budget": 0,
+          "example_ambiguity": 16,
+          "largest_indistinguishable_class": 16
+        },
+        {
+          "best_action_ids": [
+            1
+          ],
+          "best_distinguishable_classes": 2,
+          "budget": 1,
+          "example_ambiguity": 8,
+          "largest_indistinguishable_class": 8
+        },
+        {
+          "best_action_ids": [
+            1,
+            3
+          ],
+          "best_distinguishable_classes": 4,
+          "budget": 2,
+          "example_ambiguity": 4,
+          "largest_indistinguishable_class": 4
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4
+          ],
+          "best_distinguishable_classes": 8,
+          "budget": 3,
+          "example_ambiguity": 2,
+          "largest_indistinguishable_class": 2
+        },
+        {
+          "best_action_ids": [
+            1,
+            3,
+            4,
+            6
+          ],
+          "best_distinguishable_classes": 16,
+          "budget": 4,
+          "example_ambiguity": 1,
+          "largest_indistinguishable_class": 1
+        }
+      ],
+      "trace_examples": {
+        "exact_mask_example": {
+          "anchor_mask": 10,
+          "compatible_masks_at_end": [
+            15
+          ],
+          "family_id": "F17_NEGATIVE",
+          "final_decision": 15,
+          "number_of_interventions": 4,
+          "objective": "identify",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                3,
+                7,
+                11,
+                15
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                7,
+                15
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                15
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 15
+        },
+        "same_as_anchor": {
+          "anchor_mask": 10,
+          "compatible_masks_at_end": [
+            10
+          ],
+          "family_id": "F17_NEGATIVE",
+          "final_decision": true,
+          "number_of_interventions": 4,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14
+              ],
+              "step": 1
+            },
+            {
+              "experiment": {
+                "action_id": 3,
+                "background": {
+                  "G": true,
+                  "U": false
+                },
+                "context_index": 1,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                2,
+                6,
+                10,
+                14
+              ],
+              "step": 2
+            },
+            {
+              "experiment": {
+                "action_id": 4,
+                "background": {
+                  "G": false,
+                  "U": true
+                },
+                "context_index": 2,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": false,
+              "remaining_masks_after": [
+                2,
+                10
+              ],
+              "step": 3
+            },
+            {
+              "experiment": {
+                "action_id": 6,
+                "background": {
+                  "G": true,
+                  "U": true
+                },
+                "context_index": 3,
+                "do_SIGNAL": false,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                10
+              ],
+              "step": 4
+            }
+          ],
+          "true_mask": 10
+        },
+        "some_different_from_anchor": {
+          "anchor_mask": 10,
+          "compatible_masks_at_end": [
+            1,
+            3,
+            5,
+            7,
+            9,
+            11,
+            13,
+            15
+          ],
+          "family_id": "F17_NEGATIVE",
+          "final_decision": false,
+          "number_of_interventions": 1,
+          "objective": "anchor",
+          "simulated_scm_not_real_experiment": true,
+          "steps": [
+            {
+              "experiment": {
+                "action_id": 1,
+                "background": {
+                  "G": false,
+                  "U": false
+                },
+                "context_index": 0,
+                "do_SIGNAL": true,
+                "information_gain_bits_uniform": 1.0,
+                "partial_information_only": false,
+                "same_as_natural_SIGNAL": false,
+                "unit_cost": 1
+              },
+              "observed_Y": true,
+              "remaining_masks_after": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15
+              ],
+              "step": 1
+            }
+          ],
+          "true_mask": 11
+        }
+      }
+    }
+  ],
+  "format": "ALCG-v0.19-bounded-active-intervention-design",
+  "pinned_v018_report_sha256": "52588b33e3edda771728b6963964c6ebdc6b2d6d0004d0c8816407495b30557e",
+  "pinned_v018_search_space_sha256": "99c7ba43e36fad5dfc10f893ff70808c4278b148214bba8c9426cc8674ab465a",
+  "summary": {
+    "actual_world_causal_inference": false,
+    "adaptive_reduces_worst_case_full_identification_vs_static": false,
+    "candidate_models": 112,
+    "complete_observational_only_identification_possible": false,
+    "discriminable_classes_by_budget_0_to_4": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "empirical_interventions": 0,
+    "families": 7,
+    "independent_ai_readers": 0,
+    "informative_interventions_per_family": 4,
+    "minimum_expected_anchor_agreement_interventions_uniform": 1.875,
+    "minimum_expected_exact_identification_interventions_uniform": 4.0,
+    "minimum_worst_case_anchor_agreement_interventions": 4,
+    "minimum_worst_case_exact_identification_interventions": 4,
+    "natural_value_controls_information_gain_bits": 0,
+    "published_registry_changed": false,
+    "same_prior_across_all_families": true,
+    "validated_synthetic_intervention_outcomes": 896
+  },
+  "versioned_spec_sha256": "96acd1e374283c8923f003db641c77e607aa5295278b324ea5295083e7439853"
+}
