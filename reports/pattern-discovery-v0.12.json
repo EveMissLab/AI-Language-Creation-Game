@@ -1,0 +1,126 @@
+{
+  "caution": "These structures were inferred and checked on the SAME author-curated examples. No independent validation, semantic equivalence, new English coverage or AI comprehension is demonstrated. Candidate list is NOT active.",
+  "corpus_sha256": {
+    "benchmarks/coverage-v0.4.jsonl": "4569e6b8507340d7c26b1012504f73cdbe078448cf9f887fe256f1e90f2107c6",
+    "benchmarks/coverage-v0.6.jsonl": "1555814a6ec16a4083c198cf8e72fe8e6de28cd19c87e76c8c3e6b59ccfd9ea9"
+  },
+  "format": "ALCG-pattern-discovery-v0.12",
+  "generated_candidate_count": 4,
+  "heldout_transfer_results": null,
+  "independent_ai_participants": 0,
+  "input_author_curated_candidates": 64,
+  "new_operators": 0,
+  "public_registry_sha256": "5d97c41701b8196766a65bf08ac24f1942df3fa2e1a7546f3845b0df805d3bc6",
+  "ranked_candidates": [
+    {
+      "domains": [
+        "computing",
+        "science"
+      ],
+      "estimated_reuses_to_amortize_definition": 14,
+      "gate_reason": "structural_gate_passed_human_review_required",
+      "id": "DISC12-E650D79604",
+      "in_sample_support": 2,
+      "incremental_definition_bytes_estimate": 314,
+      "leaf_positions": 3,
+      "name": "P_DISC_CAUSE_E650D79604",
+      "net_bytes_after_single_definition": -266,
+      "normalized_expansion_checked": 2,
+      "sample_compact_bytes": 88,
+      "sample_original_bytes": 136,
+      "sample_payload_bytes_saved": 48,
+      "signature_sha256": "e650d796049cc1af6f36b36706a70b3ad97023b1202c034404fa4661700ecf4c",
+      "slot_groups": 3,
+      "source_ids": [
+        "C04",
+        "S02"
+      ],
+      "status": "staged_for_human_review"
+    },
+    {
+      "domains": [
+        "computing"
+      ],
+      "estimated_reuses_to_amortize_definition": 8,
+      "gate_reason": "structural_gate_passed_human_review_required",
+      "id": "DISC12-28BF19FB1F",
+      "in_sample_support": 2,
+      "incremental_definition_bytes_estimate": 419,
+      "leaf_positions": 6,
+      "name": "P_DISC_BEFORE_28BF19FB1F",
+      "net_bytes_after_single_definition": -303,
+      "normalized_expansion_checked": 2,
+      "sample_compact_bytes": 110,
+      "sample_original_bytes": 226,
+      "sample_payload_bytes_saved": 116,
+      "signature_sha256": "28bf19fb1f3795a71eb9bc869341d55855128fb8d05d219774817d15466884a7",
+      "slot_groups": 5,
+      "source_ids": [
+        "C05",
+        "C105"
+      ],
+      "status": "staged_for_human_review"
+    },
+    {
+      "domains": [
+        "mathematics"
+      ],
+      "estimated_reuses_to_amortize_definition": 10,
+      "gate_reason": "structural_gate_passed_human_review_required",
+      "id": "DISC12-A8241B5011",
+      "in_sample_support": 2,
+      "incremental_definition_bytes_estimate": 376,
+      "leaf_positions": 5,
+      "name": "P_DISC_EXISTS_A8241B5011",
+      "net_bytes_after_single_definition": -300,
+      "normalized_expansion_checked": 2,
+      "sample_compact_bytes": 101,
+      "sample_original_bytes": 177,
+      "sample_payload_bytes_saved": 76,
+      "signature_sha256": "a8241b5011b9e89ed2c0354ef39e1acd5f88351394692c8bf9a2e1e16f5c7b74",
+      "slot_groups": 4,
+      "source_ids": [
+        "M102",
+        "M104"
+      ],
+      "status": "staged_for_human_review"
+    },
+    {
+      "domains": [
+        "mathematics"
+      ],
+      "estimated_reuses_to_amortize_definition": 22,
+      "gate_reason": "structural_gate_passed_human_review_required",
+      "id": "DISC12-34AE85E4FF",
+      "in_sample_support": 2,
+      "incremental_definition_bytes_estimate": 300,
+      "leaf_positions": 3,
+      "name": "P_DISC_NOT_34AE85E4FF",
+      "net_bytes_after_single_definition": -272,
+      "normalized_expansion_checked": 2,
+      "sample_compact_bytes": 84,
+      "sample_original_bytes": 112,
+      "sample_payload_bytes_saved": 28,
+      "signature_sha256": "34ae85e4ff1c8f3f3c825403118b6b567a51b003ee26c2aacce87cc18c06a16b",
+      "slot_groups": 3,
+      "source_ids": [
+        "M03",
+        "M04"
+      ],
+      "status": "staged_for_human_review"
+    }
+  ],
+  "registry_automatically_modified": false,
+  "root_shape_groups": 31,
+  "semantic_quality_scores": null,
+  "skipped_group_reasons": {
+    "existing_active_structure": 1,
+    "low_support_shape_groups": 21,
+    "single_operator_shape_groups": 5
+  },
+  "structural_gate_outcomes": {
+    "staged_for_human_review": 4
+  },
+  "v0_10_frozen_roundtrips": 24,
+  "v0_11_existing_gate_sha256": "ee4d190b81ef32cdd1c566f09659a5892c134f44ef8ca01e88248e8d01a0adb8"
+}

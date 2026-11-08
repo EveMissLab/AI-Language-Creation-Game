@@ -74,3 +74,7 @@ jobs:
         run: python pattern_evolution.py check
       - name: Verify v0.11 review-only report and staging preview
         run: python pattern_evolution.py verify-report
+      - name: Check v0.12 machine-mined pattern proposals and pinned artifacts
+        run: python pattern_discovery.py check
+      - name: Audit v0.12 review-only motifs and dictionary costs (NOT semantic comprehension)
+        run: python pattern_discovery.py report

@@ -81,6 +81,12 @@ python pattern_evolution.py verify-report
 python pattern_evolution.py report
 python pattern_evolution.py export-preview --out .local/staged-v0.11.json
 # Feed external proposals with --proposals .local/your-proposals.jsonl; never auto-merges.
+
+# v0.12: mine reusable AST motifs from the 84 frozen English cases
+python pattern_discovery.py check
+python pattern_discovery.py report
+python pattern_discovery.py export-proposals --out .local/discovered-v0.12.jsonl
+# Patterns remain proposals; no public dictionary is automatically changed.
 ```
 
 Minimal examples:
@@ -92,7 +98,7 @@ WANT(agent=PERSON, goal=DO(actor=AI, action=HELP, object=PERSON))
 RAW(text="A meaning not yet expressed with structured concepts.")
 ```
 
-These examples demonstrate a **parser**, not verified meaning or truth. See [syntax sketch](docs/GRAMMAR-v0.1.md) and the [v0.2 coverage protocol](docs/COVERAGE-v0.2.md), and the [v0.3 reconstruction protocol](docs/RECONSTRUCTION-v0.3.md), the [v0.4 scope/time/modality experiments](docs/SCOPE-TIME-MODAL-v0.4.md), and the [v0.5 semantic stability laboratory](docs/SEMANTIC-STABILITY-v0.5.md), the [v0.6 coverage and polysemy protocol](docs/SENSE-COVERAGE-v0.6.md), and the [v0.7 reader-transfer protocol](docs/READER-TRANSFER-v0.7.md), the [v0.8 composition pattern experiment](docs/COMPOSITION-PATTERNS-v0.8.md), and the [v0.9 pattern-transfer protocol](docs/PATTERN-TRANSFER-v0.9.md), and the [v0.10 compact surface experiment](docs/COMPACT-SURFACE-v0.10.md), and the [v0.11 pattern proposal gate](docs/PATTERN-EVOLUTION-v0.11.md) for the current limits.
+These examples demonstrate a **parser**, not verified meaning or truth. See [syntax sketch](docs/GRAMMAR-v0.1.md) and the [v0.2 coverage protocol](docs/COVERAGE-v0.2.md), and the [v0.3 reconstruction protocol](docs/RECONSTRUCTION-v0.3.md), the [v0.4 scope/time/modality experiments](docs/SCOPE-TIME-MODAL-v0.4.md), and the [v0.5 semantic stability laboratory](docs/SEMANTIC-STABILITY-v0.5.md), the [v0.6 coverage and polysemy protocol](docs/SENSE-COVERAGE-v0.6.md), and the [v0.7 reader-transfer protocol](docs/READER-TRANSFER-v0.7.md), the [v0.8 composition pattern experiment](docs/COMPOSITION-PATTERNS-v0.8.md), and the [v0.9 pattern-transfer protocol](docs/PATTERN-TRANSFER-v0.9.md), and the [v0.10 compact surface experiment](docs/COMPACT-SURFACE-v0.10.md), and the [v0.11 pattern proposal gate](docs/PATTERN-EVOLUTION-v0.11.md) and [v0.12 deterministic discovery lab](docs/AUTOMATIC-DISCOVERY-v0.12.md) for the current limits.
 
 ## Roadmap, kept intentionally small
 
@@ -107,16 +113,19 @@ These examples demonstrate a **parser**, not verified meaning or truth. See [syn
 9. **Three-condition pattern transfer (v0.9):** freeze the 24 v0.8 cases and create six reader packet types (24 free-reconstruction items or 12 contrast probes × `unaided` / `glossary` / `expanded`). Separate paraphrase choices from free reconstruction, with packet hashes, independent rating inputs and a descriptive cross-reader comparator. **This version has no observed independent AI comprehension scores.**
 10. **Transparent compact surface (v0.10):** add optional `@NAME[slot|...]` abbreviations using the published, SHA-pinned v0.8 pattern dictionary. The 24 frozen examples expand to identical canonical structures; 10 negative probes distinguish invalid vs valid-but-changed shortenings. The 4,684-byte registry overhead is reported separately, so shorter payloads are not mislabeled as total compression. No new operators or independent AI reading results.
 11. **Pattern evolution gate (v0.11):** accept third-party AI pattern proposals as UTF-8 JSONL, verify template structure/slot binding and authored reference roundtrips, flag duplicates and defective examples. The shipped 14 **assistant-authored** proposals produce four review-only staged records, two requiring more examples, and eight rejections. No active registry is updated. No independent model-comprehension or truth claims.
-12. **Next:** collect independent AI reader responses with fresh contexts, measure false novelty and semantic disagreements, and publish a new registry version only after a deliberate review.
-13. **Mesoscopic units (later):** explore functional composition and executable semantics as a separate future stage; v0.8 recipes are **not** this stage.
+12. **Automated proposal discovery (v0.12):** deterministically mine repeated full-expression AST shapes from 64 candidate representations across the frozen 84 English cases. Four machine-induced, structurally roundtripping motifs enter human review; one redundant active shape is filtered out. The original examples are also the evidence, **not held-out testing**; estimated incremental dictionary cost exceeds payload savings for every two-sample batch. No automatic promotion or claim of AI comprehension.
+13. **Next:** collect independent AI reader responses with fresh contexts, measure false novelty and semantic disagreements, and publish a new registry version only after a deliberate review.
+14. **Mesoscopic units (later):** explore functional composition and executable semantics as a separate future stage; v0.8 recipes are **not** this stage.
 
-GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.11 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
+GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.12 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
 
 ## 中文簡介
 
 這是 **AI 語言創造遊戲** 的第一個開源試作。優先使用英文概念與現有符號，逐步擴大可表達的語義範圍，並保留 AI 可直接閱讀、依公開規格解析的可能性。目前提供**最小可解析結構與六領域合計 84 條人工英文語義樣本（v0.4 的 36 題保持原樣，v0.6 另增 48 題）**，明確區分候選結構、部分表達與原文保留；已具備 v0.3 與 v0.4 盲讀與概念辨別測試流程，v0.4 新增時間、可能性與量詞作用域及有限模型對照；v0.5 修正具名事件參數順序與自由變數檢查，新增 34 組語義一致／區別測試與有限反例搜尋；v0.6 增加 8 組英文多義詞的 17 個明確概念標籤、兩種盲讀條件及防止 RAW 原文洩漏的檢查；v0.7 新增 24 組語義對照與 36 題還原實驗，可輸出分離的題包／答案及測試非 AI 英文詞彙重疊基準（24 題中選答並答對 8 題、16 題棄答），並且在 v0.8 增加 16 個公開組合樣板，對 24 條既有跨領域題目驗證展開後結構不變；v0.9 再將這些樣板整理為不提供說明、提供樣板定義、完全展開三種獨立閱讀條件，另備 24 題自由還原與 12 題概念辨別的分離題包、校驗及評分流程；這不是新的關係算子、英文語義覆蓋率或中觀字元。 v0.10 增加公開樣板字典支持的 `@` 位置式簡寫：24 條舊題庫展開後標準化結構全數一致，原式字元合計由 1,459 降至 853；同時加入 10 個參數遺失／語義漂移的風險題。這是字串簡寫，不是直接量到 AI 理解率，且讀者仍必須取得 4,684 bytes 的公開規則字典。尚未取得獨立 AI 的實際測試紀錄，不宣稱 AI 已能無歧義理解，不處理發音、加密或中觀字元。後續中觀單元會優先考察實際可用的概念／函數組合。
 
 v0.11 接著提供 AI 組合提案的**待審核關卡**：14 筆助手撰寫的示範提案中，4 筆完成結構自洽檢查而進入人工審核、2 筆需要更多樣本、8 筆被拒絕。既有 16 個公開樣板及 v0.10 的 24 個固定簡寫不會被自動修改。測試通過不代表跨 AI 理解成功，也不代表函數已經可以執行。詳見 [v0.11 研究規格](docs/PATTERN-EVOLUTION-v0.11.md)。
+
+v0.12 新增**程式化組合候選發現器**：它從舊版 84 條人工英文案例中擷取 64 條已標記為結構候選的表達，按照算子／關係樹的重複形態，自動提出 4 個待審核樣板（1 個與既有公開形態重複者不列入）。四個提案都通過既有結構審核，但都還沒有獨立的跨 AI 理解驗證；同時把字典成本計入後，兩筆示例的淨節省皆為負。**這是確定性程式挖掘，不是模型自主發明詞義；無自動發布。** 詳見 [v0.12 實驗規格](docs/AUTOMATIC-DISCOVERY-v0.12.md)。
 
 ## License
 
