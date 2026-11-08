@@ -1,0 +1,53 @@
+{
+  "format": "ALCG-compact-surface-v0.10",
+  "registry_sha256": "5d97c41701b8196766a65bf08ac24f1942df3fa2e1a7546f3845b0df805d3bc6",
+  "pattern_definitions": 16,
+  "frozen_cases": 24,
+  "domains": {
+    "computing": 4,
+    "daily": 4,
+    "epistemic": 4,
+    "mathematics": 4,
+    "science": 4,
+    "society": 4
+  },
+  "exact_expanded_canonical_roundtrips": 24,
+  "characters": {
+    "original": 1459,
+    "named_pattern": 1457,
+    "compact": 853
+  },
+  "characters_saved_vs_named_patterns": 604,
+  "characters_saved_vs_expanded_source": 606,
+  "registry_transfer_bytes": 4684,
+  "one_batch_payload_plus_registry_bytes": 5537,
+  "one_batch_expanded_source_bytes": 1459,
+  "repeated_24_case_batches_to_amortize_registry": 8,
+  "pattern_invocations": {
+    "P_ACT": 7,
+    "P_ACT2": 2,
+    "P_ALL": 3,
+    "P_BEFORE_ACTS": 1,
+    "P_COMPARE": 3,
+    "P_HAS": 3,
+    "P_IF_ACTION": 1,
+    "P_KNOW": 1,
+    "P_MAY_ACT": 1,
+    "P_MAY_ACT2": 2,
+    "P_NOT": 2,
+    "P_SAY": 1,
+    "P_SOME": 2,
+    "P_STATE": 3
+  },
+  "risks": {
+    "risk_cases": 10,
+    "malformed_rejected": 4,
+    "canonical_drift_detected": 6,
+    "finite_world_counterexamples": 2,
+    "warning": "Registry order is trusted; a role swap can be valid syntax but change intent."
+  },
+  "new_relation_operators": 0,
+  "new_english_coverage_claims": 0,
+  "independent_ai_comprehension_results": null,
+  "disclaimer": "Exact AST reconstruction requires the pinned public registry; no proof of cross-AI comprehension, truth, or lossless natural-language paraphrase."
+}

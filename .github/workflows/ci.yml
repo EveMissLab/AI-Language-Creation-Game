@@ -66,3 +66,7 @@ jobs:
         run: python pattern_transfer.py check
       - name: Audit v0.9 public three-arm protocol (NOT independent AI comprehension)
         run: python pattern_transfer.py report
+      - name: Check v0.10 public-registry positional abbreviation roundtrips
+        run: python compact_surface.py check
+      - name: Audit v0.10 compact syntax savings and risk probes (NOT AI comprehension)
+        run: python compact_surface.py report
