@@ -1,0 +1,251 @@
+{
+  "base_definitions_unchanged": 16,
+  "base_registry_sha256": "5d97c41701b8196766a65bf08ac24f1942df3fa2e1a7546f3845b0df805d3bc6",
+  "candidate_count": 14,
+  "cases": [
+    {
+      "candidate_sha256": "db9e407af186c0bc5bab6c31bbc2b730aa78f8f55b9ac8c1f43015f1d053e24a",
+      "example_checks": [
+        {
+          "compact_bytes": 34,
+          "expanded_bytes": 113,
+          "expanded_sha256": "d2271962da86461b3324c2cf8e9fdb63ace34d9213c12c1491196ce1e855701f",
+          "index": 1
+        },
+        {
+          "compact_bytes": 37,
+          "expanded_bytes": 119,
+          "expanded_sha256": "ac7881fb96dc04ed0f63757430693e8044cacbd5e03f7762c668ea7dd377cea8",
+          "index": 2
+        }
+      ],
+      "examples_checked": 2,
+      "id": "EV011-01",
+      "name": "P_BEFORE_CHECK_DELETE",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "structural_gate_passed_human_review_required",
+      "sample_bytes": {
+        "compact": 71,
+        "difference_excluding_registry": 161,
+        "expanded": 232
+      },
+      "signature_sha256": "6167fcfe6999251ac7a97b2886063d25a482d62b7bd646e65ad8f63e95251b6a",
+      "status": "staged_for_human_review"
+    },
+    {
+      "candidate_sha256": "df3075ec57e8b535f6ebf697d8ec805cdcf39ed757db574fb8417f22a39824fe",
+      "example_checks": [
+        {
+          "compact_bytes": 34,
+          "expanded_bytes": 73,
+          "expanded_sha256": "ac5bb780188cdb0060b8a20c544f88154359c777bc6c1458488b9f4619e64b56",
+          "index": 1
+        },
+        {
+          "compact_bytes": 34,
+          "expanded_bytes": 73,
+          "expanded_sha256": "f8fb45445087e29ce55d6f415d5fb0130bb0840efba1b156b078e01308ca0da1",
+          "index": 2
+        }
+      ],
+      "examples_checked": 2,
+      "id": "EV011-02",
+      "name": "P_SAY_NOT_STATE",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "structural_gate_passed_human_review_required",
+      "sample_bytes": {
+        "compact": 68,
+        "difference_excluding_registry": 78,
+        "expanded": 146
+      },
+      "signature_sha256": "31cb9c946483ac3c35fd9281f9705cd665fa91aef7990ced9f157db205560450",
+      "status": "staged_for_human_review"
+    },
+    {
+      "candidate_sha256": "5082271d6242c8c900aa90b96e89dc33ef3a4e347525fad80307b27e6bb8b43e",
+      "example_checks": [
+        {
+          "compact_bytes": 26,
+          "expanded_bytes": 54,
+          "expanded_sha256": "451d3b09610f90817037681b1f6775e61cb2c03da98479913994d0250f66da54",
+          "index": 1
+        },
+        {
+          "compact_bytes": 28,
+          "expanded_bytes": 56,
+          "expanded_sha256": "e6016e1d509f4839ff99ee4b16b147ea2becb6eec679a38405ebf3e5ff2a3294",
+          "index": 2
+        }
+      ],
+      "examples_checked": 2,
+      "id": "EV011-03",
+      "name": "P_MAY_NOT_STATE",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "structural_gate_passed_human_review_required",
+      "sample_bytes": {
+        "compact": 54,
+        "difference_excluding_registry": 56,
+        "expanded": 110
+      },
+      "signature_sha256": "03545008f27a49959b2b84f1173ec670d706c3eecd0f1426b90e16731730b81b",
+      "status": "staged_for_human_review"
+    },
+    {
+      "candidate_sha256": "fbcdc03d6de6c83976880d1a6ac0d3c475a2825a26eb12995e2b26c010fb8c9e",
+      "example_checks": [
+        {
+          "compact_bytes": 26,
+          "expanded_bytes": 51,
+          "expanded_sha256": "9b08fecc14c67dd5fefb36ae692d4a381f58b5ca0cd8e54f0b677ad3d17fd0ce",
+          "index": 1
+        },
+        {
+          "compact_bytes": 26,
+          "expanded_bytes": 51,
+          "expanded_sha256": "49efcbd0ad2cc64e6e1daa19b27efab8509678636409241b1ad155512af58fe1",
+          "index": 2
+        }
+      ],
+      "examples_checked": 2,
+      "id": "EV011-04",
+      "name": "P_NOT_MAY_ACT2",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "structural_gate_passed_human_review_required",
+      "sample_bytes": {
+        "compact": 52,
+        "difference_excluding_registry": 50,
+        "expanded": 102
+      },
+      "signature_sha256": "237382ef66e087299168f09a3afde6486752b890f4eeb30c79d712849e0eb009",
+      "status": "staged_for_human_review"
+    },
+    {
+      "duplicate_of": "P_ACT",
+      "examples_checked": 0,
+      "id": "EV011-05",
+      "name": "P_ACT_CLONE",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "duplicate_expansion_signature",
+      "status": "rejected"
+    },
+    {
+      "duplicate_of": "P_BEFORE_CHECK_DELETE",
+      "examples_checked": 0,
+      "id": "EV011-06",
+      "name": "P_BEFORE_CHECK_DELETE_ALIAS",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "duplicate_expansion_signature",
+      "status": "rejected"
+    },
+    {
+      "detail": "P_CAPTURE_TEST: quantified var must be a caller-supplied HOLE",
+      "examples_checked": 0,
+      "id": "EV011-07",
+      "name": "P_CAPTURE_TEST",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "template_validation_failed",
+      "status": "rejected"
+    },
+    {
+      "detail": "P_UNUSED_TEST: declared slots not used: ['action']",
+      "examples_checked": 0,
+      "id": "EV011-08",
+      "name": "P_UNUSED_TEST",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "template_validation_failed",
+      "status": "rejected"
+    },
+    {
+      "detail": "P_RAW_TEST: RAW/PARTIAL may not be hidden in a pattern",
+      "examples_checked": 0,
+      "id": "EV011-09",
+      "name": "P_RAW_TEST",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "template_validation_failed",
+      "status": "rejected"
+    },
+    {
+      "examples_checked": 0,
+      "failing_example": 1,
+      "id": "EV011-10",
+      "name": "P_NEG_STATE_TRIAL",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "reference_structure_mismatch",
+      "status": "rejected"
+    },
+    {
+      "candidate_sha256": "f9d63017e0c24add6308260a8a6f82ffbf09436f4cc14f8264e077328a3f8f3d",
+      "example_checks": [
+        {
+          "compact_bytes": 24,
+          "expanded_bytes": 45,
+          "expanded_sha256": "52b1f5f3d7104d5a3103f28a054ee2bbe2a5713354482b3af87af34273b49737",
+          "index": 1
+        }
+      ],
+      "examples_checked": 1,
+      "id": "EV011-11",
+      "name": "P_MAY_STATE",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "at_least_two_distinct_examples_required",
+      "sample_bytes": {
+        "compact": 24,
+        "difference_excluding_registry": 21,
+        "expanded": 45
+      },
+      "signature_sha256": "02dd3618ce5a3591bfeacb4098f45fa8d33479226c87c4b2fb3e0a8f602308c1",
+      "status": "needs_more_evidence"
+    },
+    {
+      "candidate_sha256": "f1adf2fbad8c210e282542653bfba2e70dd81637e0013df1acce70e1950152f1",
+      "example_checks": [
+        {
+          "compact_bytes": 30,
+          "expanded_bytes": 62,
+          "expanded_sha256": "b5ba65ec8a9369f0e18c084c6da205d76e92018e1f9f33859ac46e3ea7823f34",
+          "index": 1
+        }
+      ],
+      "examples_checked": 1,
+      "id": "EV011-12",
+      "name": "P_SAY_STATE",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "at_least_two_distinct_examples_required",
+      "sample_bytes": {
+        "compact": 30,
+        "difference_excluding_registry": 32,
+        "expanded": 62
+      },
+      "signature_sha256": "dd928ec0090fe650d8463b9ec7aa19198cc6dca26e237661cd264aaaa574c9ec",
+      "status": "needs_more_evidence"
+    },
+    {
+      "examples_checked": 0,
+      "id": "EV011-13",
+      "name": "P_ACT",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "existing_registry_name_collision",
+      "status": "rejected"
+    },
+    {
+      "detail": "pattern cycle: P_CYCLE_TEST -> P_CYCLE_TEST",
+      "examples_checked": 0,
+      "id": "EV011-14",
+      "name": "P_CYCLE_TEST",
+      "origin": "assistant-authored-v0.11-example",
+      "reason": "template_validation_failed",
+      "status": "rejected"
+    }
+  ],
+  "decisions": {
+    "needs_more_evidence": 2,
+    "rejected": 8,
+    "staged_for_human_review": 4
+  },
+  "format": "ALCG-pattern-evolution-v0.11",
+  "frozen_v0_10_roundtrips": 24,
+  "independent_ai_reader_results": null,
+  "promotion_performed": false,
+  "proposals_sha256": "ee4d190b81ef32cdd1c566f09659a5892c134f44ef8ca01e88248e8d01a0adb8",
+  "warning": "Assistant-authored example proposals, not external AI trials. Structural reconstruction is not a proof of intended meaning, truth, semantic completeness or improved English coverage. Staged patterns are NOT installed."
+}

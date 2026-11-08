@@ -1,0 +1,104 @@
+{
+  "base_registry_sha256": "5d97c41701b8196766a65bf08ac24f1942df3fa2e1a7546f3845b0df805d3bc6",
+  "format": "ALCG-staging-preview-v0.11-NOT-ACTIVE",
+  "patterns_for_human_review": [
+    {
+      "candidate_sha256": "db9e407af186c0bc5bab6c31bbc2b730aa78f8f55b9ac8c1f43015f1d053e24a",
+      "evidence": [
+        {
+          "expected": "BEFORE(earlier=DO(actor=PROGRAM, action=CHECK, object=FILE), later=DO(actor=PROGRAM, action=DELETE, object=FILE))",
+          "input": "P_BEFORE_CHECK_DELETE(actor=PROGRAM, object=FILE)"
+        },
+        {
+          "expected": "BEFORE(earlier=DO(actor=SERVICE, action=CHECK, object=ARCHIVE), later=DO(actor=SERVICE, action=DELETE, object=ARCHIVE))",
+          "input": "P_BEFORE_CHECK_DELETE(actor=SERVICE, object=ARCHIVE)"
+        }
+      ],
+      "id": "EV011-01",
+      "origin": "assistant-authored-v0.11-example",
+      "pattern": {
+        "gloss": "Test structural composition with explicit roles and public definitions.",
+        "name": "P_BEFORE_CHECK_DELETE",
+        "slots": [
+          "actor",
+          "object"
+        ],
+        "template": "BEFORE(earlier=DO(actor=HOLE(slot=actor), action=CHECK, object=HOLE(slot=object)), later=DO(actor=HOLE(slot=actor), action=DELETE, object=HOLE(slot=object)))"
+      }
+    },
+    {
+      "candidate_sha256": "df3075ec57e8b535f6ebf697d8ec805cdcf39ed757db574fb8417f22a39824fe",
+      "evidence": [
+        {
+          "expected": "SAY(speaker=EXPERT, content=NOT(claim=IS(subject=REPORT, property=TRUE)))",
+          "input": "P_SAY_NOT_STATE(speaker=EXPERT, subject=REPORT, property=TRUE)"
+        },
+        {
+          "expected": "SAY(speaker=AGENT, content=NOT(claim=IS(subject=SYSTEM, property=READY)))",
+          "input": "P_SAY_NOT_STATE(speaker=AGENT, subject=SYSTEM, property=READY)"
+        }
+      ],
+      "id": "EV011-02",
+      "origin": "assistant-authored-v0.11-example",
+      "pattern": {
+        "gloss": "Test structural composition with explicit roles and public definitions.",
+        "name": "P_SAY_NOT_STATE",
+        "slots": [
+          "speaker",
+          "subject",
+          "property"
+        ],
+        "template": "SAY(speaker=HOLE(slot=speaker), content=NOT(claim=IS(subject=HOLE(slot=subject), property=HOLE(slot=property))))"
+      }
+    },
+    {
+      "candidate_sha256": "5082271d6242c8c900aa90b96e89dc33ef3a4e347525fad80307b27e6bb8b43e",
+      "evidence": [
+        {
+          "expected": "MAY(claim=NOT(claim=IS(subject=WATER, property=COLD)))",
+          "input": "P_MAY_NOT_STATE(subject=WATER, property=COLD)"
+        },
+        {
+          "expected": "MAY(claim=NOT(claim=IS(subject=SYSTEM, property=READY)))",
+          "input": "P_MAY_NOT_STATE(subject=SYSTEM, property=READY)"
+        }
+      ],
+      "id": "EV011-03",
+      "origin": "assistant-authored-v0.11-example",
+      "pattern": {
+        "gloss": "Test structural composition with explicit roles and public definitions.",
+        "name": "P_MAY_NOT_STATE",
+        "slots": [
+          "subject",
+          "property"
+        ],
+        "template": "MAY(claim=NOT(claim=IS(subject=HOLE(slot=subject), property=HOLE(slot=property))))"
+      }
+    },
+    {
+      "candidate_sha256": "fbcdc03d6de6c83976880d1a6ac0d3c475a2825a26eb12995e2b26c010fb8c9e",
+      "evidence": [
+        {
+          "expected": "NOT(claim=MAY(claim=DO(actor=SERVER, action=FAIL)))",
+          "input": "P_NOT_MAY_ACT2(actor=SERVER, action=FAIL)"
+        },
+        {
+          "expected": "NOT(claim=MAY(claim=DO(actor=DEVICE, action=WAKE)))",
+          "input": "P_NOT_MAY_ACT2(actor=DEVICE, action=WAKE)"
+        }
+      ],
+      "id": "EV011-04",
+      "origin": "assistant-authored-v0.11-example",
+      "pattern": {
+        "gloss": "Test structural composition with explicit roles and public definitions.",
+        "name": "P_NOT_MAY_ACT2",
+        "slots": [
+          "actor",
+          "action"
+        ],
+        "template": "NOT(claim=MAY(claim=DO(actor=HOLE(slot=actor), action=HOLE(slot=action))))"
+      }
+    }
+  ],
+  "promotion_performed": false
+}

@@ -70,3 +70,7 @@ jobs:
         run: python compact_surface.py check
       - name: Audit v0.10 compact syntax savings and risk probes (NOT AI comprehension)
         run: python compact_surface.py report
+      - name: Check v0.11 assistant-authored pattern evolution proposals
+        run: python pattern_evolution.py check
+      - name: Verify v0.11 review-only report and staging preview
+        run: python pattern_evolution.py verify-report
