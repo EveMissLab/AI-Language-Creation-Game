@@ -42,3 +42,9 @@ jobs:
         run: python coverage_lab.py audit
       - name: Validate v0.3 reconstruction and contrast fixtures
         run: python reconstruction_lab.py check
+      - name: Validate v0.4 fixed-English coverage bridge
+        run: python coverage_bridge.py check
+      - name: Check v0.4 finite-world semantic contrasts
+        run: python finite_probe.py check
+      - name: Validate v0.4 AI reader challenge fixtures
+        run: python reader_v04.py check

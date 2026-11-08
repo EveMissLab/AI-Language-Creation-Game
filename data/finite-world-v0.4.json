@@ -1,0 +1,79 @@
+{
+  "version": "0.4-finite-demo",
+  "domains": {
+    "PERSON": [
+      "ALICE",
+      "BOB"
+    ],
+    "INTEGER": [
+      "ZERO",
+      "ONE",
+      "TWO"
+    ],
+    "EMPTY": []
+  },
+  "worlds": {
+    "actual": {
+      "facts": [
+        [
+          "ALICE",
+          "READY"
+        ],
+        [
+          "SYSTEM",
+          "STABLE"
+        ]
+      ],
+      "before": [
+        [
+          "READ_EVENT",
+          "WRITE_EVENT"
+        ],
+        [
+          "DO(actor=PROGRAM, action=READ, object=FILE)",
+          "DO(actor=PROGRAM, action=WRITE, object=OUTPUT)"
+        ]
+      ]
+    },
+    "possible": {
+      "facts": [
+        [
+          "ALICE",
+          "READY"
+        ],
+        [
+          "BOB",
+          "READY"
+        ],
+        [
+          "SYSTEM",
+          "DISTURBED"
+        ]
+      ],
+      "before": [
+        [
+          "WRITE_EVENT",
+          "READ_EVENT"
+        ],
+        [
+          "DO(actor=PROGRAM, action=WRITE, object=OUTPUT)",
+          "DO(actor=PROGRAM, action=READ, object=FILE)"
+        ]
+      ]
+    }
+  },
+  "accessibility": {
+    "actual": [
+      "actual",
+      "possible"
+    ],
+    "possible": [
+      "possible"
+    ]
+  },
+  "order": {
+    "ZERO": 0,
+    "ONE": 1,
+    "TWO": 2
+  }
+}

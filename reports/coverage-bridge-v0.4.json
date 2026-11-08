@@ -1,0 +1,25 @@
+{
+  "version": "0.4",
+  "fixed_english_cases": 36,
+  "original_v0_2_sha256": "42f4ab07a509fdfa26849385e5f22e1709dece3f5c9392f679c0a9eb0039c569",
+  "proposal_v0_4_sha256": "4569e6b8507340d7c26b1012504f73cdbe078448cf9f887fe256f1e90f2107c6",
+  "v0_2": {
+    "candidate": 24,
+    "partial": 6,
+    "raw": 6
+  },
+  "v0_4": {
+    "candidate": 28,
+    "partial": 3,
+    "raw": 5
+  },
+  "changed_cases": [
+    "C05",
+    "D05",
+    "M06",
+    "S05"
+  ],
+  "unverified_proposal_delta": 4,
+  "independent_reader_scores": null,
+  "interpretation": "This is an authored structural-proposal change on a frozen curated dataset, not a measured increase in English-language coverage or independent AI comprehension."
+}
