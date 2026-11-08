@@ -1,0 +1,24 @@
+{
+  "active_registry_sha256": "5d97c41701b8196766a65bf08ac24f1942df3fa2e1a7546f3845b0df805d3bc6",
+  "actual_english_coverage_gain": null,
+  "concept_bank_design": "human_curated_label_pools; combinatorial program generator",
+  "format": "ALCG-generated-challenges-v0.14",
+  "independent_ai_readers": 0,
+  "lexicon_sha256": "9853432f360627755338790c4188e8884e5bb74b12289e136d15e84856ffe595",
+  "metamorphic_variants_checked": 104,
+  "old_ast_overlap_excluded": true,
+  "positive_generated_expressions": 32,
+  "positive_structural_matches": 32,
+  "promoted_patterns": 0,
+  "seed": 1409,
+  "semantic_comprehension_score": null,
+  "v0_12_non_active_proposals_sha256": "da0583e148b0d73ef082252722bf77450f729e1086b9311c6a44cf54fb9bebeb",
+  "v0_13_frozen_probes_sha256": "bf7898715ec880d809d7aa1e7b055bf269301bf73e14ef952a2e976ebaf2a196",
+  "variant_classes": {
+    "equivalent_alpha_rename": 8,
+    "equivalent_reordering": 32,
+    "non_matching_structural_controls": 32,
+    "same_shape_but_canonical_changed": 32
+  },
+  "warning": "Program-created probes are conditional on known candidate patterns and human-curated labels. A lexical change proves AST non-identity, NOT truth-value difference in all models or incorrect English meaning. This is synthetic invariant/regression testing, NOT independent generalization, autonomous AI invention or human semantic verification."
+}

@@ -1,0 +1,182 @@
+{
+  "format": "ALCG-synthetic-lexical-banks-v0.14",
+  "seed": 1409,
+  "cases_per_candidate": 8,
+  "status": "Synthetic English concept labels; not factual assertions, independently collected English, or annotated semantic gold data.",
+  "banks": {
+    "CAUSE": {
+      "item_01": [
+        "SIGNAL_QUALITY",
+        "FLOW_RATE",
+        "THERMAL_STABILITY",
+        "VISIBILITY",
+        "POWER_OUTPUT",
+        "ACCURACY",
+        "LATENCY",
+        "EFFICIENCY",
+        "MOISTURE_LEVEL",
+        "MATERIAL_DENSITY"
+      ],
+      "item_02": [
+        "SENSOR_ARRAY",
+        "FILTRATION_SYSTEM",
+        "BATTERY_MODULE",
+        "ROBOTIC_ARM",
+        "DATA_PIPELINE",
+        "SOLAR_PANEL",
+        "WATER_CHANNEL",
+        "CONTROL_SYSTEM",
+        "MATERIAL_LAYER",
+        "TEST_CHAMBER"
+      ],
+      "item_03": [
+        "PRESSURE_CHANGE",
+        "VIBRATION",
+        "HUMIDITY",
+        "HARDWARE_UPDATE",
+        "CALIBRATION",
+        "FREQUENCY_SHIFT",
+        "HEAT_CYCLE",
+        "AIRFLOW",
+        "SURFACE_FRICTION",
+        "POWER_FLUCTUATION"
+      ]
+    },
+    "BEFORE": {
+      "item_01": [
+        "INSPECT",
+        "SCAN",
+        "MEASURE",
+        "VALIDATE",
+        "LOAD",
+        "FILTER",
+        "CHECK",
+        "MAP",
+        "REGISTER",
+        "CALIBRATE"
+      ],
+      "item_02": [
+        "AUTOMATED_AGENT",
+        "TEST_ROBOT",
+        "LAB_TECHNICIAN",
+        "CONTROL_PROGRAM",
+        "DATA_WORKER",
+        "FIELD_SENSOR",
+        "LOGISTICS_UNIT",
+        "RESEARCH_ASSISTANT",
+        "INSPECTION_DEVICE",
+        "AUTONOMOUS_VEHICLE"
+      ],
+      "item_03": [
+        "INPUT_BATCH",
+        "SAMPLE_BATCH",
+        "ROUTE_MAP",
+        "TEST_RESULT",
+        "POWER_CELL",
+        "DATA_STREAM",
+        "REFERENCE_MODEL",
+        "PACKAGE_RECORD",
+        "SENSOR_READING",
+        "SYSTEM_LOG"
+      ],
+      "item_04": [
+        "ARCHIVE",
+        "TRANSMIT",
+        "PACKAGE",
+        "SUMMARIZE",
+        "RELEASE",
+        "REPORT",
+        "STORE",
+        "DELIVER",
+        "ANALYZE",
+        "SYNCHRONIZE"
+      ],
+      "item_05": [
+        "OUTPUT_BATCH",
+        "RESULT_REPORT",
+        "DELIVERY_ORDER",
+        "ARCHIVE_RECORD",
+        "REFERENCE_TABLE",
+        "QUALITY_REPORT",
+        "CONTROL_SIGNAL",
+        "STATUS_REPORT",
+        "FINAL_MODEL",
+        "MEASUREMENT_SET"
+      ]
+    },
+    "EXISTS": {
+      "item_01": [
+        "GREATER_THAN",
+        "LESS_THAN",
+        "EQUAL"
+      ],
+      "item_02": [
+        "X",
+        "Y",
+        "Z",
+        "Q",
+        "T",
+        "K",
+        "M",
+        "R",
+        "S",
+        "U"
+      ],
+      "item_03": [
+        "TEST_LIMIT",
+        "REFERENCE_RATE",
+        "UPPER_BOUND",
+        "LOWER_BOUND",
+        "TARGET_VALUE",
+        "BASELINE_LEVEL",
+        "REFERENCE_COUNT",
+        "QUALITY_THRESHOLD",
+        "LIMIT_VALUE",
+        "SAFETY_MARGIN"
+      ],
+      "item_04": [
+        "READINGS",
+        "SAMPLES",
+        "LATENCY_VALUES",
+        "OUTPUT_RATES",
+        "TEST_SCORES",
+        "MEASUREMENTS",
+        "SENSOR_VALUES",
+        "ENERGY_LEVELS",
+        "DELIVERY_TIMES",
+        "QUALITY_SCORES"
+      ]
+    },
+    "NOT": {
+      "item_01": [
+        "GREATER_THAN",
+        "LESS_THAN",
+        "EQUAL"
+      ],
+      "item_02": [
+        "ACTUAL_POWER",
+        "TEST_RESULT",
+        "SENSOR_SCORE",
+        "PLANNED_OUTPUT",
+        "CURRENT_LIMIT",
+        "LOGGED_RATE",
+        "REPORTED_COUNT",
+        "CALCULATED_PRICE",
+        "OBSERVED_LEVEL",
+        "TARGET_RATE"
+      ],
+      "item_03": [
+        "REQUIRED_POWER",
+        "REFERENCE_SCORE",
+        "ACCEPTABLE_SCORE",
+        "PLANNED_LIMIT",
+        "MAXIMUM_LIMIT",
+        "TARGET_RATE",
+        "REFERENCE_COUNT",
+        "MINIMUM_PRICE",
+        "BASELINE_LEVEL",
+        "ACTUAL_RATE"
+      ]
+    }
+  }
+}

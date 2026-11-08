@@ -2,7 +2,7 @@
 
 **An open-source, AI-first language-creation playground.** Begin with English-readable concepts and symbols, then grow toward wider semantic coverage and eventually reusable mesoscopic concept/function bundles.
 
-> Status: **v0.11 pattern proposal evolution gate (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
+> Status: **v0.14 automatic structural challenge generation (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
 
 ## What is the game?
 
@@ -93,6 +93,12 @@ python transfer_lab.py check
 python transfer_lab.py report
 python transfer_lab.py match 'CAUSE(source=DROUGHT, effect=CHANGE(subject=SOIL, property=MOISTURE))'
 # Historical matches may be foils: this is NOT an AI comprehension score.
+
+# v0.14: deterministic self-generated structural challenges and mutation tests
+python challenge_generator.py check
+python challenge_generator.py report
+python challenge_generator.py generate --out ../alcg-v0.14-generated.jsonl
+# Uses human-curated English label banks; NOT independent semantic comprehension.
 ```
 
 Minimal examples:
@@ -104,7 +110,7 @@ WANT(agent=PERSON, goal=DO(actor=AI, action=HELP, object=PERSON))
 RAW(text="A meaning not yet expressed with structured concepts.")
 ```
 
-These examples demonstrate a **parser**, not verified meaning or truth. See [syntax sketch](docs/GRAMMAR-v0.1.md) and the [v0.2 coverage protocol](docs/COVERAGE-v0.2.md), and the [v0.3 reconstruction protocol](docs/RECONSTRUCTION-v0.3.md), the [v0.4 scope/time/modality experiments](docs/SCOPE-TIME-MODAL-v0.4.md), and the [v0.5 semantic stability laboratory](docs/SEMANTIC-STABILITY-v0.5.md), the [v0.6 coverage and polysemy protocol](docs/SENSE-COVERAGE-v0.6.md), and the [v0.7 reader-transfer protocol](docs/READER-TRANSFER-v0.7.md), the [v0.8 composition pattern experiment](docs/COMPOSITION-PATTERNS-v0.8.md), and the [v0.9 pattern-transfer protocol](docs/PATTERN-TRANSFER-v0.9.md), and the [v0.10 compact surface experiment](docs/COMPACT-SURFACE-v0.10.md), and the [v0.11 pattern proposal gate](docs/PATTERN-EVOLUTION-v0.11.md) and [v0.12 deterministic discovery lab](docs/AUTOMATIC-DISCOVERY-v0.12.md), plus the [v0.13 nontraining transfer diagnostic](docs/HOLDOUT-TRANSFER-v0.13.md) for current limits.
+These examples demonstrate a **parser**, not verified meaning or truth. See [syntax sketch](docs/GRAMMAR-v0.1.md) and the [v0.2 coverage protocol](docs/COVERAGE-v0.2.md), and the [v0.3 reconstruction protocol](docs/RECONSTRUCTION-v0.3.md), the [v0.4 scope/time/modality experiments](docs/SCOPE-TIME-MODAL-v0.4.md), and the [v0.5 semantic stability laboratory](docs/SEMANTIC-STABILITY-v0.5.md), the [v0.6 coverage and polysemy protocol](docs/SENSE-COVERAGE-v0.6.md), and the [v0.7 reader-transfer protocol](docs/READER-TRANSFER-v0.7.md), the [v0.8 composition pattern experiment](docs/COMPOSITION-PATTERNS-v0.8.md), and the [v0.9 pattern-transfer protocol](docs/PATTERN-TRANSFER-v0.9.md), and the [v0.10 compact surface experiment](docs/COMPACT-SURFACE-v0.10.md), and the [v0.11 pattern proposal gate](docs/PATTERN-EVOLUTION-v0.11.md) and [v0.12 deterministic discovery lab](docs/AUTOMATIC-DISCOVERY-v0.12.md), plus the [v0.13 nontraining transfer diagnostic](docs/HOLDOUT-TRANSFER-v0.13.md) and the [v0.14 generated challenge protocol](docs/AUTOMATIC-CHALLENGE-GENERATOR-v0.14.md) for current limits.
 
 ## Roadmap, kept intentionally small
 
@@ -121,10 +127,11 @@ These examples demonstrate a **parser**, not verified meaning or truth. See [syn
 11. **Pattern evolution gate (v0.11):** accept third-party AI pattern proposals as UTF-8 JSONL, verify template structure/slot binding and authored reference roundtrips, flag duplicates and defective examples. The shipped 14 **assistant-authored** proposals produce four review-only staged records, two requiring more examples, and eight rejections. No active registry is updated. No independent model-comprehension or truth claims.
 12. **Automated proposal discovery (v0.12):** deterministically mine repeated full-expression AST shapes from 64 candidate representations across the frozen 84 English cases. Four machine-induced, structurally roundtripping motifs enter human review; one redundant active shape is filtered out. The original examples are also the evidence, **not held-out testing**; estimated incremental dictionary cost exceeds payload savings for every two-sample batch. No automatic promotion or claim of AI comprehension.
 13. **Nontraining structural transfer (v0.13):** examine 96 contrast expressions authored in earlier versions, removing 39 exact overlaps with the v0.12 mining set. Of 57 remaining canonical ASTs, three match the mined templates — **all three are deliberately incorrect foil answers** to their English targets. Add 16 post-discovery diagnostic pairs: all 16 positive structures roundtrip, eight foils fail the pattern while eight still match but alter the intended claim. This is syntax-level evidence, **not AI understanding or independent semantic generalization**; the active registry stays frozen.
-14. **Next:** preregister a genuinely independent semantic benchmark and collect AI reader responses with fresh contexts; no registry revision without deliberate review.
-15. **Mesoscopic units (later):** explore functional composition and executable semantics as a separate future stage; v0.8 recipes are **not** this stage.
+14. **Automatic metamorphic challenges (v0.14):** generate 32 new synthetic ASTs and 104 variants from human-curated English label banks and the 4 non-active v0.12 candidate motifs. Check argument-order and alpha-renaming invariants, changed lexical slots that still match, and role/operator violations that do not. This is **deterministic synthetic structural testing**, not independent natural-language generalization or AI comprehension; no dictionary change.
+15. **Next:** preregister a genuinely independent semantic benchmark and collect AI reader responses with fresh contexts; no registry revision without deliberate review.
+16. **Mesoscopic units (later):** explore functional composition and executable semantics as a separate future stage; v0.8 recipes are **not** this stage.
 
-GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.13 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
+GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.14 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
 
 ## 中文簡介
 
@@ -135,6 +142,8 @@ v0.11 接著提供 AI 組合提案的**待審核關卡**：14 筆助手撰寫的
 v0.12 新增**程式化組合候選發現器**：它從舊版 84 條人工英文案例中擷取 64 條已標記為結構候選的表達，按照算子／關係樹的重複形態，自動提出 4 個待審核樣板（1 個與既有公開形態重複者不列入）。四個提案都通過既有結構審核，但都還沒有獨立的跨 AI 理解驗證；同時把字典成本計入後，兩筆示例的淨節省皆為負。**這是確定性程式挖掘，不是模型自主發明詞義；無自動發布。** 詳見 [v0.12 實驗規格](docs/AUTOMATIC-DISCOVERY-v0.12.md)。
 
 v0.13 開始針對候選樣板做**訓練集外的結構泛化診斷**：先從舊版 96 條概念對照表達中，扣除 39 條與 v0.12 挖掘輸入完全一致的結構，剩下 57 條只有 3 條符合樣板，且**三條全部是原問題的錯誤對照選項**。另加入 16 組事後設計的跨領域壓力測試，正例全部無損還原，對照中 8 條被拒絕，8 條仍符合結構卻改變了想要表達的意思。這個結果提醒我們：**可還原、可重用與「理解原意」必須分開驗證**。四個樣板仍在待審核區，公開字典沒有變動。詳見 [v0.13 規格](docs/HOLDOUT-TRANSFER-v0.13.md)。
+
+v0.14 新增**程式產生的語言挑戰與變形測試**：由人工挑選的英文概念標籤池及既有四個待審核樣板，確定性生成 32 條新結構與 104 條對照；其中 40 條為標準化結構等價變形，32 條在樣板仍可匹配時改變概念內容，另 32 條改變算子或共用角色而不再匹配。這是可重現的**結構測試**，不是 AI 獨立創造了新的自然語義，也不是英文覆蓋率或理解率。仍未修改 16 個公開樣板。參見 [v0.14 生成實驗規格](docs/AUTOMATIC-CHALLENGE-GENERATOR-v0.14.md)。
 
 ## License
 

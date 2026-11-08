@@ -82,3 +82,7 @@ jobs:
         run: python transfer_lab.py check
       - name: Audit v0.13 shape matching limits (NOT independent AI semantics)
         run: python transfer_lab.py report
+      - name: Check v0.14 generated novel structural probes and frozen artifacts
+        run: python challenge_generator.py check
+      - name: Audit v0.14 metamorphic invariants (NOT independent AI semantics)
+        run: python challenge_generator.py report
