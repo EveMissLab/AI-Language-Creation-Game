@@ -1,0 +1,32 @@
+{
+  "version": "0.9",
+  "tasks": [
+    "reconstruct",
+    "contrast"
+  ],
+  "conditions": [
+    "unaided",
+    "glossary",
+    "expanded"
+  ],
+  "reconstruction_items": 24,
+  "contrast_items": 12,
+  "condition_task_packets": 6,
+  "patterns": 16,
+  "probe_domain_counts": {
+    "computing": 2,
+    "daily": 2,
+    "epistemic": 2,
+    "mathematics": 2,
+    "science": 2,
+    "society": 2
+  },
+  "frozen_source_hashes": {
+    "v0.8_patterns": "5d97c41701b8196766a65bf08ac24f1942df3fa2e1a7546f3845b0df805d3bc6",
+    "v0.8_examples": "b18682f859e2000bbc97dcc82d8520eef9b9ed9a5ee363106a89d86f4a315130",
+    "v0.6_source": "1555814a6ec16a4083c198cf8e72fe8e6de28cd19c87e76c8c3e6b59ccfd9ea9",
+    "v0.9_probes": "062b7eace68e070aa522b61491952775aa736cab73bd78cc635a3de7ed1a36e9"
+  },
+  "independent_reader_results": null,
+  "note": "Deterministic protocol validation only. Zero external model calls; no independent comprehension score."
+}
