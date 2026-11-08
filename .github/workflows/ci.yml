@@ -48,3 +48,5 @@ jobs:
         run: python finite_probe.py check
       - name: Validate v0.4 AI reader challenge fixtures
         run: python reader_v04.py check
+      - name: Validate v0.5 semantic stability and finite counterexamples
+        run: python semantic_lab.py check

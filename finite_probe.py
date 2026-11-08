@@ -130,7 +130,10 @@ def _term(node: Name | String | Call, env: dict[str, str], budget: _Budget, *, e
             raise ProbeError('event DO requires actor, action, optionally object')
         # Render event terms in original role order. A DO used here is an
         # event *descriptor*, not executable code or proof of occurrence.
-        terms = tuple((key, Name(_term(value, env, budget))) for key, value in node.args)
+        values = {key: Name(_term(value, env, budget)) for key, value in node.args}
+        # Named roles identify an event; textual role order must not become
+        # a hidden part of its identity (v0.4 incorrectly preserved it).
+        terms = tuple((key, values[key]) for key in ('actor', 'action', 'object') if key in values)
         return render(Call('DO', terms))
     raise ProbeError(f'{node.name} cannot be used as a value in this probe')
 
@@ -185,6 +188,29 @@ def _evaluate(node: Name | String | Call, model: FiniteModel, world: str, env: d
     raise ProbeError(f'operator has no finite-probe semantics: {name}')
 
 
+def check_scopes(node: Name | String | Call, bound: frozenset[str] = frozenset()) -> None:
+    """Reject free REF uses, even under empty quantifiers or short-circuited paths.
+
+    This is a well-formedness check, not a semantic theorem. V0.4 only
+    checked REF dynamically during evaluation, which could miss dead paths.
+    """
+    if not isinstance(node, Call):
+        return
+    if node.name == 'REF':
+        variable = _as_name(_roles(node, ('var',))['var'], 'REF.var')
+        if variable not in bound:
+            raise ProbeError(f'unbound variable reference: {variable}')
+        return
+    if node.name in ('FORALL', 'EXISTS'):
+        args = _roles(node, ('var', 'domain', 'claim'))
+        variable = _as_name(args['var'], f'{node.name}.var')
+        _as_name(args['domain'], f'{node.name}.domain')
+        check_scopes(args['claim'], bound | frozenset({variable}))
+        return
+    for _, value in node.args:
+        check_scopes(value, bound)
+
+
 def evaluate(expression: str | Name | String | Call, model: FiniteModel, *, world: str = 'actual', budget: int = 100000) -> bool:
     if world not in model.facts:
         raise ProbeError(f'unknown world: {world}')
@@ -193,6 +219,7 @@ def evaluate(expression: str | Name | String | Call, model: FiniteModel, *, worl
     try:
         node = parse(expression) if isinstance(expression, str) else expression
         inspect_calls(node, relations(DEFAULT_REGISTRY))
+        check_scopes(node)
         return _evaluate(node, model, world, {}, _Budget(budget))
     except (ParseError, BenchmarkError) as exc:
         raise ProbeError(str(exc)) from exc

@@ -2,7 +2,7 @@
 
 **An open-source, AI-first language-creation playground.** Begin with English-readable concepts and symbols, then grow toward wider semantic coverage and eventually reusable mesoscopic concept/function bundles.
 
-> Status: **v0.4 scope/time/modality experiments (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
+> Status: **v0.5 semantic stability and counterexample experiments (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
 
 ## What is the game?
 
@@ -34,6 +34,11 @@ python coverage_bridge.py report
 python finite_probe.py check
 python reader_v04.py check
 # For a new independent reader packet: see docs/SCOPE-TIME-MODAL-v0.4.md
+
+# v0.5: bounded semantic stability and counterexample search
+python semantic_lab.py check
+python semantic_lab.py normalize --left 'FORALL(var=X, domain=PERSON, claim=IS(subject=REF(var=X), property=READY))'
+python semantic_lab.py compare --left 'MAY(claim=IS(subject=SYSTEM, property=DISTURBED))' --right 'IS(subject=SYSTEM, property=DISTURBED)'
 ```
 
 Minimal examples:
@@ -45,7 +50,7 @@ WANT(agent=PERSON, goal=DO(actor=AI, action=HELP, object=PERSON))
 RAW(text="A meaning not yet expressed with structured concepts.")
 ```
 
-These examples demonstrate a **parser**, not verified meaning or truth. See [syntax sketch](docs/GRAMMAR-v0.1.md) and the [v0.2 coverage protocol](docs/COVERAGE-v0.2.md), and the [v0.3 reconstruction protocol](docs/RECONSTRUCTION-v0.3.md), and the [v0.4 scope/time/modality experiments](docs/SCOPE-TIME-MODAL-v0.4.md) for the current limits.
+These examples demonstrate a **parser**, not verified meaning or truth. See [syntax sketch](docs/GRAMMAR-v0.1.md) and the [v0.2 coverage protocol](docs/COVERAGE-v0.2.md), and the [v0.3 reconstruction protocol](docs/RECONSTRUCTION-v0.3.md), the [v0.4 scope/time/modality experiments](docs/SCOPE-TIME-MODAL-v0.4.md), and the [v0.5 semantic stability laboratory](docs/SEMANTIC-STABILITY-v0.5.md) for the current limits.
 
 ## Roadmap, kept intentionally small
 
@@ -53,14 +58,15 @@ These examples demonstrate a **parser**, not verified meaning or truth. See [syn
 2. **Coverage experiments (v0.2):** 36 annotated cases across six domains; `candidate`, `partial` and `raw` remain explicitly distinct. Blind reconstruction packets can be exported, but **no independent AI comprehension scores exist yet**.
 3. **Blind-reading laboratory (v0.3):** 24 opaque reconstruction tasks and 12 semantic contrast pairs, with separate packet/key and scorer. No independent reader results are claimed.
 4. **Scope, time and modality (v0.4):** add five provisional operators (`BEFORE`, `MAY`, `FORALL`, `EXISTS`, `REF`), hold the English benchmark fixed, and verify 20 distinctions in a synthetic finite-world model. v0.4 has 28 *authorial* structured candidates, not independent AI comprehension scores.
-5. **Stability:** refine relation labels and scope only when test cases expose ambiguity.
-6. **Mesoscopic units (later):** explore reusable concept and *functional* compositions; do not force them into the first syntax.
+5. **Semantic stability (v0.5):** fix named-argument event identity and free-variable checking; compare 34 author-built same/different pairs over 192 finite toy models and 2 worlds each. These are bounded test outcomes, **not independently measured AI comprehension**.
+6. **Next expansion:** use the counterexamples and the independent reader protocol to prioritize concept coverage and role/scope clarity.
+7. **Mesoscopic units (later):** explore reusable concept and *functional* compositions; do not force them into the first syntax.
 
-GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.4 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
+GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.5 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
 
 ## 中文簡介
 
-這是 **AI 語言創造遊戲** 的第一個開源試作。優先使用英文概念與現有符號，逐步擴大可表達的語義範圍，並保留 AI 可直接閱讀、依公開規格解析的可能性。目前提供**最小的可解析結構與六領域 36 條覆蓋實驗樣本**，明確區分候選結構、部分表達與原文保留；已具備 v0.3 與 v0.4 盲讀與概念辨別測試流程，v0.4 新增時間、可能性與量詞作用域及有限模型對照，但尚未取得獨立 AI 的實際測試紀錄，不宣稱 AI 已能無歧義理解，不處理發音、加密或中觀字元。後續中觀單元會優先考察實際可用的概念／函數組合。
+這是 **AI 語言創造遊戲** 的第一個開源試作。優先使用英文概念與現有符號，逐步擴大可表達的語義範圍，並保留 AI 可直接閱讀、依公開規格解析的可能性。目前提供**最小的可解析結構與六領域 36 條覆蓋實驗樣本**，明確區分候選結構、部分表達與原文保留；已具備 v0.3 與 v0.4 盲讀與概念辨別測試流程，v0.4 新增時間、可能性與量詞作用域及有限模型對照；v0.5 修正具名事件參數順序與自由變數檢查，新增 34 組語義一致／區別測試與有限反例搜尋，但尚未取得獨立 AI 的實際測試紀錄，不宣稱 AI 已能無歧義理解，不處理發音、加密或中觀字元。後續中觀單元會優先考察實際可用的概念／函數組合。
 
 ## License
 

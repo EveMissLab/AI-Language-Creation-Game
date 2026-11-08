@@ -1,0 +1,139 @@
+{
+  "version": "0.5-semantic-stability-experiment",
+  "pair_cases": 34,
+  "same_in_suite": 16,
+  "distinguished_by_counterexample": 18,
+  "canonical_structure_identical": 7,
+  "synthetic_models": 192,
+  "worlds_per_model": 2,
+  "first_witnesses": [
+    {
+      "id": "D01",
+      "fixture": "m0-tforward-aself-d0",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D02",
+      "fixture": "m0-tforward-aother-d0",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D03",
+      "fixture": "m0-tforward-aboth-d0",
+      "world": "actual",
+      "left": false,
+      "right": true
+    },
+    {
+      "id": "D04",
+      "fixture": "m0-tforward-aself-d0",
+      "world": "actual",
+      "left": false,
+      "right": true
+    },
+    {
+      "id": "D05",
+      "fixture": "m0-tforward-aself-d0",
+      "world": "actual",
+      "left": false,
+      "right": true
+    },
+    {
+      "id": "D06",
+      "fixture": "m0-tforward-aself-d0",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D07",
+      "fixture": "m1-tforward-aboth-d0",
+      "world": "actual",
+      "left": false,
+      "right": true
+    },
+    {
+      "id": "D08",
+      "fixture": "m1-tforward-aself-d0",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D09",
+      "fixture": "m1-tforward-aself-d2",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D10",
+      "fixture": "m0-tnone-aself-d0",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D11",
+      "fixture": "m0-tforward-aboth-d0",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D12",
+      "fixture": "m0-tforward-aself-d0",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D13",
+      "fixture": "m0-tforward-aself-d0",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D14",
+      "fixture": "m0-tforward-aself-d0",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D15",
+      "fixture": "m1-tforward-aself-d0",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D16",
+      "fixture": "m0-tforward-aself-d0",
+      "world": "actual",
+      "left": true,
+      "right": false
+    },
+    {
+      "id": "D17",
+      "fixture": "m0-tforward-aself-d0",
+      "world": "possible",
+      "left": false,
+      "right": true
+    },
+    {
+      "id": "D18",
+      "fixture": "m0-tforward-aother-d0",
+      "world": "actual",
+      "left": false,
+      "right": true
+    }
+  ],
+  "independent_ai_reading_score": null,
+  "caution": "This corpus was author-built. Same means not distinguished in this finite suite; no general language semantics, AI comprehension, or real-world truth is established."
+}
