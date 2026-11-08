@@ -54,3 +54,7 @@ jobs:
         run: python sense_coverage.py check
       - name: Audit v0.6 sense coverage without claiming reader scores
         run: python sense_coverage.py report
+      - name: Validate v0.7 reader trial, contrasts and packet integrity
+        run: python reader_trial.py check
+      - name: Audit v0.7 non-AI lexical baseline (NOT AI comprehension)
+        run: python reader_trial.py baseline-report

@@ -1,0 +1,116 @@
+{
+  "schema": "ALCG-reader-v0.7-development-report",
+  "seed": 20261108,
+  "public_curated_source_cases": 48,
+  "reconstruction_tasks": 36,
+  "contrast_tasks": 24,
+  "contrast_types": {
+    "argument_swap": 1,
+    "conditional_swap": 1,
+    "epistemic_shift": 1,
+    "modal_shift": 2,
+    "polarity_shift": 1,
+    "quantifier_shift": 3,
+    "relation_shift": 1,
+    "role_swap": 4,
+    "scope_shift": 1,
+    "sense_swap": 8,
+    "temporal_swap": 1
+  },
+  "conditions": [
+    "unaided",
+    "glossary"
+  ],
+  "lexical_overlap_baseline_not_ai": {
+    "unaided": {
+      "selected": 8,
+      "correct": 8,
+      "incorrect": 0,
+      "abstained": 16,
+      "missing": 0,
+      "accuracy_all_assigned": 0.3333,
+      "accuracy_selected_only": 1.0,
+      "always_A_expected_accuracy": 0.5,
+      "by_domain": {
+        "computing": {
+          "assigned": 4,
+          "correct": 2,
+          "abstained": 2
+        },
+        "daily": {
+          "assigned": 4,
+          "correct": 1,
+          "abstained": 3
+        },
+        "epistemic": {
+          "assigned": 4,
+          "correct": 1,
+          "abstained": 3
+        },
+        "mathematics": {
+          "assigned": 4,
+          "correct": 1,
+          "abstained": 3
+        },
+        "science": {
+          "assigned": 4,
+          "correct": 2,
+          "abstained": 2
+        },
+        "society": {
+          "assigned": 4,
+          "correct": 1,
+          "abstained": 3
+        }
+      }
+    },
+    "glossary": {
+      "selected": 8,
+      "correct": 8,
+      "incorrect": 0,
+      "abstained": 16,
+      "missing": 0,
+      "accuracy_all_assigned": 0.3333,
+      "accuracy_selected_only": 1.0,
+      "always_A_expected_accuracy": 0.5,
+      "by_domain": {
+        "computing": {
+          "assigned": 4,
+          "correct": 2,
+          "abstained": 2
+        },
+        "daily": {
+          "assigned": 4,
+          "correct": 1,
+          "abstained": 3
+        },
+        "epistemic": {
+          "assigned": 4,
+          "correct": 1,
+          "abstained": 3
+        },
+        "mathematics": {
+          "assigned": 4,
+          "correct": 1,
+          "abstained": 3
+        },
+        "science": {
+          "assigned": 4,
+          "correct": 2,
+          "abstained": 2
+        },
+        "society": {
+          "assigned": 4,
+          "correct": 1,
+          "abstained": 3
+        }
+      }
+    },
+    "uses_glossary": false,
+    "reconstruction_cases_answered": 0
+  },
+  "independent_ai_reader_scores": null,
+  "externally_adjudicated_reconstruction_scores": null,
+  "public_source_generalization_claim": null,
+  "warning": "Mechanical coverage, balanced keys and a lexical non-AI baseline do not measure AI comprehension. The public gold source is not a secure unseen test."
+}
