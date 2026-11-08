@@ -36,3 +36,7 @@ jobs:
         run: python alcg.py check samples/seed.alcg
       - name: Audit example vocabulary
         run: python alcg.py audit samples/seed.alcg
+      - name: Validate v0.2 coverage benchmark
+        run: python coverage_lab.py check
+      - name: Audit v0.2 coverage proposals
+        run: python coverage_lab.py audit

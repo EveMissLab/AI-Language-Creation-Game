@@ -1,0 +1,50 @@
+{
+  "benchmark_cases": 36,
+  "candidate_not_yet_verified": 24,
+  "partial_with_explicit_gap": 6,
+  "raw_unrepresented": 6,
+  "candidate_share_of_this_curated_set": 0.6667,
+  "independent_reconstruction_scores": null,
+  "unique_english_concept_labels_not_semantically_validated": 63,
+  "relation_operators_used": 16,
+  "registered_relation_operators": 17,
+  "by_domain": {
+    "computing": {
+      "total": 6,
+      "candidate": 4,
+      "partial": 1,
+      "raw": 1
+    },
+    "daily": {
+      "total": 6,
+      "candidate": 4,
+      "partial": 1,
+      "raw": 1
+    },
+    "epistemic": {
+      "total": 6,
+      "candidate": 4,
+      "partial": 1,
+      "raw": 1
+    },
+    "mathematics": {
+      "total": 6,
+      "candidate": 4,
+      "partial": 1,
+      "raw": 1
+    },
+    "science": {
+      "total": 6,
+      "candidate": 4,
+      "partial": 1,
+      "raw": 1
+    },
+    "society": {
+      "total": 6,
+      "candidate": 4,
+      "partial": 1,
+      "raw": 1
+    }
+  },
+  "warning": "Author hypotheses are NOT independent semantic coverage or AI comprehension scores. The corpus was curated, not sampled from English use."
+}

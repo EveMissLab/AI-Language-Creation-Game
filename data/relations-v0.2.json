@@ -1,0 +1,23 @@
+{
+  "version": "0.2-experimental",
+  "notice": "These are provisional role signatures for benchmark auditing, not formally proved denotational semantics.",
+  "relations": {
+    "DO": {"required": ["actor", "action"], "optional": ["object"], "gloss": "An actor performs an action, optionally on an object."},
+    "IS": {"required": ["subject", "property"], "optional": [], "gloss": "Attribute a property to a subject in the stated context."},
+    "HAS": {"required": ["owner", "item"], "optional": [], "gloss": "A holder has an item; ownership is not necessarily implied."},
+    "CAUSE": {"required": ["source", "effect"], "optional": [], "gloss": "A causal relation is asserted; not the same as mere correlation."},
+    "CHANGE": {"required": ["subject", "property"], "optional": [], "gloss": "The property of a subject changes; no direction or amount is specified."},
+    "FLOW": {"required": ["subject"], "optional": [], "gloss": "The subject flows; no path or speed is specified."},
+    "IF": {"required": ["test", "then"], "optional": [], "gloss": "A conditional; does not itself assert the antecedent."},
+    "NOT": {"required": ["claim"], "optional": [], "gloss": "Negates the scope of the embedded claim."},
+    "AND": {"required": ["left", "right"], "optional": [], "gloss": "Conjunction of two expressions; not a temporal ordering."},
+    "COMPARE": {"required": ["left", "right", "by"], "optional": [], "gloss": "Claims a comparison by a named relation, with its scale still provisional."},
+    "WANT": {"required": ["agent", "goal"], "optional": [], "gloss": "An agent wants a goal; does not imply the goal is achieved."},
+    "KNOW": {"required": ["agent", "content"], "optional": [], "gloss": "Knowledge claim, conventionally factive; requires future semantic refinement."},
+    "BELIEVE": {"required": ["agent", "content"], "optional": [], "gloss": "Reports a belief attribution, not proof of internal subjective experience."},
+    "SAY": {"required": ["speaker", "content"], "optional": [], "gloss": "A speaker makes a statement, not necessarily true."},
+    "REL": {"required": ["subject", "relation", "object"], "optional": [], "gloss": "Open relation placeholder; may be too vague for precise reconstruction."},
+    "RAW": {"required": ["text"], "optional": [], "gloss": "Escaped natural language, never counted as structured coverage."},
+    "PARTIAL": {"required": ["core", "missing"], "optional": [], "gloss": "Benchmark-only annotation: structured core with unresolved meaning in RAW."}
+  }
+}
