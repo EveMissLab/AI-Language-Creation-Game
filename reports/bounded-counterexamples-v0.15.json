@@ -1,0 +1,2356 @@
+{
+  "ai_comprehension_score": null,
+  "canonical_equivalences_finite_spot_checked": 32,
+  "cases": 32,
+  "cause_canonical_equivalences_structural_only": 8,
+  "caveat": "Synthetic pair-directed finite witnesses are existential countermodels within the stated toy interpretation, NOT evidence of real-world truth or AI understanding. A missing witness does not prove semantic equivalence. CAUSE has no executable oracle in this release.",
+  "counts": {
+    "canonical_equivalent": 40,
+    "finite_counterexample": 46,
+    "no_witness_under_bounded_model": 2,
+    "unsupported_causality": 16
+  },
+  "findings": [
+    {
+      "canonical_equal": true,
+      "case_id": "G14_BEFORE_01",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_01",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=RESEARCH_ASSISTANT, action=LOAD, object=PACKAGE_RECORD)",
+                "DO(actor=RESEARCH_ASSISTANT, action=ANALYZE, object=RESULT_REPORT)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_01",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=RESEARCH_ASSISTANT, action=LOAD, object=PACKAGE_RECORD)",
+                "DO(actor=RESEARCH_ASSISTANT, action=ANALYZE, object=RESULT_REPORT)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_BEFORE_02",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_02",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=FIELD_SENSOR, action=MEASURE, object=SENSOR_READING)",
+                "DO(actor=FIELD_SENSOR, action=RELEASE, object=CONTROL_SIGNAL)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_02",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=FIELD_SENSOR, action=MEASURE, object=SENSOR_READING)",
+                "DO(actor=FIELD_SENSOR, action=RELEASE, object=CONTROL_SIGNAL)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_BEFORE_03",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_03",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=INSPECTION_DEVICE, action=SCAN, object=SYSTEM_LOG)",
+                "DO(actor=INSPECTION_DEVICE, action=SUMMARIZE, object=DELIVERY_ORDER)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_03",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=INSPECTION_DEVICE, action=SCAN, object=SYSTEM_LOG)",
+                "DO(actor=INSPECTION_DEVICE, action=SUMMARIZE, object=DELIVERY_ORDER)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_BEFORE_04",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_04",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=DATA_WORKER, action=MEASURE, object=SENSOR_READING)",
+                "DO(actor=DATA_WORKER, action=ANALYZE, object=MEASUREMENT_SET)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_04",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=DATA_WORKER, action=MEASURE, object=SENSOR_READING)",
+                "DO(actor=DATA_WORKER, action=ANALYZE, object=MEASUREMENT_SET)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_BEFORE_05",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_05",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=LOGISTICS_UNIT, action=MAP, object=PACKAGE_RECORD)",
+                "DO(actor=LOGISTICS_UNIT, action=PACKAGE, object=DELIVERY_ORDER)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_05",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=LOGISTICS_UNIT, action=MAP, object=PACKAGE_RECORD)",
+                "DO(actor=LOGISTICS_UNIT, action=PACKAGE, object=DELIVERY_ORDER)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_BEFORE_06",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_06",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=LOGISTICS_UNIT, action=LOAD, object=SENSOR_READING)",
+                "DO(actor=LOGISTICS_UNIT, action=SYNCHRONIZE, object=REFERENCE_TABLE)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_06",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=LOGISTICS_UNIT, action=LOAD, object=SENSOR_READING)",
+                "DO(actor=LOGISTICS_UNIT, action=SYNCHRONIZE, object=REFERENCE_TABLE)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_BEFORE_07",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_07",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=AUTOMATED_AGENT, action=REGISTER, object=POWER_CELL)",
+                "DO(actor=AUTOMATED_AGENT, action=RELEASE, object=FINAL_MODEL)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_07",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=AUTOMATED_AGENT, action=REGISTER, object=POWER_CELL)",
+                "DO(actor=AUTOMATED_AGENT, action=RELEASE, object=FINAL_MODEL)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_BEFORE_08",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_08",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=CONTROL_PROGRAM, action=FILTER, object=DATA_STREAM)",
+                "DO(actor=CONTROL_PROGRAM, action=ANALYZE, object=QUALITY_REPORT)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_BEFORE_08",
+      "models_examined": 1,
+      "root": "BEFORE",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [
+              [
+                "DO(actor=CONTROL_PROGRAM, action=FILTER, object=DATA_STREAM)",
+                "DO(actor=CONTROL_PROGRAM, action=ANALYZE, object=QUALITY_REPORT)"
+              ]
+            ],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {}
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_CAUSE_01",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_01",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "lexical_slot_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_01",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "operator_or_coreference_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_CAUSE_02",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_02",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "lexical_slot_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_02",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "operator_or_coreference_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_CAUSE_03",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_03",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "lexical_slot_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_03",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "operator_or_coreference_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_CAUSE_04",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_04",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "lexical_slot_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_04",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "operator_or_coreference_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_CAUSE_05",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_05",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "lexical_slot_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_05",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "operator_or_coreference_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_CAUSE_06",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_06",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "lexical_slot_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_06",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "operator_or_coreference_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_CAUSE_07",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_07",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "lexical_slot_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_07",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "operator_or_coreference_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_CAUSE_08",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_08",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "lexical_slot_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_CAUSE_08",
+      "models_examined": 0,
+      "root": "CAUSE",
+      "status": "unsupported_causality",
+      "variant": "operator_or_coreference_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_01",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_01",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "MEASUREMENTS": [
+              "SAFETY_MARGIN",
+              "V15_UNEQUAL"
+            ],
+            "SENSOR_VALUES": [
+              "V15_UNEQUAL"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "SAFETY_MARGIN": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_01",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "MEASUREMENTS": [
+              "SAFETY_MARGIN",
+              "V15_UNEQUAL"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "SAFETY_MARGIN": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_01",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "bound_variable_alpha_rename",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_02",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_02",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "READINGS": [
+              "QUALITY_THRESHOLD",
+              "V15_UNEQUAL"
+            ],
+            "SAMPLES": [
+              "V15_UNEQUAL"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "QUALITY_THRESHOLD": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_02",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "READINGS": [
+              "QUALITY_THRESHOLD",
+              "V15_UNEQUAL"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "QUALITY_THRESHOLD": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_02",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "bound_variable_alpha_rename",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_03",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_03",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "LATENCY_VALUES": [
+              "V15_UNEQUAL"
+            ],
+            "SAMPLES": [
+              "LIMIT_VALUE",
+              "V15_UNEQUAL"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "LIMIT_VALUE": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_03",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "SAMPLES": [
+              "LIMIT_VALUE",
+              "V15_UNEQUAL"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "LIMIT_VALUE": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_03",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "bound_variable_alpha_rename",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_04",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_04",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "DELIVERY_TIMES": [
+              "V15_HIGH",
+              "V15_LOW"
+            ],
+            "QUALITY_SCORES": [
+              "V15_LOW"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "REFERENCE_COUNT": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_04",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "DELIVERY_TIMES": [
+              "V15_HIGH",
+              "V15_LOW"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "REFERENCE_COUNT": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_04",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "bound_variable_alpha_rename",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_05",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_05",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "DELIVERY_TIMES": [
+              "V15_HIGH"
+            ],
+            "ENERGY_LEVELS": [
+              "V15_LOW",
+              "V15_HIGH"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "UPPER_BOUND": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_05",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "ENERGY_LEVELS": [
+              "V15_LOW",
+              "V15_HIGH"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "UPPER_BOUND": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_05",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "bound_variable_alpha_rename",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_06",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_06",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "OUTPUT_RATES": [
+              "LOWER_BOUND",
+              "V15_UNEQUAL"
+            ],
+            "TEST_SCORES": [
+              "V15_UNEQUAL"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "LOWER_BOUND": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_06",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "OUTPUT_RATES": [
+              "LOWER_BOUND",
+              "V15_UNEQUAL"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "LOWER_BOUND": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_06",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "bound_variable_alpha_rename",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_07",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_07",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "LATENCY_VALUES": [
+              "V15_HIGH"
+            ],
+            "SAMPLES": [
+              "V15_LOW",
+              "V15_HIGH"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "TEST_LIMIT": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_07",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "SAMPLES": [
+              "V15_LOW",
+              "V15_HIGH"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "TEST_LIMIT": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_07",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "bound_variable_alpha_rename",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_08",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_08",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "DELIVERY_TIMES": [
+              "V15_UNEQUAL"
+            ],
+            "ENERGY_LEVELS": [
+              "REFERENCE_COUNT",
+              "V15_UNEQUAL"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "REFERENCE_COUNT": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_EXISTS_08",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {
+            "ENERGY_LEVELS": [
+              "REFERENCE_COUNT",
+              "V15_UNEQUAL"
+            ]
+          },
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "REFERENCE_COUNT": 1,
+            "V15_HIGH": 2,
+            "V15_LOW": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_EXISTS_08",
+      "models_examined": 1,
+      "root": "EXISTS",
+      "status": "canonical_equivalent",
+      "variant": "bound_variable_alpha_rename",
+      "witness": null
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_NOT_01",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_01",
+      "models_examined": 2,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": false,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "ACTUAL_POWER": 0,
+            "MAXIMUM_LIMIT": 0,
+            "PLANNED_LIMIT": 1
+          }
+        },
+        "right": true,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_01",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "ACTUAL_POWER": 0,
+            "PLANNED_LIMIT": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_NOT_02",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_02",
+      "models_examined": 2,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "ACTUAL_POWER": 0,
+            "ACTUAL_RATE": 0,
+            "REQUIRED_POWER": 1
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_02",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "ACTUAL_POWER": 0,
+            "ACTUAL_RATE": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_NOT_03",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_03",
+      "models_examined": 27,
+      "root": "NOT",
+      "status": "no_witness_under_bounded_model",
+      "variant": "lexical_slot_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_03",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "ACTUAL_POWER": 0,
+            "PLANNED_LIMIT": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_NOT_04",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_04",
+      "models_examined": 5,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "REFERENCE_SCORE": 0,
+            "REQUIRED_POWER": 1,
+            "TEST_RESULT": 1
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_04",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "REQUIRED_POWER": 0,
+            "TEST_RESULT": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_NOT_05",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_05",
+      "models_examined": 2,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "REFERENCE_COUNT": 0,
+            "TARGET_RATE": 1
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_05",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "TARGET_RATE": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_NOT_06",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_06",
+      "models_examined": 27,
+      "root": "NOT",
+      "status": "no_witness_under_bounded_model",
+      "variant": "lexical_slot_change",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_06",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "TARGET_RATE": 0,
+            "TEST_RESULT": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_NOT_07",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_07",
+      "models_examined": 2,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "MAXIMUM_LIMIT": 0,
+            "SENSOR_SCORE": 0,
+            "TARGET_RATE": 1
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_07",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "MAXIMUM_LIMIT": 0,
+            "SENSOR_SCORE": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": true,
+      "case_id": "G14_NOT_08",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "canonical_equivalent",
+      "variant": "named_argument_reorder",
+      "witness": null
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_08",
+      "models_examined": 4,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "lexical_slot_change",
+      "witness": {
+        "left": false,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "MINIMUM_PRICE": 0,
+            "REFERENCE_COUNT": 1,
+            "REPORTED_COUNT": 0
+          }
+        },
+        "right": true,
+        "world": "actual"
+      }
+    },
+    {
+      "canonical_equal": false,
+      "case_id": "G14_NOT_08",
+      "models_examined": 1,
+      "root": "NOT",
+      "status": "finite_counterexample",
+      "variant": "operator_or_coreference_change",
+      "witness": {
+        "left": true,
+        "model": {
+          "accessibility": {
+            "actual": [
+              "actual"
+            ],
+            "possible": [
+              "possible"
+            ]
+          },
+          "before": {
+            "actual": [],
+            "possible": []
+          },
+          "domains": {},
+          "facts": {
+            "actual": [],
+            "possible": []
+          },
+          "order": {
+            "REFERENCE_COUNT": 0,
+            "REPORTED_COUNT": 0
+          }
+        },
+        "right": false,
+        "world": "actual"
+      }
+    }
+  ],
+  "format": "ALCG-v0.15-bounded-witness",
+  "independent_ai_readers": 0,
+  "no_active_registry_change": true,
+  "real_world_semantic_accuracy": null,
+  "source_generated_suite_sha256": "0d40a9effbf8c3f559269d5a300a6160e5ed3ef251b0bd2b2ad18651c60f8802",
+  "variants": 104,
+  "witness_models_examined": 111
+}

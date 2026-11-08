@@ -86,3 +86,7 @@ jobs:
         run: python challenge_generator.py check
       - name: Audit v0.14 metamorphic invariants (NOT independent AI semantics)
         run: python challenge_generator.py report
+      - name: Validate v0.15 bounded finite countermodels and replay receipts
+        run: python counterexample_lab.py check
+      - name: Audit v0.15 supported, inconclusive and unsupported statuses (NOT AI comprehension)
+        run: python counterexample_lab.py report

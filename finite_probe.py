@@ -152,10 +152,11 @@ def _evaluate(node: Name | String | Call, model: FiniteModel, world: str, env: d
         comparator = _as_name(args['by'], 'COMPARE.by')
         if comparator == 'EQUAL':
             return left == right
-        if comparator == 'GREATER_THAN':
+        if comparator in ('GREATER_THAN', 'LESS_THAN'):
             if left not in model.order or right not in model.order:
                 raise ProbeError(f'no order rank for: {left!r} or {right!r}')
-            return model.order[left] > model.order[right]
+            return (model.order[left] > model.order[right] if comparator == 'GREATER_THAN'
+                    else model.order[left] < model.order[right])
         raise ProbeError(f'unsupported comparator: {comparator}')
     if name == 'AND':
         args = _roles(node, ('left', 'right'))

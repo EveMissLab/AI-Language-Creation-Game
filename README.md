@@ -2,7 +2,7 @@
 
 **An open-source, AI-first language-creation playground.** Begin with English-readable concepts and symbols, then grow toward wider semantic coverage and eventually reusable mesoscopic concept/function bundles.
 
-> Status: **v0.14 automatic structural challenge generation (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
+> Status: **v0.15 replayable bounded countermodels (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
 
 ## What is the game?
 
@@ -99,6 +99,12 @@ python challenge_generator.py check
 python challenge_generator.py report
 python challenge_generator.py generate --out ../alcg-v0.14-generated.jsonl
 # Uses human-curated English label banks; NOT independent semantic comprehension.
+
+# v0.15: pin v0.14 generated contrasts and search toy finite-world witnesses
+python counterexample_lab.py check
+python counterexample_lab.py report
+python counterexample_lab.py replay --case G14_EXISTS_01 --variant operator_or_coreference_change
+# Reports replayable truth-value differences, NOT independent AI comprehension.
 ```
 
 Minimal examples:
@@ -110,7 +116,7 @@ WANT(agent=PERSON, goal=DO(actor=AI, action=HELP, object=PERSON))
 RAW(text="A meaning not yet expressed with structured concepts.")
 ```
 
-These examples demonstrate a **parser**, not verified meaning or truth. See [syntax sketch](docs/GRAMMAR-v0.1.md) and the [v0.2 coverage protocol](docs/COVERAGE-v0.2.md), and the [v0.3 reconstruction protocol](docs/RECONSTRUCTION-v0.3.md), the [v0.4 scope/time/modality experiments](docs/SCOPE-TIME-MODAL-v0.4.md), and the [v0.5 semantic stability laboratory](docs/SEMANTIC-STABILITY-v0.5.md), the [v0.6 coverage and polysemy protocol](docs/SENSE-COVERAGE-v0.6.md), and the [v0.7 reader-transfer protocol](docs/READER-TRANSFER-v0.7.md), the [v0.8 composition pattern experiment](docs/COMPOSITION-PATTERNS-v0.8.md), and the [v0.9 pattern-transfer protocol](docs/PATTERN-TRANSFER-v0.9.md), and the [v0.10 compact surface experiment](docs/COMPACT-SURFACE-v0.10.md), and the [v0.11 pattern proposal gate](docs/PATTERN-EVOLUTION-v0.11.md) and [v0.12 deterministic discovery lab](docs/AUTOMATIC-DISCOVERY-v0.12.md), plus the [v0.13 nontraining transfer diagnostic](docs/HOLDOUT-TRANSFER-v0.13.md) and the [v0.14 generated challenge protocol](docs/AUTOMATIC-CHALLENGE-GENERATOR-v0.14.md) for current limits.
+These examples demonstrate a **parser**, not verified meaning or truth. See [syntax sketch](docs/GRAMMAR-v0.1.md) and the [v0.2 coverage protocol](docs/COVERAGE-v0.2.md), and the [v0.3 reconstruction protocol](docs/RECONSTRUCTION-v0.3.md), the [v0.4 scope/time/modality experiments](docs/SCOPE-TIME-MODAL-v0.4.md), and the [v0.5 semantic stability laboratory](docs/SEMANTIC-STABILITY-v0.5.md), the [v0.6 coverage and polysemy protocol](docs/SENSE-COVERAGE-v0.6.md), and the [v0.7 reader-transfer protocol](docs/READER-TRANSFER-v0.7.md), the [v0.8 composition pattern experiment](docs/COMPOSITION-PATTERNS-v0.8.md), and the [v0.9 pattern-transfer protocol](docs/PATTERN-TRANSFER-v0.9.md), and the [v0.10 compact surface experiment](docs/COMPACT-SURFACE-v0.10.md), and the [v0.11 pattern proposal gate](docs/PATTERN-EVOLUTION-v0.11.md) and [v0.12 deterministic discovery lab](docs/AUTOMATIC-DISCOVERY-v0.12.md), plus the [v0.13 nontraining transfer diagnostic](docs/HOLDOUT-TRANSFER-v0.13.md) and the [v0.14 generated challenge protocol](docs/AUTOMATIC-CHALLENGE-GENERATOR-v0.14.md) and [v0.15 bounded counterexamples](docs/BOUNDED-COUNTEREXAMPLES-v0.15.md) for current limits.
 
 ## Roadmap, kept intentionally small
 
@@ -130,6 +136,7 @@ These examples demonstrate a **parser**, not verified meaning or truth. See [syn
 14. **Automatic metamorphic challenges (v0.14):** generate 32 new synthetic ASTs and 104 variants from human-curated English label banks and the 4 non-active v0.12 candidate motifs. Check argument-order and alpha-renaming invariants, changed lexical slots that still match, and role/operator violations that do not. This is **deterministic synthetic structural testing**, not independent natural-language generalization or AI comprehension; no dictionary change.
 15. **Next:** preregister a genuinely independent semantic benchmark and collect AI reader responses with fresh contexts; no registry revision without deliberate review.
 16. **Mesoscopic units (later):** explore functional composition and executable semantics as a separate future stage; v0.8 recipes are **not** this stage.
+15. **Bounded semantic counterexamples (v0.15):** revisit the 104 frozen v0.14 variants with an explicitly limited finite oracle; generate and replay 46 separating toy models, keep 40 canonical equivalences distinct, and label two no-witness cases and 16 unsupported causal contrasts. Extends only the finite evaluator's `LESS_THAN` comparison, not the published language registry. This is **not** an AI understanding score or real-world semantics result.
 
 GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.14 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
 
