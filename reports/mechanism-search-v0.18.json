@@ -1,0 +1,5988 @@
+{
+  "families": [
+    {
+      "anchor_baseline_truth_mask": 12,
+      "anchor_observations_U_G": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "candidates": [
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 0,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H00",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 12
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 1,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H01",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            0
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 2,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H02",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": true
+            },
+            "context_index": 2,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 3,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H03",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            0,
+            1
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 4,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H04",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            2
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 5,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H05",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            0,
+            2
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 6,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H06",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1,
+            2
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": true
+            },
+            "context_index": 3,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 7,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H07",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            0,
+            1,
+            2
+          ],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 8,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H08",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 9,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H09",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            0,
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 10,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H10",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": true
+            },
+            "context_index": 2,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 11,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H11",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            0,
+            1,
+            3
+          ],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 12,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H12",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            2,
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 13,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H13",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            0,
+            2,
+            3
+          ],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 14,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECT_H14",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1,
+            2,
+            3
+          ],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "exact_intervention_response_invariant",
+          "first_violation": null,
+          "mask": 15,
+          "matches_original_intervention_signatures": [
+            "F17_DIRECT_M1",
+            "F17_DIRECT_M2",
+            "F17_DIRECT_M3"
+          ],
+          "model_id": "F18_DIRECT_H15",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "structural_equations": 19
+        }
+      ],
+      "completion_count": 16,
+      "counterexample_claim_scope": "Finite family stability under addition of one observationally anchor-compatible synthetic mechanism.",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=NETWORK_NODE, property=RELIABILITY))",
+      "family_id": "F17_DIRECT",
+      "first_anchor_intervention_difference_mask": 0,
+      "first_refuting_mask": 0,
+      "first_refuting_witness": {
+        "candidate": {
+          "direction": "unchanged",
+          "do_false_Y": false,
+          "do_true_Y": false
+        },
+        "context": {
+          "G": false,
+          "U": false
+        },
+        "context_index": 0,
+        "original_models": [
+          {
+            "case_id": "F17_DIRECT_M1",
+            "direction": "positive",
+            "do_false_Y": false,
+            "do_true_Y": true
+          },
+          {
+            "case_id": "F17_DIRECT_M2",
+            "direction": "positive",
+            "do_false_Y": false,
+            "do_true_Y": true
+          },
+          {
+            "case_id": "F17_DIRECT_M3",
+            "direction": "positive",
+            "do_false_Y": false,
+            "do_true_Y": true
+          }
+        ]
+      },
+      "observational_anchor_id": "F17_DIRECT_M1",
+      "original_classification": "exact_intervention_response_invariant",
+      "original_robust_context_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "unique_full_intervention_signatures": 16
+    },
+    {
+      "anchor_baseline_truth_mask": 8,
+      "anchor_observations_U_G": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "candidates": [
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 0,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H00",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 10
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 1,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H01",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": true
+            },
+            "context_index": 3,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 2,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H02",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 3,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H03",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 4,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H04",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 5,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H05",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "negative",
+              "do_false_Y": true,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": true
+            },
+            "context_index": 2,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 6,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H06",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 7,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H07",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 8,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H08",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 9,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H09",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "qualitative_direction_invariant_only",
+          "first_violation": null,
+          "mask": 10,
+          "matches_original_intervention_signatures": [
+            "F17_DIRECTION_ONLY_M1",
+            "F17_DIRECTION_ONLY_M3"
+          ],
+          "model_id": "F18_DIRECTION_ONLY_H10",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 11,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H11",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 12,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H12",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 13,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H13",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "negative",
+              "do_false_Y": true,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": true
+            },
+            "context_index": 2,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 14,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H14",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_DIRECTION_ONLY_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_DIRECTION_ONLY_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 15,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DIRECTION_ONLY_H15",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 17
+        }
+      ],
+      "completion_count": 16,
+      "counterexample_claim_scope": "Finite family stability under addition of one observationally anchor-compatible synthetic mechanism.",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=SENSOR_ARRAY, property=ACTIVE_STATE))",
+      "family_id": "F17_DIRECTION_ONLY",
+      "first_anchor_intervention_difference_mask": 0,
+      "first_refuting_mask": 0,
+      "first_refuting_witness": {
+        "candidate": {
+          "direction": "unchanged",
+          "do_false_Y": false,
+          "do_true_Y": false
+        },
+        "context": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "original_models": [
+          {
+            "case_id": "F17_DIRECTION_ONLY_M1",
+            "direction": "positive",
+            "do_false_Y": false,
+            "do_true_Y": true
+          },
+          {
+            "case_id": "F17_DIRECTION_ONLY_M2",
+            "direction": "positive",
+            "do_false_Y": false,
+            "do_true_Y": true
+          },
+          {
+            "case_id": "F17_DIRECTION_ONLY_M3",
+            "direction": "positive",
+            "do_false_Y": false,
+            "do_true_Y": true
+          }
+        ]
+      },
+      "observational_anchor_id": "F17_DIRECTION_ONLY_M1",
+      "original_classification": "qualitative_direction_invariant_only",
+      "original_robust_context_indices": [
+        1,
+        3
+      ],
+      "unique_full_intervention_signatures": 16
+    },
+    {
+      "anchor_baseline_truth_mask": 8,
+      "anchor_observations_U_G": [
+        false,
+        false,
+        false,
+        true
+      ],
+      "candidates": [
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 0,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H00",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 10
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 1,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H01",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": true
+            },
+            "context_index": 3,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 2,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H02",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": true
+            },
+            "context_index": 3,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 3,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H03",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 4,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H04",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 5,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H05",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": true
+            },
+            "context_index": 3,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 6,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H06",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": true
+            },
+            "context_index": 3,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 7,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H07",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 8,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H08",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 9,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H09",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": null,
+          "mask": 10,
+          "matches_original_intervention_signatures": [
+            "F17_CONTEXT_M1"
+          ],
+          "model_id": "F18_CONTEXT_H10",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": null,
+          "mask": 11,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H11",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 12,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H12",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_CONTEXT_M1",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M2",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_CONTEXT_M3",
+                "direction": "positive",
+                "do_false_Y": false,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 13,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H13",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": null,
+          "mask": 14,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H14",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": null,
+          "mask": 15,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_CONTEXT_H15",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 17
+        }
+      ],
+      "completion_count": 16,
+      "counterexample_claim_scope": "Finite family stability under addition of one observationally anchor-compatible synthetic mechanism.",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=ROBOTIC_ARM, property=CONTROL_SIGNAL))",
+      "family_id": "F17_CONTEXT",
+      "first_anchor_intervention_difference_mask": 0,
+      "first_refuting_mask": 0,
+      "first_refuting_witness": {
+        "candidate": {
+          "direction": "unchanged",
+          "do_false_Y": false,
+          "do_true_Y": false
+        },
+        "context": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "original_models": [
+          {
+            "case_id": "F17_CONTEXT_M1",
+            "direction": "positive",
+            "do_false_Y": false,
+            "do_true_Y": true
+          },
+          {
+            "case_id": "F17_CONTEXT_M2",
+            "direction": "positive",
+            "do_false_Y": false,
+            "do_true_Y": true
+          },
+          {
+            "case_id": "F17_CONTEXT_M3",
+            "direction": "positive",
+            "do_false_Y": false,
+            "do_true_Y": true
+          }
+        ]
+      },
+      "observational_anchor_id": "F17_CONTEXT_M1",
+      "original_classification": "context_limited_direction_invariant",
+      "original_robust_context_indices": [
+        1,
+        3
+      ],
+      "unique_full_intervention_signatures": 16
+    },
+    {
+      "anchor_baseline_truth_mask": 12,
+      "anchor_observations_U_G": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "candidates": [
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 0,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H00",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 12
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 1,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H01",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 2,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H02",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 3,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H03",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 4,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H04",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 5,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H05",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 6,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H06",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 7,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H07",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 8,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H08",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 9,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H09",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 10,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H10",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 11,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H11",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 12,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H12",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 13,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H13",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 14,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_POLARITY_H14",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 15,
+          "matches_original_intervention_signatures": [
+            "F17_POLARITY_M1"
+          ],
+          "model_id": "F18_POLARITY_H15",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 19
+        }
+      ],
+      "completion_count": 16,
+      "counterexample_claim_scope": "Finite family stability under addition of one observationally anchor-compatible synthetic mechanism.",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=TEST_CHAMBER, property=PRESSURE_STATE))",
+      "family_id": "F17_POLARITY",
+      "first_anchor_intervention_difference_mask": 0,
+      "first_refuting_mask": null,
+      "first_refuting_witness": null,
+      "observational_anchor_id": "F17_POLARITY_M1",
+      "original_classification": "no_common_nonzero_direction",
+      "original_robust_context_indices": [],
+      "unique_full_intervention_signatures": 16
+    },
+    {
+      "anchor_baseline_truth_mask": 12,
+      "anchor_observations_U_G": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "candidates": [
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 0,
+          "matches_original_intervention_signatures": [
+            "F17_DISPUTED_M2"
+          ],
+          "model_id": "F18_DISPUTED_H00",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 12
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 1,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H01",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 2,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H02",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 3,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H03",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 4,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H04",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 5,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H05",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 6,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H06",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 7,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H07",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 8,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H08",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 9,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H09",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 10,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H10",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 11,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H11",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 12,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H12",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 13,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H13",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 14,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_DISPUTED_H14",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": null,
+          "mask": 15,
+          "matches_original_intervention_signatures": [
+            "F17_DISPUTED_M1"
+          ],
+          "model_id": "F18_DISPUTED_H15",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 19
+        }
+      ],
+      "completion_count": 16,
+      "counterexample_claim_scope": "Finite family stability under addition of one observationally anchor-compatible synthetic mechanism.",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=POWER_GRID, property=LOAD_STATE))",
+      "family_id": "F17_DISPUTED",
+      "first_anchor_intervention_difference_mask": 0,
+      "first_refuting_mask": null,
+      "first_refuting_witness": null,
+      "observational_anchor_id": "F17_DISPUTED_M1",
+      "original_classification": "no_common_nonzero_direction",
+      "original_robust_context_indices": [],
+      "unique_full_intervention_signatures": 16
+    },
+    {
+      "anchor_baseline_truth_mask": 12,
+      "anchor_observations_U_G": [
+        false,
+        false,
+        true,
+        true
+      ],
+      "candidates": [
+        {
+          "augmented_family_classification": "qualitative_direction_invariant_only",
+          "first_violation": null,
+          "mask": 0,
+          "matches_original_intervention_signatures": [
+            "F17_NO_EFFECT_M1"
+          ],
+          "model_id": "F18_NO_EFFECT_H00",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 12
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 1,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H01",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 2,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H02",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 3,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H03",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": true
+            },
+            "context_index": 2,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 4,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H04",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 5,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H05",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 6,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H06",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 7,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H07",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": true
+            },
+            "context_index": 3,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 8,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H08",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 9,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H09",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 10,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H10",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 11,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H11",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": true
+            },
+            "context_index": 2,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 12,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H12",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 13,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H13",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 14,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H14",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 17
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NO_EFFECT_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NO_EFFECT_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 15,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NO_EFFECT_H15",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ],
+            [
+              false,
+              true
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 19
+        }
+      ],
+      "completion_count": 16,
+      "counterexample_claim_scope": "Finite family stability under addition of one observationally anchor-compatible synthetic mechanism.",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=MARKET_SYSTEM, property=SIGNAL_STATE))",
+      "family_id": "F17_NO_EFFECT",
+      "first_anchor_intervention_difference_mask": 1,
+      "first_refuting_mask": 1,
+      "first_refuting_witness": {
+        "candidate": {
+          "direction": "positive",
+          "do_false_Y": false,
+          "do_true_Y": true
+        },
+        "context": {
+          "G": false,
+          "U": false
+        },
+        "context_index": 0,
+        "original_models": [
+          {
+            "case_id": "F17_NO_EFFECT_M1",
+            "direction": "unchanged",
+            "do_false_Y": false,
+            "do_true_Y": false
+          },
+          {
+            "case_id": "F17_NO_EFFECT_M2",
+            "direction": "unchanged",
+            "do_false_Y": false,
+            "do_true_Y": false
+          },
+          {
+            "case_id": "F17_NO_EFFECT_M3",
+            "direction": "unchanged",
+            "do_false_Y": true,
+            "do_true_Y": true
+          }
+        ]
+      },
+      "observational_anchor_id": "F17_NO_EFFECT_M1",
+      "original_classification": "qualitative_direction_invariant_only",
+      "original_robust_context_indices": [],
+      "unique_full_intervention_signatures": 16
+    },
+    {
+      "anchor_baseline_truth_mask": 2,
+      "anchor_observations_U_G": [
+        false,
+        true,
+        false,
+        false
+      ],
+      "candidates": [
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 0,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H00",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 10
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 1,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H01",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": false,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": true,
+              "U": true
+            },
+            "context_index": 3,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 2,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H02",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 3,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H03",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 4,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H04",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "no_common_nonzero_direction",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 5,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H05",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "negative",
+              "do_false_Y": true,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": true
+            },
+            "context_index": 2,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 6,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H06",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 7,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H07",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 8,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H08",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 11
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 9,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H09",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "qualitative_direction_invariant_only",
+          "first_violation": null,
+          "mask": 10,
+          "matches_original_intervention_signatures": [
+            "F17_NEGATIVE_M1",
+            "F17_NEGATIVE_M2"
+          ],
+          "model_id": "F18_NEGATIVE_H10",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": false,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 11,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H11",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "unchanged",
+              "do_false_Y": true,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": true,
+              "U": false
+            },
+            "context_index": 1,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "negative",
+                "do_false_Y": true,
+                "do_true_Y": false
+              }
+            ]
+          },
+          "mask": 12,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H12",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 13
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 13,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H13",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "negative",
+              "do_false_Y": true,
+              "do_true_Y": false
+            },
+            "context": {
+              "G": false,
+              "U": true
+            },
+            "context_index": 2,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 14,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H14",
+          "new_intervention_signature": [
+            [
+              false,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 15
+        },
+        {
+          "augmented_family_classification": "context_limited_direction_invariant",
+          "first_violation": {
+            "candidate": {
+              "direction": "positive",
+              "do_false_Y": false,
+              "do_true_Y": true
+            },
+            "context": {
+              "G": false,
+              "U": false
+            },
+            "context_index": 0,
+            "original_models": [
+              {
+                "case_id": "F17_NEGATIVE_M1",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M2",
+                "direction": "unchanged",
+                "do_false_Y": false,
+                "do_true_Y": false
+              },
+              {
+                "case_id": "F17_NEGATIVE_M3",
+                "direction": "unchanged",
+                "do_false_Y": true,
+                "do_true_Y": true
+              }
+            ]
+          },
+          "mask": 15,
+          "matches_original_intervention_signatures": [],
+          "model_id": "F18_NEGATIVE_H15",
+          "new_intervention_signature": [
+            [
+              false,
+              true
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ],
+            [
+              true,
+              false
+            ]
+          ],
+          "observationally_identical_to_first_model": true,
+          "refutes_original_nonvacuous_invariant": true,
+          "remaining_robust_context_indices": [
+            1,
+            3
+          ],
+          "structural_equations": 17
+        }
+      ],
+      "completion_count": 16,
+      "counterexample_claim_scope": "Finite family stability under addition of one observationally anchor-compatible synthetic mechanism.",
+      "expression": "CAUSE(source=SIGNAL, effect=CHANGE(subject=CHEMICAL_REACTOR, property=SAFETY_STATE))",
+      "family_id": "F17_NEGATIVE",
+      "first_anchor_intervention_difference_mask": 0,
+      "first_refuting_mask": 0,
+      "first_refuting_witness": {
+        "candidate": {
+          "direction": "unchanged",
+          "do_false_Y": true,
+          "do_true_Y": true
+        },
+        "context": {
+          "G": true,
+          "U": false
+        },
+        "context_index": 1,
+        "original_models": [
+          {
+            "case_id": "F17_NEGATIVE_M1",
+            "direction": "negative",
+            "do_false_Y": true,
+            "do_true_Y": false
+          },
+          {
+            "case_id": "F17_NEGATIVE_M2",
+            "direction": "negative",
+            "do_false_Y": true,
+            "do_true_Y": false
+          },
+          {
+            "case_id": "F17_NEGATIVE_M3",
+            "direction": "negative",
+            "do_false_Y": true,
+            "do_true_Y": false
+          }
+        ]
+      },
+      "observational_anchor_id": "F17_NEGATIVE_M1",
+      "original_classification": "qualitative_direction_invariant_only",
+      "original_robust_context_indices": [
+        1,
+        3
+      ],
+      "unique_full_intervention_signatures": 16
+    }
+  ],
+  "format": "ALCG-v0.18-observational-completion-search",
+  "pinned_v017_family_fixture_sha256": "8e56da78a59fae8a3c7c65940b2a44b2d351d8a155cded02308f75b3173e0589",
+  "pinned_v017_family_report_sha256": "e10073f903a77017ebae9c8571359f02028fa79276f6523f1da25aa6972838b3",
+  "provenance": "Deterministically synthesized finite SCMs from seven earlier, assistant-authored families. No empirical observations or independent AI readers.",
+  "scope": "Only 16 off-observation completions per first-model anchor with Boolean U,G,SIGNAL,Y. Observed SIGNAL=U; candidate variables may respond differently to do(SIGNAL=0/1). A witness refutes only a previously true finite-family stability property under this specified extension, not an actual universal causal theorem.",
+  "search_space_sha256": "99c7ba43e36fad5dfc10f893ff70808c4278b148214bba8c9426cc8674ab465a",
+  "summary": {
+    "active_registry_changed": false,
+    "ai_comprehension_score": null,
+    "all_candidates_observationally_match_anchor": true,
+    "candidate_intervention_evaluations": 896,
+    "candidate_models": 112,
+    "candidate_observation_evaluations": 448,
+    "candidates_per_family": 16,
+    "distinct_intervention_signatures_per_family": 16,
+    "empirical_causal_evidence": null,
+    "families": 7,
+    "families_with_nonvacuous_invariant": 5,
+    "families_with_preexisting_noninvariance": 2,
+    "independent_ai_readers": 0,
+    "nonvacuous_invariants_refuted_by_a_completion": 5,
+    "original_classification_counts": {
+      "context_limited_direction_invariant": 1,
+      "exact_intervention_response_invariant": 1,
+      "no_common_nonzero_direction": 2,
+      "qualitative_direction_invariant_only": 3
+    },
+    "original_models": 21,
+    "universal_causal_theorem_proved_or_refuted": false
+  }
+}

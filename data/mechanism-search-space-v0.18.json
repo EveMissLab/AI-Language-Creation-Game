@@ -1,0 +1,56 @@
+{
+  "format": "ALCG-v0.18-observational-completion-search",
+  "provenance": "deterministic assistant-authored finite Boolean mechanism experiment",
+  "original_family_fixture_sha256": "8e56da78a59fae8a3c7c65940b2a44b2d351d8a155cded02308f75b3173e0589",
+  "original_family_report_sha256": "e10073f903a77017ebae9c8571359f02028fa79276f6523f1da25aa6972838b3",
+  "intervention_source": "SIGNAL",
+  "exogenous_order": [
+    "U",
+    "G"
+  ],
+  "natural_source_equation": "SIGNAL=U",
+  "outcome_indicator": "Y",
+  "background_order_U_G": [
+    [
+      false,
+      false
+    ],
+    [
+      false,
+      true
+    ],
+    [
+      true,
+      false
+    ],
+    [
+      true,
+      true
+    ]
+  ],
+  "candidate_masks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "candidate_formula": "Y=B(U,G) XOR ((SIGNAL XOR U) AND H(U,G))",
+  "mask_rule": "bit i of H is its Boolean value at background_order_U_G[i]",
+  "baseline_rule": "B(U,G) equals the first v0.17 family model observed Y for that context",
+  "scope": "All 16 Boolean off-support completions of the first model observed response on the fixed two-bit U,G domain, not all SCMs or real-world causal models.",
+  "selection_rule": "Enumerate masks ascending. For existing nonvacuous stability claims, select the first model that violates the original family invariant.",
+  "no_promotion": true,
+  "no_independent_reader_or_empirical_data": true
+}

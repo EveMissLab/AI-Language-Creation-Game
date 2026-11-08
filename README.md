@@ -149,10 +149,11 @@ These examples demonstrate a **parser**, not verified meaning or truth. See [syn
 15. **Bounded semantic counterexamples (v0.15):** revisit 104 frozen v0.14 variants with an intentionally limited finite oracle; generate 46 replayable toy separating models, retain 40 canonical equivalences, and distinguish 2 no-witness results from 16 unsupported causal contrasts. Old artifacts remain pinned.
 16. **Opt-in causal interventions (v0.16):** add eight deliberately authored finite Boolean structural causal models with explicit `do`-style interventions. Test 24 CAUSE-root contrasts: 8 canonical matches, 7 conditional intervention separations, 1 non-separation, and 8 effects outside the typed `CHANGE` subset. Compare observational association against intervention sensitivity. This is **not empirical causal inference or independently measured AI comprehension**; no published dictionary change.
 17. **Cross-model causal invariance (v0.17):** compare one typed `CAUSE` claim across 7 assistant-authored families and 21 finite SCMs, including 84 aligned model/background evaluations and 168 interventions. Distinguish exact output invariance, shared qualitative direction, background-restricted direction, and disagreement; preserve all earlier model files, reports and published patterns. No independent reader or real-world causal inference is claimed.
-18. **Next:** preregister independent semantic readers and fresh out-of-sample meanings, including cases where observational evidence and intervention results conflict.
+18. **Bounded mechanism search (v0.18):** exhaustively enumerate 16 synthetic observationally anchor-equivalent Boolean completions per v0.17 family (112 candidate SCMs total). All match the designated first model at four natural backgrounds, but new candidates weaken the previously true finite-family stability claim in all five applicable families. The other two families already lacked a nonzero common direction. This is bounded *model-family sensitivity*, not a falsification of earlier calculations, not all causal models and not empirical inference. [Detailed scope and replayable witnesses](docs/OBSERVATION-EQUIVALENT-MECHANISM-SEARCH-v0.18.md).
+19. **Next:** run independent AI readers and fresh out-of-sample conceptual claims; do not conflate generated synthetic mechanisms with AI concept understanding.
 19. **Mesoscopic units (later):** explore actually usable functional/conceptual compositions without prematurely calling an unexecuted symbolic label a program.
 
-GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.17 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
+GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.18 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
 
 ## 中文簡介
 
@@ -171,6 +172,8 @@ v0.16 新增**有限布林結構因果模型（SCM）介入試驗**，以八組�
 
 
 v0.17 新增**跨模型有限因果穩定性試驗**：同一個 `CAUSE` 表達分別交給 7 組人工宣告的模型家族（21 個有限模型），比對 84 個模型背景組合及 168 次 `do` 介入結果。系統區分「介入結果完全一致」、「只有方向一致」、「只有特定背景方向一致」與「跨模型作用方向不一致」，並保存每個模型的可重播結果與不一致反例。這不是自然世界的因果推斷，也不是獨立 AI 的理解成績；既有的 v0.16 因果報告和公開字典保持原樣。詳見 [v0.17 研究規格](docs/CROSS-MODEL-CAUSAL-INVARIANCE-v0.17.md)。
+
+v0.18 加入**觀察等價的有限機制探索**：在既有 7 組 v0.17 家族上，以每組第一個模型為觀察錨點，枚舉 16 種不改變自然觀察輸出、但可能改變 `do(SIGNAL)` 結果的有限布林機制（共 112 個新模型）。五組原本具非空穩定性結論的家族都找到加入新模型後不再維持原結論的反例；兩組本來就沒有共同非零方向，不能被虛報成「再度推翻」。這不修改既有 v0.17 計算結論，而是測量**擴張假設模型家族時的敏感性**，也不是現實因果發現或獨立 AI 理解測試。詳見 [v0.18 研究規格](docs/OBSERVATION-EQUIVALENT-MECHANISM-SEARCH-v0.18.md)。
 
 ## License
 

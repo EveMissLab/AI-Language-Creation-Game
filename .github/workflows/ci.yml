@@ -100,3 +100,7 @@ jobs:
         run: python causal_robustness.py check
       - name: Audit v0.17 cross-model classification (NOT AI comprehension)
         run: python causal_robustness.py summary
+      - name: Check v0.18 bounded observation-equivalent mechanism search (NOT empirical causality)
+        run: python mechanism_search.py check
+      - name: Audit v0.18 finite mechanism completion boundaries (NOT AI comprehension)
+        run: python mechanism_search.py summary
