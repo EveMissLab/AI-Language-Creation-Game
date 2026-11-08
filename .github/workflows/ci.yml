@@ -40,3 +40,5 @@ jobs:
         run: python coverage_lab.py check
       - name: Audit v0.2 coverage proposals
         run: python coverage_lab.py audit
+      - name: Validate v0.3 reconstruction and contrast fixtures
+        run: python reconstruction_lab.py check
