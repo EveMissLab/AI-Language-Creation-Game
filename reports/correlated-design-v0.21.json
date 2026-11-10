@@ -1,0 +1,310 @@
+{
+  "counts": {
+    "context_sensor_profiles": 4,
+    "families_frozen": 7,
+    "hypotheses_masks": 16,
+    "joint_fault_mask_states": 32
+  },
+  "format": "ALCG-v0.21-asymmetric-session-correlated-stop-decisions",
+  "legacy_v020_unchanged": true,
+  "preview": {
+    "after_first_reading_loss64": [
+      {
+        "budget_cost_units": 0,
+        "budget_only_bounded": true,
+        "decision": "STOP",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 64,
+        "optimal_expected_future_total_loss": {
+          "decimal": 57.517241379,
+          "denominator": 29,
+          "numerator": 1668
+        },
+        "optimal_first_action": null,
+        "stop_now_expected_loss": {
+          "decimal": 57.517241379,
+          "denominator": 29,
+          "numerator": 1668
+        }
+      },
+      {
+        "budget_cost_units": 1,
+        "budget_only_bounded": true,
+        "decision": "CONTINUE",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 64,
+        "optimal_expected_future_total_loss": {
+          "decimal": 54.344827586,
+          "denominator": 29,
+          "numerator": 1576
+        },
+        "optimal_first_action": 4,
+        "stop_now_expected_loss": {
+          "decimal": 57.517241379,
+          "denominator": 29,
+          "numerator": 1668
+        }
+      },
+      {
+        "budget_cost_units": 2,
+        "budget_only_bounded": true,
+        "decision": "CONTINUE",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 64,
+        "optimal_expected_future_total_loss": {
+          "decimal": 54.325969828,
+          "denominator": 1856,
+          "numerator": 100829
+        },
+        "optimal_first_action": 4,
+        "stop_now_expected_loss": {
+          "decimal": 57.517241379,
+          "denominator": 29,
+          "numerator": 1668
+        }
+      }
+    ],
+    "example_family_id": "F17_DIRECT",
+    "initial_risk_policies_loss32": [
+      {
+        "budget_cost_units": 0,
+        "budget_only_bounded": true,
+        "decision": "STOP",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 32,
+        "optimal_expected_future_total_loss": {
+          "decimal": 30.0,
+          "denominator": 1,
+          "numerator": 30
+        },
+        "optimal_first_action": null,
+        "stop_now_expected_loss": {
+          "decimal": 30.0,
+          "denominator": 1,
+          "numerator": 30
+        }
+      },
+      {
+        "budget_cost_units": 1,
+        "budget_only_bounded": true,
+        "decision": "CONTINUE",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 32,
+        "optimal_expected_future_total_loss": {
+          "decimal": 29.875,
+          "denominator": 8,
+          "numerator": 239
+        },
+        "optimal_first_action": 3,
+        "stop_now_expected_loss": {
+          "decimal": 30.0,
+          "denominator": 1,
+          "numerator": 30
+        }
+      },
+      {
+        "budget_cost_units": 2,
+        "budget_only_bounded": true,
+        "decision": "CONTINUE",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 32,
+        "optimal_expected_future_total_loss": {
+          "decimal": 28.8125,
+          "denominator": 16,
+          "numerator": 461
+        },
+        "optimal_first_action": 3,
+        "stop_now_expected_loss": {
+          "decimal": 30.0,
+          "denominator": 1,
+          "numerator": 30
+        }
+      },
+      {
+        "budget_cost_units": 3,
+        "budget_only_bounded": true,
+        "decision": "CONTINUE",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 32,
+        "optimal_expected_future_total_loss": {
+          "decimal": 28.8125,
+          "denominator": 16,
+          "numerator": 461
+        },
+        "optimal_first_action": 3,
+        "stop_now_expected_loss": {
+          "decimal": 30.0,
+          "denominator": 1,
+          "numerator": 30
+        }
+      },
+      {
+        "budget_cost_units": 4,
+        "budget_only_bounded": true,
+        "decision": "CONTINUE",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 32,
+        "optimal_expected_future_total_loss": {
+          "decimal": 28.8125,
+          "denominator": 16,
+          "numerator": 461
+        },
+        "optimal_first_action": 3,
+        "stop_now_expected_loss": {
+          "decimal": 30.0,
+          "denominator": 1,
+          "numerator": 30
+        }
+      }
+    ],
+    "initial_risk_policies_loss64": [
+      {
+        "budget_cost_units": 0,
+        "budget_only_bounded": true,
+        "decision": "STOP",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 64,
+        "optimal_expected_future_total_loss": {
+          "decimal": 60.0,
+          "denominator": 1,
+          "numerator": 60
+        },
+        "optimal_first_action": null,
+        "stop_now_expected_loss": {
+          "decimal": 60.0,
+          "denominator": 1,
+          "numerator": 60
+        }
+      },
+      {
+        "budget_cost_units": 1,
+        "budget_only_bounded": true,
+        "decision": "CONTINUE",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 64,
+        "optimal_expected_future_total_loss": {
+          "decimal": 58.75,
+          "denominator": 4,
+          "numerator": 235
+        },
+        "optimal_first_action": 3,
+        "stop_now_expected_loss": {
+          "decimal": 60.0,
+          "denominator": 1,
+          "numerator": 60
+        }
+      },
+      {
+        "budget_cost_units": 2,
+        "budget_only_bounded": true,
+        "decision": "CONTINUE",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 64,
+        "optimal_expected_future_total_loss": {
+          "decimal": 55.625,
+          "denominator": 8,
+          "numerator": 445
+        },
+        "optimal_first_action": 3,
+        "stop_now_expected_loss": {
+          "decimal": 60.0,
+          "denominator": 1,
+          "numerator": 60
+        }
+      },
+      {
+        "budget_cost_units": 3,
+        "budget_only_bounded": true,
+        "decision": "CONTINUE",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 64,
+        "optimal_expected_future_total_loss": {
+          "decimal": 55.594970703,
+          "denominator": 4096,
+          "numerator": 227717
+        },
+        "optimal_first_action": 3,
+        "stop_now_expected_loss": {
+          "decimal": 60.0,
+          "denominator": 1,
+          "numerator": 60
+        }
+      },
+      {
+        "budget_cost_units": 4,
+        "budget_only_bounded": true,
+        "decision": "CONTINUE",
+        "method": "exact_joint_bayes_risk_dp_with_stop_and_session_latent",
+        "misclassification_penalty_units": 64,
+        "optimal_expected_future_total_loss": {
+          "decimal": 55.450958252,
+          "denominator": 32768,
+          "numerator": 1817017
+        },
+        "optimal_first_action": 3,
+        "stop_now_expected_loss": {
+          "decimal": 60.0,
+          "denominator": 1,
+          "numerator": 60
+        }
+      }
+    ],
+    "max_mask_probability_persistent_fault": {
+      "decimal": 0.102498935,
+      "denominator": 75152,
+      "numerator": 7703
+    },
+    "max_mask_probability_redrawn_fault": {
+      "decimal": 0.123417797,
+      "denominator": 841232,
+      "numerator": 103823
+    },
+    "persistent_and_redrawn_mask_posteriors_differ": true,
+    "repeat_count": 3,
+    "sensor_asymmetry_at_action_3": {
+      "P_false_negative": {
+        "decimal": 0.1875,
+        "denominator": 16,
+        "numerator": 3
+      },
+      "P_false_positive": {
+        "decimal": 0.0625,
+        "denominator": 16,
+        "numerator": 1
+      }
+    },
+    "synthetic_trace": [
+      {
+        "action_id": 3,
+        "observed_Y": true
+      },
+      {
+        "action_id": 2,
+        "observed_Y": false
+      },
+      {
+        "action_id": 3,
+        "observed_Y": true
+      }
+    ],
+    "trace_posterior_fault": {
+      "decimal": 0.012939615,
+      "denominator": 3014,
+      "numerator": 39
+    },
+    "trace_posterior_max_mask": {
+      "decimal": 0.122718978,
+      "denominator": 2192,
+      "numerator": 269
+    },
+    "uniform_mask_prior": "16 mechanisms at 1/16, session fault prior 1/8"
+  },
+  "provenance": "exact enumerated synthetic Bayesian inference; no sampled or real observations",
+  "warnings": [
+    "Synthetic Boolean SCMs and arbitrary assumed noise and costs; not measured sensors.",
+    "Session fault is only a toy shared latent flip, not a general correlated noise model.",
+    "The maximum four-unit plan is optimal only inside the stated bounded action/model class.",
+    "Positive noise allows no finite-history certainty; loss must be supplied by the decision maker.",
+    "No experimental causal inference, external AI reader results or published language change."
+  ]
+}

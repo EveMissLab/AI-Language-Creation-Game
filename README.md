@@ -2,7 +2,7 @@
 
 **An open-source, AI-first language-creation playground.** Begin with English-readable concepts and symbols, then grow toward wider semantic coverage and eventually reusable mesoscopic concept/function bundles.
 
-> Status: **v0.20 synthetic noisy and cost-aware active intervention design (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
+> Status: **v0.21 asymmetric, session-correlated observations and bounded stop/continue decisions (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
 
 ## What is the game?
 
@@ -148,6 +148,15 @@ RAW(text="A meaning not yet expressed with structured concepts.")
 
 These examples demonstrate a **parser**, not verified meaning or truth. See [syntax sketch](docs/GRAMMAR-v0.1.md) and the [v0.2 coverage protocol](docs/COVERAGE-v0.2.md), and the [v0.3 reconstruction protocol](docs/RECONSTRUCTION-v0.3.md), the [v0.4 scope/time/modality experiments](docs/SCOPE-TIME-MODAL-v0.4.md), and the [v0.5 semantic stability laboratory](docs/SEMANTIC-STABILITY-v0.5.md), the [v0.6 coverage and polysemy protocol](docs/SENSE-COVERAGE-v0.6.md), and the [v0.7 reader-transfer protocol](docs/READER-TRANSFER-v0.7.md), the [v0.8 composition pattern experiment](docs/COMPOSITION-PATTERNS-v0.8.md), and the [v0.9 pattern-transfer protocol](docs/PATTERN-TRANSFER-v0.9.md), and the [v0.10 compact surface experiment](docs/COMPACT-SURFACE-v0.10.md), and the [v0.11 pattern proposal gate](docs/PATTERN-EVOLUTION-v0.11.md) and [v0.12 deterministic discovery lab](docs/AUTOMATIC-DISCOVERY-v0.12.md), plus the [v0.13 nontraining transfer diagnostic](docs/HOLDOUT-TRANSFER-v0.13.md) and the [v0.14 generated challenge protocol](docs/AUTOMATIC-CHALLENGE-GENERATOR-v0.14.md), [v0.15 bounded counterexamples](docs/BOUNDED-COUNTEREXAMPLES-v0.15.md), and [v0.16 finite intervention experiments](docs/FINITE-CAUSAL-INTERVENTIONS-v0.16.md), plus [v0.17 cross-model causal invariance](docs/CROSS-MODEL-CAUSAL-INVARIANCE-v0.17.md), for current limits.
 
+```bash
+# v0.21: asymmetric observations, persistent session fault, stopping under risk
+python correlated_design.py check
+python correlated_design.py summary
+python correlated_design.py plan --family F17_DIRECT --budget 2 --loss 64
+python correlated_design.py plan --family F17_DIRECT --budget 2 --loss 64 --observe 3=1 --observe 2=0
+# Causal mechanisms and sensor parameters are synthetic, not empirical data.
+```
+
 ## Roadmap, kept intentionally small
 
 1. **Seed (now):** a readable, recursive text syntax, examples, and a local audit that makes gaps visible.
@@ -170,10 +179,11 @@ These examples demonstrate a **parser**, not verified meaning or truth. See [syn
 18. **Bounded mechanism search (v0.18):** exhaustively enumerate 16 synthetic observationally anchor-equivalent Boolean completions per v0.17 family (112 candidate SCMs total). All match the designated first model at four natural backgrounds, but new candidates weaken the previously true finite-family stability claim in all five applicable families. The other two families already lacked a nonzero common direction. This is bounded *model-family sensitivity*, not a falsification of earlier calculations, not all causal models and not empirical inference. [Detailed scope and replayable witnesses](docs/OBSERVATION-EQUIVALENT-MECHANISM-SEARCH-v0.18.md).
 19. **Active intervention design (v0.19):** use the 16 v0.18 observation-equivalent completions per family as a fixed, noiseless hypothesis class. Four informative off-natural interventions are necessary and sufficient for exact identification; a weaker anchor-agreement test can stop at the first mismatch (uniform-prior mean 1.875, worst 4). Supports partial-information recommendations under restricted access, and 896 independent SCM response replays. **No real experiments, independent AI-reader data or dictionary update.** [Full specification](docs/ACTIVE-INTERVENTION-DESIGN-v0.19.md).
 20. **Noisy, cost-aware active experiments (v0.20):** keep the v0.19 exact finite benchmark fixed and instead assume independent symmetric binary measurement errors and unequal intervention costs. Repeated readings update a rational Bayesian posterior rather than deleting candidates. Compare greedy information gain per cost with exact budget-limited MAP mechanism classification; the objectives can select different next interventions. These are hypothetical synthetic channel/cost parameters, **not measured sensor error, real-world causal discovery or AI comprehension**. [Specification](docs/NOISY-COST-AWARE-ACTIVE-DESIGN-v0.20.md).
-21. **Non-implemented challenge:** collect independent reader data without conflating it with synthetic mechanism experiments.
-22. **Mesoscopic units (later):** explore actually usable functional/conceptual compositions without prematurely calling an unexecuted symbolic label a program.
+21. **Asymmetric and session-correlated sensors (v0.21):** retain the v0.19/v0.20 frozen finite cases, but now use distinct false-positive / false-negative probabilities plus a persistent shared session fault. Maintain an exact joint posterior over 16 masks and two fault states, compare against an independent-per-reading control, and solve a finite four-unit-cost STOP/CONTINUE policy based on assumed misclassification loss. This is synthetic decision analysis, **not** measured sensor performance, AI comprehension or a new published language operator. [Specification](docs/ASYMMETRIC-CORRELATED-STOPPING-v0.21.md).
+22. **Non-implemented challenge:** collect independent reader data without conflating it with synthetic mechanism experiments.
+23. **Mesoscopic units (later):** explore actually usable functional/conceptual compositions without prematurely calling an unexecuted symbolic label a program.
 
-GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.20 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
+GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.21 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
 
 ## 中文簡介
 
@@ -198,6 +208,9 @@ v0.18 加入**觀察等價的有限機制探索**：在既有 7 組 v0.17 家族
 v0.19 新增**主動有限介入辨識**：在 v0.18 已知的七組家族、每組 16 個觀察等價機制中，系統能按照條件選擇下一個可分辨機制的 `do(SIGNAL)` 測試，並將結果回饋至剩餘候選清單。四個有效介入是完整辨識的必要且充分條件；若只是判斷是否與錨點相同，均勻候選假設下平均 1.875 次，最壞四次。總共重新執行 896 次合成模型介入來核對保存的真值表；這些**不是現實中的實驗、AI 語義理解測試，也不代表一般因果系統必須四次介入**。不更動既有公開字典。詳見 [v0.19 研究規格](docs/ACTIVE-INTERVENTION-DESIGN-v0.19.md)。
 
 v0.20 新增**假設性雜訊與不同介入成本的主動實驗設計**：以 v0.19 七組家族、每組 16 個既有機制為固定基礎，設定四種不同成本及非零對稱觀測翻轉機率。即使遇到矛盾讀數，也會以有理數貝葉斯後驗保留所有候選，不再假裝已能零錯誤辨識。比較每單位成本的預期資訊收益與固定預算內最終全機制 MAP 成功率；兩者在某些情況會選不同的下一步。本版沒有新增語言算子、沒有更新公開字典，也沒有現實感測或獨立 AI 理解率的測量。詳見 [v0.20 研究規格](docs/NOISY-COST-AWARE-ACTIVE-DESIGN-v0.20.md)。
+
+
+v0.21 加入**非對稱觀測誤差、整個實驗階段共用的隱藏感測偏差，以及有限預算下的停止決策**。使用 v0.19 的 16 種觀察等價機制，另增一個二元的固定階段偏差，形成 32 個聯合狀態。系統以精確有理數計算後驗，並對比每次重新抽取誤差的控制模型。在兩單位成本預算下，錯誤分類代價為 8 時決策停止，代價為 64 時則建議繼續。這是**明確限定的合成決策實驗**，非現實量測、非 AI 語義理解成績，也沒有變更任何正式字典。參見 [v0.21 完整規格](docs/ASYMMETRIC-CORRELATED-STOPPING-v0.21.md)。
 
 ## License
 

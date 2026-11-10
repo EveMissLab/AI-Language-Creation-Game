@@ -112,3 +112,7 @@ jobs:
         run: python noisy_design.py check
       - name: Audit v0.20 greedy information and exact bounded MAP accuracy (NOT empirical accuracy)
         run: python noisy_design.py report
+      - name: Check v0.21 asymmetric session-correlated Bayesian report and pinned inputs
+        run: python correlated_design.py check
+      - name: Audit v0.21 bounded STOP/CONTINUE expected-loss policy (NOT empirical error rates)
+        run: python correlated_design.py summary

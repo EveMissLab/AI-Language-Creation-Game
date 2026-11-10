@@ -1,0 +1,76 @@
+{
+  "allowed_actions": "all eight v0.19 interventions, including natural-output calibration probes",
+  "channel": "A fresh base reading B has P(B=1|trueY=0)=FPR, P(B=0|trueY=1)=FNR; actual observed Y=B XOR persistent Z.",
+  "correlation": "Z is drawn once for the full session; base sensor errors are independent given M,Z,actions",
+  "costs": [
+    4,
+    1,
+    1,
+    3
+  ],
+  "format": "ALCG-v0.21-asymmetric-session-correlated-stop-decisions",
+  "hypotheses": "sixteen mechanisms m=0..15 and persistent session fault Z=0/1",
+  "independent_control": "Z is instead redrawn independently per observation (for analytic contrast only)",
+  "joint_prior": "P(M=m)=1/16, P(Z=1)=1/8 independent at session start",
+  "limitations": [
+    "Synthetic Boolean SCMs and arbitrary assumed noise and costs; not measured sensors.",
+    "Session fault is only a toy shared latent flip, not a general correlated noise model.",
+    "The maximum four-unit plan is optimal only inside the stated bounded action/model class.",
+    "Positive noise allows no finite-history certainty; loss must be supplied by the decision maker.",
+    "No experimental causal inference, external AI reader results or published language change."
+  ],
+  "loss": "L*(1-max_m P(M=m|history)), for a chosen unit-cost misclassification penalty L",
+  "no_empirical_causality": true,
+  "no_independent_ai_comprehension": true,
+  "per_context_false_negative": [
+    {
+      "decimal": 0.0625,
+      "denominator": 16,
+      "numerator": 1
+    },
+    {
+      "decimal": 0.1875,
+      "denominator": 16,
+      "numerator": 3
+    },
+    {
+      "decimal": 0.125,
+      "denominator": 8,
+      "numerator": 1
+    },
+    {
+      "decimal": 0.25,
+      "denominator": 4,
+      "numerator": 1
+    }
+  ],
+  "per_context_false_positive": [
+    {
+      "decimal": 0.03125,
+      "denominator": 32,
+      "numerator": 1
+    },
+    {
+      "decimal": 0.0625,
+      "denominator": 16,
+      "numerator": 1
+    },
+    {
+      "decimal": 0.1875,
+      "denominator": 16,
+      "numerator": 3
+    },
+    {
+      "decimal": 0.125,
+      "denominator": 8,
+      "numerator": 1
+    }
+  ],
+  "pinned_v020_report_sha256": "5375a1f49e81eae095cad6041f8829010a4583eb4ec7573420922aa93bf73e90",
+  "pinned_v020_spec_sha256": "c93375d04d1c4b45110d00ca2f961e23c58711575654eb0dc41668519b27837e",
+  "planning_budget_max": 4,
+  "published_language_dictionary_unmodified": true,
+  "source": "frozen v0.19 sixteen-mask SCMs and frozen v0.20 independent-noise comparison",
+  "stop_policy": "exact finite-horizon dynamic program: minimum expected future measurement cost plus stop loss",
+  "stop_tie_break": "stop on equality; otherwise lowest action id among exact ties"
+}
