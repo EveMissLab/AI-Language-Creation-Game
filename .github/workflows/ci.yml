@@ -166,3 +166,10 @@ jobs:
         run: python alcg.py check samples/model-selections-v0.32.alcg
       - name: Audit v0.32 switches and held-out scoring (NOT production accuracy)
         run: python model_selection.py report
+
+      - name: Verify v0.33 frozen past-only evidence and switch-stability report
+        run: python switch_stability.py check
+      - name: Validate v0.33 ALCG decision projection syntax
+        run: python alcg.py check samples/switch-decisions-v0.33.alcg
+      - name: Audit v0.33 bounded anti-thrashing tradeoff (NOT production confidence)
+        run: python switch_stability.py report

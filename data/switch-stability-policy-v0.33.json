@@ -1,0 +1,51 @@
+{
+  "beta_prior": {
+    "alpha": 1,
+    "beta": 1
+  },
+  "cooldown_subsequent_windows": 1,
+  "cuts": [
+    32,
+    64,
+    96,
+    128,
+    160
+  ],
+  "expert_names": [
+    "RAW",
+    "LAGGED",
+    "HEDGE"
+  ],
+  "format": "ALCG-v0.33-bounded-switch-stability",
+  "horizon": 32,
+  "lookback_closed_windows": 3,
+  "min_evidence_windows": 2,
+  "minimum_extra_margin": {
+    "den": 1000,
+    "num": 1
+  },
+  "posterior_win_threshold": {
+    "den": 8,
+    "num": 7
+  },
+  "scenarios": [
+    "stable",
+    "churn",
+    "sparse",
+    "drift"
+  ],
+  "stress_length": 12,
+  "stress_tracks": [
+    "alternating",
+    "sustained_shift",
+    "single_spike",
+    "flat"
+  ],
+  "switch_penalty": {
+    "den": 10000,
+    "num": 1
+  },
+  "v029_timing_source_sha256": "69ba138d26321e338108fc87c207c08c09050010b5d48896c1933244b5a0ac01",
+  "v030_events_sha256": "fb9c0f1b789fc1f853c24fb6bb84bbfbf1663c59dd23bd9fd102c3ecd493a01d",
+  "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+}

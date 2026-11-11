@@ -335,3 +335,20 @@ python alcg.py check samples/model-selections-v0.32.alcg
 ```
 
 The deterministic source, explicit model inventory, scored receipts, switches, complete frozen report, 20 ALCG expressions, negative examples and limitations are documented in [PREQUENTIAL-MODEL-SELECTION-v0.32](docs/PREQUENTIAL-MODEL-SELECTION-v0.32.md). All previous dictionaries, parser rules, synthetic fixtures, historical reports and CI checks are preserved.
+
+
+## v0.33 — Prefix-only switch evidence, bounded confidence score and anti-thrashing (2026-11-11)
+
+```bash
+python switch_stability.py check
+python switch_stability.py report
+python switch_stability.py issue --case drift --at 128
+python switch_stability.py stress --case alternating
+python alcg.py check samples/switch-decisions-v0.33.alcg
+```
+
+ALCG v0.33 adds an experimental **gate** to the v0.32 prequential expert selector: a challenger must repeatedly beat the incumbent on *already closed* windows, clear an explicit exact-rational advantage and Beta-Bernoulli win-score threshold, and satisfy a one-window cooldown. It emits 20 `GATE_V033(...)` expressions with reproducible prefix receipts; the existing English-readable parser and published word/symbol dictionaries are not modified.
+
+**Measured bounded result (synthetic only):** switches decline **5 → 4**, but mean combined Brier loss **worsens 0.208214 → 0.213635** on the 15 scored windows. On an additional hand-authored `alternating` stress track the gate avoids 10 naive previous-window switches, while on `sustained_shift` it adapts three steps after the change and accumulates extra loss. The win score assumes independent Bernoulli comparisons, and is **not** a calibrated statistical confidence guarantee. No production accuracy, universal policy optimality or AI language comprehension is implied. See [v0.33 full formal protocol and limitations](docs/SWITCH-STABILITY-v0.33.md).
+
+中文補充：v0.33 加入「連續證據門檻、切換冷卻期、過去窗口證據回執」，以抑制頻繁切換，但也保留切換過慢造成預測損失增加的反例。兩者不應被混成單一成功率；所有結果都只針對明確定義的合成測試成立。

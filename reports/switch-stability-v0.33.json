@@ -1,0 +1,3523 @@
+{
+  "config": {
+    "beta_prior": {
+      "alpha": 1,
+      "beta": 1
+    },
+    "cooldown_subsequent_windows": 1,
+    "cuts": [
+      32,
+      64,
+      96,
+      128,
+      160
+    ],
+    "expert_names": [
+      "RAW",
+      "LAGGED",
+      "HEDGE"
+    ],
+    "format": "ALCG-v0.33-bounded-switch-stability",
+    "horizon": 32,
+    "lookback_closed_windows": 3,
+    "min_evidence_windows": 2,
+    "minimum_extra_margin": {
+      "den": 1000,
+      "num": 1
+    },
+    "posterior_win_threshold": {
+      "den": 8,
+      "num": 7
+    },
+    "scenarios": [
+      "stable",
+      "churn",
+      "sparse",
+      "drift"
+    ],
+    "stress_length": 12,
+    "stress_tracks": [
+      "alternating",
+      "sustained_shift",
+      "single_spike",
+      "flat"
+    ],
+    "switch_penalty": {
+      "den": 10000,
+      "num": 1
+    },
+    "v029_timing_source_sha256": "69ba138d26321e338108fc87c207c08c09050010b5d48896c1933244b5a0ac01",
+    "v030_events_sha256": "fb9c0f1b789fc1f853c24fb6bb84bbfbf1663c59dd23bd9fd102c3ecd493a01d",
+    "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+  },
+  "format": "ALCG-v0.33-bounded-switch-stability",
+  "issuances": [
+    {
+      "at_tick": 32,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 9
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 34,
+            "num": 9
+          },
+          "reset_probability": {
+            "den": 27,
+            "num": 1
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 9
+          },
+          "reset_probability": {
+            "den": 27,
+            "num": 1
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 0,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {},
+        "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+        "selected": "RAW"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "da1b372c288604df4a4c5758ceb428daa7407ce0842e8d180a800cf0baf186fe",
+      "policy_route": "direct",
+      "prior_closed_receipts": [],
+      "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+      "scenario": "stable",
+      "selected": "RAW",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "497323706f4fee1b9a7156256a871c6c3b80893383e50635ba8188da71692c2a",
+      "source_receipt_sha256": "144d856095974fa00867a2f243d36d7df5ea180e5ecfaed3f112b03ae278cc24",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 64,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 16
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 1
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 1,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 1,
+            "mean_loss_advantage": {
+              "den": 729,
+              "num": -80
+            },
+            "posterior_win_score": {
+              "den": 4,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 1,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 10404,
+            "num": 6781
+          },
+          "LAGGED": {
+            "den": 842724,
+            "num": 456781
+          },
+          "RAW": {
+            "den": 842724,
+            "num": 456781
+          }
+        },
+        "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+        "selected": "RAW"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "f230224a47ef5cd6cee583503fbc51f2018c4236f8e086c5f9e67825e8b1c01a",
+      "policy_route": "direct",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 6781
+            },
+            "LAGGED": {
+              "den": 842724,
+              "num": 456781
+            },
+            "RAW": {
+              "den": 842724,
+              "num": 456781
+            }
+          },
+          "outcome_sha256": "783dd1748e1904c64cde6aa2f8014b7d46e1564042898d641b28a514cebb839a",
+          "prior_cut": 32
+        }
+      ],
+      "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+      "scenario": "stable",
+      "selected": "RAW",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "ff268e0373be8b3121f966eaa4f65eedab6cfdb85a0edda8fc9893b20c4af594",
+      "source_receipt_sha256": "5868690f49e3983d5d069fa446d9abfe607fab9fab2b7394b0f42d51c9d55bb4",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 96,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 16
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 1
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 11491218,
+              "num": 6371
+            },
+            "posterior_win_score": {
+              "den": 4,
+              "num": 3
+            },
+            "qualifies": false,
+            "ties": 1,
+            "wins": 1
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 2,
+            "mean_loss_advantage": {
+              "den": 210681,
+              "num": -23224
+            },
+            "posterior_win_score": {
+              "den": 8,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 2,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 10404,
+            "num": 3973
+          },
+          "LAGGED": {
+            "den": 1861577316,
+            "num": 504645551
+          },
+          "RAW": {
+            "den": 842724,
+            "num": 228917
+          }
+        },
+        "reason": "NO_QUALIFYING_ADVANTAGE",
+        "selected": "RAW"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "b5abb41c1f3afa7e84d6c78884f8f6ff6ac8369ff1f1b2cd702f7c19d21698d9",
+      "policy_route": "direct",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 6781
+            },
+            "LAGGED": {
+              "den": 842724,
+              "num": 456781
+            },
+            "RAW": {
+              "den": 842724,
+              "num": 456781
+            }
+          },
+          "outcome_sha256": "783dd1748e1904c64cde6aa2f8014b7d46e1564042898d641b28a514cebb839a",
+          "prior_cut": 32
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 1165
+            },
+            "LAGGED": {
+              "den": 22982436,
+              "num": 3233
+            },
+            "RAW": {
+              "den": 10404,
+              "num": 13
+            }
+          },
+          "outcome_sha256": "2f724c2f6fb7a5bbee74593f0071597d88f1124b32b73af582598fa1a5312d80",
+          "prior_cut": 64
+        }
+      ],
+      "reason": "NO_QUALIFYING_ADVANTAGE",
+      "scenario": "stable",
+      "selected": "RAW",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "632a07b881503687f5442c7f62128f296bf2ecca9d957620c0bdb875218d81de",
+      "source_receipt_sha256": "69d80cb2568179e780ef4398a6f47178655e679ef43057fb8f59fc2bbb4595a6",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 128,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 16
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 1
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 17236827,
+              "num": 12742
+            },
+            "posterior_win_score": {
+              "den": 8,
+              "num": 7
+            },
+            "qualifies": false,
+            "ties": 1,
+            "wins": 2
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 3,
+            "mean_loss_advantage": {
+              "den": 632043,
+              "num": -69776
+            },
+            "posterior_win_score": {
+              "den": 16,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 3,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 10404,
+            "num": 3037
+          },
+          "LAGGED": {
+            "den": 5584731948,
+            "num": 1009552975
+          },
+          "RAW": {
+            "den": 2528172,
+            "num": 458887
+          }
+        },
+        "reason": "NO_QUALIFYING_ADVANTAGE",
+        "selected": "RAW"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "9994b443ff5cefaf9a5d4325fcc25f71fc999cc2345b3049848229c7a62f838d",
+      "policy_route": "direct",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 6781
+            },
+            "LAGGED": {
+              "den": 842724,
+              "num": 456781
+            },
+            "RAW": {
+              "den": 842724,
+              "num": 456781
+            }
+          },
+          "outcome_sha256": "783dd1748e1904c64cde6aa2f8014b7d46e1564042898d641b28a514cebb839a",
+          "prior_cut": 32
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 1165
+            },
+            "LAGGED": {
+              "den": 22982436,
+              "num": 3233
+            },
+            "RAW": {
+              "den": 10404,
+              "num": 13
+            }
+          },
+          "outcome_sha256": "2f724c2f6fb7a5bbee74593f0071597d88f1124b32b73af582598fa1a5312d80",
+          "prior_cut": 64
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 1165
+            },
+            "LAGGED": {
+              "den": 22982436,
+              "num": 3233
+            },
+            "RAW": {
+              "den": 10404,
+              "num": 13
+            }
+          },
+          "outcome_sha256": "a07a8cff390d24c4b516891b4e448ed94fc12d41b66ca4bbb75ccbc0c6efe977",
+          "prior_cut": 96
+        }
+      ],
+      "reason": "NO_QUALIFYING_ADVANTAGE",
+      "scenario": "stable",
+      "selected": "RAW",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "b1d5d8a61cd41633151c7516d35f960f494489909cb17534301d18dfe7c0d473",
+      "source_receipt_sha256": "34ddded1c41078e9d71953aa63a0cf2bc7c281b85578f3a218c39e09858d7797",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 160,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 16
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 1
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 5745609,
+              "num": 6371
+            },
+            "posterior_win_score": {
+              "den": 16,
+              "num": 15
+            },
+            "qualifies": true,
+            "ties": 0,
+            "wins": 3
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 3,
+            "mean_loss_advantage": {
+              "den": 289,
+              "num": -32
+            },
+            "posterior_win_score": {
+              "den": 16,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 3,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 10404,
+            "num": 1165
+          },
+          "LAGGED": {
+            "den": 22982436,
+            "num": 3233
+          },
+          "RAW": {
+            "den": 10404,
+            "num": 13
+          }
+        },
+        "reason": "PERSISTENT_ADVANTAGE_SWITCH",
+        "selected": "LAGGED"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "5619b945e4dc48107c9d54ea16e90717c6fec33d8943ed756858a6c3e71e6ee7",
+      "policy_route": "cache",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 1165
+            },
+            "LAGGED": {
+              "den": 22982436,
+              "num": 3233
+            },
+            "RAW": {
+              "den": 10404,
+              "num": 13
+            }
+          },
+          "outcome_sha256": "2f724c2f6fb7a5bbee74593f0071597d88f1124b32b73af582598fa1a5312d80",
+          "prior_cut": 64
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 1165
+            },
+            "LAGGED": {
+              "den": 22982436,
+              "num": 3233
+            },
+            "RAW": {
+              "den": 10404,
+              "num": 13
+            }
+          },
+          "outcome_sha256": "a07a8cff390d24c4b516891b4e448ed94fc12d41b66ca4bbb75ccbc0c6efe977",
+          "prior_cut": 96
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 1165
+            },
+            "LAGGED": {
+              "den": 22982436,
+              "num": 3233
+            },
+            "RAW": {
+              "den": 10404,
+              "num": 13
+            }
+          },
+          "outcome_sha256": "9b2db5a9eabcd2ba1137920ce910257adcee02903bcc09b00ec92804f4080bf2",
+          "prior_cut": 128
+        }
+      ],
+      "reason": "PERSISTENT_ADVANTAGE_SWITCH",
+      "scenario": "stable",
+      "selected": "LAGGED",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "139ce2f0c04488882a7372a158fe3a3b8a059dbf60127c727f5b01365937f392",
+      "source_receipt_sha256": "a6d0fd650676e593d7315f3d1285c62d71a9c384b11dc5f49b59cd61a8446a8a",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 32,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 16
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 16
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 0,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {},
+        "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+        "selected": "RAW"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "00864dbc04285acbe670f6943941bc6e5f82c05bdc4db831da55d06f84d8fc21",
+      "policy_route": "direct",
+      "prior_closed_receipts": [],
+      "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+      "scenario": "churn",
+      "selected": "RAW",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "37c1944ca68209c0394f45ca08fd8b03b1d3085ebe32cf2e5f2a131dd177eec7",
+      "source_receipt_sha256": "1600c6eddc9385a1ba747ad7726b25201f4ff89948997af5ad0167adf74d6420",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 64,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 1021
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 16
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 1,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 26877,
+              "num": 169
+            },
+            "posterior_win_score": {
+              "den": 4,
+              "num": 3
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 1
+          }
+        ],
+        "closed_windows_scored": 1,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 322524,
+            "num": 88135
+          },
+          "LAGGED": {
+            "den": 322524,
+            "num": 90163
+          },
+          "RAW": {
+            "den": 322524,
+            "num": 90163
+          }
+        },
+        "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+        "selected": "RAW"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "4007265bd2ff3d1fa40f3a7aa623cd457ac64df7187dcb21798b64aacaec3385",
+      "policy_route": "direct",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 322524,
+              "num": 90163
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "985b0d57a7654e90feff672fb9a331a30e6fd056d0517f47ab346665c1080488",
+          "prior_cut": 32
+        }
+      ],
+      "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+      "scenario": "churn",
+      "selected": "RAW",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "d0967345a1121a1254f5091ba0b7e1b865022af844a8009e895f5c7b9a7dfe76",
+      "source_receipt_sha256": "957a86aca302356a53db79ed8a9f1058af767dac3585977c2ecaedd37d4fb1fd",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 96,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 1021
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 16
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 356227758,
+              "num": 4695701
+            },
+            "posterior_win_score": {
+              "den": 4,
+              "num": 3
+            },
+            "qualifies": false,
+            "ties": 1,
+            "wins": 1
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 26877,
+              "num": 169
+            },
+            "posterior_win_score": {
+              "den": 8,
+              "num": 7
+            },
+            "qualifies": true,
+            "ties": 0,
+            "wins": 2
+          }
+        ],
+        "closed_windows_scored": 2,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 322524,
+            "num": 88135
+          },
+          "LAGGED": {
+            "den": 237485172,
+            "num": 63259555
+          },
+          "RAW": {
+            "den": 322524,
+            "num": 90163
+          }
+        },
+        "reason": "PERSISTENT_ADVANTAGE_SWITCH",
+        "selected": "HEDGE"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "6e6f0ba5bc1d0045a3fe9b1c89881588132cb62f01a5292f6eb6225af2b60bd6",
+      "policy_route": "direct",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 322524,
+              "num": 90163
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "985b0d57a7654e90feff672fb9a331a30e6fd056d0517f47ab346665c1080488",
+          "prior_cut": 32
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 180387263
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "3ee88be43b7f37148b6d35c04e984eec76cca78b4c2f278b942e7788a7a4d89e",
+          "prior_cut": 64
+        }
+      ],
+      "reason": "PERSISTENT_ADVANTAGE_SWITCH",
+      "scenario": "churn",
+      "selected": "HEDGE",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "b76ebfdc760675f86fede0682f655527665ae17a39960d608a605020d087a539",
+      "source_receipt_sha256": "d4f7371211cf132e8f79080684205490a80ed57eef46c1e388cd6390560a5a49",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 128,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 1021
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 16
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "RAW",
+            "losses": 3,
+            "mean_loss_advantage": {
+              "den": 26877,
+              "num": -169
+            },
+            "posterior_win_score": {
+              "den": 16,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          },
+          {
+            "expert": "LAGGED",
+            "losses": 1,
+            "mean_loss_advantage": {
+              "den": 534341637,
+              "num": 6031513
+            },
+            "posterior_win_score": {
+              "den": 16,
+              "num": 11
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 2
+          }
+        ],
+        "closed_windows_scored": 3,
+        "cooldown_active": true,
+        "incumbent_before": "HEDGE",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 322524,
+            "num": 88135
+          },
+          "LAGGED": {
+            "den": 2137366548,
+            "num": 559944593
+          },
+          "RAW": {
+            "den": 322524,
+            "num": 90163
+          }
+        },
+        "reason": "COOLDOWN_KEEP",
+        "selected": "HEDGE"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "14cc4fe562a6577ff06bfec73a4b59bba44bfe01cecd525697623b93c81908ac",
+      "policy_route": "direct",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 322524,
+              "num": 90163
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "985b0d57a7654e90feff672fb9a331a30e6fd056d0517f47ab346665c1080488",
+          "prior_cut": 32
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 180387263
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "3ee88be43b7f37148b6d35c04e984eec76cca78b4c2f278b942e7788a7a4d89e",
+          "prior_cut": 64
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 180387263
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "7682015589ca267094f18e15ff379a1e6585ef8fd4e1b429a0431d277d6f66d1",
+          "prior_cut": 96
+        }
+      ],
+      "reason": "COOLDOWN_KEEP",
+      "scenario": "churn",
+      "selected": "HEDGE",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "33b2c4c2ce871661581f2a1c8e3975fa0039afe0ffc9a18c4c62fc14f358dca4",
+      "source_receipt_sha256": "5c1c7002b2df1e83210fe10d519e3b5b512e0a166868b79789f14f442729ca23",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 160,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 1021
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 16
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "RAW",
+            "losses": 3,
+            "mean_loss_advantage": {
+              "den": 26877,
+              "num": -169
+            },
+            "posterior_win_score": {
+              "den": 16,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          },
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 178113879,
+              "num": 3575738
+            },
+            "posterior_win_score": {
+              "den": 16,
+              "num": 15
+            },
+            "qualifies": true,
+            "ties": 0,
+            "wins": 3
+          }
+        ],
+        "closed_windows_scored": 3,
+        "cooldown_active": false,
+        "incumbent_before": "HEDGE",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 322524,
+            "num": 88135
+          },
+          "LAGGED": {
+            "den": 712455516,
+            "num": 180387263
+          },
+          "RAW": {
+            "den": 322524,
+            "num": 90163
+          }
+        },
+        "reason": "PERSISTENT_ADVANTAGE_SWITCH",
+        "selected": "LAGGED"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "129c432634bbc25fe1c9739a0aa8c144b7c3d86296b878d25d1f5cc751c7337d",
+      "policy_route": "direct",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 180387263
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "3ee88be43b7f37148b6d35c04e984eec76cca78b4c2f278b942e7788a7a4d89e",
+          "prior_cut": 64
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 180387263
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "7682015589ca267094f18e15ff379a1e6585ef8fd4e1b429a0431d277d6f66d1",
+          "prior_cut": 96
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 180387263
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "7bbb64ce197cfa462018621fe0050b43b31606b5028086bac7d05e94adad6d91",
+          "prior_cut": 128
+        }
+      ],
+      "reason": "PERSISTENT_ADVANTAGE_SWITCH",
+      "scenario": "churn",
+      "selected": "LAGGED",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "89dc8258ce5fbc4f551b17fae78efacf8d9bc7c70dfc0bceddbbfc25a72fa8b8",
+      "source_receipt_sha256": "22f6efec29fcca62ab9b243f3a5a66f59b9f66f9c8b800090c0a0c79ce7f5b85",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 32,
+      "candidates": null,
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 0,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {},
+        "reason": "NO_SUPPORTED_FORECAST",
+        "selected": "DEFER"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "41116c6a7e22fd0152ae77079a3cfa3db21f605d605ce0c053b6ca3f2554faee",
+      "policy_route": "direct",
+      "prior_closed_receipts": [],
+      "reason": "NO_SUPPORTED_FORECAST",
+      "scenario": "sparse",
+      "selected": "DEFER",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "4f4b16438cfd862994219f47308d76f8f1cd8058dd9cb9729418d3214ad632f4",
+      "source_receipt_sha256": "44bd998415e60e546591e83db4c412164ebe623960e0481439a9cf04b15bc4e4",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 64,
+      "candidates": null,
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 0,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {},
+        "reason": "NO_SUPPORTED_FORECAST",
+        "selected": "DEFER"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "5f2fbf87df1ab96e905969a48fd3f32f0808a2b766faf1de3587ef5126dfec15",
+      "policy_route": "direct",
+      "prior_closed_receipts": [],
+      "reason": "NO_SUPPORTED_FORECAST",
+      "scenario": "sparse",
+      "selected": "DEFER",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "e1a5a3f47e3c27e56da30e3150915290f844014f175346f37c648fc2d149fd47",
+      "source_receipt_sha256": "ec1562beaba2427e77ad576ded65a8cbb026c45147911c8b6c6af7ba509d096c",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 96,
+      "candidates": null,
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 0,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {},
+        "reason": "NO_SUPPORTED_FORECAST",
+        "selected": "DEFER"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "ea045dfd4a687382ad6046a7ae9c34c2cf18fa16ec67abf19f940b51ad732ae5",
+      "policy_route": "direct",
+      "prior_closed_receipts": [],
+      "reason": "NO_SUPPORTED_FORECAST",
+      "scenario": "sparse",
+      "selected": "DEFER",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "48eb95129e38c752060dea2cd7c8f12287a3e5ffb363e670728cc5946b88b1f4",
+      "source_receipt_sha256": "92b3ec491482da98b24eadffd304fe071491f5231c5e48e54fa6e14bff7775b7",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 128,
+      "candidates": null,
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 0,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {},
+        "reason": "NO_SUPPORTED_FORECAST",
+        "selected": "DEFER"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "bf0a4fbf0d229a0a15241e9b9b238367d1593dcf6dbd60c822fd6eb068262563",
+      "policy_route": "direct",
+      "prior_closed_receipts": [],
+      "reason": "NO_SUPPORTED_FORECAST",
+      "scenario": "sparse",
+      "selected": "DEFER",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "7215784374afcb032476a44d8d2da3d57cb21f36344a0e9a5a321f71cef3cd75",
+      "source_receipt_sha256": "fb90b77b2b50dcf9f17dff3c21af558bc5da7ad0ca98dedca74c63bfcf307f93",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 160,
+      "candidates": null,
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 0,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {},
+        "reason": "NO_SUPPORTED_FORECAST",
+        "selected": "DEFER"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "e47fe944fc11be6df34e57f7f8bc93269cb26c449ba2bc5f974b7dd45dafd74b",
+      "policy_route": "direct",
+      "prior_closed_receipts": [],
+      "reason": "NO_SUPPORTED_FORECAST",
+      "scenario": "sparse",
+      "selected": "DEFER",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "cd902d1970e865373ad5350e34eaba64a35adcbe71968c1102462c1770fe41c9",
+      "source_receipt_sha256": "09654cb7a6c9389ca4dc2a2ddf3e211769a9a3c5e740c2d0075a6428cbb8c8f4",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 32,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 1
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 1
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 0,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {},
+        "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+        "selected": "RAW"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "fa4e4b5982f6d4d2c4eab0fdd27082f7ab2836cda64980df230c14cb45bab5cf",
+      "policy_route": "direct",
+      "prior_closed_receipts": [],
+      "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+      "scenario": "drift",
+      "selected": "RAW",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "e7b74218061a7209b358b5afef0a97a5e6a5004a0845e842b50796bad49cc430",
+      "source_receipt_sha256": "bbb383b64f10338719aef270ac850fb06db75f0618ab89eeb7600fae7715d07c",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 64,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 16
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 1
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 1,
+              "num": 0
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 1,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 1,
+            "mean_loss_advantage": {
+              "den": 289,
+              "num": -32
+            },
+            "posterior_win_score": {
+              "den": 4,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 0
+          }
+        ],
+        "closed_windows_scored": 1,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 10404,
+            "num": 1165
+          },
+          "LAGGED": {
+            "den": 10404,
+            "num": 13
+          },
+          "RAW": {
+            "den": 10404,
+            "num": 13
+          }
+        },
+        "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+        "selected": "RAW"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "390f7fa59d75e883ecea0d734653a2a62c5fd79e412db7a389f717123394d09d",
+      "policy_route": "direct",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 1165
+            },
+            "LAGGED": {
+              "den": 10404,
+              "num": 13
+            },
+            "RAW": {
+              "den": 10404,
+              "num": 13
+            }
+          },
+          "outcome_sha256": "783dd1748e1904c64cde6aa2f8014b7d46e1564042898d641b28a514cebb839a",
+          "prior_cut": 32
+        }
+      ],
+      "reason": "INSUFFICIENT_CLOSED_EVIDENCE",
+      "scenario": "drift",
+      "selected": "RAW",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "bc8639a38de284ba472c0df17909dc8988ec467a291a024b0bf4627e77565a13",
+      "source_receipt_sha256": "3710044a357532f8776d7bf939cac2fc74cc426ab222030e26b2d774f9e7f2db",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 96,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 1021
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 16
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 1,
+            "mean_loss_advantage": {
+              "den": 11491218,
+              "num": -65539
+            },
+            "posterior_win_score": {
+              "den": 4,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 1,
+            "wins": 0
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 1,
+            "mean_loss_advantage": {
+              "den": 8959,
+              "num": 368
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 1
+          }
+        ],
+        "closed_windows_scored": 2,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 322524,
+            "num": 62125
+          },
+          "LAGGED": {
+            "den": 79161724,
+            "num": 18951375
+          },
+          "RAW": {
+            "den": 322524,
+            "num": 75373
+          }
+        },
+        "reason": "NO_QUALIFYING_ADVANTAGE",
+        "selected": "RAW"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "d2c548c68759b8dee7d702611664ecd9c418e079361d2d9e98380e30c9ef823d",
+      "policy_route": "direct",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 1165
+            },
+            "LAGGED": {
+              "den": 10404,
+              "num": 13
+            },
+            "RAW": {
+              "den": 10404,
+              "num": 13
+            }
+          },
+          "outcome_sha256": "783dd1748e1904c64cde6aa2f8014b7d46e1564042898d641b28a514cebb839a",
+          "prior_cut": 32
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 340234523
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 150343
+            }
+          },
+          "outcome_sha256": "3ee88be43b7f37148b6d35c04e984eec76cca78b4c2f278b942e7788a7a4d89e",
+          "prior_cut": 64
+        }
+      ],
+      "reason": "NO_QUALIFYING_ADVANTAGE",
+      "scenario": "drift",
+      "selected": "RAW",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "11936a816b6d6fd13eb4e56f816ad20726a9be38d2eca4f9fbf46d8451885aab",
+      "source_receipt_sha256": "fa380b9ad4aace4b10f97890c08b27294906555560c583bde65567ef91be5dd0",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 128,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 1021
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 16
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 1,
+            "mean_loss_advantage": {
+              "den": 534341637,
+              "num": 2663992
+            },
+            "posterior_win_score": {
+              "den": 2,
+              "num": 1
+            },
+            "qualifies": false,
+            "ties": 1,
+            "wins": 1
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 1,
+            "mean_loss_advantage": {
+              "den": 80631,
+              "num": 2377
+            },
+            "posterior_win_score": {
+              "den": 16,
+              "num": 11
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 2
+          }
+        ],
+        "closed_windows_scored": 3,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 322524,
+            "num": 70795
+          },
+          "LAGGED": {
+            "den": 2137366548,
+            "num": 521512013
+          },
+          "RAW": {
+            "den": 322524,
+            "num": 80303
+          }
+        },
+        "reason": "NO_QUALIFYING_ADVANTAGE",
+        "selected": "RAW"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "149eecf99c0912652f30621dc6c98a7706ac621e7e83948087e3597692fc2031",
+      "policy_route": "direct",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 10404,
+              "num": 1165
+            },
+            "LAGGED": {
+              "den": 10404,
+              "num": 13
+            },
+            "RAW": {
+              "den": 10404,
+              "num": 13
+            }
+          },
+          "outcome_sha256": "783dd1748e1904c64cde6aa2f8014b7d46e1564042898d641b28a514cebb839a",
+          "prior_cut": 32
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 340234523
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 150343
+            }
+          },
+          "outcome_sha256": "3ee88be43b7f37148b6d35c04e984eec76cca78b4c2f278b942e7788a7a4d89e",
+          "prior_cut": 64
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 180387263
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "7682015589ca267094f18e15ff379a1e6585ef8fd4e1b429a0431d277d6f66d1",
+          "prior_cut": 96
+        }
+      ],
+      "reason": "NO_QUALIFYING_ADVANTAGE",
+      "scenario": "drift",
+      "selected": "RAW",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "7f7ebde42d40a4cb7138905b93455684422d6c28d3a8aa74794f842a6c4ed28c",
+      "source_receipt_sha256": "b74a6f26b78f592b05388f9f420b2d440cce368880cc132528113885b7a84dd0",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    },
+    {
+      "at_tick": 160,
+      "candidates": {
+        "HEDGE": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 3,
+            "num": 1
+          }
+        },
+        "LAGGED": {
+          "read_probability": {
+            "den": 102,
+            "num": 101
+          },
+          "reset_probability": {
+            "den": 2397,
+            "num": 1021
+          }
+        },
+        "RAW": {
+          "read_probability": {
+            "den": 34,
+            "num": 33
+          },
+          "reset_probability": {
+            "den": 51,
+            "num": 16
+          }
+        }
+      },
+      "decision_evidence": {
+        "candidate_evidence": [
+          {
+            "expert": "LAGGED",
+            "losses": 1,
+            "mean_loss_advantage": {
+              "den": 178113879,
+              "num": 2453231
+            },
+            "posterior_win_score": {
+              "den": 16,
+              "num": 11
+            },
+            "qualifies": false,
+            "ties": 0,
+            "wins": 2
+          },
+          {
+            "expert": "HEDGE",
+            "losses": 0,
+            "mean_loss_advantage": {
+              "den": 80631,
+              "num": 5522
+            },
+            "posterior_win_score": {
+              "den": 16,
+              "num": 15
+            },
+            "qualifies": true,
+            "ties": 0,
+            "wins": 3
+          }
+        ],
+        "closed_windows_scored": 3,
+        "cooldown_active": false,
+        "incumbent_before": "RAW",
+        "mean_prior_losses": {
+          "HEDGE": {
+            "den": 322524,
+            "num": 88135
+          },
+          "LAGGED": {
+            "den": 712455516,
+            "num": 233669683
+          },
+          "RAW": {
+            "den": 35836,
+            "num": 12247
+          }
+        },
+        "reason": "PERSISTENT_ADVANTAGE_SWITCH",
+        "selected": "HEDGE"
+      },
+      "format": "ALCG-v0.33-bounded-switch-stability",
+      "horizon": 32,
+      "issue_sha256": "72873cb7d76386f3cdeb32123f6cee650f3e10d779b31798fd886b3462d12b21",
+      "policy_route": "direct",
+      "prior_closed_receipts": [
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 340234523
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 150343
+            }
+          },
+          "outcome_sha256": "3ee88be43b7f37148b6d35c04e984eec76cca78b4c2f278b942e7788a7a4d89e",
+          "prior_cut": 64
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 180387263
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "7682015589ca267094f18e15ff379a1e6585ef8fd4e1b429a0431d277d6f66d1",
+          "prior_cut": 96
+        },
+        {
+          "losses": {
+            "HEDGE": {
+              "den": 322524,
+              "num": 88135
+            },
+            "LAGGED": {
+              "den": 712455516,
+              "num": 180387263
+            },
+            "RAW": {
+              "den": 322524,
+              "num": 90163
+            }
+          },
+          "outcome_sha256": "7bbb64ce197cfa462018621fe0050b43b31606b5028086bac7d05e94adad6d91",
+          "prior_cut": 128
+        }
+      ],
+      "reason": "PERSISTENT_ADVANTAGE_SWITCH",
+      "scenario": "drift",
+      "selected": "HEDGE",
+      "source": "synthetic-fixture",
+      "source_prefix_sha256": "7b3019230acf617b6f42e95795c1e04b17a266a0e67e9d829d2b8552ea1b2afd",
+      "source_receipt_sha256": "a2f550168497816c26f2aa75cdbda8cd808e8e2143b2fe8ee75f73adc87527f4",
+      "v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c"
+    }
+  ],
+  "limitations": [
+    "Only deterministic synthetic streams and hand-authored diagnostic stress tracks.",
+    "Beta win score assumes IID Bernoulli comparisons, which correlated windows may violate.",
+    "A high posterior win score is not calibrated confidence in real forecast accuracy.",
+    "Short lookbacks may miss short genuine regime shifts and may delay useful switching.",
+    "No independent AI semantic comprehension, production forecast, or runtime acceleration measured.",
+    "Costs and cooldown are authored fixed thresholds, not optimal or learned policies.",
+    "Frozen v0.32 report and all historical grammars, model files and dictionaries remain unchanged.",
+    "SHA-256 records verify internal consistency, not author identity or external data authenticity."
+  ],
+  "report_sha256": "13a66675ec696e4bb3d46ace2b40511d106fd38214be680122cb5f4e5089d451",
+  "settlements": [
+    {
+      "always_raw_loss": {
+        "den": 842724,
+        "num": 456781
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 842724,
+        "num": 456781
+      },
+      "issue_sha256": "da1b372c288604df4a4c5758ceb428daa7407ce0842e8d180a800cf0baf186fe",
+      "outcome_sha256": "9a78d513cf88cf1fe54ef0cf068528f5473fb7384858d5aae122cdd92d20ccde",
+      "v032_loss": {
+        "den": 842724,
+        "num": 456781
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 10404,
+        "num": 13
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 10404,
+        "num": 13
+      },
+      "issue_sha256": "f230224a47ef5cd6cee583503fbc51f2018c4236f8e086c5f9e67825e8b1c01a",
+      "outcome_sha256": "9f947fbc19742721ba62d8ff6278801bf23dd2f8693e2e50c7d9aa78f128987d",
+      "v032_loss": {
+        "den": 10404,
+        "num": 13
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 10404,
+        "num": 13
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 10404,
+        "num": 13
+      },
+      "issue_sha256": "b5abb41c1f3afa7e84d6c78884f8f6ff6ac8369ff1f1b2cd702f7c19d21698d9",
+      "outcome_sha256": "fd86f374150efdc6f134edbfe3f2fef3a7fcb78230ba85365c1454c095070639",
+      "v032_loss": {
+        "den": 22982436,
+        "num": 3233
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 10404,
+        "num": 13
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 10404,
+        "num": 13
+      },
+      "issue_sha256": "9994b443ff5cefaf9a5d4325fcc25f71fc999cc2345b3049848229c7a62f838d",
+      "outcome_sha256": "2c3c8f956bac5c21f08a42a3092a5ad2cbf215843858aa0bb14fa25a16ec7f92",
+      "v032_loss": {
+        "den": 22982436,
+        "num": 3233
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 10404,
+        "num": 13
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 22982436,
+        "num": 3233
+      },
+      "issue_sha256": "5619b945e4dc48107c9d54ea16e90717c6fec33d8943ed756858a6c3e71e6ee7",
+      "outcome_sha256": "a68339293b168149ccaac6c8d866c6c348a6e2b9c85fff50b2ced905330eba4f",
+      "v032_loss": {
+        "den": 22982436,
+        "num": 3233
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "issue_sha256": "00864dbc04285acbe670f6943941bc6e5f82c05bdc4db831da55d06f84d8fc21",
+      "outcome_sha256": "7fd8a73f6d6b541d8d1062bdc6b731198e0fe3d7e7f246bd1e97dd58fd40ce41",
+      "v032_loss": {
+        "den": 322524,
+        "num": 90163
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "issue_sha256": "4007265bd2ff3d1fa40f3a7aa623cd457ac64df7187dcb21798b64aacaec3385",
+      "outcome_sha256": "5bee621ee3e20560aac248058fcbffdc8c98b188cfff8eaff8a87a6ea26d8a48",
+      "v032_loss": {
+        "den": 322524,
+        "num": 88135
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 322524,
+        "num": 88135
+      },
+      "issue_sha256": "6e6f0ba5bc1d0045a3fe9b1c89881588132cb62f01a5292f6eb6225af2b60bd6",
+      "outcome_sha256": "bdb928cc4f38c324cda8ff07e7222023ad904c3db991977b5db9834178f5604d",
+      "v032_loss": {
+        "den": 712455516,
+        "num": 180387263
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 322524,
+        "num": 88135
+      },
+      "issue_sha256": "14cc4fe562a6577ff06bfec73a4b59bba44bfe01cecd525697623b93c81908ac",
+      "outcome_sha256": "5794788c82dfe6ffe124c3f028613fabfb2c807019811aa99abc56dcfa6a0faf",
+      "v032_loss": {
+        "den": 712455516,
+        "num": 180387263
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 712455516,
+        "num": 180387263
+      },
+      "issue_sha256": "129c432634bbc25fe1c9739a0aa8c144b7c3d86296b878d25d1f5cc751c7337d",
+      "outcome_sha256": "fcb955ed5cc0c3f9f16728d894e9e9b91ffd43d6d91364439ac1467a5aee854a",
+      "v032_loss": {
+        "den": 712455516,
+        "num": 180387263
+      }
+    },
+    {
+      "always_raw_loss": null,
+      "eligible": false,
+      "gated_loss": null,
+      "issue_sha256": "41116c6a7e22fd0152ae77079a3cfa3db21f605d605ce0c053b6ca3f2554faee",
+      "outcome_sha256": "1a6a91da7272d343e84a407a129020ef52cf119b46e1ea1182be9dbd0ecb3161",
+      "v032_loss": null
+    },
+    {
+      "always_raw_loss": null,
+      "eligible": false,
+      "gated_loss": null,
+      "issue_sha256": "5f2fbf87df1ab96e905969a48fd3f32f0808a2b766faf1de3587ef5126dfec15",
+      "outcome_sha256": "deba1165852421eb2e59db7a6c17d73c0e730ff9873260c6de33d1b31553b190",
+      "v032_loss": null
+    },
+    {
+      "always_raw_loss": null,
+      "eligible": false,
+      "gated_loss": null,
+      "issue_sha256": "ea045dfd4a687382ad6046a7ae9c34c2cf18fa16ec67abf19f940b51ad732ae5",
+      "outcome_sha256": "067097bc0dd9d8d52fdfdc94615bea43c3a27debee377937a4cf5c1ddf975e00",
+      "v032_loss": null
+    },
+    {
+      "always_raw_loss": null,
+      "eligible": false,
+      "gated_loss": null,
+      "issue_sha256": "bf0a4fbf0d229a0a15241e9b9b238367d1593dcf6dbd60c822fd6eb068262563",
+      "outcome_sha256": "d9a4d48f9a438baa2cccf7a66aca4b562c343847bc0bf00f45565b59a7726544",
+      "v032_loss": null
+    },
+    {
+      "always_raw_loss": null,
+      "eligible": false,
+      "gated_loss": null,
+      "issue_sha256": "e47fe944fc11be6df34e57f7f8bc93269cb26c449ba2bc5f974b7dd45dafd74b",
+      "outcome_sha256": "9c350752ba92456fdc8a127e0b545908fb137d9469e3b6a93e3261c2a8be07e1",
+      "v032_loss": null
+    },
+    {
+      "always_raw_loss": {
+        "den": 10404,
+        "num": 13
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 10404,
+        "num": 13
+      },
+      "issue_sha256": "fa4e4b5982f6d4d2c4eab0fdd27082f7ab2836cda64980df230c14cb45bab5cf",
+      "outcome_sha256": "9a78d513cf88cf1fe54ef0cf068528f5473fb7384858d5aae122cdd92d20ccde",
+      "v032_loss": {
+        "den": 10404,
+        "num": 13
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 322524,
+        "num": 150343
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 322524,
+        "num": 150343
+      },
+      "issue_sha256": "390f7fa59d75e883ecea0d734653a2a62c5fd79e412db7a389f717123394d09d",
+      "outcome_sha256": "5bee621ee3e20560aac248058fcbffdc8c98b188cfff8eaff8a87a6ea26d8a48",
+      "v032_loss": {
+        "den": 322524,
+        "num": 150343
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "issue_sha256": "d2c548c68759b8dee7d702611664ecd9c418e079361d2d9e98380e30c9ef823d",
+      "outcome_sha256": "bdb928cc4f38c324cda8ff07e7222023ad904c3db991977b5db9834178f5604d",
+      "v032_loss": {
+        "den": 322524,
+        "num": 88135
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "issue_sha256": "149eecf99c0912652f30621dc6c98a7706ac621e7e83948087e3597692fc2031",
+      "outcome_sha256": "5794788c82dfe6ffe124c3f028613fabfb2c807019811aa99abc56dcfa6a0faf",
+      "v032_loss": {
+        "den": 322524,
+        "num": 88135
+      }
+    },
+    {
+      "always_raw_loss": {
+        "den": 322524,
+        "num": 90163
+      },
+      "eligible": true,
+      "gated_loss": {
+        "den": 322524,
+        "num": 88135
+      },
+      "issue_sha256": "72873cb7d76386f3cdeb32123f6cee650f3e10d779b31798fd886b3462d12b21",
+      "outcome_sha256": "fcb955ed5cc0c3f9f16728d894e9e9b91ffd43d6d91364439ac1467a5aee854a",
+      "v032_loss": {
+        "den": 712455516,
+        "num": 180387263
+      }
+    }
+  ],
+  "source_v032_report_sha256": "e48d99d6aef4dbbb15b4756d7693eb61ceb7f6602223d46148d4a859b1a8f17c",
+  "stress": {
+    "alternating": {
+      "gated_minus_naive_total_loss": {
+        "den": 1,
+        "num": -1
+      },
+      "gated_realized_total_loss": {
+        "den": 5,
+        "num": 12
+      },
+      "gated_selection": [
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW"
+      ],
+      "gated_switches": 0,
+      "length": 12,
+      "losses": [
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        }
+      ],
+      "naive_one_window_selection": [
+        "RAW",
+        "RAW",
+        "LAGGED",
+        "RAW",
+        "LAGGED",
+        "RAW",
+        "LAGGED",
+        "RAW",
+        "LAGGED",
+        "RAW",
+        "LAGGED",
+        "RAW"
+      ],
+      "naive_realized_total_loss": {
+        "den": 5,
+        "num": 17
+      },
+      "naive_switches": 10,
+      "name": "alternating",
+      "post_shift_first_gated_change": null
+    },
+    "flat": {
+      "gated_minus_naive_total_loss": {
+        "den": 1,
+        "num": 0
+      },
+      "gated_realized_total_loss": {
+        "den": 5,
+        "num": 6
+      },
+      "gated_selection": [
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW"
+      ],
+      "gated_switches": 0,
+      "length": 12,
+      "losses": [
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 1
+          }
+        }
+      ],
+      "naive_one_window_selection": [
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW"
+      ],
+      "naive_realized_total_loss": {
+        "den": 5,
+        "num": 6
+      },
+      "naive_switches": 0,
+      "name": "flat",
+      "post_shift_first_gated_change": null
+    },
+    "single_spike": {
+      "gated_minus_naive_total_loss": {
+        "den": 4,
+        "num": -1
+      },
+      "gated_realized_total_loss": {
+        "den": 20,
+        "num": 17
+      },
+      "gated_selection": [
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW"
+      ],
+      "gated_switches": 0,
+      "length": 12,
+      "losses": [
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 20,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 10,
+            "num": 3
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        }
+      ],
+      "naive_one_window_selection": [
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "LAGGED",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW"
+      ],
+      "naive_realized_total_loss": {
+        "den": 10,
+        "num": 11
+      },
+      "naive_switches": 2,
+      "name": "single_spike",
+      "post_shift_first_gated_change": null
+    },
+    "sustained_shift": {
+      "gated_minus_naive_total_loss": {
+        "den": 2,
+        "num": 1
+      },
+      "gated_realized_total_loss": {
+        "den": 20,
+        "num": 27
+      },
+      "gated_selection": [
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "LAGGED",
+        "LAGGED",
+        "LAGGED"
+      ],
+      "gated_switches": 1,
+      "length": 12,
+      "losses": [
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 3,
+            "num": 1
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 3,
+            "num": 1
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 3,
+            "num": 1
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 3,
+            "num": 1
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 3,
+            "num": 1
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 3,
+            "num": 1
+          },
+          "RAW": {
+            "den": 20,
+            "num": 1
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 20,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 20,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 20,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 20,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 20,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        },
+        {
+          "HEDGE": {
+            "den": 5,
+            "num": 2
+          },
+          "LAGGED": {
+            "den": 20,
+            "num": 1
+          },
+          "RAW": {
+            "den": 10,
+            "num": 3
+          }
+        }
+      ],
+      "naive_one_window_selection": [
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "RAW",
+        "LAGGED",
+        "LAGGED",
+        "LAGGED",
+        "LAGGED",
+        "LAGGED"
+      ],
+      "naive_realized_total_loss": {
+        "den": 20,
+        "num": 17
+      },
+      "naive_switches": 1,
+      "name": "sustained_shift",
+      "post_shift_first_gated_change": 9
+    }
+  },
+  "summary": {
+    "always_raw_mean_combined_brier": {
+      "den": 391866660,
+      "num": 84926833
+    },
+    "deferred_windows": 5,
+    "eligible_scored_windows": 15,
+    "gated_mean_combined_brier": {
+      "den": 50919614820,
+      "num": 10878198389
+    },
+    "issued_windows": 20,
+    "selected_inventory": {
+      "DEFER": 5,
+      "HEDGE": 3,
+      "LAGGED": 2,
+      "RAW": 10
+    },
+    "stress_gated_vs_naive_switches": {
+      "alternating": {
+        "gated": 0,
+        "naive": 10
+      },
+      "flat": {
+        "gated": 0,
+        "naive": 0
+      },
+      "single_spike": {
+        "gated": 0,
+        "naive": 2
+      },
+      "sustained_shift": {
+        "gated": 1,
+        "naive": 1
+      }
+    },
+    "switches_by_scenario": {
+      "churn": 2,
+      "drift": 1,
+      "sparse": 0,
+      "stable": 1
+    },
+    "total_switches": 4,
+    "v032_mean_combined_brier": {
+      "den": 865633451940,
+      "num": 180237170593
+    }
+  },
+  "version": "v0.33"
+}
