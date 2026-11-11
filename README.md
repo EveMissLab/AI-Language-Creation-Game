@@ -304,3 +304,17 @@ python workload_estimator.py predict --case drift --at 96 --mode selective
 `workload_estimator.py` accepts a bounded event log of explicitly labeled **read/idle opportunities** and source-revision flags. It forecasts reads in the next 64 opportunities from only the previous 32, then calls the existing v0.29 cache economics with unchanged v0.28 pinned local timing measurements. A low-evidence or unknown-source case uses direct full verification. A new in-process `ObservedCacheReader` can collect its own successful read events, trigger v0.28 verified admission after sufficient observation, and invalidate when the source or monitored model changes. The four checked-in event streams are **fully synthetic**, not real user analytics. The event receipts are integrity checks, not authentication; no ALCG syntax, published dictionary or historical fixture was changed. [Full specification and limitations](docs/OBSERVED-WORKLOAD-v0.30.md).
 
 中文補充：v0.30 先用四組**合成讀取紀錄**示範「只用過去事件推估未來讀取負載」，並實作可在本地程序內記錄真實成功讀取的觀測器。自動判斷仍依賴舊版單機測量與明確指定的先驗、窗口、預測長度；不能當成實測用戶行為、跨硬體加速保證或 AI 語義理解率。未來資料不能被偷偷拿來改寫過去時間點的決策。
+
+### v0.31 — frozen forecasts, delayed scoring and calibration feedback
+
+```bash
+python forecast_calibration.py check
+python forecast_calibration.py report
+python forecast_calibration.py score --case drift --at 64
+python forecast_calibration.py emit --case stable --at 64
+python alcg.py check samples/forecast-audits-v0.31.alcg
+```
+
+ALCG v0.31 freezes each forecast **using only its currently available event prefix**, then scores the next 32 read/idle opportunities once they exist. A completed earlier window can adjust the next forecast, but **no future event is allowed into its own issuance**. The fixed synthetic trial issues eight windows, scores six, and evaluates three one-step calibrated holdouts. Exact Brier scores and retrospective cache/direct cost regret are reported separately; the `drift` fixture shows a case where calibration worsens a reset forecast and cache decision. Eight readable `AUDIT_V031(...)` ALCG expressions project the issued forecast, observed outcome and feedback without altering the canonical v0.30 event data or core grammar. [Complete experimental protocol and limitations](docs/FORECAST-ERROR-CALIBRATION-v0.31.md).
+
+中文補充：v0.31 正式加入「**先預測、後觀測、再校準**」的時間順序驗證。這輪只處理四組合成事件流，並保留校準失敗與環境突變的反例；分數改善不等於實際快取成本改善，也不代表 AI 語義理解率。舊版語言字典與歷史紀錄均保持不變。

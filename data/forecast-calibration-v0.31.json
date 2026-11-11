@@ -1,0 +1,16 @@
+{
+  "calibration_strength": 16,
+  "cuts": [
+    32,
+    64
+  ],
+  "format": "ALCG-v0.31-prequential-workload-calibration",
+  "horizon_opportunities": 32,
+  "modes": [
+    "selective",
+    "hybrid_final",
+    "full"
+  ],
+  "source_events_sha256": "fb9c0f1b789fc1f853c24fb6bb84bbfbf1663c59dd23bd9fd102c3ecd493a01d",
+  "source_timing_sha256": "69ba138d26321e338108fc87c207c08c09050010b5d48896c1933244b5a0ac01"
+}

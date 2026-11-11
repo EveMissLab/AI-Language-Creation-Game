@@ -154,3 +154,9 @@ jobs:
         run: python workload_estimator.py check
       - name: Audit v0.30 workload forecast (NOT empirical production traffic)
         run: python workload_estimator.py predict --case drift --at 96 --mode selective
+      - name: Validate v0.31 frozen forecasts and delayed synthetic calibration
+        run: python forecast_calibration.py check
+      - name: Validate v0.31 ALCG post-hoc forecast audit syntax
+        run: python alcg.py check samples/forecast-audits-v0.31.alcg
+      - name: Audit v0.31 synthetic held-out scores (NOT production accuracy)
+        run: python forecast_calibration.py report

@@ -1,0 +1,1180 @@
+{
+  "config": {
+    "calibration_strength": 16,
+    "cuts": [
+      32,
+      64
+    ],
+    "format": "ALCG-v0.31-prequential-workload-calibration",
+    "horizon_opportunities": 32,
+    "modes": [
+      "selective",
+      "hybrid_final",
+      "full"
+    ],
+    "source_events_sha256": "fb9c0f1b789fc1f853c24fb6bb84bbfbf1663c59dd23bd9fd102c3ecd493a01d",
+    "source_timing_sha256": "69ba138d26321e338108fc87c207c08c09050010b5d48896c1933244b5a0ac01"
+  },
+  "format": "ALCG-v0.31-prequential-workload-calibration",
+  "limitations": [
+    "Synthetic event streams are not real production traffic or AI comprehension.",
+    "All forecasts issued before their next 32 events; holdouts never influence their own issuance.",
+    "No data outside the completed [32,64) window calibrates the forecast at cut 64.",
+    "The first read within each holdout is excluded from read-gap reset scoring.",
+    "A Brier score evaluates declared predictive probabilities, not causal truth.",
+    "Costs are counterfactual from one host's pinned v0.28 medians, not measured future latency.",
+    "Previous future outcomes are legally available only after the earlier block closes.",
+    "Calibration may worsen subsequent forecasts; do not equate tuning with improvement.",
+    "Receipts are SHA-256 consistency checks, not origin authentication or signatures."
+  ],
+  "method": "frozen prefix at 32/64, score next 32; lagged calibration from closed previous block",
+  "mode_decisions": [
+    {
+      "cut": 32,
+      "decision": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "direct",
+        "raw_regret_ns": 54858839,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 121314185,
+          "direct_cost_ns": 176173024,
+          "oracle": "cache"
+        }
+      },
+      "mode": "selective",
+      "scenario": "stable"
+    },
+    {
+      "cut": 32,
+      "decision": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "direct",
+        "raw_regret_ns": 49899576,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 131332008,
+          "direct_cost_ns": 181231584,
+          "oracle": "cache"
+        }
+      },
+      "mode": "hybrid_final",
+      "scenario": "stable"
+    },
+    {
+      "cut": 32,
+      "decision": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "cache",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 175150742,
+          "direct_cost_ns": 2037446144,
+          "oracle": "cache"
+        }
+      },
+      "mode": "full",
+      "scenario": "stable"
+    },
+    {
+      "cut": 64,
+      "decision": {
+        "calibrated_regret_ns": 0,
+        "calibrated_route": "cache",
+        "forecast_route": "direct",
+        "raw_regret_ns": 54858839,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 121314185,
+          "direct_cost_ns": 176173024,
+          "oracle": "cache"
+        }
+      },
+      "mode": "selective",
+      "scenario": "stable"
+    },
+    {
+      "cut": 64,
+      "decision": {
+        "calibrated_regret_ns": 0,
+        "calibrated_route": "cache",
+        "forecast_route": "direct",
+        "raw_regret_ns": 49899576,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 131332008,
+          "direct_cost_ns": 181231584,
+          "oracle": "cache"
+        }
+      },
+      "mode": "hybrid_final",
+      "scenario": "stable"
+    },
+    {
+      "cut": 64,
+      "decision": {
+        "calibrated_regret_ns": 0,
+        "calibrated_route": "cache",
+        "forecast_route": "cache",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 175150742,
+          "direct_cost_ns": 2037446144,
+          "oracle": "cache"
+        }
+      },
+      "mode": "full",
+      "scenario": "stable"
+    },
+    {
+      "cut": 32,
+      "decision": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "direct",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 1786154000,
+          "direct_cost_ns": 176173024,
+          "oracle": "direct"
+        }
+      },
+      "mode": "selective",
+      "scenario": "churn"
+    },
+    {
+      "cut": 32,
+      "decision": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "direct",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 1940752608,
+          "direct_cost_ns": 181231584,
+          "oracle": "direct"
+        }
+      },
+      "mode": "hybrid_final",
+      "scenario": "churn"
+    },
+    {
+      "cut": 32,
+      "decision": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "cache",
+        "raw_regret_ns": 590267808,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 2627713952,
+          "direct_cost_ns": 2037446144,
+          "oracle": "direct"
+        }
+      },
+      "mode": "full",
+      "scenario": "churn"
+    },
+    {
+      "cut": 64,
+      "decision": {
+        "calibrated_regret_ns": 0,
+        "calibrated_route": "direct",
+        "forecast_route": "direct",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 1786154000,
+          "direct_cost_ns": 176173024,
+          "oracle": "direct"
+        }
+      },
+      "mode": "selective",
+      "scenario": "churn"
+    },
+    {
+      "cut": 64,
+      "decision": {
+        "calibrated_regret_ns": 0,
+        "calibrated_route": "direct",
+        "forecast_route": "direct",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 1940752608,
+          "direct_cost_ns": 181231584,
+          "oracle": "direct"
+        }
+      },
+      "mode": "hybrid_final",
+      "scenario": "churn"
+    },
+    {
+      "cut": 64,
+      "decision": {
+        "calibrated_regret_ns": 0,
+        "calibrated_route": "direct",
+        "forecast_route": "cache",
+        "raw_regret_ns": 590267808,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 2627713952,
+          "direct_cost_ns": 2037446144,
+          "oracle": "direct"
+        }
+      },
+      "mode": "full",
+      "scenario": "churn"
+    },
+    {
+      "cut": 32,
+      "decision": null,
+      "mode": "selective",
+      "scenario": "sparse"
+    },
+    {
+      "cut": 32,
+      "decision": null,
+      "mode": "hybrid_final",
+      "scenario": "sparse"
+    },
+    {
+      "cut": 32,
+      "decision": null,
+      "mode": "full",
+      "scenario": "sparse"
+    },
+    {
+      "cut": 64,
+      "decision": null,
+      "mode": "selective",
+      "scenario": "sparse"
+    },
+    {
+      "cut": 64,
+      "decision": null,
+      "mode": "hybrid_final",
+      "scenario": "sparse"
+    },
+    {
+      "cut": 64,
+      "decision": null,
+      "mode": "full",
+      "scenario": "sparse"
+    },
+    {
+      "cut": 32,
+      "decision": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "direct",
+        "raw_regret_ns": 54858839,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 121314185,
+          "direct_cost_ns": 176173024,
+          "oracle": "cache"
+        }
+      },
+      "mode": "selective",
+      "scenario": "drift"
+    },
+    {
+      "cut": 32,
+      "decision": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "direct",
+        "raw_regret_ns": 49899576,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 131332008,
+          "direct_cost_ns": 181231584,
+          "oracle": "cache"
+        }
+      },
+      "mode": "hybrid_final",
+      "scenario": "drift"
+    },
+    {
+      "cut": 32,
+      "decision": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "cache",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 175150742,
+          "direct_cost_ns": 2037446144,
+          "oracle": "cache"
+        }
+      },
+      "mode": "full",
+      "scenario": "drift"
+    },
+    {
+      "cut": 64,
+      "decision": {
+        "calibrated_regret_ns": 1609980976,
+        "calibrated_route": "cache",
+        "forecast_route": "direct",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 1786154000,
+          "direct_cost_ns": 176173024,
+          "oracle": "direct"
+        }
+      },
+      "mode": "selective",
+      "scenario": "drift"
+    },
+    {
+      "cut": 64,
+      "decision": {
+        "calibrated_regret_ns": 1759521024,
+        "calibrated_route": "cache",
+        "forecast_route": "direct",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 1940752608,
+          "direct_cost_ns": 181231584,
+          "oracle": "direct"
+        }
+      },
+      "mode": "hybrid_final",
+      "scenario": "drift"
+    },
+    {
+      "cut": 64,
+      "decision": {
+        "calibrated_regret_ns": 590267808,
+        "calibrated_route": "cache",
+        "forecast_route": "cache",
+        "raw_regret_ns": 590267808,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 2627713952,
+          "direct_cost_ns": 2037446144,
+          "oracle": "direct"
+        }
+      },
+      "mode": "full",
+      "scenario": "drift"
+    }
+  ],
+  "records": [
+    {
+      "calibrated_scores": null,
+      "calibration_training": null,
+      "decision_audit": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "direct",
+        "raw_regret_ns": 54858839,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 121314185,
+          "direct_cost_ns": 176173024,
+          "oracle": "cache"
+        }
+      },
+      "issue": {
+        "at_tick": 32,
+        "forecast": {
+          "at_tick": 32,
+          "decision": {
+            "cache_cost_ns": {
+              "den": 1000000,
+              "num": 142345517373139
+            },
+            "direct_cost_ns": {
+              "den": 1,
+              "num": 44043256
+            },
+            "expected_cache_admissions": {
+              "den": 1000000,
+              "num": 1259259
+            },
+            "expected_cache_hits": {
+              "den": 1000000,
+              "num": 6740741
+            },
+            "expected_reads": 8,
+            "expected_savings_ns_if_cached": {
+              "den": 1000000,
+              "num": -98302261373139
+            },
+            "invalidation_per_million": 37037,
+            "selection": "direct"
+          },
+          "forecast": {
+            "expected_reads": 8,
+            "invalidation_per_million": 37037,
+            "rebuild_penalty_ns": 0,
+            "retention_ns_per_read": 0
+          },
+          "observed_read_gaps": 7,
+          "observed_reads": 8,
+          "observed_revision_changes": 0,
+          "prefix_sha256": "497323706f4fee1b9a7156256a871c6c3b80893383e50635ba8188da71692c2a",
+          "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+          "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+          "selection": "direct",
+          "window_opportunities": 32
+        },
+        "format": "ALCG-v0.31-prequential-workload-calibration",
+        "horizon": 32,
+        "issue_sha256": "3daf26c1f8752300872209e1821ff40abb7028f48deb2cf0f0c5424709957aa9",
+        "kind": "ISSUE",
+        "mode": "selective",
+        "scenario": "stable",
+        "source_origin": "synthetic-fixture",
+        "timing_source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+      },
+      "raw_scores": {
+        "predicted_read_probability": {
+          "den": 34,
+          "num": 9
+        },
+        "predicted_reset_probability_per_read_gap": {
+          "den": 27,
+          "num": 1
+        },
+        "read_brier": {
+          "den": 1156,
+          "num": 625
+        },
+        "realized_read_frequency": {
+          "den": 1,
+          "num": 1
+        },
+        "realized_reset_frequency_per_gap": {
+          "den": 1,
+          "num": 0
+        },
+        "reset_brier": {
+          "den": 729,
+          "num": 1
+        }
+      },
+      "realization": {
+        "end_tick": 64,
+        "future_receipt_sha256": "9a78d513cf88cf1fe54ef0cf068528f5473fb7384858d5aae122cdd92d20ccde",
+        "opportunities": 32,
+        "read_gaps": 31,
+        "reads": 32,
+        "revision_changes_internal": 0,
+        "start_tick": 32
+      },
+      "status": "scored"
+    },
+    {
+      "calibrated_scores": {
+        "predicted_read_probability": {
+          "den": 102,
+          "num": 101
+        },
+        "predicted_reset_probability_per_read_gap": {
+          "den": 2397,
+          "num": 16
+        },
+        "read_brier": {
+          "den": 10404,
+          "num": 1
+        },
+        "realized_read_frequency": {
+          "den": 1,
+          "num": 1
+        },
+        "realized_reset_frequency_per_gap": {
+          "den": 1,
+          "num": 0
+        },
+        "reset_brier": {
+          "den": 5745609,
+          "num": 256
+        }
+      },
+      "calibration_training": {
+        "issue_sha256": "3daf26c1f8752300872209e1821ff40abb7028f48deb2cf0f0c5424709957aa9",
+        "realization_receipt_sha256": "783dd1748e1904c64cde6aa2f8014b7d46e1564042898d641b28a514cebb839a"
+      },
+      "decision_audit": {
+        "calibrated_regret_ns": 0,
+        "calibrated_route": "cache",
+        "forecast_route": "direct",
+        "raw_regret_ns": 54858839,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 121314185,
+          "direct_cost_ns": 176173024,
+          "oracle": "cache"
+        }
+      },
+      "issue": {
+        "at_tick": 64,
+        "forecast": {
+          "at_tick": 64,
+          "decision": {
+            "cache_cost_ns": {
+              "den": 12500,
+              "num": 2328498639813
+            },
+            "direct_cost_ns": {
+              "den": 1,
+              "num": 170667617
+            },
+            "expected_cache_admissions": {
+              "den": 12500,
+              "num": 19853
+            },
+            "expected_cache_hits": {
+              "den": 12500,
+              "num": 367647
+            },
+            "expected_reads": 31,
+            "expected_savings_ns_if_cached": {
+              "den": 12500,
+              "num": -195153427313
+            },
+            "invalidation_per_million": 19608,
+            "selection": "direct"
+          },
+          "forecast": {
+            "expected_reads": 31,
+            "invalidation_per_million": 19608,
+            "rebuild_penalty_ns": 0,
+            "retention_ns_per_read": 0
+          },
+          "observed_read_gaps": 31,
+          "observed_reads": 32,
+          "observed_revision_changes": 0,
+          "prefix_sha256": "ff268e0373be8b3121f966eaa4f65eedab6cfdb85a0edda8fc9893b20c4af594",
+          "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+          "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+          "selection": "direct",
+          "window_opportunities": 32
+        },
+        "format": "ALCG-v0.31-prequential-workload-calibration",
+        "horizon": 32,
+        "issue_sha256": "1135ed130775d9203a494e4784502bca12971d6bbcd9856a1f8a9f3dc48fb26d",
+        "kind": "ISSUE",
+        "mode": "selective",
+        "scenario": "stable",
+        "source_origin": "synthetic-fixture",
+        "timing_source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+      },
+      "raw_scores": {
+        "predicted_read_probability": {
+          "den": 34,
+          "num": 33
+        },
+        "predicted_reset_probability_per_read_gap": {
+          "den": 51,
+          "num": 1
+        },
+        "read_brier": {
+          "den": 1156,
+          "num": 1
+        },
+        "realized_read_frequency": {
+          "den": 1,
+          "num": 1
+        },
+        "realized_reset_frequency_per_gap": {
+          "den": 1,
+          "num": 0
+        },
+        "reset_brier": {
+          "den": 2601,
+          "num": 1
+        }
+      },
+      "realization": {
+        "end_tick": 96,
+        "future_receipt_sha256": "9f947fbc19742721ba62d8ff6278801bf23dd2f8693e2e50c7d9aa78f128987d",
+        "opportunities": 32,
+        "read_gaps": 31,
+        "reads": 32,
+        "revision_changes_internal": 0,
+        "start_tick": 64
+      },
+      "status": "scored"
+    },
+    {
+      "calibrated_scores": null,
+      "calibration_training": null,
+      "decision_audit": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "direct",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 1786154000,
+          "direct_cost_ns": 176173024,
+          "oracle": "direct"
+        }
+      },
+      "issue": {
+        "at_tick": 32,
+        "forecast": {
+          "at_tick": 32,
+          "decision": {
+            "cache_cost_ns": {
+              "den": 4000,
+              "num": 4662381099687
+            },
+            "direct_cost_ns": {
+              "den": 1,
+              "num": 170667617
+            },
+            "expected_cache_admissions": {
+              "den": 4000,
+              "num": 41647
+            },
+            "expected_cache_hits": {
+              "den": 4000,
+              "num": 82353
+            },
+            "expected_reads": 31,
+            "expected_savings_ns_if_cached": {
+              "den": 4000,
+              "num": -3979710631687
+            },
+            "invalidation_per_million": 313725,
+            "selection": "direct"
+          },
+          "forecast": {
+            "expected_reads": 31,
+            "invalidation_per_million": 313725,
+            "rebuild_penalty_ns": 0,
+            "retention_ns_per_read": 0
+          },
+          "observed_read_gaps": 31,
+          "observed_reads": 32,
+          "observed_revision_changes": 15,
+          "prefix_sha256": "37c1944ca68209c0394f45ca08fd8b03b1d3085ebe32cf2e5f2a131dd177eec7",
+          "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+          "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+          "selection": "direct",
+          "window_opportunities": 32
+        },
+        "format": "ALCG-v0.31-prequential-workload-calibration",
+        "horizon": 32,
+        "issue_sha256": "e84ed34097b1d2b642641d09723e5edae413b9a56eee66fda7b158687abc89ec",
+        "kind": "ISSUE",
+        "mode": "selective",
+        "scenario": "churn",
+        "source_origin": "synthetic-fixture",
+        "timing_source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+      },
+      "raw_scores": {
+        "predicted_read_probability": {
+          "den": 34,
+          "num": 33
+        },
+        "predicted_reset_probability_per_read_gap": {
+          "den": 51,
+          "num": 16
+        },
+        "read_brier": {
+          "den": 1156,
+          "num": 1
+        },
+        "realized_read_frequency": {
+          "den": 1,
+          "num": 1
+        },
+        "realized_reset_frequency_per_gap": {
+          "den": 31,
+          "num": 15
+        },
+        "reset_brier": {
+          "den": 80631,
+          "num": 22471
+        }
+      },
+      "realization": {
+        "end_tick": 64,
+        "future_receipt_sha256": "7fd8a73f6d6b541d8d1062bdc6b731198e0fe3d7e7f246bd1e97dd58fd40ce41",
+        "opportunities": 32,
+        "read_gaps": 31,
+        "reads": 32,
+        "revision_changes_internal": 15,
+        "start_tick": 32
+      },
+      "status": "scored"
+    },
+    {
+      "calibrated_scores": {
+        "predicted_read_probability": {
+          "den": 102,
+          "num": 101
+        },
+        "predicted_reset_probability_per_read_gap": {
+          "den": 2397,
+          "num": 1021
+        },
+        "read_brier": {
+          "den": 10404,
+          "num": 1
+        },
+        "realized_read_frequency": {
+          "den": 1,
+          "num": 1
+        },
+        "realized_reset_frequency_per_gap": {
+          "den": 31,
+          "num": 15
+        },
+        "reset_brier": {
+          "den": 178113879,
+          "num": 45079696
+        }
+      },
+      "calibration_training": {
+        "issue_sha256": "e84ed34097b1d2b642641d09723e5edae413b9a56eee66fda7b158687abc89ec",
+        "realization_receipt_sha256": "985b0d57a7654e90feff672fb9a331a30e6fd056d0517f47ab346665c1080488"
+      },
+      "decision_audit": {
+        "calibrated_regret_ns": 0,
+        "calibrated_route": "direct",
+        "forecast_route": "direct",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 1786154000,
+          "direct_cost_ns": 176173024,
+          "oracle": "direct"
+        }
+      },
+      "issue": {
+        "at_tick": 64,
+        "forecast": {
+          "at_tick": 64,
+          "decision": {
+            "cache_cost_ns": {
+              "den": 4000,
+              "num": 4662381099687
+            },
+            "direct_cost_ns": {
+              "den": 1,
+              "num": 170667617
+            },
+            "expected_cache_admissions": {
+              "den": 4000,
+              "num": 41647
+            },
+            "expected_cache_hits": {
+              "den": 4000,
+              "num": 82353
+            },
+            "expected_reads": 31,
+            "expected_savings_ns_if_cached": {
+              "den": 4000,
+              "num": -3979710631687
+            },
+            "invalidation_per_million": 313725,
+            "selection": "direct"
+          },
+          "forecast": {
+            "expected_reads": 31,
+            "invalidation_per_million": 313725,
+            "rebuild_penalty_ns": 0,
+            "retention_ns_per_read": 0
+          },
+          "observed_read_gaps": 31,
+          "observed_reads": 32,
+          "observed_revision_changes": 15,
+          "prefix_sha256": "d0967345a1121a1254f5091ba0b7e1b865022af844a8009e895f5c7b9a7dfe76",
+          "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+          "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+          "selection": "direct",
+          "window_opportunities": 32
+        },
+        "format": "ALCG-v0.31-prequential-workload-calibration",
+        "horizon": 32,
+        "issue_sha256": "4ecb13c5e67b9c107ccde37cd67e5f360c3288c1fe75402c6a2cb27ee87bb4f6",
+        "kind": "ISSUE",
+        "mode": "selective",
+        "scenario": "churn",
+        "source_origin": "synthetic-fixture",
+        "timing_source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+      },
+      "raw_scores": {
+        "predicted_read_probability": {
+          "den": 34,
+          "num": 33
+        },
+        "predicted_reset_probability_per_read_gap": {
+          "den": 51,
+          "num": 16
+        },
+        "read_brier": {
+          "den": 1156,
+          "num": 1
+        },
+        "realized_read_frequency": {
+          "den": 1,
+          "num": 1
+        },
+        "realized_reset_frequency_per_gap": {
+          "den": 31,
+          "num": 15
+        },
+        "reset_brier": {
+          "den": 80631,
+          "num": 22471
+        }
+      },
+      "realization": {
+        "end_tick": 96,
+        "future_receipt_sha256": "5bee621ee3e20560aac248058fcbffdc8c98b188cfff8eaff8a87a6ea26d8a48",
+        "opportunities": 32,
+        "read_gaps": 31,
+        "reads": 32,
+        "revision_changes_internal": 15,
+        "start_tick": 64
+      },
+      "status": "scored"
+    },
+    {
+      "calibrated_scores": null,
+      "calibration_training": null,
+      "decision_audit": null,
+      "issue": {
+        "at_tick": 32,
+        "forecast": {
+          "at_tick": 32,
+          "decision": null,
+          "forecast": null,
+          "observed_read_gaps": 2,
+          "observed_reads": 3,
+          "observed_revision_changes": 0,
+          "prefix_sha256": "4f4b16438cfd862994219f47308d76f8f1cd8058dd9cb9729418d3214ad632f4",
+          "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+          "reason": "insufficient fully observed rolling window or read gaps",
+          "selection": "direct",
+          "window_opportunities": 32
+        },
+        "format": "ALCG-v0.31-prequential-workload-calibration",
+        "horizon": 32,
+        "issue_sha256": "0e0abc1f1f2ad5e680cd6602ff3b930466ea8b19762697bd7ed0e6fa64b65ad6",
+        "kind": "ISSUE",
+        "mode": "selective",
+        "scenario": "sparse",
+        "source_origin": "synthetic-fixture",
+        "timing_source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+      },
+      "raw_scores": null,
+      "realization": {
+        "end_tick": 64,
+        "future_receipt_sha256": "1a6a91da7272d343e84a407a129020ef52cf119b46e1ea1182be9dbd0ecb3161",
+        "opportunities": 32,
+        "read_gaps": 2,
+        "reads": 3,
+        "revision_changes_internal": 0,
+        "start_tick": 32
+      },
+      "status": "insufficient_prefix"
+    },
+    {
+      "calibrated_scores": null,
+      "calibration_training": null,
+      "decision_audit": null,
+      "issue": {
+        "at_tick": 64,
+        "forecast": {
+          "at_tick": 64,
+          "decision": null,
+          "forecast": null,
+          "observed_read_gaps": 2,
+          "observed_reads": 3,
+          "observed_revision_changes": 0,
+          "prefix_sha256": "e1a5a3f47e3c27e56da30e3150915290f844014f175346f37c648fc2d149fd47",
+          "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+          "reason": "insufficient fully observed rolling window or read gaps",
+          "selection": "direct",
+          "window_opportunities": 32
+        },
+        "format": "ALCG-v0.31-prequential-workload-calibration",
+        "horizon": 32,
+        "issue_sha256": "ef0ea36e9576375ee5ca828538583d9fc10eb875b8187a4bfbc5392c6fcfc0e7",
+        "kind": "ISSUE",
+        "mode": "selective",
+        "scenario": "sparse",
+        "source_origin": "synthetic-fixture",
+        "timing_source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+      },
+      "raw_scores": null,
+      "realization": {
+        "end_tick": 96,
+        "future_receipt_sha256": "deba1165852421eb2e59db7a6c17d73c0e730ff9873260c6de33d1b31553b190",
+        "opportunities": 32,
+        "read_gaps": 1,
+        "reads": 2,
+        "revision_changes_internal": 0,
+        "start_tick": 64
+      },
+      "status": "insufficient_prefix"
+    },
+    {
+      "calibrated_scores": null,
+      "calibration_training": null,
+      "decision_audit": {
+        "calibrated_regret_ns": null,
+        "calibrated_route": null,
+        "forecast_route": "direct",
+        "raw_regret_ns": 54858839,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 121314185,
+          "direct_cost_ns": 176173024,
+          "oracle": "cache"
+        }
+      },
+      "issue": {
+        "at_tick": 32,
+        "forecast": {
+          "at_tick": 32,
+          "decision": {
+            "cache_cost_ns": {
+              "den": 12500,
+              "num": 2328498639813
+            },
+            "direct_cost_ns": {
+              "den": 1,
+              "num": 170667617
+            },
+            "expected_cache_admissions": {
+              "den": 12500,
+              "num": 19853
+            },
+            "expected_cache_hits": {
+              "den": 12500,
+              "num": 367647
+            },
+            "expected_reads": 31,
+            "expected_savings_ns_if_cached": {
+              "den": 12500,
+              "num": -195153427313
+            },
+            "invalidation_per_million": 19608,
+            "selection": "direct"
+          },
+          "forecast": {
+            "expected_reads": 31,
+            "invalidation_per_million": 19608,
+            "rebuild_penalty_ns": 0,
+            "retention_ns_per_read": 0
+          },
+          "observed_read_gaps": 31,
+          "observed_reads": 32,
+          "observed_revision_changes": 0,
+          "prefix_sha256": "e7b74218061a7209b358b5afef0a97a5e6a5004a0845e842b50796bad49cc430",
+          "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+          "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+          "selection": "direct",
+          "window_opportunities": 32
+        },
+        "format": "ALCG-v0.31-prequential-workload-calibration",
+        "horizon": 32,
+        "issue_sha256": "0de0c460eaadf7f8d44987d82769e349cb56b4b1000a536c7f6c9d8e69daca14",
+        "kind": "ISSUE",
+        "mode": "selective",
+        "scenario": "drift",
+        "source_origin": "synthetic-fixture",
+        "timing_source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+      },
+      "raw_scores": {
+        "predicted_read_probability": {
+          "den": 34,
+          "num": 33
+        },
+        "predicted_reset_probability_per_read_gap": {
+          "den": 51,
+          "num": 1
+        },
+        "read_brier": {
+          "den": 1156,
+          "num": 1
+        },
+        "realized_read_frequency": {
+          "den": 1,
+          "num": 1
+        },
+        "realized_reset_frequency_per_gap": {
+          "den": 1,
+          "num": 0
+        },
+        "reset_brier": {
+          "den": 2601,
+          "num": 1
+        }
+      },
+      "realization": {
+        "end_tick": 64,
+        "future_receipt_sha256": "9a78d513cf88cf1fe54ef0cf068528f5473fb7384858d5aae122cdd92d20ccde",
+        "opportunities": 32,
+        "read_gaps": 31,
+        "reads": 32,
+        "revision_changes_internal": 0,
+        "start_tick": 32
+      },
+      "status": "scored"
+    },
+    {
+      "calibrated_scores": {
+        "predicted_read_probability": {
+          "den": 102,
+          "num": 101
+        },
+        "predicted_reset_probability_per_read_gap": {
+          "den": 2397,
+          "num": 16
+        },
+        "read_brier": {
+          "den": 10404,
+          "num": 1
+        },
+        "realized_read_frequency": {
+          "den": 1,
+          "num": 1
+        },
+        "realized_reset_frequency_per_gap": {
+          "den": 31,
+          "num": 15
+        },
+        "reset_brier": {
+          "den": 178113879,
+          "num": 85041511
+        }
+      },
+      "calibration_training": {
+        "issue_sha256": "0de0c460eaadf7f8d44987d82769e349cb56b4b1000a536c7f6c9d8e69daca14",
+        "realization_receipt_sha256": "783dd1748e1904c64cde6aa2f8014b7d46e1564042898d641b28a514cebb839a"
+      },
+      "decision_audit": {
+        "calibrated_regret_ns": 1609980976,
+        "calibrated_route": "cache",
+        "forecast_route": "direct",
+        "raw_regret_ns": 0,
+        "realized_costs_pinned_ns": {
+          "cache_cost_ns": 1786154000,
+          "direct_cost_ns": 176173024,
+          "oracle": "direct"
+        }
+      },
+      "issue": {
+        "at_tick": 64,
+        "forecast": {
+          "at_tick": 64,
+          "decision": {
+            "cache_cost_ns": {
+              "den": 12500,
+              "num": 2328498639813
+            },
+            "direct_cost_ns": {
+              "den": 1,
+              "num": 170667617
+            },
+            "expected_cache_admissions": {
+              "den": 12500,
+              "num": 19853
+            },
+            "expected_cache_hits": {
+              "den": 12500,
+              "num": 367647
+            },
+            "expected_reads": 31,
+            "expected_savings_ns_if_cached": {
+              "den": 12500,
+              "num": -195153427313
+            },
+            "invalidation_per_million": 19608,
+            "selection": "direct"
+          },
+          "forecast": {
+            "expected_reads": 31,
+            "invalidation_per_million": 19608,
+            "rebuild_penalty_ns": 0,
+            "retention_ns_per_read": 0
+          },
+          "observed_read_gaps": 31,
+          "observed_reads": 32,
+          "observed_revision_changes": 0,
+          "prefix_sha256": "bc8639a38de284ba472c0df17909dc8988ec467a291a024b0bf4627e77565a13",
+          "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+          "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+          "selection": "direct",
+          "window_opportunities": 32
+        },
+        "format": "ALCG-v0.31-prequential-workload-calibration",
+        "horizon": 32,
+        "issue_sha256": "be9899ecf83f694e0da1bd7f5a8f25e83d16a1afb00694ca82420ebfadd52297",
+        "kind": "ISSUE",
+        "mode": "selective",
+        "scenario": "drift",
+        "source_origin": "synthetic-fixture",
+        "timing_source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+      },
+      "raw_scores": {
+        "predicted_read_probability": {
+          "den": 34,
+          "num": 33
+        },
+        "predicted_reset_probability_per_read_gap": {
+          "den": 51,
+          "num": 1
+        },
+        "read_brier": {
+          "den": 1156,
+          "num": 1
+        },
+        "realized_read_frequency": {
+          "den": 1,
+          "num": 1
+        },
+        "realized_reset_frequency_per_gap": {
+          "den": 31,
+          "num": 15
+        },
+        "reset_brier": {
+          "den": 80631,
+          "num": 37516
+        }
+      },
+      "realization": {
+        "end_tick": 96,
+        "future_receipt_sha256": "5bee621ee3e20560aac248058fcbffdc8c98b188cfff8eaff8a87a6ea26d8a48",
+        "opportunities": 32,
+        "read_gaps": 31,
+        "reads": 32,
+        "revision_changes_internal": 15,
+        "start_tick": 64
+      },
+      "status": "scored"
+    }
+  ],
+  "report_sha256": "ab8143df7a188d227398bb00a11db3a9fcc56abb69c6240ece9a3d270fcead20",
+  "source": "v0.30 four deterministic synthetic event streams",
+  "source_report_timing": "v0.28 single-host pinned medians; counterfactual only",
+  "summary": {
+    "calibrated_holdouts": 3,
+    "holdout_calibrated_read_brier_macro": {
+      "den": 10404,
+      "num": 1
+    },
+    "holdout_calibrated_reset_brier_macro": {
+      "den": 178113879,
+      "num": 43376381
+    },
+    "holdout_raw_read_brier_macro": {
+      "den": 1156,
+      "num": 1
+    },
+    "holdout_raw_reset_brier_macro": {
+      "den": 80631,
+      "num": 20006
+    },
+    "insufficient_prefix_windows": 2,
+    "raw_read_brier_macro": {
+      "den": 1156,
+      "num": 105
+    },
+    "raw_reset_brier_macro": {
+      "den": 39186666,
+      "num": 6693079
+    },
+    "scored_windows": 6,
+    "total_issued_scenario_windows": 8
+  }
+}
