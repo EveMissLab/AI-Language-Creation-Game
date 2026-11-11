@@ -160,3 +160,9 @@ jobs:
         run: python alcg.py check samples/forecast-audits-v0.31.alcg
       - name: Audit v0.31 synthetic held-out scores (NOT production accuracy)
         run: python forecast_calibration.py report
+      - name: Verify v0.32 prefix-only model switching and pinned synthetic report
+        run: python model_selection.py check
+      - name: Verify v0.32 ALCG selection evidence expressions
+        run: python alcg.py check samples/model-selections-v0.32.alcg
+      - name: Audit v0.32 switches and held-out scoring (NOT production accuracy)
+        run: python model_selection.py report

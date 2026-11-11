@@ -1,0 +1,35 @@
+{
+  "cuts": [
+    32,
+    64,
+    96,
+    128,
+    160
+  ],
+  "expert_names": [
+    "RAW",
+    "LAGGED",
+    "HEDGE"
+  ],
+  "extended_events_per_scenario": 192,
+  "format": "ALCG-v0.32-prequential-model-selection",
+  "hedge_reset_floor": {
+    "den": 3,
+    "num": 1
+  },
+  "history_lookback": 2,
+  "horizon": 32,
+  "scenarios": [
+    "stable",
+    "churn",
+    "sparse",
+    "drift"
+  ],
+  "source_v028_timings_sha256": "69ba138d26321e338108fc87c207c08c09050010b5d48896c1933244b5a0ac01",
+  "source_v030_events_sha256": "fb9c0f1b789fc1f853c24fb6bb84bbfbf1663c59dd23bd9fd102c3ecd493a01d",
+  "source_v031_report_sha256": "b8c79dd08eab09e8836da3cb3b9eb4fd45aeaf01ad5ead0d190a3a276da7d7b1",
+  "switch_penalty": {
+    "den": 10000,
+    "num": 1
+  }
+}

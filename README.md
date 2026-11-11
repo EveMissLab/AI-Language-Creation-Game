@@ -318,3 +318,20 @@ python alcg.py check samples/forecast-audits-v0.31.alcg
 ALCG v0.31 freezes each forecast **using only its currently available event prefix**, then scores the next 32 read/idle opportunities once they exist. A completed earlier window can adjust the next forecast, but **no future event is allowed into its own issuance**. The fixed synthetic trial issues eight windows, scores six, and evaluates three one-step calibrated holdouts. Exact Brier scores and retrospective cache/direct cost regret are reported separately; the `drift` fixture shows a case where calibration worsens a reset forecast and cache decision. Eight readable `AUDIT_V031(...)` ALCG expressions project the issued forecast, observed outcome and feedback without altering the canonical v0.30 event data or core grammar. [Complete experimental protocol and limitations](docs/FORECAST-ERROR-CALIBRATION-v0.31.md).
 
 中文補充：v0.31 正式加入「**先預測、後觀測、再校準**」的時間順序驗證。這輪只處理四組合成事件流，並保留校準失敗與環境突變的反例；分數改善不等於實際快取成本改善，也不代表 AI 語義理解率。舊版語言字典與歷史紀錄均保持不變。
+
+
+## v0.32 — Prefix-only forecast expert selection and bounded model switching (2026-11-11)
+
+ALCG now records model selection itself as a replayable English-readable symbol structure, `SELECT_V032(...)`. The bounded experiment keeps the v0.30 workload generator and v0.31 frozen forecast/settlement model intact, then compares three **fixed** candidates: `RAW` (uncalibrated), `LAGGED` (calibrated only from a prior *completed* block), and `HEDGE` (a conservative fixed reset-probability floor). When evidence is insufficient it returns `DEFER`, never a fabricated expert win. The last two completed evaluation windows and an exact switch penalty are stored with every issuance receipt; future observations only enter a *separate* settlement. All forecasts and losses use exact rational arithmetic.
+
+This first deterministic extension produces **20 synthetic issuance windows**, **15** with scored expert forecasts, **5** deferred windows and **5** model switches. A crucial negative result is preserved: the switching policy has mean combined Brier loss **0.208214** on the 15 eligible future windows, lower than always `RAW` (**0.216724**) but higher than always `LAGGED` (**0.204886**). The result is **not** an AI language comprehension test, production forecast, universal optimality claim or real-world cache recommendation.
+
+```bash
+python model_selection.py check
+python model_selection.py report
+python model_selection.py issue --case drift --at 128
+python model_selection.py replay --case churn --at 96
+python alcg.py check samples/model-selections-v0.32.alcg
+```
+
+The deterministic source, explicit model inventory, scored receipts, switches, complete frozen report, 20 ALCG expressions, negative examples and limitations are documented in [PREQUENTIAL-MODEL-SELECTION-v0.32](docs/PREQUENTIAL-MODEL-SELECTION-v0.32.md). All previous dictionaries, parser rules, synthetic fixtures, historical reports and CI checks are preserved.
