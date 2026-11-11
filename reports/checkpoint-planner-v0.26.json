@@ -1,0 +1,729 @@
+{
+  "cases": [
+    {
+      "baseline_v025_bytes": 890,
+      "full_v023_bytes": 3171,
+      "id": "R23_TWO_ROUNDS",
+      "profiles": {
+        "bounded_latency": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": 1,
+            "reads_per_state": [
+              1,
+              1,
+              1
+            ],
+            "replay_weight": 100,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 6,
+          "selected": {
+            "checkpoints": [
+              1
+            ],
+            "expression_sha256": "b87423e5c50ae158382a572f27116575499e0739dd8a0698ac3deb457be8658e",
+            "max_replay_units_for_requested_states": 1,
+            "mode": "hybrid",
+            "objective_score": 1858,
+            "snapshot_write_units": 1,
+            "utf8_bytes": 1648,
+            "weighted_replay_units": 2
+          }
+        },
+        "cold_archive": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              0,
+              0
+            ],
+            "replay_weight": 50,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 9,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6",
+            "max_replay_units_for_requested_states": 0,
+            "mode": "selective",
+            "objective_score": 890,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 890,
+            "weighted_replay_units": 0
+          }
+        },
+        "hot_tail": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              0,
+              80
+            ],
+            "replay_weight": 20,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 9,
+          "selected": {
+            "checkpoints": [
+              2
+            ],
+            "expression_sha256": "cafe5478274409b65508244c8454e4a724c8dcae52ef2e728742c914351645e5",
+            "max_replay_units_for_requested_states": 0,
+            "mode": "hybrid",
+            "objective_score": 1698,
+            "snapshot_write_units": 1,
+            "utf8_bytes": 1688,
+            "weighted_replay_units": 0
+          }
+        },
+        "mixed_reads": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              10,
+              20,
+              30
+            ],
+            "replay_weight": 10,
+            "snapshot_write_weight": 15
+          },
+          "candidate_count": 9,
+          "selected": {
+            "checkpoints": [
+              1
+            ],
+            "expression_sha256": "b87423e5c50ae158382a572f27116575499e0739dd8a0698ac3deb457be8658e",
+            "max_replay_units_for_requested_states": 1,
+            "mode": "hybrid",
+            "objective_score": 2063,
+            "snapshot_write_units": 1,
+            "utf8_bytes": 1648,
+            "weighted_replay_units": 40
+          }
+        },
+        "storage_limited": {
+          "assumptions": {
+            "byte_budget": 990,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              0,
+              80
+            ],
+            "replay_weight": 20,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 1,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6",
+            "max_replay_units_for_requested_states": 3,
+            "mode": "selective",
+            "objective_score": 5690,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 890,
+            "weighted_replay_units": 240
+          }
+        }
+      },
+      "rounds": 2,
+      "status": "STOP"
+    },
+    {
+      "baseline_v025_bytes": 924,
+      "full_v023_bytes": 4254,
+      "id": "R23_THREE_ROUNDS",
+      "profiles": {
+        "bounded_latency": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": 1,
+            "reads_per_state": [
+              1,
+              1,
+              1,
+              1
+            ],
+            "replay_weight": 100,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 9,
+          "selected": {
+            "checkpoints": [
+              0,
+              2
+            ],
+            "expression_sha256": "9698a0af35b7731c47076b9af130e0c985ad9700066f905a4c136647b04f46a9",
+            "max_replay_units_for_requested_states": 1,
+            "mode": "hybrid",
+            "objective_score": 2613,
+            "snapshot_write_units": 2,
+            "utf8_bytes": 2393,
+            "weighted_replay_units": 2
+          }
+        },
+        "cold_archive": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "replay_weight": 50,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 17,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "b1bfb130536d039b00a8a0e874db0633104bf71b942922b967ac34dce11a84be",
+            "max_replay_units_for_requested_states": 0,
+            "mode": "selective",
+            "objective_score": 924,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 924,
+            "weighted_replay_units": 0
+          }
+        },
+        "hot_tail": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              0,
+              0,
+              80
+            ],
+            "replay_weight": 20,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 17,
+          "selected": {
+            "checkpoints": [
+              3
+            ],
+            "expression_sha256": "89583848c7372c3192a024c88e395fa56b572ca670c1f7fe37ef578791718108",
+            "max_replay_units_for_requested_states": 0,
+            "mode": "hybrid",
+            "objective_score": 1784,
+            "snapshot_write_units": 1,
+            "utf8_bytes": 1774,
+            "weighted_replay_units": 0
+          }
+        },
+        "mixed_reads": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              10,
+              20,
+              30,
+              40
+            ],
+            "replay_weight": 10,
+            "snapshot_write_weight": 15
+          },
+          "candidate_count": 17,
+          "selected": {
+            "checkpoints": [
+              2
+            ],
+            "expression_sha256": "457b68d85aed9d96efa4f1a55f428f69acdd6cb0732543a5c88a3c7658de24fa",
+            "max_replay_units_for_requested_states": 2,
+            "mode": "hybrid",
+            "objective_score": 2644,
+            "snapshot_write_units": 1,
+            "utf8_bytes": 1729,
+            "weighted_replay_units": 90
+          }
+        },
+        "storage_limited": {
+          "assumptions": {
+            "byte_budget": 1024,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              0,
+              0,
+              80
+            ],
+            "replay_weight": 20,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 1,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "b1bfb130536d039b00a8a0e874db0633104bf71b942922b967ac34dce11a84be",
+            "max_replay_units_for_requested_states": 4,
+            "mode": "selective",
+            "objective_score": 7324,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 924,
+            "weighted_replay_units": 320
+          }
+        }
+      },
+      "rounds": 3,
+      "status": "STOP"
+    },
+    {
+      "baseline_v025_bytes": 828,
+      "full_v023_bytes": 1172,
+      "id": "R23_START_STOP",
+      "profiles": {
+        "bounded_latency": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": 1,
+            "reads_per_state": [
+              1
+            ],
+            "replay_weight": 100,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 3,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "e81713c0b6254fef11b0178a17c2fb30425ad320eb797963925bae70a3453996",
+            "max_replay_units_for_requested_states": 1,
+            "mode": "selective",
+            "objective_score": 928,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 828,
+            "weighted_replay_units": 1
+          }
+        },
+        "cold_archive": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0
+            ],
+            "replay_weight": 50,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 3,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "e81713c0b6254fef11b0178a17c2fb30425ad320eb797963925bae70a3453996",
+            "max_replay_units_for_requested_states": 0,
+            "mode": "selective",
+            "objective_score": 828,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 828,
+            "weighted_replay_units": 0
+          }
+        },
+        "hot_tail": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              80
+            ],
+            "replay_weight": 20,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 3,
+          "selected": {
+            "checkpoints": [
+              0
+            ],
+            "expression_sha256": "e2280c3bc3220b18a058a7896a0212539bb19281307f1ec8d816b0469408988a",
+            "max_replay_units_for_requested_states": 0,
+            "mode": "full",
+            "objective_score": 1182,
+            "snapshot_write_units": 1,
+            "utf8_bytes": 1172,
+            "weighted_replay_units": 0
+          }
+        },
+        "mixed_reads": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              10
+            ],
+            "replay_weight": 10,
+            "snapshot_write_weight": 15
+          },
+          "candidate_count": 3,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "e81713c0b6254fef11b0178a17c2fb30425ad320eb797963925bae70a3453996",
+            "max_replay_units_for_requested_states": 1,
+            "mode": "selective",
+            "objective_score": 928,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 828,
+            "weighted_replay_units": 10
+          }
+        },
+        "storage_limited": {
+          "assumptions": {
+            "byte_budget": 928,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              80
+            ],
+            "replay_weight": 20,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 1,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "e81713c0b6254fef11b0178a17c2fb30425ad320eb797963925bae70a3453996",
+            "max_replay_units_for_requested_states": 1,
+            "mode": "selective",
+            "objective_score": 2428,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 828,
+            "weighted_replay_units": 80
+          }
+        }
+      },
+      "rounds": 0,
+      "status": "STOP"
+    },
+    {
+      "baseline_v025_bytes": 859,
+      "full_v023_bytes": 2169,
+      "id": "R23_OPEN_PREFIX",
+      "profiles": {
+        "bounded_latency": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": 1,
+            "reads_per_state": [
+              1,
+              1
+            ],
+            "replay_weight": 100,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 4,
+          "selected": {
+            "checkpoints": [
+              0
+            ],
+            "expression_sha256": "c5cdcb92dd3558199b67a6c5483a0acb31f60a9b9dcc3993c9703dd93a59c581",
+            "max_replay_units_for_requested_states": 1,
+            "mode": "hybrid",
+            "objective_score": 1679,
+            "snapshot_write_units": 1,
+            "utf8_bytes": 1569,
+            "weighted_replay_units": 1
+          }
+        },
+        "cold_archive": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              0
+            ],
+            "replay_weight": 50,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 5,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "e9c25d8bab1a587dab34576125cb0465019cc521b73f73e898273080b7cf989c",
+            "max_replay_units_for_requested_states": 0,
+            "mode": "selective",
+            "objective_score": 859,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 859,
+            "weighted_replay_units": 0
+          }
+        },
+        "hot_tail": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              80
+            ],
+            "replay_weight": 20,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 5,
+          "selected": {
+            "checkpoints": [
+              1
+            ],
+            "expression_sha256": "5c38b1bdb35ed84d6f0368f6885bcfb38d82cd58dc36411b72f08d89f83f9c6b",
+            "max_replay_units_for_requested_states": 0,
+            "mode": "hybrid",
+            "objective_score": 1631,
+            "snapshot_write_units": 1,
+            "utf8_bytes": 1621,
+            "weighted_replay_units": 0
+          }
+        },
+        "mixed_reads": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              10,
+              20
+            ],
+            "replay_weight": 10,
+            "snapshot_write_weight": 15
+          },
+          "candidate_count": 5,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "e9c25d8bab1a587dab34576125cb0465019cc521b73f73e898273080b7cf989c",
+            "max_replay_units_for_requested_states": 2,
+            "mode": "selective",
+            "objective_score": 1359,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 859,
+            "weighted_replay_units": 50
+          }
+        },
+        "storage_limited": {
+          "assumptions": {
+            "byte_budget": 959,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              80
+            ],
+            "replay_weight": 20,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 1,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "e9c25d8bab1a587dab34576125cb0465019cc521b73f73e898273080b7cf989c",
+            "max_replay_units_for_requested_states": 2,
+            "mode": "selective",
+            "objective_score": 4059,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 859,
+            "weighted_replay_units": 160
+          }
+        }
+      },
+      "rounds": 1,
+      "status": "OPEN"
+    },
+    {
+      "baseline_v025_bytes": 895,
+      "full_v023_bytes": 3174,
+      "id": "R23_CONTEXT_FAMILY",
+      "profiles": {
+        "bounded_latency": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": 1,
+            "reads_per_state": [
+              1,
+              1,
+              1
+            ],
+            "replay_weight": 100,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 6,
+          "selected": {
+            "checkpoints": [
+              1
+            ],
+            "expression_sha256": "1a172242609272ca54086b8e75abd5557ab9b3917a28afe34320413c1fecf071",
+            "max_replay_units_for_requested_states": 1,
+            "mode": "hybrid",
+            "objective_score": 1863,
+            "snapshot_write_units": 1,
+            "utf8_bytes": 1653,
+            "weighted_replay_units": 2
+          }
+        },
+        "cold_archive": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              0,
+              0
+            ],
+            "replay_weight": 50,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 9,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "9996344b36ebe4133894d0a8376291e18680ff7a99b1f7c7d1d875f9c8362771",
+            "max_replay_units_for_requested_states": 0,
+            "mode": "selective",
+            "objective_score": 895,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 895,
+            "weighted_replay_units": 0
+          }
+        },
+        "hot_tail": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              0,
+              80
+            ],
+            "replay_weight": 20,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 9,
+          "selected": {
+            "checkpoints": [
+              2
+            ],
+            "expression_sha256": "2c3c6ed87394d45df52d30d0cde2fc17db1d8c57eda08f8bd2ebf3ec72a742f1",
+            "max_replay_units_for_requested_states": 0,
+            "mode": "hybrid",
+            "objective_score": 1701,
+            "snapshot_write_units": 1,
+            "utf8_bytes": 1691,
+            "weighted_replay_units": 0
+          }
+        },
+        "mixed_reads": {
+          "assumptions": {
+            "byte_budget": null,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              10,
+              20,
+              30
+            ],
+            "replay_weight": 10,
+            "snapshot_write_weight": 15
+          },
+          "candidate_count": 9,
+          "selected": {
+            "checkpoints": [
+              1
+            ],
+            "expression_sha256": "1a172242609272ca54086b8e75abd5557ab9b3917a28afe34320413c1fecf071",
+            "max_replay_units_for_requested_states": 1,
+            "mode": "hybrid",
+            "objective_score": 2068,
+            "snapshot_write_units": 1,
+            "utf8_bytes": 1653,
+            "weighted_replay_units": 40
+          }
+        },
+        "storage_limited": {
+          "assumptions": {
+            "byte_budget": 995,
+            "byte_weight": 1,
+            "max_lookup_units": null,
+            "reads_per_state": [
+              0,
+              0,
+              80
+            ],
+            "replay_weight": 20,
+            "snapshot_write_weight": 10
+          },
+          "candidate_count": 1,
+          "selected": {
+            "checkpoints": [],
+            "expression_sha256": "9996344b36ebe4133894d0a8376291e18680ff7a99b1f7c7d1d875f9c8362771",
+            "max_replay_units_for_requested_states": 3,
+            "mode": "selective",
+            "objective_score": 5695,
+            "snapshot_write_units": 0,
+            "utf8_bytes": 895,
+            "weighted_replay_units": 240
+          }
+        }
+      },
+      "rounds": 2,
+      "status": "STOP"
+    }
+  ],
+  "distribution_and_reader_cost_included": false,
+  "format": "ALCG-v0.26-bounded-checkpoint-selection",
+  "independent_ai_comprehension_measured": false,
+  "pinned_v025_sha256": {
+    "data/selective-profile-v0.25.json": "6a7ca226a4bd3125ea148deadce88cd80665466dbe83a883b8816ced1ca838d6",
+    "reports/selective-delta-v0.25.json": "b13f30352991264abb9da5730da262a6929da80c0e421a50f3e8da9f372ef428",
+    "samples/selective-sessions-v0.25.alcg": "762df7e57d8d39de93859913a5d2f63eddafc80e9cf32f310772cbff53e325a0",
+    "selective_delta.py": "befc10ee4b0d72f822bf7fa27f69b6a21f3011fbaafebca77a888121d9bbfe5a"
+  },
+  "profile_definitions": {
+    "authentication": false,
+    "candidate_representations": [
+      "v0.25 selective",
+      "v0.26 hybrid with any subset of 0..N state checkpoints",
+      "v0.23 full"
+    ],
+    "checkpoint_trust": "all checkpoint traces and terminal receipts are verified against deterministic v0.23 replay before use",
+    "dependency": "requires pinned public v0.23-v0.25 sources and canonical ALCG parser",
+    "format": "ALCG-v0.26-bounded-checkpoint-selection",
+    "full_trace": "v0.23 RUN includes all states, so modeled read-replay units are 0",
+    "initial_state": "state index 0; round k -> state index k",
+    "limits": [
+      "Not an online optimizer",
+      "No cache replacement/paging simulation",
+      "Does not avoid full replay during verification in current implementation",
+      "No proof of real CPU or network efficiency",
+      "Enumeration is bounded by MAX_ROUNDS; not scalable in general"
+    ],
+    "maximum_rounds": 4,
+    "measurement": "actual source UTF-8 bytes; hypothetical replay work units; no wall-clock benchmarks",
+    "public_registry_updated": false,
+    "read_distribution": "synthetic known integer counts, not a real-world estimate",
+    "replay_unit_model": "no prior checkpoint -> state_index+1; prior checkpoint j -> state_index-j; stored state -> 0",
+    "scoring": "byte_weight*real_UTF8_bytes + replay_weight*weighted_abstract_replay_units + snapshot_write_weight*materialized_state_count"
+  },
+  "real_cpu_time_measured": false,
+  "rounds": 8,
+  "sample_sha256": "830cad43c80b47cea64249e6a8e455afc5e960ca69c5424711abedfa83ea91de",
+  "sessions": 5,
+  "source_sessions": "five fixed synthetic v0.23 examples"
+}

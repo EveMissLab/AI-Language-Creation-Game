@@ -132,3 +132,7 @@ jobs:
         run: python selective_delta.py check
       - name: Audit v0.25 UTF-8 savings, tradeoffs and derivative-field accounting (NOT AI comprehension)
         run: python selective_delta.py report
+      - name: Validate v0.26 pinned checkpoint and delta storage planner
+        run: python checkpoint_planner.py check
+      - name: Audit v0.26 byte sizes and hypothetical replay units (NOT measured CPU time)
+        run: python checkpoint_planner.py report

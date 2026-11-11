@@ -1,0 +1,26 @@
+{
+  "authentication": false,
+  "candidate_representations": [
+    "v0.25 selective",
+    "v0.26 hybrid with any subset of 0..N state checkpoints",
+    "v0.23 full"
+  ],
+  "checkpoint_trust": "all checkpoint traces and terminal receipts are verified against deterministic v0.23 replay before use",
+  "dependency": "requires pinned public v0.23-v0.25 sources and canonical ALCG parser",
+  "format": "ALCG-v0.26-bounded-checkpoint-selection",
+  "full_trace": "v0.23 RUN includes all states, so modeled read-replay units are 0",
+  "initial_state": "state index 0; round k -> state index k",
+  "limits": [
+    "Not an online optimizer",
+    "No cache replacement/paging simulation",
+    "Does not avoid full replay during verification in current implementation",
+    "No proof of real CPU or network efficiency",
+    "Enumeration is bounded by MAX_ROUNDS; not scalable in general"
+  ],
+  "maximum_rounds": 4,
+  "measurement": "actual source UTF-8 bytes; hypothetical replay work units; no wall-clock benchmarks",
+  "public_registry_updated": false,
+  "read_distribution": "synthetic known integer counts, not a real-world estimate",
+  "replay_unit_model": "no prior checkpoint -> state_index+1; prior checkpoint j -> state_index-j; stored state -> 0",
+  "scoring": "byte_weight*real_UTF8_bytes + replay_weight*weighted_abstract_replay_units + snapshot_write_weight*materialized_state_count"
+}
