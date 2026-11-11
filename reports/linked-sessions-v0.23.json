@@ -1,0 +1,119 @@
+{
+  "case_summaries": [
+    {
+      "actions": [
+        3,
+        4
+      ],
+      "budget": 2,
+      "family": "F17_DIRECT",
+      "final_chain_sha256": "380ec01381359a7886488cbd3d3ab9a44f324f6845c367f0c7bc42ce651b9d5c",
+      "final_state_sha256": "7705163349ae70dc43a5e529489017d96fb871a26bafb6443d937fad8f44e5bb",
+      "id": "R23_TWO_ROUNDS",
+      "loss": 64,
+      "readings": [
+        true,
+        false
+      ],
+      "remaining": 0,
+      "rounds": 2,
+      "spent": 2,
+      "status": "STOP"
+    },
+    {
+      "actions": [
+        3,
+        3,
+        4
+      ],
+      "budget": 3,
+      "family": "F17_DIRECT",
+      "final_chain_sha256": "4b91a21ab65f2ff98aa207ab197a29b86e5331960374c65b8400f59cf8dadaee",
+      "final_state_sha256": "004eecbeb90d74ff5f402b4cd2229674529d94c8242159a9d79e36c71ae7adec",
+      "id": "R23_THREE_ROUNDS",
+      "loss": 64,
+      "readings": [
+        false,
+        true,
+        false
+      ],
+      "remaining": 0,
+      "rounds": 3,
+      "spent": 3,
+      "status": "STOP"
+    },
+    {
+      "actions": [],
+      "budget": 2,
+      "family": "F17_DIRECT",
+      "final_chain_sha256": "3efb95d9bcd839cef80120b93787bcaae23fe83cc977fdadda006dca4d03b8f0",
+      "final_state_sha256": "94582450bf8a24406d52551cbcca875bc173981ee9c0090df007a69c5f94b1d6",
+      "id": "R23_START_STOP",
+      "loss": 8,
+      "readings": [],
+      "remaining": 2,
+      "rounds": 0,
+      "spent": 0,
+      "status": "STOP"
+    },
+    {
+      "actions": [
+        3
+      ],
+      "budget": 3,
+      "family": "F17_DIRECT",
+      "final_chain_sha256": "84786aceeb4f44ce62d7cdd4b8ad0039df258345ae4aa74ef9344f0abb0cf0d0",
+      "final_state_sha256": "0730819a4ed93ee443542fd34e8f03c1c9f91e4f8ba3c4e489b6ebab6db85cd0",
+      "id": "R23_OPEN_PREFIX",
+      "loss": 64,
+      "readings": [
+        true
+      ],
+      "remaining": 2,
+      "rounds": 1,
+      "spent": 1,
+      "status": "OPEN"
+    },
+    {
+      "actions": [
+        3,
+        4
+      ],
+      "budget": 2,
+      "family": "F17_CONTEXT",
+      "final_chain_sha256": "fac199aa811e04a81036b521beef984d0212c274f482e095753bd399e8526b48",
+      "final_state_sha256": "3d73d0240e469ab7a549e42fc2b7300e18774b18fc5ef4d84b703763e3a6d984",
+      "id": "R23_CONTEXT_FAMILY",
+      "loss": 64,
+      "readings": [
+        false,
+        true
+      ],
+      "remaining": 0,
+      "rounds": 2,
+      "spent": 2,
+      "status": "STOP"
+    }
+  ],
+  "empirical_sensor_measurements": false,
+  "fixture_sha256": "190e7f2a6b2efd045e635c6496f8e10da0522962263bf0b1752671561ad68098",
+  "format": "ALCG-v0.23-linked-decision-session",
+  "independent_ai_comprehension_scores": false,
+  "limitations": [
+    "Each session is a finite-horizon policy-following path in the fixed synthetic v0.21 model.",
+    "An OPEN prefix is intentionally truncated and is not equivalent to a STOP action.",
+    "Link digests are unkeyed and are not signatures; rewriting an entire chain remains possible.",
+    "The parser verifies computations under pinned public assumptions, not real-world truth.",
+    "All observations are synthetic and were selected by the author, not measured.",
+    "The profile encodes policy-following decisions, not externally chosen or off-policy actions."
+  ],
+  "open_prefixes": 1,
+  "published_dictionary_unchanged": true,
+  "rounds": 8,
+  "sessions": 5,
+  "source": "assistant-authored hypothetical Boolean observation sequences",
+  "spent_units": 8,
+  "terminal_stops": 4,
+  "v022_report_sha256": "e9ee27dd9c1c8635489554af2bb04672a1de161dc7f42144e98c883690d79dfd",
+  "v022_sample_sha256": "a19e3a6a6c2af32630abaed6f7db75f7cac2442c19ce55e07ca6f8de40acf640"
+}

@@ -120,3 +120,7 @@ jobs:
         run: python trace_language.py check
       - name: Audit v0.22 English-readable trace evidence and policy labels (NOT independent AI comprehension)
         run: python trace_language.py report
+      - name: Check v0.23 linked multi-round ALCG sessions and pinned snapshots
+        run: python session_language.py check
+      - name: Audit v0.23 action provenance and OPEN versus STOP status (NOT empirical data)
+        run: python session_language.py report

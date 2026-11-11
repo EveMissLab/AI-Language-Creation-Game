@@ -1,0 +1,10 @@
+{
+  "format": "ALCG-v0.23-linked-decision-session",
+  "cases": [
+    {"id":"R23_TWO_ROUNDS","family":"F17_DIRECT","budget":2,"loss":64,"readings":[true,false]},
+    {"id":"R23_THREE_ROUNDS","family":"F17_DIRECT","budget":3,"loss":64,"readings":[false,true,false]},
+    {"id":"R23_START_STOP","family":"F17_DIRECT","budget":2,"loss":8,"readings":[]},
+    {"id":"R23_OPEN_PREFIX","family":"F17_DIRECT","budget":3,"loss":64,"readings":[true]},
+    {"id":"R23_CONTEXT_FAMILY","family":"F17_CONTEXT","budget":2,"loss":64,"readings":[false,true]}
+  ]
+}
