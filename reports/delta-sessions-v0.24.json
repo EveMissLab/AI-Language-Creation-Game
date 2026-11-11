@@ -1,0 +1,94 @@
+{
+  "authenticated_against_rewritten_full_chain": false,
+  "cases": 5,
+  "dictionary_distribution_cost_included": false,
+  "fixture_sha256": "fbe3b1571e8fd6f469ad7a40d9b48d540542ba843ad441caf80fa082a9f98507",
+  "format": "ALCG-v0.24-replayable-delta-session",
+  "independent_ai_comprehension_measured": false,
+  "limits": [
+    "Delta decoding requires the exact public v0.21 model and v0.22/v0.23 replay rules.",
+    "An OPEN prefix is a valid partial record but does not assert STOP.",
+    "All examples use fixed synthetic observations and bounded policy-following actions.",
+    "Hashes show internal consistency, not real-world provenance or secure authentication.",
+    "Byte comparisons count per-record UTF-8 text, excluding code/rule distribution."
+  ],
+  "open_prefixes": 1,
+  "per_case": [
+    {
+      "byte_exact_expansion": true,
+      "delta_v024_utf8_bytes": 1050,
+      "final_history_sha256": "6e351ad45221982f51b58f272d6861515ff107f00245d3b9c52e393dae6a2a0f",
+      "final_state_sha256": "7705163349ae70dc43a5e529489017d96fb871a26bafb6443d937fad8f44e5bb",
+      "full_v023_utf8_bytes": 3171,
+      "id": "R23_TWO_ROUNDS",
+      "rounds": 2,
+      "saved_utf8_bytes": 2121,
+      "status": "STOP",
+      "v023_and_v024_final_chain_sha256": "380ec01381359a7886488cbd3d3ab9a44f324f6845c367f0c7bc42ce651b9d5c"
+    },
+    {
+      "byte_exact_expansion": true,
+      "delta_v024_utf8_bytes": 1201,
+      "final_history_sha256": "5bbb2c07dc1f75e4972040937f3daefcb0bb393c437efb11e76fc51e0e60d79c",
+      "final_state_sha256": "004eecbeb90d74ff5f402b4cd2229674529d94c8242159a9d79e36c71ae7adec",
+      "full_v023_utf8_bytes": 4254,
+      "id": "R23_THREE_ROUNDS",
+      "rounds": 3,
+      "saved_utf8_bytes": 3053,
+      "status": "STOP",
+      "v023_and_v024_final_chain_sha256": "4b91a21ab65f2ff98aa207ab197a29b86e5331960374c65b8400f59cf8dadaee"
+    },
+    {
+      "byte_exact_expansion": true,
+      "delta_v024_utf8_bytes": 754,
+      "final_history_sha256": "ee504423e0876c89d077a8e94435dec2fa0159f4d804e065dd29d50e999d1d3f",
+      "final_state_sha256": "94582450bf8a24406d52551cbcca875bc173981ee9c0090df007a69c5f94b1d6",
+      "full_v023_utf8_bytes": 1172,
+      "id": "R23_START_STOP",
+      "rounds": 0,
+      "saved_utf8_bytes": 418,
+      "status": "STOP",
+      "v023_and_v024_final_chain_sha256": "3efb95d9bcd839cef80120b93787bcaae23fe83cc977fdadda006dca4d03b8f0"
+    },
+    {
+      "byte_exact_expansion": true,
+      "delta_v024_utf8_bytes": 902,
+      "final_history_sha256": "d8372250d76f5242049409de780cb524959479125cd59edc2adc4f00ffc66b37",
+      "final_state_sha256": "0730819a4ed93ee443542fd34e8f03c1c9f91e4f8ba3c4e489b6ebab6db85cd0",
+      "full_v023_utf8_bytes": 2169,
+      "id": "R23_OPEN_PREFIX",
+      "rounds": 1,
+      "saved_utf8_bytes": 1267,
+      "status": "OPEN",
+      "v023_and_v024_final_chain_sha256": "84786aceeb4f44ce62d7cdd4b8ad0039df258345ae4aa74ef9344f0abb0cf0d0"
+    },
+    {
+      "byte_exact_expansion": true,
+      "delta_v024_utf8_bytes": 1055,
+      "final_history_sha256": "d613837b1547cc39ccf165bd8ad8e98a478e5a81cc394ca8a69165903a4af1d3",
+      "final_state_sha256": "3d73d0240e469ab7a549e42fc2b7300e18774b18fc5ef4d84b703763e3a6d984",
+      "full_v023_utf8_bytes": 3174,
+      "id": "R23_CONTEXT_FAMILY",
+      "rounds": 2,
+      "saved_utf8_bytes": 2119,
+      "status": "STOP",
+      "v023_and_v024_final_chain_sha256": "fac199aa811e04a81036b521beef984d0212c274f482e095753bd399e8526b48"
+    }
+  ],
+  "pinned_v023_sha256": {
+    "data/linked-sessions-v0.23.json": "227e60504d707c4073e3ada2924b38a93c77f9fde49dfa979432623c682191ed",
+    "reports/linked-sessions-v0.23.json": "881acf9b453d87c7390c877d4fe774c47ef0dc2f4bd84d67099c04c0c397c6c5",
+    "samples/linked-sessions-v0.23.alcg": "190e7f2a6b2efd045e635c6496f8e10da0522962263bf0b1752671561ad68098",
+    "session_language.py": "08e4ffb15fd301aa1897e803dd893f1e05c9f524481a98ef3bb081c45a6742f2"
+  },
+  "portable_without_pinned_rules": false,
+  "real_sensor_data": false,
+  "reduction_percent": 64.405,
+  "rounds": 8,
+  "same_v023_end_chain": true,
+  "saved_utf8_bytes": 8978,
+  "source": "five frozen author-selected synthetic v0.23 sessions",
+  "stop_sessions": 4,
+  "total_delta_utf8_bytes": 4962,
+  "total_full_utf8_bytes": 13940
+}

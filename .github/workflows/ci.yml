@@ -124,3 +124,7 @@ jobs:
         run: python session_language.py check
       - name: Audit v0.23 action provenance and OPEN versus STOP status (NOT empirical data)
         run: python session_language.py report
+      - name: Validate v0.24 reversible incremental sessions and frozen v0.23 expansion
+        run: python delta_language.py check
+      - name: Audit v0.24 UTF-8 reduction, receipts and replay boundaries (NOT AI comprehension)
+        run: python delta_language.py report
