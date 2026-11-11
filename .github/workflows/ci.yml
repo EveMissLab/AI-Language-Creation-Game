@@ -136,3 +136,7 @@ jobs:
         run: python checkpoint_planner.py check
       - name: Audit v0.26 byte sizes and hypothetical replay units (NOT measured CPU time)
         run: python checkpoint_planner.py report
+      - name: Validate v0.27 captured LOCAL wall-clock report without re-running volatile timings
+        run: python measured_replay.py check
+      - name: Re-score v0.27 reported timing samples for a cold archive scenario
+        run: python measured_replay.py recommend --profile cold_archive --byte-price-ns 1000

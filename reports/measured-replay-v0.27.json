@@ -1,0 +1,166 @@
+{
+  "clock": "time.perf_counter_ns; elapsed ns per fully verified state access",
+  "format": "ALCG-v0.27-measured-verified-replay",
+  "kind": "environment-specific experimental timing; not a universal benchmark",
+  "machine": "x86_64",
+  "measurement_start_utc": "2026-11-11T02:08:19.633893+00:00",
+  "notes": [
+    "All candidates use complete full-chain verification per timed access.",
+    "Saved checkpoints currently do not enable lazy state retrieval.",
+    "The assumed byte-price is not a real market cost or CPU time.",
+    "No-independent-AI-semantic-reader and no physical sensor are involved.",
+    "Small fixture and process-local caches limit generalizability."
+  ],
+  "observed_scenario": {
+    "byte_price_ns_equivalent": 1000,
+    "evaluated": [
+      {
+        "mode": "selective",
+        "score_ns_equivalent": 487178160,
+        "storage_charge_ns_equivalent": 890000,
+        "utf8_bytes": 890,
+        "weighted_latency_ns": 486288160
+      },
+      {
+        "mode": "hybrid_final",
+        "score_ns_equivalent": 495513520,
+        "storage_charge_ns_equivalent": 1688000,
+        "utf8_bytes": 1688,
+        "weighted_latency_ns": 493825520
+      },
+      {
+        "mode": "full",
+        "score_ns_equivalent": 4344362840,
+        "storage_charge_ns_equivalent": 3171000,
+        "utf8_bytes": 3171,
+        "weighted_latency_ns": 4341191840
+      }
+    ],
+    "reads_per_state": [
+      0,
+      0,
+      80
+    ],
+    "selected_mode": "selective"
+  },
+  "os": "Linux",
+  "profile": "hot_tail",
+  "python_version": "3.13.5",
+  "reader": "checkpoint_planner.access_state (decode and validate whole history on EVERY read)",
+  "receipt_sha256": "90872ae889d846b29956093358e9a9bdc55d222cc2ac2619d32fd46ee320bb14",
+  "repetitions": 3,
+  "results": [
+    {
+      "checkpoints": [],
+      "expression_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6",
+      "median_ns_by_state": [
+        40073418,
+        9121458,
+        6078602
+      ],
+      "mode": "selective",
+      "sample_ns_by_state": [
+        [
+          40073418,
+          38474500,
+          44091206
+        ],
+        [
+          10091995,
+          8442668,
+          9121458
+        ],
+        [
+          6078602,
+          6396822,
+          5163831
+        ]
+      ],
+      "utf8_bytes": 890
+    },
+    {
+      "checkpoints": [
+        2
+      ],
+      "expression_sha256": "cafe5478274409b65508244c8454e4a724c8dcae52ef2e728742c914351645e5",
+      "median_ns_by_state": [
+        38574530,
+        10004243,
+        6172819
+      ],
+      "mode": "hybrid_final",
+      "sample_ns_by_state": [
+        [
+          38021349,
+          38574530,
+          39195438
+        ],
+        [
+          10004243,
+          9790689,
+          10440397
+        ],
+        [
+          6603720,
+          6172819,
+          5564885
+        ]
+      ],
+      "utf8_bytes": 1688
+    },
+    {
+      "checkpoints": [
+        0,
+        1,
+        2
+      ],
+      "expression_sha256": "167175955ad988f5295a6a5b9c3b442208b998e41c34751c439808704b62d3b9",
+      "median_ns_by_state": [
+        90090428,
+        59778757,
+        54264898
+      ],
+      "mode": "full",
+      "sample_ns_by_state": [
+        [
+          92235370,
+          86669299,
+          90090428
+        ],
+        [
+          58200827,
+          59778757,
+          60124650
+        ],
+        [
+          54264898,
+          54027623,
+          54974235
+        ]
+      ],
+      "utf8_bytes": 3171
+    }
+  ],
+  "rounds": 2,
+  "session_id": "R23_TWO_ROUNDS",
+  "shuffle_seed": 27027,
+  "source_fingerprints": {
+    "alcg.py": "de6794841ed254225e86a0cb1b5e69ace947a9177d3b05e156c383e53eeed5ad",
+    "checkpoint_planner.py": "4807991f5f09a83293e8f771cdfc0be94b2e9bac2f7926bdc7974162fc568974",
+    "data/checkpoint-profiles-v0.26.json": "58b75c706266a8fbbf48a8b7cad49d0f1d1f0b364364661ea3ed97003dd43c21",
+    "data/linked-sessions-v0.23.json": "227e60504d707c4073e3ada2924b38a93c77f9fde49dfa979432623c682191ed",
+    "delta_language.py": "74409ee3775c61411b0afaecd2c150d42dc424a9414ea8fa45e3684990f25f2d",
+    "selective_delta.py": "befc10ee4b0d72f822bf7fa27f69b6a21f3011fbaafebca77a888121d9bbfe5a",
+    "session_language.py": "08e4ffb15fd301aa1897e803dd893f1e05c9f524481a98ef3bb081c45a6742f2",
+    "trace_language.py": "fcdba5c3eb9de5f7bbfffd0d0c49410ffa3039f7d606713d6910f4b4ef33a6f7"
+  },
+  "source_v023_sha256": "167175955ad988f5295a6a5b9c3b442208b998e41c34751c439808704b62d3b9",
+  "v026_abstract_planner": {
+    "checkpoints": [
+      2
+    ],
+    "mode": "hybrid",
+    "modeled_replay_units": 0
+  },
+  "warmup_blocks": 1
+}

@@ -194,10 +194,11 @@ python trace_language.py build --family F17_DIRECT --budget 2 --loss 64 --observ
 24. **Reversible incremental session transport (v0.24):** encode the same five frozen v0.23 sessions as `DELTA_RUN_V024`, retaining initial model/budget/loss, action/reading pairs, inherited per-round v0.23 chain hashes and final receipts, but omitting recomputable full `TRACE_V022` snapshots. The 13,940 UTF-8 bytes of full expressions become 4,962 bytes of delta expressions (64.405% smaller on this fixed corpus), and expanding each delta yields byte-identical `RUN_V023` text. Supports policy-following append to an explicitly `OPEN` prefix, not after `STOP`. **Decoder requires frozen public rules; no real sensor evidence, independent AI comprehension, authenticated provenance or new published language operator.** [Full specification](docs/INCREMENTAL-DECISION-SESSIONS-v0.24.md).
 25. **Selective, constraint-aware derived receipts (v0.25):** start from v0.24 and enumerate the bounded choices to retain or derive each round's policy action and intermediate chain receipt. Every Boolean observation, initial model pin and final state/chain receipt remains mandatory. In five frozen synthetic sessions, `lean` is **4,396 UTF-8 bytes** versus **4,962** for v0.24, while `review` is **4,582** and `audit` **4,956**. The **zero-round case gets larger** (828 versus 754 bytes), and CPU/replay cost has **not** been measured. All three profiles reproduce byte-identical v0.23 source, preserve `OPEN`/`STOP`, and do not update the published language dictionary. [Full scope and negative results](docs/SELECTIVE-DERIVATION-v0.25.md).
 26. **Bounded checkpoint/delta storage planning (v0.26):** enumerate v0.25 selective deltas, every subset of full materialized v0.22 state checkpoints, and complete v0.23 histories. Choose using actual UTF-8 byte size plus **hypothetical** state-read frequencies, abstract reconstruction steps and materialization work, optionally enforcing storage and per-request work limits. Five frozen synthetic sessions yield different choices: cold archive selects pure deltas, frequent final-state reads usually favor an extra checkpoint, and one zero-round case favors the complete original. Every representation is verified against byte-identical v0.23 replay; the decoder still fully validates history and **no real CPU-time or AI understanding gains are claimed**. [Specification](docs/CHECKPOINT-REPLAY-PLANNING-v0.26.md).
-27. **Non-implemented challenge:** collect independent reader data without conflating it with synthetic mechanism experiments.
-28. **Mesoscopic units (later):** explore actually usable functional/conceptual compositions without prematurely calling an unexecuted symbolic label a program.
+27. **Measured fully verified replay (v0.27):** measure actual warm-process `checkpoint_planner.access_state` times for the same v0.23 session in v0.25 selective, v0.26 final-checkpoint and v0.23 full representations. Compare per-state medians and actual UTF-8 bytes under explicitly declared read frequencies and a synthetic storage weight; keep v0.26's abstract replay-work model separate. The committed illustrative run (one warm-up, three measured blocks) selects selective rather than the abstract planner's hybrid, but small samples cannot establish a portable performance ranking. The reader **still fully validates every access**, so this is not a lazy-checkpoint speedup. [Experiment and limitations](docs/MEASURED-REPLAY-v0.27.md).
+28. **Non-implemented challenge:** collect independent reader data without conflating it with synthetic mechanism experiments.
+29. **Mesoscopic units (later):** explore actually usable functional/conceptual compositions without prematurely calling an unexecuted symbolic label a program.
 
-GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.26 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
+GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.27 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
 
 ## 中文簡介
 
@@ -250,3 +251,15 @@ python checkpoint_planner.py plan --session R23_START_STOP --profile hot_tail
 `CHECKPOINT_RUN_V026` is an optional, verifiable materialized-state overlay on the canonical v0.25 delta. The planner also considers plain v0.25 and full v0.23 records. **The work estimates are synthetic replay units, not measured latency**; a state is returned only after full deterministic verification. Original grammar, published dictionary and historical data remain unchanged.
 
 中文補充：v0.26 在五筆既有合成決策歷程上，按預期讀取次數、真實 UTF-8 儲存位元組數與假設性的重建步數，在完整快照與增量紀錄之間窮舉選擇。冷存檔適合只留增量，常讀取末端狀態可能值得另存完整狀態；但**沒有實測 CPU 加速、獨立 AI 理解率，也沒有發明新的正式語言字典**。
+
+### v0.27 — measured full-replay timing, not hypothetical checkpoint latency
+
+```bash
+python measured_replay.py check
+python measured_replay.py recommend --profile hot_tail --byte-price-ns 1000
+python measured_replay.py bench --session R23_TWO_ROUNDS --repeats 5 --warmups 2 --output .local/own-timing.json
+```
+
+The captured Linux/Python 3.13 sample shows ~6.08 ms (selective), ~6.17 ms (hybrid final checkpoint), and ~54.26 ms (full) for a final-state read **with full-history verification on every access**. This is one environment and a tiny synthetic corpus, **not** a stable hardware benchmark, a causal/AI understanding result, or a working lazy-cache performance improvement. CI checks the sample receipts and score arithmetic, **not** volatile clock values. [Specification and raw-sample interpretation](docs/MEASURED-REPLAY-v0.27.md).
+
+中文補充：v0.27 開始直接量測現有解碼器的 CPU 執行時間，區分「理論重建成本」與「真正讀取時包含完整驗證的時間」。目前只是有限樣本與單一環境的示範，不能以此宣稱檢查點無用或某種格式在所有硬體上都最快。既有正式語言字典及歷史資料不變。
