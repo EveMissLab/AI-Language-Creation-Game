@@ -2,7 +2,7 @@
 
 **An open-source, AI-first language-creation playground.** Begin with English-readable concepts and symbols, then grow toward wider semantic coverage and eventually reusable mesoscopic concept/function bundles.
 
-> Status: **v0.26 bounded checkpoint/delta storage planning (experimental profile)** — not a finished language, cipher, natural-language translator or semantic proof system.
+> Status: **v0.28 verified-once, in-process decision-state cache (experimental implementation)** — not a finished language, cipher, natural-language translator or semantic proof system.
 
 ## What is the game?
 
@@ -263,3 +263,15 @@ python measured_replay.py bench --session R23_TWO_ROUNDS --repeats 5 --warmups 2
 The captured Linux/Python 3.13 sample shows ~6.08 ms (selective), ~6.17 ms (hybrid final checkpoint), and ~54.26 ms (full) for a final-state read **with full-history verification on every access**. This is one environment and a tiny synthetic corpus, **not** a stable hardware benchmark, a causal/AI understanding result, or a working lazy-cache performance improvement. CI checks the sample receipts and score arithmetic, **not** volatile clock values. [Specification and raw-sample interpretation](docs/MEASURED-REPLAY-v0.27.md).
 
 中文補充：v0.27 開始直接量測現有解碼器的 CPU 執行時間，區分「理論重建成本」與「真正讀取時包含完整驗證的時間」。目前只是有限樣本與單一環境的示範，不能以此宣稱檢查點無用或某種格式在所有硬體上都最快。既有正式語言字典及歷史資料不變。
+
+### v0.28 — verified-once process-local replay cache
+
+```bash
+python trusted_cache.py check
+python trusted_cache.py read --session R23_TWO_ROUNDS --mode selective --state 2 --times 2
+python trusted_cache.py bench --session R23_TWO_ROUNDS --repeats 5 --output .local/cache-run.json
+```
+
+`VerifiedStateCache` fully verifies a **canonical source on first admission**, materializes the v0.22 states, then serves repeated reads from a bounded in-process LRU while checking the source and monitored model/decoder byte fingerprints. Changed inputs cause invalidation; eviction and restart require fresh replay. The sample records faster repeat-hit reads but substantial first-admission cost. **No signatures, cross-process trust, hostile concurrent-file guarantees, or independent AI understanding are implied.** The original v0.1–v0.27 language, models and reports are not changed. See [v0.28 research specification and measured limitations](docs/TRUSTED-IN-PROCESS-CACHE-v0.28.md).
+
+中文補充：v0.28 先做完整可重播驗證，再讓同一個受控 Python 程序重複使用已驗證的計算狀態。首次建立快取成本較高，重複讀取才可能攤平；來源、模型或解碼器檔案發生變動時，必須清除快取並重新驗證。雜湊檢查不等於密碼學身分認證，亦不是獨立 AI 語義理解測試。

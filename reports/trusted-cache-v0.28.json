@@ -1,0 +1,97 @@
+{
+  "format": "ALCG-v0.28-verified-in-process-cache",
+  "limitations": [
+    "synthetic short histories, environment-specific timings",
+    "no cryptographic authenticity or cross-process trust",
+    "cached reads still hash source, snapshots and dependency files",
+    "non-hostile process assumption; no hostile concurrent file mutation guarantee",
+    "first access must fully validate all history"
+  ],
+  "measurement": "time.perf_counter_ns, single local process",
+  "measurements": [
+    {
+      "cache_hits": 5,
+      "cached_median_ns": 322652,
+      "cached_samples_ns": [
+        426833,
+        322652,
+        357440,
+        291999,
+        292394
+      ],
+      "cold_admission_ns": 111311973,
+      "mode": "selective",
+      "source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6",
+      "uncached_median_ns": 5505407,
+      "uncached_samples_ns": [
+        6028161,
+        4837571,
+        5307407,
+        5505407,
+        7101139
+      ],
+      "utf8_bytes": 890,
+      "verified_admissions": 1
+    },
+    {
+      "cache_hits": 5,
+      "cached_median_ns": 334499,
+      "cached_samples_ns": [
+        334499,
+        311087,
+        336521,
+        1935423,
+        322655
+      ],
+      "cold_admission_ns": 120962539,
+      "mode": "hybrid_final",
+      "source_sha256": "cafe5478274409b65508244c8454e4a724c8dcae52ef2e728742c914351645e5",
+      "uncached_median_ns": 5663487,
+      "uncached_samples_ns": [
+        5663487,
+        5782221,
+        5892064,
+        5335800,
+        5156511
+      ],
+      "utf8_bytes": 1688,
+      "verified_admissions": 1
+    },
+    {
+      "cache_hits": 5,
+      "cached_median_ns": 363954,
+      "cached_samples_ns": [
+        363954,
+        544422,
+        473119,
+        313331,
+        350614
+      ],
+      "cold_admission_ns": 163868168,
+      "mode": "full",
+      "source_sha256": "167175955ad988f5295a6a5b9c3b442208b998e41c34751c439808704b62d3b9",
+      "uncached_median_ns": 63670192,
+      "uncached_samples_ns": [
+        68827990,
+        54742008,
+        63670192,
+        68747347,
+        54644186
+      ],
+      "utf8_bytes": 3171,
+      "verified_admissions": 1
+    }
+  ],
+  "mode_sequence": [
+    "selective",
+    "hybrid_final",
+    "full"
+  ],
+  "model_environment_sha256": "7b31a4ce1ede0fc16d7ab69a8d9034ca9e616a16b240496707e93a3e6f378560",
+  "os": "Linux",
+  "python_version": "3.13.5",
+  "receipt_sha256": "f6a20e05a214be6f0c2c547d1622b25574f5f320ea17bb6ae493a8977a5e01f6",
+  "repeats": 5,
+  "rounds": 2,
+  "session_id": "R23_TWO_ROUNDS"
+}

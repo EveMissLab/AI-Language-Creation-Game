@@ -140,3 +140,7 @@ jobs:
         run: python measured_replay.py check
       - name: Re-score v0.27 reported timing samples for a cold archive scenario
         run: python measured_replay.py recommend --profile cold_archive --byte-price-ns 1000
+      - name: Validate v0.28 fully verified cache and recorded local sample (no timing threshold)
+        run: python trusted_cache.py check
+      - name: Verify v0.28 first admission plus repeated cached reads
+        run: python trusted_cache.py read --session R23_TWO_ROUNDS --mode selective --state 2 --times 3

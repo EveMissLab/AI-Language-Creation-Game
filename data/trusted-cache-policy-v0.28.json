@@ -1,0 +1,8 @@
+{
+  "format": "ALCG-v0.28-verified-in-process-cache",
+  "max_entries": 4,
+  "max_source_bytes": 128000,
+  "persistence": "process-only",
+  "source_check": "hash source and monitored model files on each read",
+  "trust_domain": "non-hostile single process"
+}
