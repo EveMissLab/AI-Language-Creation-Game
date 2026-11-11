@@ -1,0 +1,276 @@
+{
+  "cases": 5,
+  "cryptographic_authentication_or_tamper_proof": false,
+  "derivable_under_pins": [
+    "chosen action",
+    "intermediate chain hash",
+    "Bayesian state, cost debit and policy recommendation"
+  ],
+  "distribution_cost_included": false,
+  "finite_exhaustive_search_over_optional_action_and_step_hash_fields": true,
+  "fixture_sha256": "762df7e57d8d39de93859913a5d2f63eddafc80e9cf32f310772cbff53e325a0",
+  "format": "ALCG-v0.25-selective-derivable-receipts",
+  "full_v023_bytes": 13940,
+  "fully_self_contained_without_public_rules": false,
+  "legacy_v024_bytes": 4962,
+  "limits": [
+    "Shortest among four optional action/hash flags per round under declared constraints, not globally optimal compression.",
+    "All profiles require the same deterministic pinned v0.23 replay; saved bytes do not prove saved CPU time.",
+    "Per-step action/hash copies support direct inspection or fault localization but are not secure signatures.",
+    "The terminal chain digest remains mandatory in all profiles; it is not a trusted external signature.",
+    "The synthetic corpus contains only five sessions (0 to 3 rounds), not a representative workload."
+  ],
+  "mandatory": [
+    "each new observed Boolean",
+    "source model/policy pins",
+    "initial budget/loss",
+    "final history/state/chain receipts"
+  ],
+  "measured_replay_time": false,
+  "per_case": [
+    {
+      "full_v023_bytes": 3171,
+      "id": "R23_TWO_ROUNDS",
+      "legacy_v024_bytes": 1050,
+      "profiles": {
+        "audit": {
+          "derived_actions": 0,
+          "derived_step_chain_receipts": 1,
+          "exact_v023_expansion": true,
+          "max_gap": 1,
+          "min_actions": 2,
+          "source_sha256": "b93a7a6ae249db5c1c0b34c97efb7faec643b1fe8ea1a274fc4e10b89df23857",
+          "stored_action_receipts": 2,
+          "stored_readings": 2,
+          "stored_step_chain_receipts": 1,
+          "utf8_bytes": 1030
+        },
+        "lean": {
+          "derived_actions": 2,
+          "derived_step_chain_receipts": 2,
+          "exact_v023_expansion": true,
+          "max_gap": 5,
+          "min_actions": 0,
+          "source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6",
+          "stored_action_receipts": 0,
+          "stored_readings": 2,
+          "stored_step_chain_receipts": 0,
+          "utf8_bytes": 890
+        },
+        "review": {
+          "derived_actions": 1,
+          "derived_step_chain_receipts": 2,
+          "exact_v023_expansion": true,
+          "max_gap": 2,
+          "min_actions": 1,
+          "source_sha256": "feac395eac067ba6a733314c2bb5a183001ccee19325d38eb171737ab553b460",
+          "stored_action_receipts": 1,
+          "stored_readings": 2,
+          "stored_step_chain_receipts": 0,
+          "utf8_bytes": 913
+        }
+      },
+      "rounds": 2,
+      "status": "STOP"
+    },
+    {
+      "full_v023_bytes": 4254,
+      "id": "R23_THREE_ROUNDS",
+      "legacy_v024_bytes": 1201,
+      "profiles": {
+        "audit": {
+          "derived_actions": 0,
+          "derived_step_chain_receipts": 1,
+          "exact_v023_expansion": true,
+          "max_gap": 1,
+          "min_actions": 3,
+          "source_sha256": "4467df0222a9503e5b6a23eeb00d65fa87610f0c0647c70615af657271fabaa9",
+          "stored_action_receipts": 3,
+          "stored_readings": 3,
+          "stored_step_chain_receipts": 2,
+          "utf8_bytes": 1181
+        },
+        "lean": {
+          "derived_actions": 3,
+          "derived_step_chain_receipts": 3,
+          "exact_v023_expansion": true,
+          "max_gap": 5,
+          "min_actions": 0,
+          "source_sha256": "b1bfb130536d039b00a8a0e874db0633104bf71b942922b967ac34dce11a84be",
+          "stored_action_receipts": 0,
+          "stored_readings": 3,
+          "stored_step_chain_receipts": 0,
+          "utf8_bytes": 924
+        },
+        "review": {
+          "derived_actions": 2,
+          "derived_step_chain_receipts": 2,
+          "exact_v023_expansion": true,
+          "max_gap": 2,
+          "min_actions": 1,
+          "source_sha256": "b9c78f28128f0dee11d919e6107a6d861601af0f157192027cf304afd112769c",
+          "stored_action_receipts": 1,
+          "stored_readings": 3,
+          "stored_step_chain_receipts": 1,
+          "utf8_bytes": 1041
+        }
+      },
+      "rounds": 3,
+      "status": "STOP"
+    },
+    {
+      "full_v023_bytes": 1172,
+      "id": "R23_START_STOP",
+      "legacy_v024_bytes": 754,
+      "profiles": {
+        "audit": {
+          "derived_actions": 0,
+          "derived_step_chain_receipts": 0,
+          "exact_v023_expansion": true,
+          "max_gap": 1,
+          "min_actions": 0,
+          "source_sha256": "5c7eef540212710cde4a5cce67c33ca1792cc990a7c30ec7ca942dcc8bcbd70b",
+          "stored_action_receipts": 0,
+          "stored_readings": 0,
+          "stored_step_chain_receipts": 0,
+          "utf8_bytes": 828
+        },
+        "lean": {
+          "derived_actions": 0,
+          "derived_step_chain_receipts": 0,
+          "exact_v023_expansion": true,
+          "max_gap": 5,
+          "min_actions": 0,
+          "source_sha256": "e81713c0b6254fef11b0178a17c2fb30425ad320eb797963925bae70a3453996",
+          "stored_action_receipts": 0,
+          "stored_readings": 0,
+          "stored_step_chain_receipts": 0,
+          "utf8_bytes": 828
+        },
+        "review": {
+          "derived_actions": 0,
+          "derived_step_chain_receipts": 0,
+          "exact_v023_expansion": true,
+          "max_gap": 2,
+          "min_actions": 0,
+          "source_sha256": "6d7034fd4819cb2b7a7c7be587b0db51b48aaf2adf96cc3322b16cc3b2f91523",
+          "stored_action_receipts": 0,
+          "stored_readings": 0,
+          "stored_step_chain_receipts": 0,
+          "utf8_bytes": 828
+        }
+      },
+      "rounds": 0,
+      "status": "STOP"
+    },
+    {
+      "full_v023_bytes": 2169,
+      "id": "R23_OPEN_PREFIX",
+      "legacy_v024_bytes": 902,
+      "profiles": {
+        "audit": {
+          "derived_actions": 0,
+          "derived_step_chain_receipts": 1,
+          "exact_v023_expansion": true,
+          "max_gap": 1,
+          "min_actions": 1,
+          "source_sha256": "3bc0ffe712c7defbbeedc545993ddaa2609d7b5d07289917c4aecc2d40dcf76e",
+          "stored_action_receipts": 1,
+          "stored_readings": 1,
+          "stored_step_chain_receipts": 0,
+          "utf8_bytes": 882
+        },
+        "lean": {
+          "derived_actions": 1,
+          "derived_step_chain_receipts": 1,
+          "exact_v023_expansion": true,
+          "max_gap": 5,
+          "min_actions": 0,
+          "source_sha256": "e9c25d8bab1a587dab34576125cb0465019cc521b73f73e898273080b7cf989c",
+          "stored_action_receipts": 0,
+          "stored_readings": 1,
+          "stored_step_chain_receipts": 0,
+          "utf8_bytes": 859
+        },
+        "review": {
+          "derived_actions": 0,
+          "derived_step_chain_receipts": 1,
+          "exact_v023_expansion": true,
+          "max_gap": 2,
+          "min_actions": 1,
+          "source_sha256": "b429f2cf49f59e1e66f61497144247883093992d0d7505f9173f3df5cd8dccad",
+          "stored_action_receipts": 1,
+          "stored_readings": 1,
+          "stored_step_chain_receipts": 0,
+          "utf8_bytes": 882
+        }
+      },
+      "rounds": 1,
+      "status": "OPEN"
+    },
+    {
+      "full_v023_bytes": 3174,
+      "id": "R23_CONTEXT_FAMILY",
+      "legacy_v024_bytes": 1055,
+      "profiles": {
+        "audit": {
+          "derived_actions": 0,
+          "derived_step_chain_receipts": 1,
+          "exact_v023_expansion": true,
+          "max_gap": 1,
+          "min_actions": 2,
+          "source_sha256": "540374e355a3bc145f0d644d2d6803586f3e4347eb0dcfba615eb0ffc9cf97be",
+          "stored_action_receipts": 2,
+          "stored_readings": 2,
+          "stored_step_chain_receipts": 1,
+          "utf8_bytes": 1035
+        },
+        "lean": {
+          "derived_actions": 2,
+          "derived_step_chain_receipts": 2,
+          "exact_v023_expansion": true,
+          "max_gap": 5,
+          "min_actions": 0,
+          "source_sha256": "9996344b36ebe4133894d0a8376291e18680ff7a99b1f7c7d1d875f9c8362771",
+          "stored_action_receipts": 0,
+          "stored_readings": 2,
+          "stored_step_chain_receipts": 0,
+          "utf8_bytes": 895
+        },
+        "review": {
+          "derived_actions": 1,
+          "derived_step_chain_receipts": 2,
+          "exact_v023_expansion": true,
+          "max_gap": 2,
+          "min_actions": 1,
+          "source_sha256": "78c82620de96a5dc967ed3f8f0e18473f0f364cc6f94871e8ab3195179cc54cb",
+          "stored_action_receipts": 1,
+          "stored_readings": 2,
+          "stored_step_chain_receipts": 0,
+          "utf8_bytes": 918
+        }
+      },
+      "rounds": 2,
+      "status": "STOP"
+    }
+  ],
+  "pinned_v023_sha256": {
+    "data/linked-sessions-v0.23.json": "227e60504d707c4073e3ada2924b38a93c77f9fde49dfa979432623c682191ed",
+    "reports/linked-sessions-v0.23.json": "881acf9b453d87c7390c877d4fe774c47ef0dc2f4bd84d67099c04c0c397c6c5",
+    "samples/linked-sessions-v0.23.alcg": "190e7f2a6b2efd045e635c6496f8e10da0522962263bf0b1752671561ad68098",
+    "session_language.py": "08e4ffb15fd301aa1897e803dd893f1e05c9f524481a98ef3bb081c45a6742f2"
+  },
+  "profile_savings_vs_v024": {
+    "audit": 6,
+    "lean": 566,
+    "review": 380
+  },
+  "profile_totals": {
+    "audit": 4956,
+    "lean": 4396,
+    "review": 4582
+  },
+  "real_world_or_independent_ai_test": false,
+  "rounds": 8,
+  "source": "five frozen synthetic v0.23 sessions, not general language statistics"
+}

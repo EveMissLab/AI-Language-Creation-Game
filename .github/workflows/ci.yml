@@ -128,3 +128,7 @@ jobs:
         run: python delta_language.py check
       - name: Audit v0.24 UTF-8 reduction, receipts and replay boundaries (NOT AI comprehension)
         run: python delta_language.py report
+      - name: Validate v0.25 canonical selective storage against frozen v0.23 sessions
+        run: python selective_delta.py check
+      - name: Audit v0.25 UTF-8 savings, tradeoffs and derivative-field accounting (NOT AI comprehension)
+        run: python selective_delta.py report

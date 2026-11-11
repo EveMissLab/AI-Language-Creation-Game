@@ -1,0 +1,32 @@
+{
+  "authentication": false,
+  "constraints": {
+    "audit": {
+      "max_gap": 1,
+      "min_visible_actions": "all rounds"
+    },
+    "lean": {
+      "max_gap": 5,
+      "min_visible_actions": 0
+    },
+    "review": {
+      "max_gap": 2,
+      "min_visible_actions": "min(1, round count)"
+    }
+  },
+  "fields_never_removed": [
+    "reading",
+    "initial model/policy pins",
+    "budget/loss",
+    "final chain/state/history receipts"
+  ],
+  "format": "ALCG-v0.25-selective-derivable-receipts",
+  "optional_per_step_fields": [
+    "policy-selected action",
+    "intermediate v0.23 chain SHA-256"
+  ],
+  "public_registry_updated": false,
+  "requires_frozen_public_v023_rules": true,
+  "selection_method": "exhaustively minimize UTF-8 length within this bounded candidate family",
+  "source_sessions": "data/linked-sessions-v0.23.json"
+}
