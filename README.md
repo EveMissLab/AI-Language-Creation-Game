@@ -275,3 +275,18 @@ python trusted_cache.py bench --session R23_TWO_ROUNDS --repeats 5 --output .loc
 `VerifiedStateCache` fully verifies a **canonical source on first admission**, materializes the v0.22 states, then serves repeated reads from a bounded in-process LRU while checking the source and monitored model/decoder byte fingerprints. Changed inputs cause invalidation; eviction and restart require fresh replay. The sample records faster repeat-hit reads but substantial first-admission cost. **No signatures, cross-process trust, hostile concurrent-file guarantees, or independent AI understanding are implied.** The original v0.1–v0.27 language, models and reports are not changed. See [v0.28 research specification and measured limitations](docs/TRUSTED-IN-PROCESS-CACHE-v0.28.md).
 
 中文補充：v0.28 先做完整可重播驗證，再讓同一個受控 Python 程序重複使用已驗證的計算狀態。首次建立快取成本較高，重複讀取才可能攤平；來源、模型或解碼器檔案發生變動時，必須清除快取並重新驗證。雜湊檢查不等於密碼學身分認證，亦不是獨立 AI 語義理解測試。
+
+
+### v0.29 — evidence-gated adaptive caching and invalidation cost
+
+```bash
+python adaptive_cache.py check
+python adaptive_cache.py plan --profile one_off --mode selective
+python adaptive_cache.py plan --profile stable_repeat --mode selective
+python adaptive_cache.py plan --profile medium_churn --mode full
+python adaptive_cache.py read --profile stable_repeat --mode selective --state 2 --times 3
+```
+
+`AdaptiveCacheReader` selects **fresh full verification** or v0.28's **verified-once in-process cache** using a pinned v0.28 local timing report and seven explicitly hypothetical workload forecasts. It also models invalidation and retention cost. For an unfamiliar source, the safe default is always full verification; an alias revision clears cached states, and a monitored model/policy change blocks the reader until restart. The v0.28 sample suggests an approximately 22-read break-even for a stable, two-round selective representation, **not a general performance guarantee**. No core grammar, published dictionary, historical fixture or independent AI-comprehension score is changed. See [technical specification, exact cost equations and limitations](docs/ADAPTIVE-CACHE-ADMISSION-v0.29.md).
+
+中文補充：v0.29 以公開的舊版實測資料與明確假設的讀取次數、來源失效機率、記憶體持有成本，決定是否建立可信快取。這是受限模型的成本比較，**失效機率不是實際量測**；無資料的來源仍採完整驗證。新增的原始碼、成本模型、政策與報表均可以直接執行與重新校驗。

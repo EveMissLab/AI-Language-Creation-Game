@@ -1,0 +1,48 @@
+{
+  "format": "ALCG-v0.29-evidence-gated-adaptive-cache",
+  "source_report_sha256": "69ba138d26321e338108fc87c207c08c09050010b5d48896c1933244b5a0ac01",
+  "workloads": {
+    "medium_churn": {
+      "expected_reads": 64,
+      "invalidation_per_million": 50000,
+      "rebuild_penalty_ns": 0,
+      "retention_ns_per_read": 0
+    },
+    "one_off": {
+      "expected_reads": 2,
+      "invalidation_per_million": 0,
+      "rebuild_penalty_ns": 0,
+      "retention_ns_per_read": 0
+    },
+    "rapid_churn": {
+      "expected_reads": 64,
+      "invalidation_per_million": 800000,
+      "rebuild_penalty_ns": 1000000,
+      "retention_ns_per_read": 0
+    },
+    "retention_cost": {
+      "expected_reads": 64,
+      "invalidation_per_million": 0,
+      "rebuild_penalty_ns": 0,
+      "retention_ns_per_read": 20000000
+    },
+    "short_repeat": {
+      "expected_reads": 4,
+      "invalidation_per_million": 0,
+      "rebuild_penalty_ns": 0,
+      "retention_ns_per_read": 0
+    },
+    "stable_repeat": {
+      "expected_reads": 64,
+      "invalidation_per_million": 0,
+      "rebuild_penalty_ns": 0,
+      "retention_ns_per_read": 0
+    },
+    "steady_slow": {
+      "expected_reads": 32,
+      "invalidation_per_million": 10000,
+      "rebuild_penalty_ns": 2000000,
+      "retention_ns_per_read": 100000
+    }
+  }
+}

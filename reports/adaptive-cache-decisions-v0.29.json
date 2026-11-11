@@ -1,0 +1,667 @@
+{
+  "assumption": "independent Bernoulli reset per gap, known forecast, no new empirical hazard data",
+  "cases": [
+    {
+      "break_even_reads_with_same_hazard": null,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 20,
+          "num": 9625108203
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 352346048
+        },
+        "expected_cache_admissions": {
+          "den": 20,
+          "num": 83
+        },
+        "expected_cache_hits": {
+          "den": 20,
+          "num": 1197
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 20,
+          "num": -2578187243
+        },
+        "invalidation_per_million": 50000,
+        "selection": "direct"
+      },
+      "mode": "selective",
+      "profile": "medium_churn",
+      "source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+    },
+    {
+      "break_even_reads_with_same_hazard": null,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 522014302
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 362463168
+        },
+        "expected_cache_admissions": {
+          "den": 20,
+          "num": 83
+        },
+        "expected_cache_hits": {
+          "den": 20,
+          "num": 1197
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": -159551134
+        },
+        "invalidation_per_million": 50000,
+        "selection": "direct"
+      },
+      "mode": "hybrid_final",
+      "profile": "medium_churn",
+      "source_sha256": "cafe5478274409b65508244c8454e4a724c8dcae52ef2e728742c914351645e5"
+    },
+    {
+      "break_even_reads_with_same_hazard": 3,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 10,
+          "num": 7018355441
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 4074892288
+        },
+        "expected_cache_admissions": {
+          "den": 20,
+          "num": 83
+        },
+        "expected_cache_hits": {
+          "den": 20,
+          "num": 1197
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 10,
+          "num": 33730567439
+        },
+        "invalidation_per_million": 50000,
+        "selection": "cache"
+      },
+      "mode": "full",
+      "profile": "medium_churn",
+      "source_sha256": "167175955ad988f5295a6a5b9c3b442208b998e41c34751c439808704b62d3b9"
+    },
+    {
+      "break_even_reads_with_same_hazard": 22,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 111634625
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 11010814
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_reads": 2,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": -100623811
+        },
+        "invalidation_per_million": 0,
+        "selection": "direct"
+      },
+      "mode": "selective",
+      "profile": "one_off",
+      "source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+    },
+    {
+      "break_even_reads_with_same_hazard": 23,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 121297038
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 11326974
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_reads": 2,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": -109970064
+        },
+        "invalidation_per_million": 0,
+        "selection": "direct"
+      },
+      "mode": "hybrid_final",
+      "profile": "one_off",
+      "source_sha256": "cafe5478274409b65508244c8454e4a724c8dcae52ef2e728742c914351645e5"
+    },
+    {
+      "break_even_reads_with_same_hazard": 3,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 164232122
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 127340384
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_reads": 2,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": -36891738
+        },
+        "invalidation_per_million": 0,
+        "selection": "direct"
+      },
+      "mode": "full",
+      "profile": "one_off",
+      "source_sha256": "167175955ad988f5295a6a5b9c3b442208b998e41c34751c439808704b62d3b9"
+    },
+    {
+      "break_even_reads_with_same_hazard": null,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 5,
+          "num": 28879504137
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 352346048
+        },
+        "expected_cache_admissions": {
+          "den": 5,
+          "num": 257
+        },
+        "expected_cache_hits": {
+          "den": 5,
+          "num": 63
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 5,
+          "num": -27117773897
+        },
+        "invalidation_per_million": 800000,
+        "selection": "direct"
+      },
+      "mode": "selective",
+      "profile": "rapid_churn",
+      "source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+    },
+    {
+      "break_even_reads_with_same_hazard": null,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 6272089192
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 362463168
+        },
+        "expected_cache_admissions": {
+          "den": 5,
+          "num": 257
+        },
+        "expected_cache_hits": {
+          "den": 5,
+          "num": 63
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": -5909626024
+        },
+        "invalidation_per_million": 800000,
+        "selection": "direct"
+      },
+      "mode": "hybrid_final",
+      "profile": "rapid_churn",
+      "source_sha256": "cafe5478274409b65508244c8454e4a724c8dcae52ef2e728742c914351645e5"
+    },
+    {
+      "break_even_reads_with_same_hazard": null,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 5,
+          "num": 42389048278
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 4074892288
+        },
+        "expected_cache_admissions": {
+          "den": 5,
+          "num": 257
+        },
+        "expected_cache_hits": {
+          "den": 5,
+          "num": 63
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 5,
+          "num": -22014586838
+        },
+        "invalidation_per_million": 800000,
+        "selection": "direct"
+      },
+      "mode": "full",
+      "profile": "rapid_churn",
+      "source_sha256": "167175955ad988f5295a6a5b9c3b442208b998e41c34751c439808704b62d3b9"
+    },
+    {
+      "break_even_reads_with_same_hazard": null,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 1411639049
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 352346048
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 63
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": -1059293001
+        },
+        "invalidation_per_million": 0,
+        "selection": "direct"
+      },
+      "mode": "selective",
+      "profile": "retention_cost",
+      "source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+    },
+    {
+      "break_even_reads_with_same_hazard": null,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 1422035976
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 362463168
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 63
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": -1059572808
+        },
+        "invalidation_per_million": 0,
+        "selection": "direct"
+      },
+      "mode": "hybrid_final",
+      "profile": "retention_cost",
+      "source_sha256": "cafe5478274409b65508244c8454e4a724c8dcae52ef2e728742c914351645e5"
+    },
+    {
+      "break_even_reads_with_same_hazard": 4,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 1466797270
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 4074892288
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 63
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": 2608095018
+        },
+        "invalidation_per_million": 0,
+        "selection": "cache"
+      },
+      "mode": "full",
+      "profile": "retention_cost",
+      "source_sha256": "167175955ad988f5295a6a5b9c3b442208b998e41c34751c439808704b62d3b9"
+    },
+    {
+      "break_even_reads_with_same_hazard": 22,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 112279929
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 22021628
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 3
+        },
+        "expected_reads": 4,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": -90258301
+        },
+        "invalidation_per_million": 0,
+        "selection": "direct"
+      },
+      "mode": "selective",
+      "profile": "short_repeat",
+      "source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+    },
+    {
+      "break_even_reads_with_same_hazard": 23,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 121966036
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 22653948
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 3
+        },
+        "expected_reads": 4,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": -99312088
+        },
+        "invalidation_per_million": 0,
+        "selection": "direct"
+      },
+      "mode": "hybrid_final",
+      "profile": "short_repeat",
+      "source_sha256": "cafe5478274409b65508244c8454e4a724c8dcae52ef2e728742c914351645e5"
+    },
+    {
+      "break_even_reads_with_same_hazard": 3,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 164960030
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 254680768
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 3
+        },
+        "expected_reads": 4,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": 89720738
+        },
+        "invalidation_per_million": 0,
+        "selection": "cache"
+      },
+      "mode": "full",
+      "profile": "short_repeat",
+      "source_sha256": "167175955ad988f5295a6a5b9c3b442208b998e41c34751c439808704b62d3b9"
+    },
+    {
+      "break_even_reads_with_same_hazard": 22,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 131639049
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 352346048
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 63
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": 220706999
+        },
+        "invalidation_per_million": 0,
+        "selection": "cache"
+      },
+      "mode": "selective",
+      "profile": "stable_repeat",
+      "source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+    },
+    {
+      "break_even_reads_with_same_hazard": 23,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 142035976
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 362463168
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 63
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": 220427192
+        },
+        "invalidation_per_million": 0,
+        "selection": "cache"
+      },
+      "mode": "hybrid_final",
+      "profile": "stable_repeat",
+      "source_sha256": "cafe5478274409b65508244c8454e4a724c8dcae52ef2e728742c914351645e5"
+    },
+    {
+      "break_even_reads_with_same_hazard": 3,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 1,
+          "num": 186797270
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 4074892288
+        },
+        "expected_cache_admissions": {
+          "den": 1,
+          "num": 1
+        },
+        "expected_cache_hits": {
+          "den": 1,
+          "num": 63
+        },
+        "expected_reads": 64,
+        "expected_savings_ns_if_cached": {
+          "den": 1,
+          "num": 3888095018
+        },
+        "invalidation_per_million": 0,
+        "selection": "cache"
+      },
+      "mode": "full",
+      "profile": "stable_repeat",
+      "source_sha256": "167175955ad988f5295a6a5b9c3b442208b998e41c34751c439808704b62d3b9"
+    },
+    {
+      "break_even_reads_with_same_hazard": 28,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 100,
+          "num": 15954087451
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 176173024
+        },
+        "expected_cache_admissions": {
+          "den": 100,
+          "num": 131
+        },
+        "expected_cache_hits": {
+          "den": 100,
+          "num": 3069
+        },
+        "expected_reads": 32,
+        "expected_savings_ns_if_cached": {
+          "den": 100,
+          "num": 1663214949
+        },
+        "invalidation_per_million": 10000,
+        "selection": "cache"
+      },
+      "mode": "selective",
+      "profile": "steady_slow",
+      "source_sha256": "ee10712b00d83d6d885ebb4ec483986936207d5c9a875c9217830b1a8bf86be6"
+    },
+    {
+      "break_even_reads_with_same_hazard": 30,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 5,
+          "num": 862733502
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 181231584
+        },
+        "expected_cache_admissions": {
+          "den": 100,
+          "num": 131
+        },
+        "expected_cache_hits": {
+          "den": 100,
+          "num": 3069
+        },
+        "expected_reads": 32,
+        "expected_savings_ns_if_cached": {
+          "den": 5,
+          "num": 43424418
+        },
+        "invalidation_per_million": 10000,
+        "selection": "cache"
+      },
+      "mode": "hybrid_final",
+      "profile": "steady_slow",
+      "source_sha256": "cafe5478274409b65508244c8454e4a724c8dcae52ef2e728742c914351645e5"
+    },
+    {
+      "break_even_reads_with_same_hazard": 3,
+      "decision": {
+        "cache_cost_ns": {
+          "den": 50,
+          "num": 11482852417
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 2037446144
+        },
+        "expected_cache_admissions": {
+          "den": 100,
+          "num": 131
+        },
+        "expected_cache_hits": {
+          "den": 100,
+          "num": 3069
+        },
+        "expected_reads": 32,
+        "expected_savings_ns_if_cached": {
+          "den": 50,
+          "num": 90389454783
+        },
+        "invalidation_per_million": 10000,
+        "selection": "cache"
+      },
+      "mode": "full",
+      "profile": "steady_slow",
+      "source_sha256": "167175955ad988f5295a6a5b9c3b442208b998e41c34751c439808704b62d3b9"
+    }
+  ],
+  "claims_excluded": [
+    "no universal performance or accuracy guarantee",
+    "no empirical source-change frequency",
+    "no authentication of local process or hash receipt",
+    "no proof of independent AI semantic comprehension",
+    "all cached admissions perform a fresh full validation"
+  ],
+  "evidence": "re-used v0.28 five-sample local medians; not remeasured",
+  "format": "ALCG-v0.29-evidence-gated-adaptive-cache",
+  "receipt_sha256": "859e38f6347d3dd63b45ad09e2ff338dbdb9e498d6738ea37e205e0c165a7096",
+  "source_report_sha256": "69ba138d26321e338108fc87c207c08c09050010b5d48896c1933244b5a0ac01"
+}

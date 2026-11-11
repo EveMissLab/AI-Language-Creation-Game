@@ -144,3 +144,9 @@ jobs:
         run: python trusted_cache.py check
       - name: Verify v0.28 first admission plus repeated cached reads
         run: python trusted_cache.py read --session R23_TWO_ROUNDS --mode selective --state 2 --times 3
+      - name: Verify v0.29 pinned evidence, automatic cache gate and direct/cache correctness
+        run: python adaptive_cache.py check
+      - name: Audit v0.29 stable repeat forecast without new timing claims
+        run: python adaptive_cache.py plan --profile stable_repeat --mode selective
+      - name: Audit v0.29 moderate invalidation cost without assuming real rates
+        run: python adaptive_cache.py plan --profile medium_churn --mode full
