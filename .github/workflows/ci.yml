@@ -150,3 +150,7 @@ jobs:
         run: python adaptive_cache.py plan --profile stable_repeat --mode selective
       - name: Audit v0.29 moderate invalidation cost without assuming real rates
         run: python adaptive_cache.py plan --profile medium_churn --mode full
+      - name: Verify v0.30 bounded synthetic workload log and prefix-only forecast
+        run: python workload_estimator.py check
+      - name: Audit v0.30 workload forecast (NOT empirical production traffic)
+        run: python workload_estimator.py predict --case drift --at 96 --mode selective

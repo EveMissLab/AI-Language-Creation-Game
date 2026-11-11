@@ -1,0 +1,503 @@
+{
+  "cases": [
+    {
+      "at_tick": 16,
+      "case": "stable",
+      "decision": null,
+      "forecast": null,
+      "observed_read_gaps": 3,
+      "observed_reads": 4,
+      "observed_revision_changes": 0,
+      "prefix_sha256": "a46d0811d7d52f3f1815624b5de9c0fa9994be1a46b95cc878ec4edd480e85f4",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "insufficient fully observed rolling window or read gaps",
+      "selection": "direct",
+      "window_opportunities": 16
+    },
+    {
+      "at_tick": 32,
+      "case": "stable",
+      "decision": {
+        "cache_cost_ns": {
+          "den": 62500,
+          "num": 11390361794377
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 93591919
+        },
+        "expected_cache_admissions": {
+          "den": 62500,
+          "num": 99537
+        },
+        "expected_cache_hits": {
+          "den": 62500,
+          "num": 962963
+        },
+        "expected_reads": 17,
+        "expected_savings_ns_if_cached": {
+          "den": 62500,
+          "num": -5540866856877
+        },
+        "invalidation_per_million": 37037,
+        "selection": "direct"
+      },
+      "forecast": {
+        "expected_reads": 17,
+        "invalidation_per_million": 37037,
+        "rebuild_penalty_ns": 0,
+        "retention_ns_per_read": 0
+      },
+      "observed_read_gaps": 7,
+      "observed_reads": 8,
+      "observed_revision_changes": 0,
+      "prefix_sha256": "497323706f4fee1b9a7156256a871c6c3b80893383e50635ba8188da71692c2a",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+      "selection": "direct",
+      "window_opportunities": 32
+    },
+    {
+      "at_tick": 64,
+      "case": "stable",
+      "decision": {
+        "cache_cost_ns": {
+          "den": 125000,
+          "num": 32968342497031
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 341335234
+        },
+        "expected_cache_admissions": {
+          "den": 125000,
+          "num": 274511
+        },
+        "expected_cache_hits": {
+          "den": 125000,
+          "num": 7475489
+        },
+        "expected_reads": 62,
+        "expected_savings_ns_if_cached": {
+          "den": 125000,
+          "num": 9698561752969
+        },
+        "invalidation_per_million": 19608,
+        "selection": "cache"
+      },
+      "forecast": {
+        "expected_reads": 62,
+        "invalidation_per_million": 19608,
+        "rebuild_penalty_ns": 0,
+        "retention_ns_per_read": 0
+      },
+      "observed_read_gaps": 31,
+      "observed_reads": 32,
+      "observed_revision_changes": 0,
+      "prefix_sha256": "ff268e0373be8b3121f966eaa4f65eedab6cfdb85a0edda8fc9893b20c4af594",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+      "selection": "cache",
+      "window_opportunities": 32
+    },
+    {
+      "at_tick": 96,
+      "case": "stable",
+      "decision": {
+        "cache_cost_ns": {
+          "den": 125000,
+          "num": 32968342497031
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 341335234
+        },
+        "expected_cache_admissions": {
+          "den": 125000,
+          "num": 274511
+        },
+        "expected_cache_hits": {
+          "den": 125000,
+          "num": 7475489
+        },
+        "expected_reads": 62,
+        "expected_savings_ns_if_cached": {
+          "den": 125000,
+          "num": 9698561752969
+        },
+        "invalidation_per_million": 19608,
+        "selection": "cache"
+      },
+      "forecast": {
+        "expected_reads": 62,
+        "invalidation_per_million": 19608,
+        "rebuild_penalty_ns": 0,
+        "retention_ns_per_read": 0
+      },
+      "observed_read_gaps": 31,
+      "observed_reads": 32,
+      "observed_revision_changes": 0,
+      "prefix_sha256": "632a07b881503687f5442c7f62128f296bf2ecca9d957620c0bdb875218d81de",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+      "selection": "cache",
+      "window_opportunities": 32
+    },
+    {
+      "at_tick": 16,
+      "case": "churn",
+      "decision": null,
+      "forecast": null,
+      "observed_read_gaps": 15,
+      "observed_reads": 16,
+      "observed_revision_changes": 7,
+      "prefix_sha256": "b4295d898e6ce2d26ad4167e156c91839f39e3b00217b1c3a1d6df3d303213e5",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "insufficient fully observed rolling window or read gaps",
+      "selection": "direct",
+      "window_opportunities": 16
+    },
+    {
+      "at_tick": 32,
+      "case": "churn",
+      "decision": {
+        "cache_cost_ns": {
+          "den": 40000,
+          "num": 90200854142969
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 341335234
+        },
+        "expected_cache_admissions": {
+          "den": 40000,
+          "num": 805489
+        },
+        "expected_cache_hits": {
+          "den": 40000,
+          "num": 1674511
+        },
+        "expected_reads": 62,
+        "expected_savings_ns_if_cached": {
+          "den": 40000,
+          "num": -76547444782969
+        },
+        "invalidation_per_million": 313725,
+        "selection": "direct"
+      },
+      "forecast": {
+        "expected_reads": 62,
+        "invalidation_per_million": 313725,
+        "rebuild_penalty_ns": 0,
+        "retention_ns_per_read": 0
+      },
+      "observed_read_gaps": 31,
+      "observed_reads": 32,
+      "observed_revision_changes": 15,
+      "prefix_sha256": "37c1944ca68209c0394f45ca08fd8b03b1d3085ebe32cf2e5f2a131dd177eec7",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+      "selection": "direct",
+      "window_opportunities": 32
+    },
+    {
+      "at_tick": 64,
+      "case": "churn",
+      "decision": {
+        "cache_cost_ns": {
+          "den": 40000,
+          "num": 90200854142969
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 341335234
+        },
+        "expected_cache_admissions": {
+          "den": 40000,
+          "num": 805489
+        },
+        "expected_cache_hits": {
+          "den": 40000,
+          "num": 1674511
+        },
+        "expected_reads": 62,
+        "expected_savings_ns_if_cached": {
+          "den": 40000,
+          "num": -76547444782969
+        },
+        "invalidation_per_million": 313725,
+        "selection": "direct"
+      },
+      "forecast": {
+        "expected_reads": 62,
+        "invalidation_per_million": 313725,
+        "rebuild_penalty_ns": 0,
+        "retention_ns_per_read": 0
+      },
+      "observed_read_gaps": 31,
+      "observed_reads": 32,
+      "observed_revision_changes": 15,
+      "prefix_sha256": "d0967345a1121a1254f5091ba0b7e1b865022af844a8009e895f5c7b9a7dfe76",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+      "selection": "direct",
+      "window_opportunities": 32
+    },
+    {
+      "at_tick": 96,
+      "case": "churn",
+      "decision": {
+        "cache_cost_ns": {
+          "den": 40000,
+          "num": 90200854142969
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 341335234
+        },
+        "expected_cache_admissions": {
+          "den": 40000,
+          "num": 805489
+        },
+        "expected_cache_hits": {
+          "den": 40000,
+          "num": 1674511
+        },
+        "expected_reads": 62,
+        "expected_savings_ns_if_cached": {
+          "den": 40000,
+          "num": -76547444782969
+        },
+        "invalidation_per_million": 313725,
+        "selection": "direct"
+      },
+      "forecast": {
+        "expected_reads": 62,
+        "invalidation_per_million": 313725,
+        "rebuild_penalty_ns": 0,
+        "retention_ns_per_read": 0
+      },
+      "observed_read_gaps": 31,
+      "observed_reads": 32,
+      "observed_revision_changes": 15,
+      "prefix_sha256": "b76ebfdc760675f86fede0682f655527665ae17a39960d608a605020d087a539",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+      "selection": "direct",
+      "window_opportunities": 32
+    },
+    {
+      "at_tick": 16,
+      "case": "sparse",
+      "decision": null,
+      "forecast": null,
+      "observed_read_gaps": 1,
+      "observed_reads": 2,
+      "observed_revision_changes": 0,
+      "prefix_sha256": "5904d8498ed0f4040063ff96043c078319bd17db36e35ce60a0d5c9c1e4e1d59",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "insufficient fully observed rolling window or read gaps",
+      "selection": "direct",
+      "window_opportunities": 16
+    },
+    {
+      "at_tick": 32,
+      "case": "sparse",
+      "decision": null,
+      "forecast": null,
+      "observed_read_gaps": 2,
+      "observed_reads": 3,
+      "observed_revision_changes": 0,
+      "prefix_sha256": "4f4b16438cfd862994219f47308d76f8f1cd8058dd9cb9729418d3214ad632f4",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "insufficient fully observed rolling window or read gaps",
+      "selection": "direct",
+      "window_opportunities": 32
+    },
+    {
+      "at_tick": 64,
+      "case": "sparse",
+      "decision": null,
+      "forecast": null,
+      "observed_read_gaps": 2,
+      "observed_reads": 3,
+      "observed_revision_changes": 0,
+      "prefix_sha256": "e1a5a3f47e3c27e56da30e3150915290f844014f175346f37c648fc2d149fd47",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "insufficient fully observed rolling window or read gaps",
+      "selection": "direct",
+      "window_opportunities": 32
+    },
+    {
+      "at_tick": 96,
+      "case": "sparse",
+      "decision": null,
+      "forecast": null,
+      "observed_read_gaps": 1,
+      "observed_reads": 2,
+      "observed_revision_changes": 0,
+      "prefix_sha256": "48eb95129e38c752060dea2cd7c8f12287a3e5ffb363e670728cc5946b88b1f4",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "insufficient fully observed rolling window or read gaps",
+      "selection": "direct",
+      "window_opportunities": 32
+    },
+    {
+      "at_tick": 16,
+      "case": "drift",
+      "decision": null,
+      "forecast": null,
+      "observed_read_gaps": 15,
+      "observed_reads": 16,
+      "observed_revision_changes": 0,
+      "prefix_sha256": "4558130f005476097bc6e906603ae82debcfe9a0cc0e8679a1e1d80a28ee0fdd",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "insufficient fully observed rolling window or read gaps",
+      "selection": "direct",
+      "window_opportunities": 16
+    },
+    {
+      "at_tick": 32,
+      "case": "drift",
+      "decision": {
+        "cache_cost_ns": {
+          "den": 125000,
+          "num": 32968342497031
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 341335234
+        },
+        "expected_cache_admissions": {
+          "den": 125000,
+          "num": 274511
+        },
+        "expected_cache_hits": {
+          "den": 125000,
+          "num": 7475489
+        },
+        "expected_reads": 62,
+        "expected_savings_ns_if_cached": {
+          "den": 125000,
+          "num": 9698561752969
+        },
+        "invalidation_per_million": 19608,
+        "selection": "cache"
+      },
+      "forecast": {
+        "expected_reads": 62,
+        "invalidation_per_million": 19608,
+        "rebuild_penalty_ns": 0,
+        "retention_ns_per_read": 0
+      },
+      "observed_read_gaps": 31,
+      "observed_reads": 32,
+      "observed_revision_changes": 0,
+      "prefix_sha256": "e7b74218061a7209b358b5afef0a97a5e6a5004a0845e842b50796bad49cc430",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+      "selection": "cache",
+      "window_opportunities": 32
+    },
+    {
+      "at_tick": 64,
+      "case": "drift",
+      "decision": {
+        "cache_cost_ns": {
+          "den": 125000,
+          "num": 32968342497031
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 341335234
+        },
+        "expected_cache_admissions": {
+          "den": 125000,
+          "num": 274511
+        },
+        "expected_cache_hits": {
+          "den": 125000,
+          "num": 7475489
+        },
+        "expected_reads": 62,
+        "expected_savings_ns_if_cached": {
+          "den": 125000,
+          "num": 9698561752969
+        },
+        "invalidation_per_million": 19608,
+        "selection": "cache"
+      },
+      "forecast": {
+        "expected_reads": 62,
+        "invalidation_per_million": 19608,
+        "rebuild_penalty_ns": 0,
+        "retention_ns_per_read": 0
+      },
+      "observed_read_gaps": 31,
+      "observed_reads": 32,
+      "observed_revision_changes": 0,
+      "prefix_sha256": "bc8639a38de284ba472c0df17909dc8988ec467a291a024b0bf4627e77565a13",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+      "selection": "cache",
+      "window_opportunities": 32
+    },
+    {
+      "at_tick": 96,
+      "case": "drift",
+      "decision": {
+        "cache_cost_ns": {
+          "den": 40000,
+          "num": 90200854142969
+        },
+        "direct_cost_ns": {
+          "den": 1,
+          "num": 341335234
+        },
+        "expected_cache_admissions": {
+          "den": 40000,
+          "num": 805489
+        },
+        "expected_cache_hits": {
+          "den": 40000,
+          "num": 1674511
+        },
+        "expected_reads": 62,
+        "expected_savings_ns_if_cached": {
+          "den": 40000,
+          "num": -76547444782969
+        },
+        "invalidation_per_million": 313725,
+        "selection": "direct"
+      },
+      "forecast": {
+        "expected_reads": 62,
+        "invalidation_per_million": 313725,
+        "rebuild_penalty_ns": 0,
+        "retention_ns_per_read": 0
+      },
+      "observed_read_gaps": 31,
+      "observed_reads": 32,
+      "observed_revision_changes": 15,
+      "prefix_sha256": "11936a816b6d6fd13eb4e56f816ad20726a9be38d2eca4f9fbf46d8451885aab",
+      "prior": "Beta(1,19) reset-per-read-gap and Beta(1,1) read-per-opportunity",
+      "reason": "prefix-only smoothed estimates evaluated with v0.28 pinned timing",
+      "selection": "direct",
+      "window_opportunities": 32
+    }
+  ],
+  "cost_evidence": "pinned v0.28 single-host medians, NOT live remeasurement",
+  "fixture": "deterministic synthetic opportunity event streams",
+  "forecast_horizon_opportunities": 64,
+  "format": "ALCG-v0.30-prefix-only-workload-observation",
+  "limitations": [
+    "one explicitly recorded opportunity per tick, not clock time",
+    "synthetic inputs do not establish actual user source-change rates",
+    "fixed uncalibrated Bayesian prior and stationary extrapolation may be wrong",
+    "no lookahead, no real-world cache speed or AI semantic comprehension score",
+    "cold starts and unknown source formats always use full verification",
+    "SHA-256 is an integrity check, not authentication"
+  ],
+  "receipt_sha256": "82140b77d6753b57e03f5cef5638cd78311682763d8ccee9eb5630450f2fab1f",
+  "window_opportunities": 32
+}

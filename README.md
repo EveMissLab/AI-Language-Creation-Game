@@ -290,3 +290,17 @@ python adaptive_cache.py read --profile stable_repeat --mode selective --state 2
 `AdaptiveCacheReader` selects **fresh full verification** or v0.28's **verified-once in-process cache** using a pinned v0.28 local timing report and seven explicitly hypothetical workload forecasts. It also models invalidation and retention cost. For an unfamiliar source, the safe default is always full verification; an alias revision clears cached states, and a monitored model/policy change blocks the reader until restart. The v0.28 sample suggests an approximately 22-read break-even for a stable, two-round selective representation, **not a general performance guarantee**. No core grammar, published dictionary, historical fixture or independent AI-comprehension score is changed. See [technical specification, exact cost equations and limitations](docs/ADAPTIVE-CACHE-ADMISSION-v0.29.md).
 
 中文補充：v0.29 以公開的舊版實測資料與明確假設的讀取次數、來源失效機率、記憶體持有成本，決定是否建立可信快取。這是受限模型的成本比較，**失效機率不是實際量測**；無資料的來源仍採完整驗證。新增的原始碼、成本模型、政策與報表均可以直接執行與重新校驗。
+
+
+### v0.30 — prefix-only event-derived cache workload forecasts
+
+```bash
+python workload_estimator.py check
+python workload_estimator.py report
+python workload_estimator.py predict --case stable --at 64 --mode selective
+python workload_estimator.py predict --case drift --at 96 --mode selective
+```
+
+`workload_estimator.py` accepts a bounded event log of explicitly labeled **read/idle opportunities** and source-revision flags. It forecasts reads in the next 64 opportunities from only the previous 32, then calls the existing v0.29 cache economics with unchanged v0.28 pinned local timing measurements. A low-evidence or unknown-source case uses direct full verification. A new in-process `ObservedCacheReader` can collect its own successful read events, trigger v0.28 verified admission after sufficient observation, and invalidate when the source or monitored model changes. The four checked-in event streams are **fully synthetic**, not real user analytics. The event receipts are integrity checks, not authentication; no ALCG syntax, published dictionary or historical fixture was changed. [Full specification and limitations](docs/OBSERVED-WORKLOAD-v0.30.md).
+
+中文補充：v0.30 先用四組**合成讀取紀錄**示範「只用過去事件推估未來讀取負載」，並實作可在本地程序內記錄真實成功讀取的觀測器。自動判斷仍依賴舊版單機測量與明確指定的先驗、窗口、預測長度；不能當成實測用戶行為、跨硬體加速保證或 AI 語義理解率。未來資料不能被偷偷拿來改寫過去時間點的決策。

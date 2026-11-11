@@ -1,0 +1,2121 @@
+{
+  "format": "ALCG-v0.30-prefix-only-workload-observation",
+  "scenarios": [
+    {
+      "events": [
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 0
+        },
+        {
+          "kind": "idle",
+          "tick": 1
+        },
+        {
+          "kind": "idle",
+          "tick": 2
+        },
+        {
+          "kind": "idle",
+          "tick": 3
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 4
+        },
+        {
+          "kind": "idle",
+          "tick": 5
+        },
+        {
+          "kind": "idle",
+          "tick": 6
+        },
+        {
+          "kind": "idle",
+          "tick": 7
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 8
+        },
+        {
+          "kind": "idle",
+          "tick": 9
+        },
+        {
+          "kind": "idle",
+          "tick": 10
+        },
+        {
+          "kind": "idle",
+          "tick": 11
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 12
+        },
+        {
+          "kind": "idle",
+          "tick": 13
+        },
+        {
+          "kind": "idle",
+          "tick": 14
+        },
+        {
+          "kind": "idle",
+          "tick": 15
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 16
+        },
+        {
+          "kind": "idle",
+          "tick": 17
+        },
+        {
+          "kind": "idle",
+          "tick": 18
+        },
+        {
+          "kind": "idle",
+          "tick": 19
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 20
+        },
+        {
+          "kind": "idle",
+          "tick": 21
+        },
+        {
+          "kind": "idle",
+          "tick": 22
+        },
+        {
+          "kind": "idle",
+          "tick": 23
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 24
+        },
+        {
+          "kind": "idle",
+          "tick": 25
+        },
+        {
+          "kind": "idle",
+          "tick": 26
+        },
+        {
+          "kind": "idle",
+          "tick": 27
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 28
+        },
+        {
+          "kind": "idle",
+          "tick": 29
+        },
+        {
+          "kind": "idle",
+          "tick": 30
+        },
+        {
+          "kind": "idle",
+          "tick": 31
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 32
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 33
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 34
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 35
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 36
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 37
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 38
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 39
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 40
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 41
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 42
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 43
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 44
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 45
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 46
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 47
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 48
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 49
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 50
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 51
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 52
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 53
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 54
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 55
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 56
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 57
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 58
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 59
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 60
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 61
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 62
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 63
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 64
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 65
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 66
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 67
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 68
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 69
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 70
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 71
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 72
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 73
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 74
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 75
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 76
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 77
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 78
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 79
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 80
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 81
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 82
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 83
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 84
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 85
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 86
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 87
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 88
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 89
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 90
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 91
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 92
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 93
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 94
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 95
+        }
+      ],
+      "format": "ALCG-v0.30-prefix-only-workload-observation",
+      "label": "stable",
+      "opportunity_unit": "one explicit read-or-idle event (not real time)",
+      "origin": "synthetic-fixture",
+      "receipt_sha256": "69d80cb2568179e780ef4398a6f47178655e679ef43057fb8f59fc2bbb4595a6"
+    },
+    {
+      "events": [
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 0
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 1
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 2
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 3
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 4
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 5
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 6
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 7
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 8
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 9
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 10
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 11
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 12
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 13
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 14
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 15
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 16
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 17
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 18
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 19
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 20
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 21
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 22
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 23
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 24
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 25
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 26
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 27
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 28
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 29
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 30
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 31
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 32
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 33
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 34
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 35
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 36
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 37
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 38
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 39
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 40
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 41
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 42
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 43
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 44
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 45
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 46
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 47
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 48
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 49
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 50
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 51
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 52
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 53
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 54
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 55
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 56
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 57
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 58
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 59
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 60
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 61
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 62
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 63
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 64
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 65
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 66
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 67
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 68
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 69
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 70
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 71
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 72
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 73
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 74
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 75
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 76
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 77
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 78
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 79
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 80
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 81
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 82
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 83
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 84
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 85
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 86
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 87
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 88
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 89
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 90
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 91
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 92
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 93
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 94
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 95
+        }
+      ],
+      "format": "ALCG-v0.30-prefix-only-workload-observation",
+      "label": "churn",
+      "opportunity_unit": "one explicit read-or-idle event (not real time)",
+      "origin": "synthetic-fixture",
+      "receipt_sha256": "d4f7371211cf132e8f79080684205490a80ed57eef46c1e388cd6390560a5a49"
+    },
+    {
+      "events": [
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 0
+        },
+        {
+          "kind": "idle",
+          "tick": 1
+        },
+        {
+          "kind": "idle",
+          "tick": 2
+        },
+        {
+          "kind": "idle",
+          "tick": 3
+        },
+        {
+          "kind": "idle",
+          "tick": 4
+        },
+        {
+          "kind": "idle",
+          "tick": 5
+        },
+        {
+          "kind": "idle",
+          "tick": 6
+        },
+        {
+          "kind": "idle",
+          "tick": 7
+        },
+        {
+          "kind": "idle",
+          "tick": 8
+        },
+        {
+          "kind": "idle",
+          "tick": 9
+        },
+        {
+          "kind": "idle",
+          "tick": 10
+        },
+        {
+          "kind": "idle",
+          "tick": 11
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 12
+        },
+        {
+          "kind": "idle",
+          "tick": 13
+        },
+        {
+          "kind": "idle",
+          "tick": 14
+        },
+        {
+          "kind": "idle",
+          "tick": 15
+        },
+        {
+          "kind": "idle",
+          "tick": 16
+        },
+        {
+          "kind": "idle",
+          "tick": 17
+        },
+        {
+          "kind": "idle",
+          "tick": 18
+        },
+        {
+          "kind": "idle",
+          "tick": 19
+        },
+        {
+          "kind": "idle",
+          "tick": 20
+        },
+        {
+          "kind": "idle",
+          "tick": 21
+        },
+        {
+          "kind": "idle",
+          "tick": 22
+        },
+        {
+          "kind": "idle",
+          "tick": 23
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 24
+        },
+        {
+          "kind": "idle",
+          "tick": 25
+        },
+        {
+          "kind": "idle",
+          "tick": 26
+        },
+        {
+          "kind": "idle",
+          "tick": 27
+        },
+        {
+          "kind": "idle",
+          "tick": 28
+        },
+        {
+          "kind": "idle",
+          "tick": 29
+        },
+        {
+          "kind": "idle",
+          "tick": 30
+        },
+        {
+          "kind": "idle",
+          "tick": 31
+        },
+        {
+          "kind": "idle",
+          "tick": 32
+        },
+        {
+          "kind": "idle",
+          "tick": 33
+        },
+        {
+          "kind": "idle",
+          "tick": 34
+        },
+        {
+          "kind": "idle",
+          "tick": 35
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 36
+        },
+        {
+          "kind": "idle",
+          "tick": 37
+        },
+        {
+          "kind": "idle",
+          "tick": 38
+        },
+        {
+          "kind": "idle",
+          "tick": 39
+        },
+        {
+          "kind": "idle",
+          "tick": 40
+        },
+        {
+          "kind": "idle",
+          "tick": 41
+        },
+        {
+          "kind": "idle",
+          "tick": 42
+        },
+        {
+          "kind": "idle",
+          "tick": 43
+        },
+        {
+          "kind": "idle",
+          "tick": 44
+        },
+        {
+          "kind": "idle",
+          "tick": 45
+        },
+        {
+          "kind": "idle",
+          "tick": 46
+        },
+        {
+          "kind": "idle",
+          "tick": 47
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 48
+        },
+        {
+          "kind": "idle",
+          "tick": 49
+        },
+        {
+          "kind": "idle",
+          "tick": 50
+        },
+        {
+          "kind": "idle",
+          "tick": 51
+        },
+        {
+          "kind": "idle",
+          "tick": 52
+        },
+        {
+          "kind": "idle",
+          "tick": 53
+        },
+        {
+          "kind": "idle",
+          "tick": 54
+        },
+        {
+          "kind": "idle",
+          "tick": 55
+        },
+        {
+          "kind": "idle",
+          "tick": 56
+        },
+        {
+          "kind": "idle",
+          "tick": 57
+        },
+        {
+          "kind": "idle",
+          "tick": 58
+        },
+        {
+          "kind": "idle",
+          "tick": 59
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 60
+        },
+        {
+          "kind": "idle",
+          "tick": 61
+        },
+        {
+          "kind": "idle",
+          "tick": 62
+        },
+        {
+          "kind": "idle",
+          "tick": 63
+        },
+        {
+          "kind": "idle",
+          "tick": 64
+        },
+        {
+          "kind": "idle",
+          "tick": 65
+        },
+        {
+          "kind": "idle",
+          "tick": 66
+        },
+        {
+          "kind": "idle",
+          "tick": 67
+        },
+        {
+          "kind": "idle",
+          "tick": 68
+        },
+        {
+          "kind": "idle",
+          "tick": 69
+        },
+        {
+          "kind": "idle",
+          "tick": 70
+        },
+        {
+          "kind": "idle",
+          "tick": 71
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 72
+        },
+        {
+          "kind": "idle",
+          "tick": 73
+        },
+        {
+          "kind": "idle",
+          "tick": 74
+        },
+        {
+          "kind": "idle",
+          "tick": 75
+        },
+        {
+          "kind": "idle",
+          "tick": 76
+        },
+        {
+          "kind": "idle",
+          "tick": 77
+        },
+        {
+          "kind": "idle",
+          "tick": 78
+        },
+        {
+          "kind": "idle",
+          "tick": 79
+        },
+        {
+          "kind": "idle",
+          "tick": 80
+        },
+        {
+          "kind": "idle",
+          "tick": 81
+        },
+        {
+          "kind": "idle",
+          "tick": 82
+        },
+        {
+          "kind": "idle",
+          "tick": 83
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 84
+        },
+        {
+          "kind": "idle",
+          "tick": 85
+        },
+        {
+          "kind": "idle",
+          "tick": 86
+        },
+        {
+          "kind": "idle",
+          "tick": 87
+        },
+        {
+          "kind": "idle",
+          "tick": 88
+        },
+        {
+          "kind": "idle",
+          "tick": 89
+        },
+        {
+          "kind": "idle",
+          "tick": 90
+        },
+        {
+          "kind": "idle",
+          "tick": 91
+        },
+        {
+          "kind": "idle",
+          "tick": 92
+        },
+        {
+          "kind": "idle",
+          "tick": 93
+        },
+        {
+          "kind": "idle",
+          "tick": 94
+        },
+        {
+          "kind": "idle",
+          "tick": 95
+        }
+      ],
+      "format": "ALCG-v0.30-prefix-only-workload-observation",
+      "label": "sparse",
+      "opportunity_unit": "one explicit read-or-idle event (not real time)",
+      "origin": "synthetic-fixture",
+      "receipt_sha256": "92b3ec491482da98b24eadffd304fe071491f5231c5e48e54fa6e14bff7775b7"
+    },
+    {
+      "events": [
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 0
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 1
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 2
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 3
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 4
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 5
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 6
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 7
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 8
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 9
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 10
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 11
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 12
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 13
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 14
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 15
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 16
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 17
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 18
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 19
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 20
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 21
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 22
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 23
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 24
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 25
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 26
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 27
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 28
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 29
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 30
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 31
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 32
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 33
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 34
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 35
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 36
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 37
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 38
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 39
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 40
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 41
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 42
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 43
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 44
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 45
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 46
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 47
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 48
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 49
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 50
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 51
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 52
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 53
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 54
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 55
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 56
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 57
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 58
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 59
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 60
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 61
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 62
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 63
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 64
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 65
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 66
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 67
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 68
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 69
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 70
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 71
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 72
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 73
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 74
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 75
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 76
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 77
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 78
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 79
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 80
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 81
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 82
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 83
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 84
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 85
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 86
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 87
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 88
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 89
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 90
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 91
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 92
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 93
+        },
+        {
+          "kind": "read",
+          "revision_changed": true,
+          "route": "not-executed",
+          "tick": 94
+        },
+        {
+          "kind": "read",
+          "revision_changed": false,
+          "route": "not-executed",
+          "tick": 95
+        }
+      ],
+      "format": "ALCG-v0.30-prefix-only-workload-observation",
+      "label": "drift",
+      "opportunity_unit": "one explicit read-or-idle event (not real time)",
+      "origin": "synthetic-fixture",
+      "receipt_sha256": "fa380b9ad4aace4b10f97890c08b27294906555560c583bde65567ef91be5dd0"
+    }
+  ]
+}
