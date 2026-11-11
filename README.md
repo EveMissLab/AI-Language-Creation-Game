@@ -2,7 +2,7 @@
 
 **An open-source, AI-first language-creation playground.** Begin with English-readable concepts and symbols, then grow toward wider semantic coverage and eventually reusable mesoscopic concept/function bundles.
 
-> Status: **v0.21 asymmetric, session-correlated observations and bounded stop/continue decisions (experimental)** — not a finished language, cipher, natural-language translator or semantic proof system.
+> Status: **v0.22 replayable English-symbol decision traces (experimental profile)** — not a finished language, cipher, natural-language translator or semantic proof system.
 
 ## What is the game?
 
@@ -157,6 +157,15 @@ python correlated_design.py plan --family F17_DIRECT --budget 2 --loss 64 --obse
 # Causal mechanisms and sensor parameters are synthetic, not empirical data.
 ```
 
+```bash
+# v0.22: experimental English-readable decision snapshots, no registry update
+python trace_language.py check
+python trace_language.py report
+python trace_language.py build --family F17_DIRECT --budget 2 --loss 64 --observe 3=1 --observe 3=0
+# Each snapshot is one typed, replayable ALCG expression with an order-sensitive history receipt.
+# See docs/REPLAYABLE-DECISION-TRACES-v0.22.md for exact schema and limitations.
+```
+
 ## Roadmap, kept intentionally small
 
 1. **Seed (now):** a readable, recursive text syntax, examples, and a local audit that makes gaps visible.
@@ -180,10 +189,11 @@ python correlated_design.py plan --family F17_DIRECT --budget 2 --loss 64 --obse
 19. **Active intervention design (v0.19):** use the 16 v0.18 observation-equivalent completions per family as a fixed, noiseless hypothesis class. Four informative off-natural interventions are necessary and sufficient for exact identification; a weaker anchor-agreement test can stop at the first mismatch (uniform-prior mean 1.875, worst 4). Supports partial-information recommendations under restricted access, and 896 independent SCM response replays. **No real experiments, independent AI-reader data or dictionary update.** [Full specification](docs/ACTIVE-INTERVENTION-DESIGN-v0.19.md).
 20. **Noisy, cost-aware active experiments (v0.20):** keep the v0.19 exact finite benchmark fixed and instead assume independent symmetric binary measurement errors and unequal intervention costs. Repeated readings update a rational Bayesian posterior rather than deleting candidates. Compare greedy information gain per cost with exact budget-limited MAP mechanism classification; the objectives can select different next interventions. These are hypothetical synthetic channel/cost parameters, **not measured sensor error, real-world causal discovery or AI comprehension**. [Specification](docs/NOISY-COST-AWARE-ACTIVE-DESIGN-v0.20.md).
 21. **Asymmetric and session-correlated sensors (v0.21):** retain the v0.19/v0.20 frozen finite cases, but now use distinct false-positive / false-negative probabilities plus a persistent shared session fault. Maintain an exact joint posterior over 16 masks and two fault states, compare against an independent-per-reading control, and solve a finite four-unit-cost STOP/CONTINUE policy based on assumed misclassification loss. This is synthetic decision analysis, **not** measured sensor performance, AI comprehension or a new published language operator. [Specification](docs/ASYMMETRIC-CORRELATED-STOPPING-v0.21.md).
-22. **Non-implemented challenge:** collect independent reader data without conflating it with synthetic mechanism experiments.
-23. **Mesoscopic units (later):** explore actually usable functional/conceptual compositions without prematurely calling an unexecuted symbolic label a program.
+22. **Replayable experimental decision traces (v0.22):** reuse the published ALCG grammar to encode eight bounded synthetic decision snapshots in `TRACE_V022` with named `SCENARIO`, ordered `OBSERVATIONS`, exact `POLICY`, and independently checkable `RECEIPT`. The serializer/decoder rejects altered action histories, out-of-range inputs, changed policy decisions and stale model fingerprints. These are **profile-specific executable expressions**, not new public core language operators, encryption, independent AI semantic understanding, or real-world sensor evidence. [Specification](docs/REPLAYABLE-DECISION-TRACES-v0.22.md).
+23. **Non-implemented challenge:** collect independent reader data without conflating it with synthetic mechanism experiments.
+24. **Mesoscopic units (later):** explore actually usable functional/conceptual compositions without prematurely calling an unexecuted symbolic label a program.
 
-GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.21 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
+GitHub Actions runs the unit tests, sample syntax check, vocabulary audit, and the v0.2–v0.22 laboratory validators on pushes and pull requests, using standard runners. All checks also work locally without Actions or external APIs. Contributions should include an example meaning, an expression, and a note about ambiguities or failures; not just a shorter spelling.
 
 ## 中文簡介
 
@@ -211,6 +221,8 @@ v0.20 新增**假設性雜訊與不同介入成本的主動實驗設計**：以 
 
 
 v0.21 加入**非對稱觀測誤差、整個實驗階段共用的隱藏感測偏差，以及有限預算下的停止決策**。使用 v0.19 的 16 種觀察等價機制，另增一個二元的固定階段偏差，形成 32 個聯合狀態。系統以精確有理數計算後驗，並對比每次重新抽取誤差的控制模型。在兩單位成本預算下，錯誤分類代價為 8 時決策停止，代價為 64 時則建議繼續。這是**明確限定的合成決策實驗**，非現實量測、非 AI 語義理解成績，也沒有變更任何正式字典。參見 [v0.21 完整規格](docs/ASYMMETRIC-CORRELATED-STOPPING-v0.21.md)。
+
+v0.22 首次提供一套**可還原的英文符號計算決策紀錄**：將 v0.21 的假設性觀測歷程、成本預算、停止／繼續決策與精確計算收據寫成 `TRACE_V022` 表達式。八個合成案例均可由公開模型重算並核對 SHA-256 來源指紋及歷史順序指紋，任何更動讀數、作用對象、模型版本或最佳決策而未重新計算者都會被拒絕。這是**有限模型的專用實驗表徵**，不是已驗證的 AI 跨模型理解能力，也不是新的加密系統、正式中觀字元或真實量測。參見 [v0.22 規格](docs/REPLAYABLE-DECISION-TRACES-v0.22.md)。
 
 ## License
 

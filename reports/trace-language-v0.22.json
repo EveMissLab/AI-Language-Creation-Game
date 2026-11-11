@@ -1,0 +1,156 @@
+{
+  "case_count": 8,
+  "cases": [
+    {
+      "action": null,
+      "decision": "STOP",
+      "evidence_count": 0,
+      "history_sha256": "d98373ff54712b8155d1618e682330f0286843426abfc2b401f6f7e8133d3f99",
+      "id": "T22_INITIAL_STOP",
+      "optimal_risk": {
+        "d": "2",
+        "n": "15"
+      },
+      "state_sha256": "94582450bf8a24406d52551cbcca875bc173981ee9c0090df007a69c5f94b1d6",
+      "stop_risk": {
+        "d": "2",
+        "n": "15"
+      }
+    },
+    {
+      "action": 3,
+      "decision": "CONTINUE",
+      "evidence_count": 0,
+      "history_sha256": "b61bd97ac05bcc5cfbd3dcd006eedcdd12b86405176a94110913daa823cbab9e",
+      "id": "T22_INITIAL_CONTINUE",
+      "optimal_risk": {
+        "d": "8",
+        "n": "445"
+      },
+      "state_sha256": "94582450bf8a24406d52551cbcca875bc173981ee9c0090df007a69c5f94b1d6",
+      "stop_risk": {
+        "d": "1",
+        "n": "60"
+      }
+    },
+    {
+      "action": 4,
+      "decision": "CONTINUE",
+      "evidence_count": 1,
+      "history_sha256": "d8372250d76f5242049409de780cb524959479125cd59edc2adc4f00ffc66b37",
+      "id": "T22_ONE_READING",
+      "optimal_risk": {
+        "d": "1856",
+        "n": "100829"
+      },
+      "state_sha256": "0730819a4ed93ee443542fd34e8f03c1c9f91e4f8ba3c4e489b6ebab6db85cd0",
+      "stop_risk": {
+        "d": "29",
+        "n": "1668"
+      }
+    },
+    {
+      "action": 3,
+      "decision": "CONTINUE",
+      "evidence_count": 2,
+      "history_sha256": "0edcca4a615e2f553360359cf399e1d07c2ac70e7bce4dd33a6af56147b50669",
+      "id": "T22_CONTRADICTORY_READINGS",
+      "optimal_risk": {
+        "d": "18",
+        "n": "1007"
+      },
+      "state_sha256": "e204b956908961fce53f96b2a3175ab338804b8552317b52f484fa7fd56d2a4d",
+      "stop_risk": {
+        "d": "9",
+        "n": "524"
+      }
+    },
+    {
+      "action": 2,
+      "decision": "CONTINUE",
+      "evidence_count": 2,
+      "history_sha256": "9352934fe1bce66693b57b1fdb7a498c7f5f30128fda0f9b6b8e84465b3614b7",
+      "id": "T22_CALIBRATION",
+      "optimal_risk": {
+        "d": "736",
+        "n": "40561"
+      },
+      "state_sha256": "4e9cacd5f1947ce896c160a81ab0da02bc106f1ad9288ecaf61cddeb497d5e6b",
+      "stop_risk": {
+        "d": "23",
+        "n": "1356"
+      }
+    },
+    {
+      "action": 2,
+      "decision": "CONTINUE",
+      "evidence_count": 3,
+      "history_sha256": "155facd490cb4b122df99676d101e3605d4f5d592c4b57b9438844856cbeb18c",
+      "id": "T22_REPEATED",
+      "optimal_risk": {
+        "d": "150304",
+        "n": "8021179"
+      },
+      "state_sha256": "6cedd8c0e24ea83cf690a7880eabad33a77b5c83b364a2f8856172d2ecf714a8",
+      "stop_risk": {
+        "d": "4697",
+        "n": "269796"
+      }
+    },
+    {
+      "action": null,
+      "decision": "STOP",
+      "evidence_count": 1,
+      "history_sha256": "72d51c2877bb0b16dcd65943b75b9f2828c4b282c1fb4aa4451f4e717ee3fb64",
+      "id": "T22_POSTERIOR_STOP",
+      "optimal_risk": {
+        "d": "58",
+        "n": "417"
+      },
+      "state_sha256": "0730819a4ed93ee443542fd34e8f03c1c9f91e4f8ba3c4e489b6ebab6db85cd0",
+      "stop_risk": {
+        "d": "58",
+        "n": "417"
+      }
+    },
+    {
+      "action": 3,
+      "decision": "CONTINUE",
+      "evidence_count": 2,
+      "history_sha256": "8e0787d32364df79b7342537f8b76e035ec62e0c1de0df5b5f9d1100dfd8c78e",
+      "id": "T22_OTHER_FAMILY",
+      "optimal_risk": {
+        "d": "83",
+        "n": "4438"
+      },
+      "state_sha256": "ee12ea9c2f2e693b63be285b538b30351008d04631cd28258d82dc0f8c24916a",
+      "stop_risk": {
+        "d": "83",
+        "n": "4760"
+      }
+    }
+  ],
+  "decision_counts": {
+    "CONTINUE": 6,
+    "STOP": 2
+  },
+  "families": [
+    "F17_CONTEXT",
+    "F17_DIRECT"
+  ],
+  "fixture_sha256": "a19e3a6a6c2af32630abaed6f7db75f7cac2442c19ce55e07ca6f8de40acf640",
+  "format": "ALCG-v0.22-replayable-decision-trace",
+  "limitations": [
+    "The document is an exact replayable snapshot of one decision, not a full experiment transcript.",
+    "English-readable operator names do not establish understanding by another AI.",
+    "All observations are authored synthetic cases, not empirical measurements.",
+    "Hashes detect changed bytes relative to pinned artifacts; no signature or authenticity claim.",
+    "The posterior and actions are only valid for the bounded v0.21 assumptions."
+  ],
+  "no_empirical_evidence": true,
+  "no_independent_ai_comprehension_scores": true,
+  "observation_count": 11,
+  "profile_sha256": "a984ede07262a083564edf1d85b8c5082e4f1eb1968ae5395e64a2874bfa3a42",
+  "published_language_dictionary_unchanged": true,
+  "source": "assistant-authored, pinned v0.21 synthetic finite SCM and channel"
+}

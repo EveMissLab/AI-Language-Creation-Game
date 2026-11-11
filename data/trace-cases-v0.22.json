@@ -1,0 +1,111 @@
+{
+  "format": "ALCG-v0.22-replayable-decision-trace",
+  "cases": [
+    {
+      "id": "T22_INITIAL_STOP",
+      "family": "F17_DIRECT",
+      "observations": [],
+      "budget": 0,
+      "loss": 8
+    },
+    {
+      "id": "T22_INITIAL_CONTINUE",
+      "family": "F17_DIRECT",
+      "observations": [],
+      "budget": 2,
+      "loss": 64
+    },
+    {
+      "id": "T22_ONE_READING",
+      "family": "F17_DIRECT",
+      "observations": [
+        {
+          "action_id": 3,
+          "observed_Y": true
+        }
+      ],
+      "budget": 2,
+      "loss": 64
+    },
+    {
+      "id": "T22_CONTRADICTORY_READINGS",
+      "family": "F17_DIRECT",
+      "observations": [
+        {
+          "action_id": 3,
+          "observed_Y": true
+        },
+        {
+          "action_id": 3,
+          "observed_Y": false
+        }
+      ],
+      "budget": 2,
+      "loss": 64
+    },
+    {
+      "id": "T22_CALIBRATION",
+      "family": "F17_DIRECT",
+      "observations": [
+        {
+          "action_id": 2,
+          "observed_Y": true
+        },
+        {
+          "action_id": 3,
+          "observed_Y": true
+        }
+      ],
+      "budget": 2,
+      "loss": 64
+    },
+    {
+      "id": "T22_REPEATED",
+      "family": "F17_DIRECT",
+      "observations": [
+        {
+          "action_id": 3,
+          "observed_Y": true
+        },
+        {
+          "action_id": 3,
+          "observed_Y": true
+        },
+        {
+          "action_id": 3,
+          "observed_Y": true
+        }
+      ],
+      "budget": 2,
+      "loss": 64
+    },
+    {
+      "id": "T22_POSTERIOR_STOP",
+      "family": "F17_DIRECT",
+      "observations": [
+        {
+          "action_id": 3,
+          "observed_Y": true
+        }
+      ],
+      "budget": 2,
+      "loss": 8
+    },
+    {
+      "id": "T22_OTHER_FAMILY",
+      "family": "F17_CONTEXT",
+      "observations": [
+        {
+          "action_id": 4,
+          "observed_Y": false
+        },
+        {
+          "action_id": 7,
+          "observed_Y": true
+        }
+      ],
+      "budget": 1,
+      "loss": 64
+    }
+  ]
+}

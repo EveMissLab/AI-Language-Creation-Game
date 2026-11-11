@@ -116,3 +116,7 @@ jobs:
         run: python correlated_design.py check
       - name: Audit v0.21 bounded STOP/CONTINUE expected-loss policy (NOT empirical error rates)
         run: python correlated_design.py summary
+      - name: Check v0.22 replayable ALCG computation traces and pinned synthetic receipts
+        run: python trace_language.py check
+      - name: Audit v0.22 English-readable trace evidence and policy labels (NOT independent AI comprehension)
+        run: python trace_language.py report
